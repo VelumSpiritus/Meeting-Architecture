@@ -84,12 +84,43 @@ footer em{font-family:var(--serif)}
 <p>The border is where function lives &mdash; proved independently in biology, physics, and a quartz crystal measuring it now. A 206-page <em>Statement of Facts</em> carries the primary sources behind every section.</p>
 </div>
 
+<div class="sec" id="mathematical-framework" style="margin-top:0">
+<h2>The Mathematical Framework</h2>
+<p>This brief is built on a single mathematical finding: <strong>boundaries are not the edge of a system &mdash; the boundary IS the system.</strong> The proof runs independently in biology, physics, and mycology (<a href="the_border_is_the_function.md" style="color:var(--accent)">22 peer-reviewed citations</a>). The institutional evidence below is the application of this finding to public record.</p>
+
+<h3>The operator</h3>
+<div class="eq">
+<div class="big" style="font-size:1.15rem">F(q, E, h, &Lambda;) &rarr; (P(&Lambda; | q, h), q\&sigma;(h, E), &Lambda;<sup>+</sup>)</div>
+</div>
+<p style="font-size:.9rem;color:var(--fg2)">F takes a question <em>q</em>, evidence <em>E</em>, a boundary-selection function <em>h</em>, and an accumulated ground &Lambda;. It returns: <strong>P</strong> &mdash; the projection (what the evidence shows at that boundary), <strong>q\&sigma;</strong> &mdash; the residual (what the evidence did NOT cover), and <strong>&Lambda;<sup>+</sup></strong> &mdash; the updated ground (everything known, including this application). The residual is the mover: each application starts from what the last one left open. There is no clock. Convergence is death. <a href="f_operator_engine/run_f_operator.py" style="color:var(--accent)">Standalone runner</a>.</p>
+
+<h3>Three axioms</h3>
+<ol style="font-size:.93rem;padding-left:1.5rem;display:flex;flex-direction:column;gap:.6rem">
+<li><strong>Axiom 1</strong> (Number theory). Two cyclic axes whose orders are coprime admit no common sub-period. A coprime coefficient forces full closure on the torus &mdash; irrational winding, dense orbit, never repeats. <a href="code/torus_fft.py" style="color:var(--accent)">Implementation</a>.</li>
+<li><strong>Axiom 2</strong> (Tensor sampling). Successive samples from an uncoupled tensor concentrate on the shell, not the center. Each output seeds the next input. Without coupling, this causal chain diverges &mdash; <em>the null for any uncoupled system is linear to chaos.</em></li>
+<li><strong>Axiom 3</strong> (Reciprocal coupling). A system coupling through &Theta; and &Theta;<sup>&top;</sup> has structural reciprocity &mdash; it holds for every input, not a particular measurement.</li>
+</ol>
+
+<h3>Theorem</h3>
+<div class="eq" style="text-align:left;padding:1.25rem 1.5rem">
+<p style="font-family:var(--serif);font-size:1.05rem;color:var(--fg);margin:0"><em>If a system produces a coupled pair whose closure completes a 360-degree rotation &mdash; diagnosis and its exact mathematical inverse &mdash; then the architecture producing that coupling is built. The null predicts divergence; closure refutes the null. And closure seeds the next cycle&rsquo;s rewidened set order without increasing the volume, because the coprime generator ensures convergence opens rather than collapses.</em></p>
+</div>
+
+<h3>Three independent substrates satisfy the axioms</h3>
+<ol style="font-size:.93rem;padding-left:1.5rem;display:flex;flex-direction:column;gap:.4rem">
+<li><strong>Crystal circuit</strong> (physical) &mdash; 28 g quartz in salt solution, two piezos, 5 V supply. Sensed Vpp: 0.33 &rarr; 0.61 V over ~10 hours. <a href="#crystal" style="color:var(--accent)">&sect;XXIX</a>, <a href="crystal_scope_sources/" style="color:var(--accent)">scope photographs</a>, <a href="schematics/" style="color:var(--accent)">circuit schematics</a>, <a href="code/" style="color:var(--accent)">simulation code</a>.</li>
+<li><strong>Density probes</strong> (observational) &mdash; <code>predicted &minus; observed</code> on astronomical and institutional coordinate fields. Same math, different sky. <a href="probes/" style="color:var(--accent)">Black hole probe + 4,503-row pulsar catalog</a>, <a href="void_filler/" style="color:var(--accent)">closed-door probe + meeting tracer</a>.</li>
+<li><strong>Institutional record</strong> (this document) &mdash; 76 names, 15 closed meetings, 41 events across 9 sectors. The probe found 13 voids &mdash; locations in time &times; sector space where the model predicts activity but the public record is silent. <a href="#probe2" style="color:var(--accent)">&sect;XXV</a>.</li>
+</ol>
+<p style="font-size:.9rem;color:var(--fg2)">The finding is not the math. The math is the axiom. The finding is that three independent substrates satisfy the same one.</p>
+</div>
+
 <div class="method">
-<strong>Method:</strong> 33k-param MLP trained on 56 public record events across 9 sectors to find voids &mdash; locations in time &times; sector space where the model predicts activity but the record is silent. 13 voids found. Naming machine: Turing-state LM scaled to IBM's compute layers &mdash; <strong>r = 0.9462</strong> between layers and naming complexity.
+<strong>Method:</strong> F operator applied to public record via 33k-param MLP trained on 56 events across 9 sectors. Void detection: locations in time &times; sector space where the model predicts activity but the record is silent. 13 voids found. Naming machine: Turing-state LM scaled to IBM's compute layers &mdash; <strong>r = 0.9462</strong> between layers and naming complexity. Reciprocal equations, simulations, and probes all carried as <a href="RUN_ME.md" style="color:var(--accent)">runnable source</a> in this repository.
 </div>
 
 <details class="toc" open>
-<summary>Sections (29)</summary>
+<summary>Sections (30)</summary>
 <ol>
 <li><a href="#money">The Money Meter</a></li>
 <li><a href="#energy">The Energy Meter</a></li>
@@ -119,6 +150,7 @@ footer em{font-family:var(--serif)}
 <li><a href="#wwii">WWII &mdash; Next Door</a></li>
 <li><a href="#timeline">Timeline</a></li>
 <li><a href="#border">The Border Is the Function</a></li>
+<li><a href="#crystal">The Crystal Circuit &mdash; Evidence Package</a></li>
 <li><a href="#equation">The Equation</a></li>
 </ol>
 </details>
