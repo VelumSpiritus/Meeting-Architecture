@@ -1,0 +1,2126 @@
+{
+  "model": "3x3 segmented electrodes + two relational acoustic components",
+  "assumption": "modal capture 4/8; contact and raw-stone piezo efficiency swept",
+  "rows": [
+    {
+      "parameters": {
+        "acoustic_power_w": 0.001,
+        "contact_efficiency": 0.01,
+        "modal_capture": 0.5,
+        "piezo_efficiency": 0.001,
+        "rectifier_efficiency": 0.88,
+        "harvester_efficiency": 0.9,
+        "buffer_capacitance_f": 1e-05,
+        "cold_start_voltage_v": 0.6,
+        "buffer_floor_voltage_v": 0.1,
+        "clamp_voltage_v": 5.1,
+        "harvester_quiescent_w": 1.6e-06,
+        "duration_s": 3600.0,
+        "battery_voltage_v": 3.7,
+        "battery_capacity_ah": 5.0,
+        "initial_soc": 0.5
+      },
+      "cold_started": true,
+      "cold_start_s": 409.090909090909,
+      "power": {
+        "acoustic_w": 0.001,
+        "rectified_electrical_w": 4.400000000000001e-09,
+        "battery_average_w": 0.0
+      },
+      "buffer": {
+        "voltage_v": 0.1,
+        "energy_j": 5.000000000000001e-08
+      },
+      "battery": {
+        "accepted_j": 0.0,
+        "mah_added": 0.0,
+        "soc_gain": 0.0,
+        "final_soc": 0.5
+      },
+      "loss_j": {
+        "contact": 3.564,
+        "uncaptured_modes": 0.018000000000000002,
+        "piezo_mechanical": 0.017982,
+        "rectifier": 2.1599999999999996e-06,
+        "harvester_operating": 1.5790000000000003e-05,
+        "conversion": 0.0,
+        "protection_residual": 0.0,
+        "clamp": 0.0
+      },
+      "closure_residual_j": 0.0
+    },
+    {
+      "parameters": {
+        "acoustic_power_w": 0.001,
+        "contact_efficiency": 0.01,
+        "modal_capture": 0.5,
+        "piezo_efficiency": 0.01,
+        "rectifier_efficiency": 0.88,
+        "harvester_efficiency": 0.9,
+        "buffer_capacitance_f": 1e-05,
+        "cold_start_voltage_v": 0.6,
+        "buffer_floor_voltage_v": 0.1,
+        "clamp_voltage_v": 5.1,
+        "harvester_quiescent_w": 1.6e-06,
+        "duration_s": 3600.0,
+        "battery_voltage_v": 3.7,
+        "battery_capacity_ah": 5.0,
+        "initial_soc": 0.5
+      },
+      "cold_started": true,
+      "cold_start_s": 40.90909090909091,
+      "power": {
+        "acoustic_w": 0.001,
+        "rectified_electrical_w": 4.4000000000000004e-08,
+        "battery_average_w": 0.0
+      },
+      "buffer": {
+        "voltage_v": 0.1,
+        "energy_j": 5.000000000000001e-08
+      },
+      "battery": {
+        "accepted_j": 0.0,
+        "mah_added": 0.0,
+        "soc_gain": 0.0,
+        "final_soc": 0.5
+      },
+      "loss_j": {
+        "contact": 3.564,
+        "uncaptured_modes": 0.018000000000000002,
+        "piezo_mechanical": 0.017820000000000003,
+        "rectifier": 2.160000000000001e-05,
+        "harvester_operating": 0.00015835,
+        "conversion": 0.0,
+        "protection_residual": 0.0,
+        "clamp": 0.0
+      },
+      "closure_residual_j": 0.0
+    },
+    {
+      "parameters": {
+        "acoustic_power_w": 0.001,
+        "contact_efficiency": 0.01,
+        "modal_capture": 0.5,
+        "piezo_efficiency": 0.1,
+        "rectifier_efficiency": 0.88,
+        "harvester_efficiency": 0.9,
+        "buffer_capacitance_f": 1e-05,
+        "cold_start_voltage_v": 0.6,
+        "buffer_floor_voltage_v": 0.1,
+        "clamp_voltage_v": 5.1,
+        "harvester_quiescent_w": 1.6e-06,
+        "duration_s": 3600.0,
+        "battery_voltage_v": 3.7,
+        "battery_capacity_ah": 5.0,
+        "initial_soc": 0.5
+      },
+      "cold_started": true,
+      "cold_start_s": 4.090909090909091,
+      "power": {
+        "acoustic_w": 0.001,
+        "rectified_electrical_w": 4.400000000000001e-07,
+        "battery_average_w": 0.0
+      },
+      "buffer": {
+        "voltage_v": 0.1,
+        "energy_j": 5.000000000000001e-08
+      },
+      "battery": {
+        "accepted_j": 0.0,
+        "mah_added": 0.0,
+        "soc_gain": 0.0,
+        "final_soc": 0.5
+      },
+      "loss_j": {
+        "contact": 3.564,
+        "uncaptured_modes": 0.018000000000000002,
+        "piezo_mechanical": 0.016200000000000003,
+        "rectifier": 0.00021600000000000005,
+        "harvester_operating": 0.0015839500000000004,
+        "conversion": 0.0,
+        "protection_residual": 0.0,
+        "clamp": 0.0
+      },
+      "closure_residual_j": 0.0
+    },
+    {
+      "parameters": {
+        "acoustic_power_w": 0.001,
+        "contact_efficiency": 0.1,
+        "modal_capture": 0.5,
+        "piezo_efficiency": 0.001,
+        "rectifier_efficiency": 0.88,
+        "harvester_efficiency": 0.9,
+        "buffer_capacitance_f": 1e-05,
+        "cold_start_voltage_v": 0.6,
+        "buffer_floor_voltage_v": 0.1,
+        "clamp_voltage_v": 5.1,
+        "harvester_quiescent_w": 1.6e-06,
+        "duration_s": 3600.0,
+        "battery_voltage_v": 3.7,
+        "battery_capacity_ah": 5.0,
+        "initial_soc": 0.5
+      },
+      "cold_started": true,
+      "cold_start_s": 40.90909090909091,
+      "power": {
+        "acoustic_w": 0.001,
+        "rectified_electrical_w": 4.4000000000000004e-08,
+        "battery_average_w": 0.0
+      },
+      "buffer": {
+        "voltage_v": 0.1,
+        "energy_j": 5.000000000000001e-08
+      },
+      "battery": {
+        "accepted_j": 0.0,
+        "mah_added": 0.0,
+        "soc_gain": 0.0,
+        "final_soc": 0.5
+      },
+      "loss_j": {
+        "contact": 3.24,
+        "uncaptured_modes": 0.18000000000000002,
+        "piezo_mechanical": 0.17982,
+        "rectifier": 2.160000000000001e-05,
+        "harvester_operating": 0.00015835,
+        "conversion": 0.0,
+        "protection_residual": 0.0,
+        "clamp": 0.0
+      },
+      "closure_residual_j": 4.440892098500626e-16
+    },
+    {
+      "parameters": {
+        "acoustic_power_w": 0.001,
+        "contact_efficiency": 0.1,
+        "modal_capture": 0.5,
+        "piezo_efficiency": 0.01,
+        "rectifier_efficiency": 0.88,
+        "harvester_efficiency": 0.9,
+        "buffer_capacitance_f": 1e-05,
+        "cold_start_voltage_v": 0.6,
+        "buffer_floor_voltage_v": 0.1,
+        "clamp_voltage_v": 5.1,
+        "harvester_quiescent_w": 1.6e-06,
+        "duration_s": 3600.0,
+        "battery_voltage_v": 3.7,
+        "battery_capacity_ah": 5.0,
+        "initial_soc": 0.5
+      },
+      "cold_started": true,
+      "cold_start_s": 4.090909090909091,
+      "power": {
+        "acoustic_w": 0.001,
+        "rectified_electrical_w": 4.4e-07,
+        "battery_average_w": 0.0
+      },
+      "buffer": {
+        "voltage_v": 0.1,
+        "energy_j": 5.000000000000001e-08
+      },
+      "battery": {
+        "accepted_j": 0.0,
+        "mah_added": 0.0,
+        "soc_gain": 0.0,
+        "final_soc": 0.5
+      },
+      "loss_j": {
+        "contact": 3.24,
+        "uncaptured_modes": 0.18000000000000002,
+        "piezo_mechanical": 0.17820000000000003,
+        "rectifier": 0.00021600000000000005,
+        "harvester_operating": 0.0015839500000000002,
+        "conversion": 0.0,
+        "protection_residual": 0.0,
+        "clamp": 0.0
+      },
+      "closure_residual_j": 4.440892098500626e-16
+    },
+    {
+      "parameters": {
+        "acoustic_power_w": 0.001,
+        "contact_efficiency": 0.1,
+        "modal_capture": 0.5,
+        "piezo_efficiency": 0.1,
+        "rectifier_efficiency": 0.88,
+        "harvester_efficiency": 0.9,
+        "buffer_capacitance_f": 1e-05,
+        "cold_start_voltage_v": 0.6,
+        "buffer_floor_voltage_v": 0.1,
+        "clamp_voltage_v": 5.1,
+        "harvester_quiescent_w": 1.6e-06,
+        "duration_s": 3600.0,
+        "battery_voltage_v": 3.7,
+        "battery_capacity_ah": 5.0,
+        "initial_soc": 0.5
+      },
+      "cold_started": true,
+      "cold_start_s": 0.409090909090909,
+      "power": {
+        "acoustic_w": 0.001,
+        "rectified_electrical_w": 4.400000000000001e-06,
+        "battery_average_w": 2.520151136363637e-06
+      },
+      "buffer": {
+        "voltage_v": 0.1,
+        "energy_j": 5.000000000000001e-08
+      },
+      "battery": {
+        "accepted_j": 0.009072544090909093,
+        "mah_added": 0.0006811219287469288,
+        "soc_gain": 1.3622438574938578e-07,
+        "final_soc": 0.5000001362243858
+      },
+      "loss_j": {
+        "contact": 3.24,
+        "uncaptured_modes": 0.18000000000000002,
+        "piezo_mechanical": 0.16200000000000003,
+        "rectifier": 0.0021599999999999987,
+        "harvester_operating": 0.005759345454545454,
+        "conversion": 0.001008060454545455,
+        "protection_residual": 0.0,
+        "clamp": 0.0
+      },
+      "closure_residual_j": 0.0
+    },
+    {
+      "parameters": {
+        "acoustic_power_w": 0.001,
+        "contact_efficiency": 0.5,
+        "modal_capture": 0.5,
+        "piezo_efficiency": 0.001,
+        "rectifier_efficiency": 0.88,
+        "harvester_efficiency": 0.9,
+        "buffer_capacitance_f": 1e-05,
+        "cold_start_voltage_v": 0.6,
+        "buffer_floor_voltage_v": 0.1,
+        "clamp_voltage_v": 5.1,
+        "harvester_quiescent_w": 1.6e-06,
+        "duration_s": 3600.0,
+        "battery_voltage_v": 3.7,
+        "battery_capacity_ah": 5.0,
+        "initial_soc": 0.5
+      },
+      "cold_started": true,
+      "cold_start_s": 8.181818181818182,
+      "power": {
+        "acoustic_w": 0.001,
+        "rectified_electrical_w": 2.2e-07,
+        "battery_average_w": 0.0
+      },
+      "buffer": {
+        "voltage_v": 0.1,
+        "energy_j": 5.000000000000001e-08
+      },
+      "battery": {
+        "accepted_j": 0.0,
+        "mah_added": 0.0,
+        "soc_gain": 0.0,
+        "final_soc": 0.5
+      },
+      "loss_j": {
+        "contact": 1.8,
+        "uncaptured_modes": 0.9,
+        "piezo_mechanical": 0.8991,
+        "rectifier": 0.00010800000000000002,
+        "harvester_operating": 0.00079195,
+        "conversion": 0.0,
+        "protection_residual": 0.0,
+        "clamp": 0.0
+      },
+      "closure_residual_j": 0.0
+    },
+    {
+      "parameters": {
+        "acoustic_power_w": 0.001,
+        "contact_efficiency": 0.5,
+        "modal_capture": 0.5,
+        "piezo_efficiency": 0.01,
+        "rectifier_efficiency": 0.88,
+        "harvester_efficiency": 0.9,
+        "buffer_capacitance_f": 1e-05,
+        "cold_start_voltage_v": 0.6,
+        "buffer_floor_voltage_v": 0.1,
+        "clamp_voltage_v": 5.1,
+        "harvester_quiescent_w": 1.6e-06,
+        "duration_s": 3600.0,
+        "battery_voltage_v": 3.7,
+        "battery_capacity_ah": 5.0,
+        "initial_soc": 0.5
+      },
+      "cold_started": true,
+      "cold_start_s": 0.818181818181818,
+      "power": {
+        "acoustic_w": 0.001,
+        "rectified_electrical_w": 2.2000000000000005e-06,
+        "battery_average_w": 5.403147727272733e-07
+      },
+      "buffer": {
+        "voltage_v": 0.1,
+        "energy_j": 5.000000000000001e-08
+      },
+      "battery": {
+        "accepted_j": 0.001945133181818184,
+        "mah_added": 0.0001460310196560198,
+        "soc_gain": 2.9206203931203963e-08,
+        "final_soc": 0.5000000292062039
+      },
+      "loss_j": {
+        "contact": 1.8,
+        "uncaptured_modes": 0.9,
+        "piezo_mechanical": 0.891,
+        "rectifier": 0.0010799999999999994,
+        "harvester_operating": 0.005758690909090909,
+        "conversion": 0.00021612590909090928,
+        "protection_residual": 0.0,
+        "clamp": 0.0
+      },
+      "closure_residual_j": 0.0
+    },
+    {
+      "parameters": {
+        "acoustic_power_w": 0.001,
+        "contact_efficiency": 0.5,
+        "modal_capture": 0.5,
+        "piezo_efficiency": 0.1,
+        "rectifier_efficiency": 0.88,
+        "harvester_efficiency": 0.9,
+        "buffer_capacitance_f": 1e-05,
+        "cold_start_voltage_v": 0.6,
+        "buffer_floor_voltage_v": 0.1,
+        "clamp_voltage_v": 5.1,
+        "harvester_quiescent_w": 1.6e-06,
+        "duration_s": 3600.0,
+        "battery_voltage_v": 3.7,
+        "battery_capacity_ah": 5.0,
+        "initial_soc": 0.5
+      },
+      "cold_started": true,
+      "cold_start_s": 0.08181818181818182,
+      "power": {
+        "acoustic_w": 0.001,
+        "rectified_electrical_w": 2.2000000000000003e-05,
+        "battery_average_w": 1.836002022727273e-05
+      },
+      "buffer": {
+        "voltage_v": 0.1,
+        "energy_j": 5.000000000000001e-08
+      },
+      "battery": {
+        "accepted_j": 0.06609607281818183,
+        "mah_added": 0.00496216762899263,
+        "soc_gain": 9.92433525798526e-07,
+        "final_soc": 0.5000009924335258
+      },
+      "loss_j": {
+        "contact": 1.8,
+        "uncaptured_modes": 0.9,
+        "piezo_mechanical": 0.81,
+        "rectifier": 0.010800000000000004,
+        "harvester_operating": 0.005759869090909091,
+        "conversion": 0.007344008090909085,
+        "protection_residual": 0.0,
+        "clamp": 0.0
+      },
+      "closure_residual_j": 4.440892098500626e-16
+    },
+    {
+      "parameters": {
+        "acoustic_power_w": 0.01,
+        "contact_efficiency": 0.01,
+        "modal_capture": 0.5,
+        "piezo_efficiency": 0.001,
+        "rectifier_efficiency": 0.88,
+        "harvester_efficiency": 0.9,
+        "buffer_capacitance_f": 1e-05,
+        "cold_start_voltage_v": 0.6,
+        "buffer_floor_voltage_v": 0.1,
+        "clamp_voltage_v": 5.1,
+        "harvester_quiescent_w": 1.6e-06,
+        "duration_s": 3600.0,
+        "battery_voltage_v": 3.7,
+        "battery_capacity_ah": 5.0,
+        "initial_soc": 0.5
+      },
+      "cold_started": true,
+      "cold_start_s": 40.90909090909092,
+      "power": {
+        "acoustic_w": 0.01,
+        "rectified_electrical_w": 4.399999999999999e-08,
+        "battery_average_w": 0.0
+      },
+      "buffer": {
+        "voltage_v": 0.1,
+        "energy_j": 5.000000000000001e-08
+      },
+      "battery": {
+        "accepted_j": 0.0,
+        "mah_added": 0.0,
+        "soc_gain": 0.0,
+        "final_soc": 0.5
+      },
+      "loss_j": {
+        "contact": 35.64,
+        "uncaptured_modes": 0.18,
+        "piezo_mechanical": 0.17981999999999998,
+        "rectifier": 2.160000000000001e-05,
+        "harvester_operating": 0.00015834999999999997,
+        "conversion": 0.0,
+        "protection_residual": 0.0,
+        "clamp": 0.0
+      },
+      "closure_residual_j": -7.105427357601002e-15
+    },
+    {
+      "parameters": {
+        "acoustic_power_w": 0.01,
+        "contact_efficiency": 0.01,
+        "modal_capture": 0.5,
+        "piezo_efficiency": 0.01,
+        "rectifier_efficiency": 0.88,
+        "harvester_efficiency": 0.9,
+        "buffer_capacitance_f": 1e-05,
+        "cold_start_voltage_v": 0.6,
+        "buffer_floor_voltage_v": 0.1,
+        "clamp_voltage_v": 5.1,
+        "harvester_quiescent_w": 1.6e-06,
+        "duration_s": 3600.0,
+        "battery_voltage_v": 3.7,
+        "battery_capacity_ah": 5.0,
+        "initial_soc": 0.5
+      },
+      "cold_started": true,
+      "cold_start_s": 4.090909090909092,
+      "power": {
+        "acoustic_w": 0.01,
+        "rectified_electrical_w": 4.3999999999999997e-07,
+        "battery_average_w": 0.0
+      },
+      "buffer": {
+        "voltage_v": 0.1,
+        "energy_j": 5.000000000000001e-08
+      },
+      "battery": {
+        "accepted_j": 0.0,
+        "mah_added": 0.0,
+        "soc_gain": 0.0,
+        "final_soc": 0.5
+      },
+      "loss_j": {
+        "contact": 35.64,
+        "uncaptured_modes": 0.18,
+        "piezo_mechanical": 0.1782,
+        "rectifier": 0.00021600000000000005,
+        "harvester_operating": 0.00158395,
+        "conversion": 0.0,
+        "protection_residual": 0.0,
+        "clamp": 0.0
+      },
+      "closure_residual_j": -7.105427357601002e-15
+    },
+    {
+      "parameters": {
+        "acoustic_power_w": 0.01,
+        "contact_efficiency": 0.01,
+        "modal_capture": 0.5,
+        "piezo_efficiency": 0.1,
+        "rectifier_efficiency": 0.88,
+        "harvester_efficiency": 0.9,
+        "buffer_capacitance_f": 1e-05,
+        "cold_start_voltage_v": 0.6,
+        "buffer_floor_voltage_v": 0.1,
+        "clamp_voltage_v": 5.1,
+        "harvester_quiescent_w": 1.6e-06,
+        "duration_s": 3600.0,
+        "battery_voltage_v": 3.7,
+        "battery_capacity_ah": 5.0,
+        "initial_soc": 0.5
+      },
+      "cold_started": true,
+      "cold_start_s": 0.4090909090909091,
+      "power": {
+        "acoustic_w": 0.01,
+        "rectified_electrical_w": 4.4e-06,
+        "battery_average_w": 2.520151136363636e-06
+      },
+      "buffer": {
+        "voltage_v": 0.1,
+        "energy_j": 5.000000000000001e-08
+      },
+      "battery": {
+        "accepted_j": 0.00907254409090909,
+        "mah_added": 0.0006811219287469286,
+        "soc_gain": 1.3622438574938573e-07,
+        "final_soc": 0.5000001362243858
+      },
+      "loss_j": {
+        "contact": 35.64,
+        "uncaptured_modes": 0.18,
+        "piezo_mechanical": 0.162,
+        "rectifier": 0.0021599999999999987,
+        "harvester_operating": 0.005759345454545454,
+        "conversion": 0.001008060454545455,
+        "protection_residual": 0.0,
+        "clamp": 0.0
+      },
+      "closure_residual_j": 0.0
+    },
+    {
+      "parameters": {
+        "acoustic_power_w": 0.01,
+        "contact_efficiency": 0.1,
+        "modal_capture": 0.5,
+        "piezo_efficiency": 0.001,
+        "rectifier_efficiency": 0.88,
+        "harvester_efficiency": 0.9,
+        "buffer_capacitance_f": 1e-05,
+        "cold_start_voltage_v": 0.6,
+        "buffer_floor_voltage_v": 0.1,
+        "clamp_voltage_v": 5.1,
+        "harvester_quiescent_w": 1.6e-06,
+        "duration_s": 3600.0,
+        "battery_voltage_v": 3.7,
+        "battery_capacity_ah": 5.0,
+        "initial_soc": 0.5
+      },
+      "cold_started": true,
+      "cold_start_s": 4.090909090909091,
+      "power": {
+        "acoustic_w": 0.01,
+        "rectified_electrical_w": 4.4e-07,
+        "battery_average_w": 0.0
+      },
+      "buffer": {
+        "voltage_v": 0.1,
+        "energy_j": 5.000000000000001e-08
+      },
+      "battery": {
+        "accepted_j": 0.0,
+        "mah_added": 0.0,
+        "soc_gain": 0.0,
+        "final_soc": 0.5
+      },
+      "loss_j": {
+        "contact": 32.4,
+        "uncaptured_modes": 1.8,
+        "piezo_mechanical": 1.7982,
+        "rectifier": 0.00021600000000000005,
+        "harvester_operating": 0.0015839500000000002,
+        "conversion": 0.0,
+        "protection_residual": 0.0,
+        "clamp": 0.0
+      },
+      "closure_residual_j": -7.105427357601002e-15
+    },
+    {
+      "parameters": {
+        "acoustic_power_w": 0.01,
+        "contact_efficiency": 0.1,
+        "modal_capture": 0.5,
+        "piezo_efficiency": 0.01,
+        "rectifier_efficiency": 0.88,
+        "harvester_efficiency": 0.9,
+        "buffer_capacitance_f": 1e-05,
+        "cold_start_voltage_v": 0.6,
+        "buffer_floor_voltage_v": 0.1,
+        "clamp_voltage_v": 5.1,
+        "harvester_quiescent_w": 1.6e-06,
+        "duration_s": 3600.0,
+        "battery_voltage_v": 3.7,
+        "battery_capacity_ah": 5.0,
+        "initial_soc": 0.5
+      },
+      "cold_started": true,
+      "cold_start_s": 0.409090909090909,
+      "power": {
+        "acoustic_w": 0.01,
+        "rectified_electrical_w": 4.400000000000001e-06,
+        "battery_average_w": 2.520151136363637e-06
+      },
+      "buffer": {
+        "voltage_v": 0.1,
+        "energy_j": 5.000000000000001e-08
+      },
+      "battery": {
+        "accepted_j": 0.009072544090909093,
+        "mah_added": 0.0006811219287469288,
+        "soc_gain": 1.3622438574938578e-07,
+        "final_soc": 0.5000001362243858
+      },
+      "loss_j": {
+        "contact": 32.4,
+        "uncaptured_modes": 1.8,
+        "piezo_mechanical": 1.782,
+        "rectifier": 0.0021599999999999987,
+        "harvester_operating": 0.005759345454545454,
+        "conversion": 0.001008060454545455,
+        "protection_residual": 0.0,
+        "clamp": 0.0
+      },
+      "closure_residual_j": 0.0
+    },
+    {
+      "parameters": {
+        "acoustic_power_w": 0.01,
+        "contact_efficiency": 0.1,
+        "modal_capture": 0.5,
+        "piezo_efficiency": 0.1,
+        "rectifier_efficiency": 0.88,
+        "harvester_efficiency": 0.9,
+        "buffer_capacitance_f": 1e-05,
+        "cold_start_voltage_v": 0.6,
+        "buffer_floor_voltage_v": 0.1,
+        "clamp_voltage_v": 5.1,
+        "harvester_quiescent_w": 1.6e-06,
+        "duration_s": 3600.0,
+        "battery_voltage_v": 3.7,
+        "battery_capacity_ah": 5.0,
+        "initial_soc": 0.5
+      },
+      "cold_started": true,
+      "cold_start_s": 0.04090909090909091,
+      "power": {
+        "acoustic_w": 0.01,
+        "rectified_electrical_w": 4.4000000000000006e-05,
+        "battery_average_w": 3.816000386363637e-05
+      },
+      "buffer": {
+        "voltage_v": 0.1,
+        "energy_j": 5.000000000000001e-08
+      },
+      "battery": {
+        "accepted_j": 0.13737601390909093,
+        "mah_added": 0.01031351455773956,
+        "soc_gain": 2.062702911547912e-06,
+        "final_soc": 0.5000020627029116
+      },
+      "loss_j": {
+        "contact": 32.4,
+        "uncaptured_modes": 1.8,
+        "piezo_mechanical": 1.62,
+        "rectifier": 0.021600000000000008,
+        "harvester_operating": 0.005759934545454545,
+        "conversion": 0.015264001545454542,
+        "protection_residual": 0.0,
+        "clamp": 0.0
+      },
+      "closure_residual_j": -1.4210854715202004e-14
+    },
+    {
+      "parameters": {
+        "acoustic_power_w": 0.01,
+        "contact_efficiency": 0.5,
+        "modal_capture": 0.5,
+        "piezo_efficiency": 0.001,
+        "rectifier_efficiency": 0.88,
+        "harvester_efficiency": 0.9,
+        "buffer_capacitance_f": 1e-05,
+        "cold_start_voltage_v": 0.6,
+        "buffer_floor_voltage_v": 0.1,
+        "clamp_voltage_v": 5.1,
+        "harvester_quiescent_w": 1.6e-06,
+        "duration_s": 3600.0,
+        "battery_voltage_v": 3.7,
+        "battery_capacity_ah": 5.0,
+        "initial_soc": 0.5
+      },
+      "cold_started": true,
+      "cold_start_s": 0.818181818181818,
+      "power": {
+        "acoustic_w": 0.01,
+        "rectified_electrical_w": 2.2000000000000005e-06,
+        "battery_average_w": 5.403147727272733e-07
+      },
+      "buffer": {
+        "voltage_v": 0.1,
+        "energy_j": 5.000000000000001e-08
+      },
+      "battery": {
+        "accepted_j": 0.001945133181818184,
+        "mah_added": 0.0001460310196560198,
+        "soc_gain": 2.9206203931203963e-08,
+        "final_soc": 0.5000000292062039
+      },
+      "loss_j": {
+        "contact": 18.0,
+        "uncaptured_modes": 9.0,
+        "piezo_mechanical": 8.991,
+        "rectifier": 0.0010799999999999994,
+        "harvester_operating": 0.005758690909090909,
+        "conversion": 0.00021612590909090928,
+        "protection_residual": 0.0,
+        "clamp": 0.0
+      },
+      "closure_residual_j": 0.0
+    },
+    {
+      "parameters": {
+        "acoustic_power_w": 0.01,
+        "contact_efficiency": 0.5,
+        "modal_capture": 0.5,
+        "piezo_efficiency": 0.01,
+        "rectifier_efficiency": 0.88,
+        "harvester_efficiency": 0.9,
+        "buffer_capacitance_f": 1e-05,
+        "cold_start_voltage_v": 0.6,
+        "buffer_floor_voltage_v": 0.1,
+        "clamp_voltage_v": 5.1,
+        "harvester_quiescent_w": 1.6e-06,
+        "duration_s": 3600.0,
+        "battery_voltage_v": 3.7,
+        "battery_capacity_ah": 5.0,
+        "initial_soc": 0.5
+      },
+      "cold_started": true,
+      "cold_start_s": 0.08181818181818183,
+      "power": {
+        "acoustic_w": 0.01,
+        "rectified_electrical_w": 2.2e-05,
+        "battery_average_w": 1.8360020227272728e-05
+      },
+      "buffer": {
+        "voltage_v": 0.1,
+        "energy_j": 5.000000000000001e-08
+      },
+      "battery": {
+        "accepted_j": 0.06609607281818182,
+        "mah_added": 0.004962167628992629,
+        "soc_gain": 9.924335257985259e-07,
+        "final_soc": 0.5000009924335258
+      },
+      "loss_j": {
+        "contact": 18.0,
+        "uncaptured_modes": 9.0,
+        "piezo_mechanical": 8.91,
+        "rectifier": 0.010800000000000004,
+        "harvester_operating": 0.005759869090909091,
+        "conversion": 0.007344008090909085,
+        "protection_residual": 0.0,
+        "clamp": 0.0
+      },
+      "closure_residual_j": 0.0
+    },
+    {
+      "parameters": {
+        "acoustic_power_w": 0.01,
+        "contact_efficiency": 0.5,
+        "modal_capture": 0.5,
+        "piezo_efficiency": 0.1,
+        "rectifier_efficiency": 0.88,
+        "harvester_efficiency": 0.9,
+        "buffer_capacitance_f": 1e-05,
+        "cold_start_voltage_v": 0.6,
+        "buffer_floor_voltage_v": 0.1,
+        "clamp_voltage_v": 5.1,
+        "harvester_quiescent_w": 1.6e-06,
+        "duration_s": 3600.0,
+        "battery_voltage_v": 3.7,
+        "battery_capacity_ah": 5.0,
+        "initial_soc": 0.5
+      },
+      "cold_started": true,
+      "cold_start_s": 0.008181818181818182,
+      "power": {
+        "acoustic_w": 0.01,
+        "rectified_electrical_w": 0.00022,
+        "battery_average_w": 0.0001965599907727273
+      },
+      "buffer": {
+        "voltage_v": 0.1,
+        "energy_j": 5.000000000000001e-08
+      },
+      "battery": {
+        "accepted_j": 0.7076159667818183,
+        "mah_added": 0.05312432183046683,
+        "soc_gain": 1.0624864366093368e-05,
+        "final_soc": 0.5000106248643661
+      },
+      "loss_j": {
+        "contact": 18.0,
+        "uncaptured_modes": 9.0,
+        "piezo_mechanical": 8.1,
+        "rectifier": 0.10799999999999998,
+        "harvester_operating": 0.005759986909090908,
+        "conversion": 0.0786239963090909,
+        "protection_residual": 0.0,
+        "clamp": 0.0
+      },
+      "closure_residual_j": -7.105427357601002e-15
+    },
+    {
+      "parameters": {
+        "acoustic_power_w": 0.1,
+        "contact_efficiency": 0.01,
+        "modal_capture": 0.5,
+        "piezo_efficiency": 0.001,
+        "rectifier_efficiency": 0.88,
+        "harvester_efficiency": 0.9,
+        "buffer_capacitance_f": 1e-05,
+        "cold_start_voltage_v": 0.6,
+        "buffer_floor_voltage_v": 0.1,
+        "clamp_voltage_v": 5.1,
+        "harvester_quiescent_w": 1.6e-06,
+        "duration_s": 3600.0,
+        "battery_voltage_v": 3.7,
+        "battery_capacity_ah": 5.0,
+        "initial_soc": 0.5
+      },
+      "cold_started": true,
+      "cold_start_s": 4.090909090909091,
+      "power": {
+        "acoustic_w": 0.1,
+        "rectified_electrical_w": 4.4e-07,
+        "battery_average_w": 0.0
+      },
+      "buffer": {
+        "voltage_v": 0.1,
+        "energy_j": 5.000000000000001e-08
+      },
+      "battery": {
+        "accepted_j": 0.0,
+        "mah_added": 0.0,
+        "soc_gain": 0.0,
+        "final_soc": 0.5
+      },
+      "loss_j": {
+        "contact": 356.4,
+        "uncaptured_modes": 1.8,
+        "piezo_mechanical": 1.7982,
+        "rectifier": 0.00021600000000000005,
+        "harvester_operating": 0.0015839500000000002,
+        "conversion": 0.0,
+        "protection_residual": 0.0,
+        "clamp": 0.0
+      },
+      "closure_residual_j": 0.0
+    },
+    {
+      "parameters": {
+        "acoustic_power_w": 0.1,
+        "contact_efficiency": 0.01,
+        "modal_capture": 0.5,
+        "piezo_efficiency": 0.01,
+        "rectifier_efficiency": 0.88,
+        "harvester_efficiency": 0.9,
+        "buffer_capacitance_f": 1e-05,
+        "cold_start_voltage_v": 0.6,
+        "buffer_floor_voltage_v": 0.1,
+        "clamp_voltage_v": 5.1,
+        "harvester_quiescent_w": 1.6e-06,
+        "duration_s": 3600.0,
+        "battery_voltage_v": 3.7,
+        "battery_capacity_ah": 5.0,
+        "initial_soc": 0.5
+      },
+      "cold_started": true,
+      "cold_start_s": 0.409090909090909,
+      "power": {
+        "acoustic_w": 0.1,
+        "rectified_electrical_w": 4.400000000000001e-06,
+        "battery_average_w": 2.520151136363637e-06
+      },
+      "buffer": {
+        "voltage_v": 0.1,
+        "energy_j": 5.000000000000001e-08
+      },
+      "battery": {
+        "accepted_j": 0.009072544090909093,
+        "mah_added": 0.0006811219287469288,
+        "soc_gain": 1.3622438574938578e-07,
+        "final_soc": 0.5000001362243858
+      },
+      "loss_j": {
+        "contact": 356.4,
+        "uncaptured_modes": 1.8,
+        "piezo_mechanical": 1.782,
+        "rectifier": 0.0021599999999999987,
+        "harvester_operating": 0.005759345454545454,
+        "conversion": 0.001008060454545455,
+        "protection_residual": 0.0,
+        "clamp": 0.0
+      },
+      "closure_residual_j": -1.1368683772161603e-13
+    },
+    {
+      "parameters": {
+        "acoustic_power_w": 0.1,
+        "contact_efficiency": 0.01,
+        "modal_capture": 0.5,
+        "piezo_efficiency": 0.1,
+        "rectifier_efficiency": 0.88,
+        "harvester_efficiency": 0.9,
+        "buffer_capacitance_f": 1e-05,
+        "cold_start_voltage_v": 0.6,
+        "buffer_floor_voltage_v": 0.1,
+        "clamp_voltage_v": 5.1,
+        "harvester_quiescent_w": 1.6e-06,
+        "duration_s": 3600.0,
+        "battery_voltage_v": 3.7,
+        "battery_capacity_ah": 5.0,
+        "initial_soc": 0.5
+      },
+      "cold_started": true,
+      "cold_start_s": 0.04090909090909091,
+      "power": {
+        "acoustic_w": 0.1,
+        "rectified_electrical_w": 4.4000000000000006e-05,
+        "battery_average_w": 3.816000386363637e-05
+      },
+      "buffer": {
+        "voltage_v": 0.1,
+        "energy_j": 5.000000000000001e-08
+      },
+      "battery": {
+        "accepted_j": 0.13737601390909093,
+        "mah_added": 0.01031351455773956,
+        "soc_gain": 2.062702911547912e-06,
+        "final_soc": 0.5000020627029116
+      },
+      "loss_j": {
+        "contact": 356.4,
+        "uncaptured_modes": 1.8,
+        "piezo_mechanical": 1.62,
+        "rectifier": 0.021600000000000008,
+        "harvester_operating": 0.005759934545454545,
+        "conversion": 0.015264001545454542,
+        "protection_residual": 0.0,
+        "clamp": 0.0
+      },
+      "closure_residual_j": -5.684341886080802e-14
+    },
+    {
+      "parameters": {
+        "acoustic_power_w": 0.1,
+        "contact_efficiency": 0.1,
+        "modal_capture": 0.5,
+        "piezo_efficiency": 0.001,
+        "rectifier_efficiency": 0.88,
+        "harvester_efficiency": 0.9,
+        "buffer_capacitance_f": 1e-05,
+        "cold_start_voltage_v": 0.6,
+        "buffer_floor_voltage_v": 0.1,
+        "clamp_voltage_v": 5.1,
+        "harvester_quiescent_w": 1.6e-06,
+        "duration_s": 3600.0,
+        "battery_voltage_v": 3.7,
+        "battery_capacity_ah": 5.0,
+        "initial_soc": 0.5
+      },
+      "cold_started": true,
+      "cold_start_s": 0.409090909090909,
+      "power": {
+        "acoustic_w": 0.1,
+        "rectified_electrical_w": 4.400000000000001e-06,
+        "battery_average_w": 2.520151136363637e-06
+      },
+      "buffer": {
+        "voltage_v": 0.1,
+        "energy_j": 5.000000000000001e-08
+      },
+      "battery": {
+        "accepted_j": 0.009072544090909093,
+        "mah_added": 0.0006811219287469288,
+        "soc_gain": 1.3622438574938578e-07,
+        "final_soc": 0.5000001362243858
+      },
+      "loss_j": {
+        "contact": 324.0,
+        "uncaptured_modes": 18.0,
+        "piezo_mechanical": 17.982,
+        "rectifier": 0.0021599999999999987,
+        "harvester_operating": 0.005759345454545454,
+        "conversion": 0.001008060454545455,
+        "protection_residual": 0.0,
+        "clamp": 0.0
+      },
+      "closure_residual_j": -1.1368683772161603e-13
+    },
+    {
+      "parameters": {
+        "acoustic_power_w": 0.1,
+        "contact_efficiency": 0.1,
+        "modal_capture": 0.5,
+        "piezo_efficiency": 0.01,
+        "rectifier_efficiency": 0.88,
+        "harvester_efficiency": 0.9,
+        "buffer_capacitance_f": 1e-05,
+        "cold_start_voltage_v": 0.6,
+        "buffer_floor_voltage_v": 0.1,
+        "clamp_voltage_v": 5.1,
+        "harvester_quiescent_w": 1.6e-06,
+        "duration_s": 3600.0,
+        "battery_voltage_v": 3.7,
+        "battery_capacity_ah": 5.0,
+        "initial_soc": 0.5
+      },
+      "cold_started": true,
+      "cold_start_s": 0.040909090909090916,
+      "power": {
+        "acoustic_w": 0.1,
+        "rectified_electrical_w": 4.4e-05,
+        "battery_average_w": 3.816000386363636e-05
+      },
+      "buffer": {
+        "voltage_v": 0.1,
+        "energy_j": 5.000000000000001e-08
+      },
+      "battery": {
+        "accepted_j": 0.1373760139090909,
+        "mah_added": 0.010313514557739555,
+        "soc_gain": 2.0627029115479116e-06,
+        "final_soc": 0.5000020627029116
+      },
+      "loss_j": {
+        "contact": 324.0,
+        "uncaptured_modes": 18.0,
+        "piezo_mechanical": 17.82,
+        "rectifier": 0.021600000000000008,
+        "harvester_operating": 0.005759934545454545,
+        "conversion": 0.015264001545454542,
+        "protection_residual": 0.0,
+        "clamp": 0.0
+      },
+      "closure_residual_j": -5.684341886080802e-14
+    },
+    {
+      "parameters": {
+        "acoustic_power_w": 0.1,
+        "contact_efficiency": 0.1,
+        "modal_capture": 0.5,
+        "piezo_efficiency": 0.1,
+        "rectifier_efficiency": 0.88,
+        "harvester_efficiency": 0.9,
+        "buffer_capacitance_f": 1e-05,
+        "cold_start_voltage_v": 0.6,
+        "buffer_floor_voltage_v": 0.1,
+        "clamp_voltage_v": 5.1,
+        "harvester_quiescent_w": 1.6e-06,
+        "duration_s": 3600.0,
+        "battery_voltage_v": 3.7,
+        "battery_capacity_ah": 5.0,
+        "initial_soc": 0.5
+      },
+      "cold_started": true,
+      "cold_start_s": 0.004090909090909091,
+      "power": {
+        "acoustic_w": 0.1,
+        "rectified_electrical_w": 0.00044,
+        "battery_average_w": 0.0003945599891363637
+      },
+      "buffer": {
+        "voltage_v": 0.1,
+        "energy_j": 5.000000000000001e-08
+      },
+      "battery": {
+        "accepted_j": 1.4204159608909093,
+        "mah_added": 0.10663783490171991,
+        "soc_gain": 2.1327566980343982e-05,
+        "final_soc": 0.5000213275669804
+      },
+      "loss_j": {
+        "contact": 324.0,
+        "uncaptured_modes": 18.0,
+        "piezo_mechanical": 16.2,
+        "rectifier": 0.21599999999999997,
+        "harvester_operating": 0.005759993454545455,
+        "conversion": 0.15782399565454552,
+        "protection_residual": 0.0,
+        "clamp": 0.0
+      },
+      "closure_residual_j": 0.0
+    },
+    {
+      "parameters": {
+        "acoustic_power_w": 0.1,
+        "contact_efficiency": 0.5,
+        "modal_capture": 0.5,
+        "piezo_efficiency": 0.001,
+        "rectifier_efficiency": 0.88,
+        "harvester_efficiency": 0.9,
+        "buffer_capacitance_f": 1e-05,
+        "cold_start_voltage_v": 0.6,
+        "buffer_floor_voltage_v": 0.1,
+        "clamp_voltage_v": 5.1,
+        "harvester_quiescent_w": 1.6e-06,
+        "duration_s": 3600.0,
+        "battery_voltage_v": 3.7,
+        "battery_capacity_ah": 5.0,
+        "initial_soc": 0.5
+      },
+      "cold_started": true,
+      "cold_start_s": 0.08181818181818183,
+      "power": {
+        "acoustic_w": 0.1,
+        "rectified_electrical_w": 2.2e-05,
+        "battery_average_w": 1.8360020227272728e-05
+      },
+      "buffer": {
+        "voltage_v": 0.1,
+        "energy_j": 5.000000000000001e-08
+      },
+      "battery": {
+        "accepted_j": 0.06609607281818182,
+        "mah_added": 0.004962167628992629,
+        "soc_gain": 9.924335257985259e-07,
+        "final_soc": 0.5000009924335258
+      },
+      "loss_j": {
+        "contact": 180.0,
+        "uncaptured_modes": 90.0,
+        "piezo_mechanical": 89.91,
+        "rectifier": 0.010800000000000004,
+        "harvester_operating": 0.005759869090909091,
+        "conversion": 0.007344008090909085,
+        "protection_residual": 0.0,
+        "clamp": 0.0
+      },
+      "closure_residual_j": 0.0
+    },
+    {
+      "parameters": {
+        "acoustic_power_w": 0.1,
+        "contact_efficiency": 0.5,
+        "modal_capture": 0.5,
+        "piezo_efficiency": 0.01,
+        "rectifier_efficiency": 0.88,
+        "harvester_efficiency": 0.9,
+        "buffer_capacitance_f": 1e-05,
+        "cold_start_voltage_v": 0.6,
+        "buffer_floor_voltage_v": 0.1,
+        "clamp_voltage_v": 5.1,
+        "harvester_quiescent_w": 1.6e-06,
+        "duration_s": 3600.0,
+        "battery_voltage_v": 3.7,
+        "battery_capacity_ah": 5.0,
+        "initial_soc": 0.5
+      },
+      "cold_started": true,
+      "cold_start_s": 0.008181818181818182,
+      "power": {
+        "acoustic_w": 0.1,
+        "rectified_electrical_w": 0.00022,
+        "battery_average_w": 0.0001965599907727273
+      },
+      "buffer": {
+        "voltage_v": 0.1,
+        "energy_j": 5.000000000000001e-08
+      },
+      "battery": {
+        "accepted_j": 0.7076159667818183,
+        "mah_added": 0.05312432183046683,
+        "soc_gain": 1.0624864366093368e-05,
+        "final_soc": 0.5000106248643661
+      },
+      "loss_j": {
+        "contact": 180.0,
+        "uncaptured_modes": 90.0,
+        "piezo_mechanical": 89.1,
+        "rectifier": 0.10799999999999998,
+        "harvester_operating": 0.005759986909090908,
+        "conversion": 0.0786239963090909,
+        "protection_residual": 0.0,
+        "clamp": 0.0
+      },
+      "closure_residual_j": 0.0
+    },
+    {
+      "parameters": {
+        "acoustic_power_w": 0.1,
+        "contact_efficiency": 0.5,
+        "modal_capture": 0.5,
+        "piezo_efficiency": 0.1,
+        "rectifier_efficiency": 0.88,
+        "harvester_efficiency": 0.9,
+        "buffer_capacitance_f": 1e-05,
+        "cold_start_voltage_v": 0.6,
+        "buffer_floor_voltage_v": 0.1,
+        "clamp_voltage_v": 5.1,
+        "harvester_quiescent_w": 1.6e-06,
+        "duration_s": 3600.0,
+        "battery_voltage_v": 3.7,
+        "battery_capacity_ah": 5.0,
+        "initial_soc": 0.5
+      },
+      "cold_started": true,
+      "cold_start_s": 0.0008181818181818182,
+      "power": {
+        "acoustic_w": 0.1,
+        "rectified_electrical_w": 0.0022,
+        "battery_average_w": 0.0019785599878272726
+      },
+      "buffer": {
+        "voltage_v": 0.1,
+        "energy_j": 5.000000000000001e-08
+      },
+      "battery": {
+        "accepted_j": 7.122815956178182,
+        "mah_added": 0.5347459426560196,
+        "soc_gain": 0.00010694918853120394,
+        "final_soc": 0.5001069491885312
+      },
+      "loss_j": {
+        "contact": 180.0,
+        "uncaptured_modes": 90.0,
+        "piezo_mechanical": 81.0,
+        "rectifier": 1.08,
+        "harvester_operating": 0.005759998690909091,
+        "conversion": 0.7914239951309092,
+        "protection_residual": 0.0,
+        "clamp": 0.0
+      },
+      "closure_residual_j": -5.684341886080802e-14
+    },
+    {
+      "parameters": {
+        "acoustic_power_w": 1.0,
+        "contact_efficiency": 0.01,
+        "modal_capture": 0.5,
+        "piezo_efficiency": 0.001,
+        "rectifier_efficiency": 0.88,
+        "harvester_efficiency": 0.9,
+        "buffer_capacitance_f": 1e-05,
+        "cold_start_voltage_v": 0.6,
+        "buffer_floor_voltage_v": 0.1,
+        "clamp_voltage_v": 5.1,
+        "harvester_quiescent_w": 1.6e-06,
+        "duration_s": 3600.0,
+        "battery_voltage_v": 3.7,
+        "battery_capacity_ah": 5.0,
+        "initial_soc": 0.5
+      },
+      "cold_started": true,
+      "cold_start_s": 0.409090909090909,
+      "power": {
+        "acoustic_w": 1.0,
+        "rectified_electrical_w": 4.400000000000001e-06,
+        "battery_average_w": 2.520151136363637e-06
+      },
+      "buffer": {
+        "voltage_v": 0.1,
+        "energy_j": 5.000000000000001e-08
+      },
+      "battery": {
+        "accepted_j": 0.009072544090909093,
+        "mah_added": 0.0006811219287469288,
+        "soc_gain": 1.3622438574938578e-07,
+        "final_soc": 0.5000001362243858
+      },
+      "loss_j": {
+        "contact": 3564.0,
+        "uncaptured_modes": 18.0,
+        "piezo_mechanical": 17.982,
+        "rectifier": 0.0021599999999999987,
+        "harvester_operating": 0.005759345454545454,
+        "conversion": 0.001008060454545455,
+        "protection_residual": 0.0,
+        "clamp": 0.0
+      },
+      "closure_residual_j": 0.0
+    },
+    {
+      "parameters": {
+        "acoustic_power_w": 1.0,
+        "contact_efficiency": 0.01,
+        "modal_capture": 0.5,
+        "piezo_efficiency": 0.01,
+        "rectifier_efficiency": 0.88,
+        "harvester_efficiency": 0.9,
+        "buffer_capacitance_f": 1e-05,
+        "cold_start_voltage_v": 0.6,
+        "buffer_floor_voltage_v": 0.1,
+        "clamp_voltage_v": 5.1,
+        "harvester_quiescent_w": 1.6e-06,
+        "duration_s": 3600.0,
+        "battery_voltage_v": 3.7,
+        "battery_capacity_ah": 5.0,
+        "initial_soc": 0.5
+      },
+      "cold_started": true,
+      "cold_start_s": 0.040909090909090916,
+      "power": {
+        "acoustic_w": 1.0,
+        "rectified_electrical_w": 4.4e-05,
+        "battery_average_w": 3.816000386363636e-05
+      },
+      "buffer": {
+        "voltage_v": 0.1,
+        "energy_j": 5.000000000000001e-08
+      },
+      "battery": {
+        "accepted_j": 0.1373760139090909,
+        "mah_added": 0.010313514557739555,
+        "soc_gain": 2.0627029115479116e-06,
+        "final_soc": 0.5000020627029116
+      },
+      "loss_j": {
+        "contact": 3564.0,
+        "uncaptured_modes": 18.0,
+        "piezo_mechanical": 17.82,
+        "rectifier": 0.021600000000000008,
+        "harvester_operating": 0.005759934545454545,
+        "conversion": 0.015264001545454542,
+        "protection_residual": 0.0,
+        "clamp": 0.0
+      },
+      "closure_residual_j": 0.0
+    },
+    {
+      "parameters": {
+        "acoustic_power_w": 1.0,
+        "contact_efficiency": 0.01,
+        "modal_capture": 0.5,
+        "piezo_efficiency": 0.1,
+        "rectifier_efficiency": 0.88,
+        "harvester_efficiency": 0.9,
+        "buffer_capacitance_f": 1e-05,
+        "cold_start_voltage_v": 0.6,
+        "buffer_floor_voltage_v": 0.1,
+        "clamp_voltage_v": 5.1,
+        "harvester_quiescent_w": 1.6e-06,
+        "duration_s": 3600.0,
+        "battery_voltage_v": 3.7,
+        "battery_capacity_ah": 5.0,
+        "initial_soc": 0.5
+      },
+      "cold_started": true,
+      "cold_start_s": 0.004090909090909091,
+      "power": {
+        "acoustic_w": 1.0,
+        "rectified_electrical_w": 0.00044,
+        "battery_average_w": 0.0003945599891363637
+      },
+      "buffer": {
+        "voltage_v": 0.1,
+        "energy_j": 5.000000000000001e-08
+      },
+      "battery": {
+        "accepted_j": 1.4204159608909093,
+        "mah_added": 0.10663783490171991,
+        "soc_gain": 2.1327566980343982e-05,
+        "final_soc": 0.5000213275669804
+      },
+      "loss_j": {
+        "contact": 3564.0,
+        "uncaptured_modes": 18.0,
+        "piezo_mechanical": 16.2,
+        "rectifier": 0.21599999999999997,
+        "harvester_operating": 0.005759993454545455,
+        "conversion": 0.15782399565454552,
+        "protection_residual": 0.0,
+        "clamp": 0.0
+      },
+      "closure_residual_j": -9.094947017729282e-13
+    },
+    {
+      "parameters": {
+        "acoustic_power_w": 1.0,
+        "contact_efficiency": 0.1,
+        "modal_capture": 0.5,
+        "piezo_efficiency": 0.001,
+        "rectifier_efficiency": 0.88,
+        "harvester_efficiency": 0.9,
+        "buffer_capacitance_f": 1e-05,
+        "cold_start_voltage_v": 0.6,
+        "buffer_floor_voltage_v": 0.1,
+        "clamp_voltage_v": 5.1,
+        "harvester_quiescent_w": 1.6e-06,
+        "duration_s": 3600.0,
+        "battery_voltage_v": 3.7,
+        "battery_capacity_ah": 5.0,
+        "initial_soc": 0.5
+      },
+      "cold_started": true,
+      "cold_start_s": 0.040909090909090916,
+      "power": {
+        "acoustic_w": 1.0,
+        "rectified_electrical_w": 4.4e-05,
+        "battery_average_w": 3.816000386363636e-05
+      },
+      "buffer": {
+        "voltage_v": 0.1,
+        "energy_j": 5.000000000000001e-08
+      },
+      "battery": {
+        "accepted_j": 0.1373760139090909,
+        "mah_added": 0.010313514557739555,
+        "soc_gain": 2.0627029115479116e-06,
+        "final_soc": 0.5000020627029116
+      },
+      "loss_j": {
+        "contact": 3240.0,
+        "uncaptured_modes": 180.0,
+        "piezo_mechanical": 179.82,
+        "rectifier": 0.021600000000000008,
+        "harvester_operating": 0.005759934545454545,
+        "conversion": 0.015264001545454542,
+        "protection_residual": 0.0,
+        "clamp": 0.0
+      },
+      "closure_residual_j": 0.0
+    },
+    {
+      "parameters": {
+        "acoustic_power_w": 1.0,
+        "contact_efficiency": 0.1,
+        "modal_capture": 0.5,
+        "piezo_efficiency": 0.01,
+        "rectifier_efficiency": 0.88,
+        "harvester_efficiency": 0.9,
+        "buffer_capacitance_f": 1e-05,
+        "cold_start_voltage_v": 0.6,
+        "buffer_floor_voltage_v": 0.1,
+        "clamp_voltage_v": 5.1,
+        "harvester_quiescent_w": 1.6e-06,
+        "duration_s": 3600.0,
+        "battery_voltage_v": 3.7,
+        "battery_capacity_ah": 5.0,
+        "initial_soc": 0.5
+      },
+      "cold_started": true,
+      "cold_start_s": 0.004090909090909091,
+      "power": {
+        "acoustic_w": 1.0,
+        "rectified_electrical_w": 0.00044,
+        "battery_average_w": 0.0003945599891363637
+      },
+      "buffer": {
+        "voltage_v": 0.1,
+        "energy_j": 5.000000000000001e-08
+      },
+      "battery": {
+        "accepted_j": 1.4204159608909093,
+        "mah_added": 0.10663783490171991,
+        "soc_gain": 2.1327566980343982e-05,
+        "final_soc": 0.5000213275669804
+      },
+      "loss_j": {
+        "contact": 3240.0,
+        "uncaptured_modes": 180.0,
+        "piezo_mechanical": 178.2,
+        "rectifier": 0.21599999999999997,
+        "harvester_operating": 0.005759993454545455,
+        "conversion": 0.15782399565454552,
+        "protection_residual": 0.0,
+        "clamp": 0.0
+      },
+      "closure_residual_j": -9.094947017729282e-13
+    },
+    {
+      "parameters": {
+        "acoustic_power_w": 1.0,
+        "contact_efficiency": 0.1,
+        "modal_capture": 0.5,
+        "piezo_efficiency": 0.1,
+        "rectifier_efficiency": 0.88,
+        "harvester_efficiency": 0.9,
+        "buffer_capacitance_f": 1e-05,
+        "cold_start_voltage_v": 0.6,
+        "buffer_floor_voltage_v": 0.1,
+        "clamp_voltage_v": 5.1,
+        "harvester_quiescent_w": 1.6e-06,
+        "duration_s": 3600.0,
+        "battery_voltage_v": 3.7,
+        "battery_capacity_ah": 5.0,
+        "initial_soc": 0.5
+      },
+      "cold_started": true,
+      "cold_start_s": 0.0004090909090909091,
+      "power": {
+        "acoustic_w": 1.0,
+        "rectified_electrical_w": 0.0044,
+        "battery_average_w": 0.003958559987663636
+      },
+      "buffer": {
+        "voltage_v": 0.1,
+        "energy_j": 5.000000000000001e-08
+      },
+      "battery": {
+        "accepted_j": 14.250815955589092,
+        "mah_added": 1.0698810777469288,
+        "soc_gain": 0.00021397621554938577,
+        "final_soc": 0.5002139762155494
+      },
+      "loss_j": {
+        "contact": 3240.0,
+        "uncaptured_modes": 180.0,
+        "piezo_mechanical": 162.0,
+        "rectifier": 2.16,
+        "harvester_operating": 0.005759999345454545,
+        "conversion": 1.5834239950654538,
+        "protection_residual": 0.0,
+        "clamp": 0.0
+      },
+      "closure_residual_j": 0.0
+    },
+    {
+      "parameters": {
+        "acoustic_power_w": 1.0,
+        "contact_efficiency": 0.5,
+        "modal_capture": 0.5,
+        "piezo_efficiency": 0.001,
+        "rectifier_efficiency": 0.88,
+        "harvester_efficiency": 0.9,
+        "buffer_capacitance_f": 1e-05,
+        "cold_start_voltage_v": 0.6,
+        "buffer_floor_voltage_v": 0.1,
+        "clamp_voltage_v": 5.1,
+        "harvester_quiescent_w": 1.6e-06,
+        "duration_s": 3600.0,
+        "battery_voltage_v": 3.7,
+        "battery_capacity_ah": 5.0,
+        "initial_soc": 0.5
+      },
+      "cold_started": true,
+      "cold_start_s": 0.008181818181818182,
+      "power": {
+        "acoustic_w": 1.0,
+        "rectified_electrical_w": 0.00022,
+        "battery_average_w": 0.0001965599907727273
+      },
+      "buffer": {
+        "voltage_v": 0.1,
+        "energy_j": 5.000000000000001e-08
+      },
+      "battery": {
+        "accepted_j": 0.7076159667818183,
+        "mah_added": 0.05312432183046683,
+        "soc_gain": 1.0624864366093368e-05,
+        "final_soc": 0.5000106248643661
+      },
+      "loss_j": {
+        "contact": 1800.0,
+        "uncaptured_modes": 900.0,
+        "piezo_mechanical": 899.1,
+        "rectifier": 0.10799999999999998,
+        "harvester_operating": 0.005759986909090908,
+        "conversion": 0.0786239963090909,
+        "protection_residual": 0.0,
+        "clamp": 0.0
+      },
+      "closure_residual_j": 0.0
+    },
+    {
+      "parameters": {
+        "acoustic_power_w": 1.0,
+        "contact_efficiency": 0.5,
+        "modal_capture": 0.5,
+        "piezo_efficiency": 0.01,
+        "rectifier_efficiency": 0.88,
+        "harvester_efficiency": 0.9,
+        "buffer_capacitance_f": 1e-05,
+        "cold_start_voltage_v": 0.6,
+        "buffer_floor_voltage_v": 0.1,
+        "clamp_voltage_v": 5.1,
+        "harvester_quiescent_w": 1.6e-06,
+        "duration_s": 3600.0,
+        "battery_voltage_v": 3.7,
+        "battery_capacity_ah": 5.0,
+        "initial_soc": 0.5
+      },
+      "cold_started": true,
+      "cold_start_s": 0.0008181818181818182,
+      "power": {
+        "acoustic_w": 1.0,
+        "rectified_electrical_w": 0.0022,
+        "battery_average_w": 0.0019785599878272726
+      },
+      "buffer": {
+        "voltage_v": 0.1,
+        "energy_j": 5.000000000000001e-08
+      },
+      "battery": {
+        "accepted_j": 7.122815956178182,
+        "mah_added": 0.5347459426560196,
+        "soc_gain": 0.00010694918853120394,
+        "final_soc": 0.5001069491885312
+      },
+      "loss_j": {
+        "contact": 1800.0,
+        "uncaptured_modes": 900.0,
+        "piezo_mechanical": 891.0,
+        "rectifier": 1.08,
+        "harvester_operating": 0.005759998690909091,
+        "conversion": 0.7914239951309092,
+        "protection_residual": 0.0,
+        "clamp": 0.0
+      },
+      "closure_residual_j": 0.0
+    },
+    {
+      "parameters": {
+        "acoustic_power_w": 1.0,
+        "contact_efficiency": 0.5,
+        "modal_capture": 0.5,
+        "piezo_efficiency": 0.1,
+        "rectifier_efficiency": 0.88,
+        "harvester_efficiency": 0.9,
+        "buffer_capacitance_f": 1e-05,
+        "cold_start_voltage_v": 0.6,
+        "buffer_floor_voltage_v": 0.1,
+        "clamp_voltage_v": 5.1,
+        "harvester_quiescent_w": 1.6e-06,
+        "duration_s": 3600.0,
+        "battery_voltage_v": 3.7,
+        "battery_capacity_ah": 5.0,
+        "initial_soc": 0.5
+      },
+      "cold_started": true,
+      "cold_start_s": 8.181818181818182e-05,
+      "power": {
+        "acoustic_w": 1.0,
+        "rectified_electrical_w": 0.022000000000000002,
+        "battery_average_w": 0.01979855998753273
+      },
+      "buffer": {
+        "voltage_v": 0.1,
+        "energy_j": 5.000000000000001e-08
+      },
+      "battery": {
+        "accepted_j": 71.27481595511783,
+        "mah_added": 5.35096215879263,
+        "soc_gain": 0.001070192431758526,
+        "final_soc": 0.5010701924317585
+      },
+      "loss_j": {
+        "contact": 1800.0,
+        "uncaptured_modes": 900.0,
+        "piezo_mechanical": 810.0,
+        "rectifier": 10.799999999999997,
+        "harvester_operating": 0.005759999869090909,
+        "conversion": 7.919423995013091,
+        "protection_residual": 0.0,
+        "clamp": 0.0
+      },
+      "closure_residual_j": 0.0
+    },
+    {
+      "parameters": {
+        "acoustic_power_w": 10.0,
+        "contact_efficiency": 0.01,
+        "modal_capture": 0.5,
+        "piezo_efficiency": 0.001,
+        "rectifier_efficiency": 0.88,
+        "harvester_efficiency": 0.9,
+        "buffer_capacitance_f": 1e-05,
+        "cold_start_voltage_v": 0.6,
+        "buffer_floor_voltage_v": 0.1,
+        "clamp_voltage_v": 5.1,
+        "harvester_quiescent_w": 1.6e-06,
+        "duration_s": 3600.0,
+        "battery_voltage_v": 3.7,
+        "battery_capacity_ah": 5.0,
+        "initial_soc": 0.5
+      },
+      "cold_started": true,
+      "cold_start_s": 0.040909090909090916,
+      "power": {
+        "acoustic_w": 10.0,
+        "rectified_electrical_w": 4.4e-05,
+        "battery_average_w": 3.816000386363636e-05
+      },
+      "buffer": {
+        "voltage_v": 0.1,
+        "energy_j": 5.000000000000001e-08
+      },
+      "battery": {
+        "accepted_j": 0.1373760139090909,
+        "mah_added": 0.010313514557739555,
+        "soc_gain": 2.0627029115479116e-06,
+        "final_soc": 0.5000020627029116
+      },
+      "loss_j": {
+        "contact": 35640.0,
+        "uncaptured_modes": 180.0,
+        "piezo_mechanical": 179.82,
+        "rectifier": 0.021600000000000008,
+        "harvester_operating": 0.005759934545454545,
+        "conversion": 0.015264001545454542,
+        "protection_residual": 0.0,
+        "clamp": 0.0
+      },
+      "closure_residual_j": 0.0
+    },
+    {
+      "parameters": {
+        "acoustic_power_w": 10.0,
+        "contact_efficiency": 0.01,
+        "modal_capture": 0.5,
+        "piezo_efficiency": 0.01,
+        "rectifier_efficiency": 0.88,
+        "harvester_efficiency": 0.9,
+        "buffer_capacitance_f": 1e-05,
+        "cold_start_voltage_v": 0.6,
+        "buffer_floor_voltage_v": 0.1,
+        "clamp_voltage_v": 5.1,
+        "harvester_quiescent_w": 1.6e-06,
+        "duration_s": 3600.0,
+        "battery_voltage_v": 3.7,
+        "battery_capacity_ah": 5.0,
+        "initial_soc": 0.5
+      },
+      "cold_started": true,
+      "cold_start_s": 0.004090909090909091,
+      "power": {
+        "acoustic_w": 10.0,
+        "rectified_electrical_w": 0.00044,
+        "battery_average_w": 0.0003945599891363637
+      },
+      "buffer": {
+        "voltage_v": 0.1,
+        "energy_j": 5.000000000000001e-08
+      },
+      "battery": {
+        "accepted_j": 1.4204159608909093,
+        "mah_added": 0.10663783490171991,
+        "soc_gain": 2.1327566980343982e-05,
+        "final_soc": 0.5000213275669804
+      },
+      "loss_j": {
+        "contact": 35640.0,
+        "uncaptured_modes": 180.0,
+        "piezo_mechanical": 178.2,
+        "rectifier": 0.21599999999999997,
+        "harvester_operating": 0.005759993454545455,
+        "conversion": 0.15782399565454552,
+        "protection_residual": 0.0,
+        "clamp": 0.0
+      },
+      "closure_residual_j": 0.0
+    },
+    {
+      "parameters": {
+        "acoustic_power_w": 10.0,
+        "contact_efficiency": 0.01,
+        "modal_capture": 0.5,
+        "piezo_efficiency": 0.1,
+        "rectifier_efficiency": 0.88,
+        "harvester_efficiency": 0.9,
+        "buffer_capacitance_f": 1e-05,
+        "cold_start_voltage_v": 0.6,
+        "buffer_floor_voltage_v": 0.1,
+        "clamp_voltage_v": 5.1,
+        "harvester_quiescent_w": 1.6e-06,
+        "duration_s": 3600.0,
+        "battery_voltage_v": 3.7,
+        "battery_capacity_ah": 5.0,
+        "initial_soc": 0.5
+      },
+      "cold_started": true,
+      "cold_start_s": 0.0004090909090909091,
+      "power": {
+        "acoustic_w": 10.0,
+        "rectified_electrical_w": 0.0044,
+        "battery_average_w": 0.003958559987663636
+      },
+      "buffer": {
+        "voltage_v": 0.1,
+        "energy_j": 5.000000000000001e-08
+      },
+      "battery": {
+        "accepted_j": 14.250815955589092,
+        "mah_added": 1.0698810777469288,
+        "soc_gain": 0.00021397621554938577,
+        "final_soc": 0.5002139762155494
+      },
+      "loss_j": {
+        "contact": 35640.0,
+        "uncaptured_modes": 180.0,
+        "piezo_mechanical": 162.0,
+        "rectifier": 2.16,
+        "harvester_operating": 0.005759999345454545,
+        "conversion": 1.5834239950654538,
+        "protection_residual": 0.0,
+        "clamp": 0.0
+      },
+      "closure_residual_j": 0.0
+    },
+    {
+      "parameters": {
+        "acoustic_power_w": 10.0,
+        "contact_efficiency": 0.1,
+        "modal_capture": 0.5,
+        "piezo_efficiency": 0.001,
+        "rectifier_efficiency": 0.88,
+        "harvester_efficiency": 0.9,
+        "buffer_capacitance_f": 1e-05,
+        "cold_start_voltage_v": 0.6,
+        "buffer_floor_voltage_v": 0.1,
+        "clamp_voltage_v": 5.1,
+        "harvester_quiescent_w": 1.6e-06,
+        "duration_s": 3600.0,
+        "battery_voltage_v": 3.7,
+        "battery_capacity_ah": 5.0,
+        "initial_soc": 0.5
+      },
+      "cold_started": true,
+      "cold_start_s": 0.004090909090909091,
+      "power": {
+        "acoustic_w": 10.0,
+        "rectified_electrical_w": 0.00044,
+        "battery_average_w": 0.0003945599891363637
+      },
+      "buffer": {
+        "voltage_v": 0.1,
+        "energy_j": 5.000000000000001e-08
+      },
+      "battery": {
+        "accepted_j": 1.4204159608909093,
+        "mah_added": 0.10663783490171991,
+        "soc_gain": 2.1327566980343982e-05,
+        "final_soc": 0.5000213275669804
+      },
+      "loss_j": {
+        "contact": 32400.0,
+        "uncaptured_modes": 1800.0,
+        "piezo_mechanical": 1798.2,
+        "rectifier": 0.21599999999999997,
+        "harvester_operating": 0.005759993454545455,
+        "conversion": 0.15782399565454552,
+        "protection_residual": 0.0,
+        "clamp": 0.0
+      },
+      "closure_residual_j": 0.0
+    },
+    {
+      "parameters": {
+        "acoustic_power_w": 10.0,
+        "contact_efficiency": 0.1,
+        "modal_capture": 0.5,
+        "piezo_efficiency": 0.01,
+        "rectifier_efficiency": 0.88,
+        "harvester_efficiency": 0.9,
+        "buffer_capacitance_f": 1e-05,
+        "cold_start_voltage_v": 0.6,
+        "buffer_floor_voltage_v": 0.1,
+        "clamp_voltage_v": 5.1,
+        "harvester_quiescent_w": 1.6e-06,
+        "duration_s": 3600.0,
+        "battery_voltage_v": 3.7,
+        "battery_capacity_ah": 5.0,
+        "initial_soc": 0.5
+      },
+      "cold_started": true,
+      "cold_start_s": 0.0004090909090909091,
+      "power": {
+        "acoustic_w": 10.0,
+        "rectified_electrical_w": 0.0044,
+        "battery_average_w": 0.003958559987663636
+      },
+      "buffer": {
+        "voltage_v": 0.1,
+        "energy_j": 5.000000000000001e-08
+      },
+      "battery": {
+        "accepted_j": 14.250815955589092,
+        "mah_added": 1.0698810777469288,
+        "soc_gain": 0.00021397621554938577,
+        "final_soc": 0.5002139762155494
+      },
+      "loss_j": {
+        "contact": 32400.0,
+        "uncaptured_modes": 1800.0,
+        "piezo_mechanical": 1782.0,
+        "rectifier": 2.16,
+        "harvester_operating": 0.005759999345454545,
+        "conversion": 1.5834239950654538,
+        "protection_residual": 0.0,
+        "clamp": 0.0
+      },
+      "closure_residual_j": 0.0
+    },
+    {
+      "parameters": {
+        "acoustic_power_w": 10.0,
+        "contact_efficiency": 0.1,
+        "modal_capture": 0.5,
+        "piezo_efficiency": 0.1,
+        "rectifier_efficiency": 0.88,
+        "harvester_efficiency": 0.9,
+        "buffer_capacitance_f": 1e-05,
+        "cold_start_voltage_v": 0.6,
+        "buffer_floor_voltage_v": 0.1,
+        "clamp_voltage_v": 5.1,
+        "harvester_quiescent_w": 1.6e-06,
+        "duration_s": 3600.0,
+        "battery_voltage_v": 3.7,
+        "battery_capacity_ah": 5.0,
+        "initial_soc": 0.5
+      },
+      "cold_started": true,
+      "cold_start_s": 4.090909090909091e-05,
+      "power": {
+        "acoustic_w": 10.0,
+        "rectified_electrical_w": 0.044000000000000004,
+        "battery_average_w": 0.03959855998751636
+      },
+      "buffer": {
+        "voltage_v": 0.1,
+        "energy_j": 5.000000000000001e-08
+      },
+      "battery": {
+        "accepted_j": 142.5548159550589,
+        "mah_added": 10.702313510139556,
+        "soc_gain": 0.0021404627020279116,
+        "final_soc": 0.502140462702028
+      },
+      "loss_j": {
+        "contact": 32400.0,
+        "uncaptured_modes": 1800.0,
+        "piezo_mechanical": 1620.0,
+        "rectifier": 21.599999999999994,
+        "harvester_operating": 0.005759999934545454,
+        "conversion": 15.839423995006541,
+        "protection_residual": 0.0,
+        "clamp": 0.0
+      },
+      "closure_residual_j": 0.0
+    },
+    {
+      "parameters": {
+        "acoustic_power_w": 10.0,
+        "contact_efficiency": 0.5,
+        "modal_capture": 0.5,
+        "piezo_efficiency": 0.001,
+        "rectifier_efficiency": 0.88,
+        "harvester_efficiency": 0.9,
+        "buffer_capacitance_f": 1e-05,
+        "cold_start_voltage_v": 0.6,
+        "buffer_floor_voltage_v": 0.1,
+        "clamp_voltage_v": 5.1,
+        "harvester_quiescent_w": 1.6e-06,
+        "duration_s": 3600.0,
+        "battery_voltage_v": 3.7,
+        "battery_capacity_ah": 5.0,
+        "initial_soc": 0.5
+      },
+      "cold_started": true,
+      "cold_start_s": 0.0008181818181818182,
+      "power": {
+        "acoustic_w": 10.0,
+        "rectified_electrical_w": 0.0022,
+        "battery_average_w": 0.0019785599878272726
+      },
+      "buffer": {
+        "voltage_v": 0.1,
+        "energy_j": 5.000000000000001e-08
+      },
+      "battery": {
+        "accepted_j": 7.122815956178182,
+        "mah_added": 0.5347459426560196,
+        "soc_gain": 0.00010694918853120394,
+        "final_soc": 0.5001069491885312
+      },
+      "loss_j": {
+        "contact": 18000.0,
+        "uncaptured_modes": 9000.0,
+        "piezo_mechanical": 8991.0,
+        "rectifier": 1.08,
+        "harvester_operating": 0.005759998690909091,
+        "conversion": 0.7914239951309092,
+        "protection_residual": 0.0,
+        "clamp": 0.0
+      },
+      "closure_residual_j": 0.0
+    },
+    {
+      "parameters": {
+        "acoustic_power_w": 10.0,
+        "contact_efficiency": 0.5,
+        "modal_capture": 0.5,
+        "piezo_efficiency": 0.01,
+        "rectifier_efficiency": 0.88,
+        "harvester_efficiency": 0.9,
+        "buffer_capacitance_f": 1e-05,
+        "cold_start_voltage_v": 0.6,
+        "buffer_floor_voltage_v": 0.1,
+        "clamp_voltage_v": 5.1,
+        "harvester_quiescent_w": 1.6e-06,
+        "duration_s": 3600.0,
+        "battery_voltage_v": 3.7,
+        "battery_capacity_ah": 5.0,
+        "initial_soc": 0.5
+      },
+      "cold_started": true,
+      "cold_start_s": 8.181818181818182e-05,
+      "power": {
+        "acoustic_w": 10.0,
+        "rectified_electrical_w": 0.022000000000000002,
+        "battery_average_w": 0.01979855998753273
+      },
+      "buffer": {
+        "voltage_v": 0.1,
+        "energy_j": 5.000000000000001e-08
+      },
+      "battery": {
+        "accepted_j": 71.27481595511783,
+        "mah_added": 5.35096215879263,
+        "soc_gain": 0.001070192431758526,
+        "final_soc": 0.5010701924317585
+      },
+      "loss_j": {
+        "contact": 18000.0,
+        "uncaptured_modes": 9000.0,
+        "piezo_mechanical": 8910.0,
+        "rectifier": 10.799999999999997,
+        "harvester_operating": 0.005759999869090909,
+        "conversion": 7.919423995013091,
+        "protection_residual": 0.0,
+        "clamp": 0.0
+      },
+      "closure_residual_j": 7.275957614183426e-12
+    },
+    {
+      "parameters": {
+        "acoustic_power_w": 10.0,
+        "contact_efficiency": 0.5,
+        "modal_capture": 0.5,
+        "piezo_efficiency": 0.1,
+        "rectifier_efficiency": 0.88,
+        "harvester_efficiency": 0.9,
+        "buffer_capacitance_f": 1e-05,
+        "cold_start_voltage_v": 0.6,
+        "buffer_floor_voltage_v": 0.1,
+        "clamp_voltage_v": 5.1,
+        "harvester_quiescent_w": 1.6e-06,
+        "duration_s": 3600.0,
+        "battery_voltage_v": 3.7,
+        "battery_capacity_ah": 5.0,
+        "initial_soc": 0.5
+      },
+      "cold_started": true,
+      "cold_start_s": 8.181818181818183e-06,
+      "power": {
+        "acoustic_w": 10.0,
+        "rectified_electrical_w": 0.22,
+        "battery_average_w": 0.19799855998750324
+      },
+      "buffer": {
+        "voltage_v": 0.1,
+        "energy_j": 5.000000000000001e-08
+      },
+      "battery": {
+        "accepted_j": 712.7948159550117,
+        "mah_added": 53.51312432094682,
+        "soc_gain": 0.010702624864189365,
+        "final_soc": 0.5107026248641894
+      },
+      "loss_j": {
+        "contact": 18000.0,
+        "uncaptured_modes": 9000.0,
+        "piezo_mechanical": 8100.0,
+        "rectifier": 108.0,
+        "harvester_operating": 0.005759999986909091,
+        "conversion": 79.19942399500133,
+        "protection_residual": 0.0,
+        "clamp": 0.0
+      },
+      "closure_residual_j": 0.0
+    }
+  ],
+  "triple": {
+    "P": "bounded acoustic input carried into buffer and battery",
+    "residual": "measured contact coupling, stone impedance, electrode capacitance, and actual open-circuit voltage",
+    "accrual": "closed energy ledgers over 45 physical scenarios"
+  }
+}

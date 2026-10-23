@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1500 990" role="img" aria-labelledby="title desc">
+  <title id="title">Speaker-free two-piezo circuit reconstruction</title>
+  <desc id="desc">A 5 volt supply powers a PAM8403 module. The upper sensing piezo feeds its input and the oscilloscope. The PAM8403 output pair drives a lower piezo through the earlier drawing's series lamp. The lower piezo faces the upper piezo across a quartz rock in salt solution. Solid connections follow the recorded speaker-to-piezo swap; dashed connections were inherited from the earlier drawing and require bench confirmation.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 10 5 0 10z" fill="#48c8c0"/></marker>
+    <marker id="orangeArrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 10 5 0 10z" fill="#ffad66"/></marker>
+    <pattern id="water" width="20" height="16" patternUnits="userSpaceOnUse"><path d="M0 8 Q5 3 10 8 T20 8" stroke="#2e749a" stroke-width="1" fill="none" opacity=".35"/></pattern>
+    <style>
+      text{font-family:system-ui,Segoe UI,sans-serif;fill:#eaf1fa}.title{font-size:27px;font-weight:700}.sub{font-size:14px;fill:#a9c4d9}.head{font-size:17px;font-weight:700}.body{font-size:13px}.tiny{font-size:11px}.muted{fill:#a9c4d9}.power{stroke:#ff6565;fill:none;stroke-width:3}.ground{stroke:#8e9aaa;fill:none;stroke-width:3}.sense{stroke:#ffad66;fill:none;stroke-width:3}.drive{stroke:#45cf8a;fill:none;stroke-width:3}.mech{stroke:#48c8c0;fill:none;stroke-width:3;stroke-dasharray:8 6}.inherited{stroke:#ef84d5;fill:none;stroke-width:2.5;stroke-dasharray:9 6}
+    </style>
+  </defs>
+  <rect width="1500" height="990" fill="#111a2b"/>
+  <text x="55" y="55" class="title">Speaker-free two-piezo circuit</text>
+  <text x="55" y="82" class="sub">Reconstruction from the 19 October 2026 speaker-to-piezo swap · not a verified node-by-node breadboard survey</text>
+
+  <!-- Electrical source and active board -->
+  <rect x="55" y="132" width="225" height="160" rx="14" fill="#192d43" stroke="#6689a8" stroke-width="2"/>
+  <text x="77" y="166" class="head">USB supply</text>
+  <text x="77" y="198" class="body">nominal fixed 5 V</text>
+  <circle cx="262" cy="224" r="6" fill="#ff6565"/><text x="183" y="216" class="tiny">+5 V</text>
+  <circle cx="262" cy="264" r="6" fill="#8e9aaa"/><text x="183" y="257" class="tiny">GND</text>
+
+  <rect x="420" y="132" width="315" height="240" rx="14" fill="#19332b" stroke="#45cf8a" stroke-width="2"/>
+  <text x="445" y="167" class="head">PAM8403 module</text>
+  <text x="445" y="191" class="body muted">present throughout measured run</text>
+  <circle cx="427" cy="225" r="6" fill="#ffad66"/><text x="444" y="229" class="body">L input</text>
+  <circle cx="427" cy="259" r="6" fill="#8e9aaa"/><text x="444" y="263" class="body">input GND</text>
+  <circle cx="505" cy="366" r="6" fill="#ff6565"/><text x="514" y="351" class="tiny">5 V power</text>
+  <circle cx="630" cy="366" r="6" fill="#8e9aaa"/><text x="612" y="351" class="tiny">power GND</text>
+  <circle cx="729" cy="227" r="6" fill="#45cf8a"/><text x="661" y="215" class="body">L+</text>
+  <circle cx="729" cy="277" r="6" fill="#45cf8a"/><text x="661" y="298" class="body">L−</text>
+  <path class="power" d="M268 224 H331 V390 H505 V366"/>
+  <path class="ground" d="M268 264 H315 V414 H630 V366"/>
+
+  <!-- Scope on the sensed node -->
+  <rect x="780" y="132" width="260" height="160" rx="14" fill="#242847" stroke="#999df5" stroke-width="2"/>
+  <text x="802" y="166" class="head">DSO-153 scope</text>
+  <text x="802" y="195" class="body">sensed Vpp: 0.33 → 0.61 V</text>
+  <circle cx="786" cy="225" r="6" fill="#ffad66"/><text x="802" y="230" class="tiny">probe tip</text>
+  <circle cx="786" cy="259" r="6" fill="#8e9aaa"/><text x="802" y="264" class="tiny">probe reference</text>
+
+  <!-- Earlier series lamp and recorded replacement of speaker load -->
+  <rect x="515" y="500" width="220" height="125" rx="12" fill="#352b18" stroke="#e7bd55" stroke-width="2"/>
+  <text x="537" y="536" class="head">6 V E10 lamp</text>
+  <text x="537" y="563" class="body">series path in earlier v2</text>
+  <text x="537" y="586" class="tiny muted">post-swap continuity to confirm</text>
+  <circle cx="521" cy="605" r="5" fill="#45cf8a"/><circle cx="729" cy="605" r="5" fill="#45cf8a"/>
+  <path class="drive" d="M735 227 H761 V457 H445 V605 H521"/>
+  <text x="390" y="475" class="body" fill="#45cf8a">PAM L+ output path</text>
+
+  <!-- Physical specimen -->
+  <rect x="905" y="378" width="515" height="420" rx="14" fill="#14283d" stroke="#81b7d4" stroke-width="3"/>
+  <rect x="909" y="494" width="507" height="300" fill="url(#water)"/>
+  <path d="M909 494 H1416" stroke="#64b5d8" stroke-width="2" stroke-dasharray="9 5"/>
+  <text x="933" y="412" class="head">Glass tray · salt solution</text>
+  <text x="933" y="438" class="body muted">28 g quartz rock between facing piezos</text>
+  <rect x="1064" y="544" width="220" height="146" rx="25" fill="#49345b" stroke="#be9ce3" stroke-width="3"/>
+  <text x="1118" y="621" class="head">QUARTZ</text>
+
+  <rect x="1089" y="506" width="170" height="24" rx="10" fill="#4c301a" stroke="#ffad66" stroke-width="3"/>
+  <text x="1088" y="479" class="body" fill="#ffad66">Sensing piezo · upper face</text>
+  <circle cx="1109" cy="518" r="5" fill="#ffad66"/><circle cx="1239" cy="518" r="5" fill="#8e9aaa"/>
+
+  <rect x="1089" y="706" width="170" height="24" rx="10" fill="#224c37" stroke="#45cf8a" stroke-width="3"/>
+  <text x="1088" y="757" class="body" fill="#45cf8a">Driving piezo · beneath rock</text>
+  <circle cx="1109" cy="718" r="5" fill="#45cf8a"/><circle cx="1239" cy="718" r="5" fill="#45cf8a"/>
+  <path class="mech" d="M1174 700 V675" marker-end="url(#arrow)"/>
+  <path class="mech" d="M1174 555 V534" marker-end="url(#arrow)"/>
+  <text x="1300" y="623" class="tiny" fill="#48c8c0">mechanical / ionic</text>
+  <text x="1300" y="640" class="tiny" fill="#48c8c0">coupling</text>
+
+  <!-- Sensing wires to input and scope -->
+  <path class="sense" d="M1109 518 H870 V328 H355 V225 H427"/>
+  <path class="sense" d="M870 328 V225 H786"/>
+  <text x="761" y="340" class="tiny" fill="#ffad66">sense node (row 5 in earlier v2)</text>
+  <path class="ground" d="M1239 518 H1358 V347 H767 V259 H786"/>
+  <path class="ground" d="M767 347 H345 V259 H427"/>
+  <path class="ground" d="M345 259 H315"/>
+
+  <!-- The two-terminal output pair replaces the speaker load -->
+  <path class="drive" d="M729 605 H833 V718 H1109"/>
+  <path class="drive" d="M735 277 H841 V764 H1306 V718 H1239"/>
+  <text x="752" y="678" class="tiny" fill="#45cf8a">speaker lead pair replaced by drive-piezo lead pair</text>
+
+  <!-- Salt-water return inherited from v2; not confirmed after swap -->
+  <path class="inherited" d="M315 414 V834 H946 V759"/>
+  <text x="557" y="854" class="tiny" fill="#ef84d5">Salt-water return contact carried from v2 drawing · post-swap connection to confirm</text>
+
+  <rect x="55" y="897" width="1365" height="62" rx="10" fill="#243247" stroke="#536b86"/>
+  <text x="75" y="923" class="body">Solid wiring: documented swap and retained modules. Pink dashed return and lamp continuity: inherited from v2, pending bench confirmation.</text>
+  <text x="75" y="944" class="body">PAM L− is shown as the second output terminal, separate from supply GND. Exact post-swap breadboard holes remain unrecorded.</text>
+</svg>

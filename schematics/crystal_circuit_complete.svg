@@ -1,0 +1,327 @@
+<svg viewBox="0 0 1400 1000" xmlns="http://www.w3.org/2000/svg" font-family="monospace" font-size="11">
+  <defs>
+    <marker id="arr" markerWidth="7" markerHeight="5" refX="7" refY="2.5" orient="auto">
+      <polygon points="0 0, 7 2.5, 0 5" fill="#888"/>
+    </marker>
+    <marker id="arrR" markerWidth="7" markerHeight="5" refX="7" refY="2.5" orient="auto">
+      <polygon points="0 0, 7 2.5, 0 5" fill="#ff4444"/>
+    </marker>
+    <marker id="arrG" markerWidth="7" markerHeight="5" refX="7" refY="2.5" orient="auto">
+      <polygon points="0 0, 7 2.5, 0 5" fill="#00cc66"/>
+    </marker>
+    <marker id="arrO" markerWidth="7" markerHeight="5" refX="7" refY="2.5" orient="auto">
+      <polygon points="0 0, 7 2.5, 0 5" fill="#ff8844"/>
+    </marker>
+    <marker id="arrC" markerWidth="7" markerHeight="5" refX="7" refY="2.5" orient="auto">
+      <polygon points="0 0, 7 2.5, 0 5" fill="#00aadd"/>
+    </marker>
+    <!-- sound waves -->
+    <pattern id="water" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+      <rect width="20" height="20" fill="#1a3355" opacity="0.5"/>
+      <path d="M 0 10 Q 5 7, 10 10 Q 15 13, 20 10" stroke="#4488aa" stroke-width="0.5" fill="none" opacity="0.4"/>
+    </pattern>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1400" height="1000" fill="#1a1a2e"/>
+
+  <!-- Title -->
+  <text x="700" y="30" text-anchor="middle" fill="#e0e0ff" font-size="20" font-weight="bold">Crystal Oscillator Feedback Loop — Complete Circuit</text>
+  <text x="700" y="50" text-anchor="middle" fill="#888" font-size="12">Pot all the way down. Touch wire to water. Sweep up slowly.</text>
+
+  <!-- ==================== USB POWER (top-left) ==================== -->
+  <rect x="40" y="80" width="80" height="50" rx="6" fill="#222" stroke="#666" stroke-width="2"/>
+  <rect x="75" y="72" width="20" height="10" rx="2" fill="#444" stroke="#666" stroke-width="1"/>
+  <text x="80" y="102" text-anchor="middle" fill="#ccc" font-size="10" font-weight="bold">USB</text>
+  <text x="80" y="115" text-anchor="middle" fill="#ff6666" font-size="9">5V Battery</text>
+
+  <!-- USB red wire → (+) rail -->
+  <path d="M 120 95 L 200 95 L 200 160" stroke="#ff4444" stroke-width="3" fill="none" marker-end="url(#arrR)"/>
+  <text x="160" y="88" text-anchor="middle" fill="#ff4444" font-size="8">RED 5V</text>
+
+  <!-- USB black wire → (-) rail -->
+  <path d="M 120 110 L 170 110 L 170 160" stroke="#555" stroke-width="3" fill="none"/>
+  <text x="145" y="124" text-anchor="middle" fill="#888" font-size="8">BLK GND</text>
+
+  <!-- ==================== BREADBOARD (center) ==================== -->
+  <rect x="150" y="160" width="500" height="620" rx="10" fill="#d4c89a" stroke="#a09060" stroke-width="3"/>
+  <!-- Center channel -->
+  <rect x="355" y="175" width="90" height="590" rx="3" fill="#b8a878"/>
+
+  <!-- Power rails -->
+  <line x1="170" y1="175" x2="170" y2="760" stroke="#ff4444" stroke-width="2" opacity="0.4"/>
+  <text x="170" y="772" text-anchor="middle" fill="#ff4444" font-size="7">(+) 5V</text>
+  <line x1="190" y1="175" x2="190" y2="760" stroke="#3388ff" stroke-width="2" opacity="0.4"/>
+  <text x="190" y="772" text-anchor="middle" fill="#3388ff" font-size="7">(-) GND</text>
+
+  <!-- Column headers -->
+  <text x="220" y="188" text-anchor="middle" fill="#776644" font-size="9" font-weight="bold">a</text>
+  <text x="250" y="188" text-anchor="middle" fill="#776644" font-size="9" font-weight="bold">b</text>
+  <text x="280" y="188" text-anchor="middle" fill="#776644" font-size="9" font-weight="bold">c</text>
+  <text x="310" y="188" text-anchor="middle" fill="#776644" font-size="9" font-weight="bold">d</text>
+  <text x="340" y="188" text-anchor="middle" fill="#776644" font-size="9" font-weight="bold">e</text>
+  <text x="460" y="188" text-anchor="middle" fill="#776644" font-size="9" font-weight="bold">f</text>
+  <text x="490" y="188" text-anchor="middle" fill="#776644" font-size="9" font-weight="bold">g</text>
+  <text x="520" y="188" text-anchor="middle" fill="#776644" font-size="9" font-weight="bold">h</text>
+  <text x="550" y="188" text-anchor="middle" fill="#776644" font-size="9" font-weight="bold">i</text>
+  <text x="580" y="188" text-anchor="middle" fill="#776644" font-size="9" font-weight="bold">j</text>
+
+  <!-- Row holes — key rows only, with labels -->
+  <!-- Row 5 — NODE A -->
+  <g fill="#333" stroke="#555" stroke-width="0.5">
+    <circle cx="170" cy="280" r="3"/><circle cx="190" cy="280" r="3"/>
+    <circle cx="220" cy="280" r="4" fill="#ff8844" stroke="#ff4444" stroke-width="1.5"/>
+    <circle cx="250" cy="280" r="3"/><circle cx="280" cy="280" r="3"/><circle cx="310" cy="280" r="3"/><circle cx="340" cy="280" r="3"/>
+    <circle cx="460" cy="280" r="4" fill="#8888ff" stroke="#6666ff" stroke-width="1.5"/>
+    <circle cx="490" cy="280" r="3"/><circle cx="520" cy="280" r="3"/><circle cx="550" cy="280" r="3"/>
+    <circle cx="580" cy="280" r="4" fill="#00cc66" stroke="#00aa44" stroke-width="1.5"/>
+  </g>
+  <text x="162" y="284" text-anchor="end" fill="#ffaa44" font-size="9" font-weight="bold">5</text>
+  <!-- Bus highlight -->
+  <rect x="214" y="274" width="132" height="12" rx="2" fill="none" stroke="#ffaa44" stroke-width="1" stroke-dasharray="2,2" opacity="0.6"/>
+  <rect x="454" y="274" width="132" height="12" rx="2" fill="none" stroke="#ffaa44" stroke-width="1" stroke-dasharray="2,2" opacity="0.6"/>
+  <text x="400" y="270" text-anchor="middle" fill="#ffaa44" font-size="8" font-weight="bold">NODE A</text>
+
+  <!-- Row 8 — PAM L+ -->
+  <g fill="#333" stroke="#555" stroke-width="0.5">
+    <circle cx="170" cy="360" r="3"/><circle cx="190" cy="360" r="3"/>
+    <circle cx="220" cy="360" r="4" fill="#00cc66" stroke="#00aa44" stroke-width="1.5"/>
+    <circle cx="250" cy="360" r="3"/><circle cx="280" cy="360" r="3"/><circle cx="310" cy="360" r="3"/>
+    <circle cx="340" cy="360" r="4" fill="#ffdd44" stroke="#ccaa00" stroke-width="1.5"/>
+    <circle cx="460" cy="360" r="3"/><circle cx="490" cy="360" r="3"/><circle cx="520" cy="360" r="3"/><circle cx="550" cy="360" r="3"/><circle cx="580" cy="360" r="3"/>
+  </g>
+  <text x="162" y="364" text-anchor="end" fill="#00cc66" font-size="9" font-weight="bold">8</text>
+
+  <!-- Row 10 — Bulb -->
+  <g fill="#333" stroke="#555" stroke-width="0.5">
+    <circle cx="170" cy="410" r="3"/><circle cx="190" cy="410" r="3"/>
+    <circle cx="220" cy="410" r="4" fill="#ffdd44" stroke="#ccaa00" stroke-width="1.5"/>
+    <circle cx="250" cy="410" r="3"/>
+    <circle cx="280" cy="410" r="4" fill="#ff6644" stroke="#cc3311" stroke-width="1.5"/>
+    <circle cx="310" cy="410" r="3"/><circle cx="340" cy="410" r="3"/>
+    <circle cx="460" cy="410" r="3"/><circle cx="490" cy="410" r="3"/><circle cx="520" cy="410" r="3"/><circle cx="550" cy="410" r="3"/><circle cx="580" cy="410" r="3"/>
+  </g>
+  <text x="162" y="414" text-anchor="end" fill="#ff6644" font-size="9" font-weight="bold">10</text>
+
+  <!-- Row 15 — PAM L- -->
+  <g fill="#333" stroke="#555" stroke-width="0.5">
+    <circle cx="170" cy="510" r="3"/><circle cx="190" cy="510" r="3"/>
+    <circle cx="220" cy="510" r="4" fill="#00cc66" stroke="#00aa44" stroke-width="1.5"/>
+    <circle cx="250" cy="510" r="3"/><circle cx="280" cy="510" r="3"/><circle cx="310" cy="510" r="3"/>
+    <circle cx="340" cy="510" r="4" fill="#3388ff" stroke="#2266cc" stroke-width="1.5"/>
+    <circle cx="460" cy="510" r="3"/><circle cx="490" cy="510" r="3"/><circle cx="520" cy="510" r="3"/><circle cx="550" cy="510" r="3"/><circle cx="580" cy="510" r="3"/>
+  </g>
+  <text x="162" y="514" text-anchor="end" fill="#00cc66" font-size="9" font-weight="bold">15</text>
+
+  <!-- Row 25 — LAST GATE -->
+  <g fill="#333" stroke="#555" stroke-width="0.5">
+    <circle cx="170" cy="660" r="3"/><circle cx="190" cy="660" r="3"/>
+    <circle cx="220" cy="660" r="4" fill="#ff44aa" stroke="#cc2288" stroke-width="1.5"/>
+    <circle cx="250" cy="660" r="3"/><circle cx="280" cy="660" r="3"/><circle cx="310" cy="660" r="3"/><circle cx="340" cy="660" r="3"/>
+    <circle cx="460" cy="660" r="3"/><circle cx="490" cy="660" r="3"/><circle cx="520" cy="660" r="3"/><circle cx="550" cy="660" r="3"/><circle cx="580" cy="660" r="3"/>
+  </g>
+  <text x="162" y="664" text-anchor="end" fill="#ff44aa" font-size="9" font-weight="bold">25</text>
+
+  <!-- Filler rows (dots for context) -->
+  <g fill="#555" stroke="none">
+    <!-- rows 1-4 -->
+    <circle cx="220" cy="200" r="2.5"/><circle cx="250" cy="200" r="2.5"/><circle cx="280" cy="200" r="2.5"/><circle cx="310" cy="200" r="2.5"/><circle cx="340" cy="200" r="2.5"/>
+    <circle cx="460" cy="200" r="2.5"/><circle cx="490" cy="200" r="2.5"/><circle cx="520" cy="200" r="2.5"/><circle cx="550" cy="200" r="2.5"/><circle cx="580" cy="200" r="2.5"/>
+    <text x="162" y="204" text-anchor="end" fill="#999" font-size="8">1</text>
+
+    <circle cx="220" cy="220" r="2.5"/><circle cx="250" cy="220" r="2.5"/><circle cx="280" cy="220" r="2.5"/><circle cx="310" cy="220" r="2.5"/><circle cx="340" cy="220" r="2.5"/>
+    <circle cx="460" cy="220" r="2.5"/><circle cx="490" cy="220" r="2.5"/><circle cx="520" cy="220" r="2.5"/><circle cx="550" cy="220" r="2.5"/><circle cx="580" cy="220" r="2.5"/>
+
+    <circle cx="220" cy="240" r="2.5"/><circle cx="250" cy="240" r="2.5"/><circle cx="280" cy="240" r="2.5"/><circle cx="310" cy="240" r="2.5"/><circle cx="340" cy="240" r="2.5"/>
+    <circle cx="460" cy="240" r="2.5"/><circle cx="490" cy="240" r="2.5"/><circle cx="520" cy="240" r="2.5"/><circle cx="550" cy="240" r="2.5"/><circle cx="580" cy="240" r="2.5"/>
+
+    <circle cx="220" cy="260" r="2.5"/><circle cx="250" cy="260" r="2.5"/><circle cx="280" cy="260" r="2.5"/><circle cx="310" cy="260" r="2.5"/><circle cx="340" cy="260" r="2.5"/>
+    <circle cx="460" cy="260" r="2.5"/><circle cx="490" cy="260" r="2.5"/><circle cx="520" cy="260" r="2.5"/><circle cx="550" cy="260" r="2.5"/><circle cx="580" cy="260" r="2.5"/>
+
+    <!-- rows 6-7, 9, 11-14, 16-24, 26-30 (abbreviated) -->
+    <circle cx="220" cy="300" r="2"/><circle cx="220" cy="320" r="2"/><circle cx="220" cy="340" r="2"/>
+    <circle cx="220" cy="385" r="2"/>
+    <circle cx="220" cy="435" r="2"/><circle cx="220" cy="455" r="2"/><circle cx="220" cy="475" r="2"/><circle cx="220" cy="490" r="2"/>
+    <circle cx="220" cy="535" r="2"/><circle cx="220" cy="555" r="2"/><circle cx="220" cy="575" r="2"/><circle cx="220" cy="595" r="2"/>
+    <circle cx="220" cy="615" r="2"/><circle cx="220" cy="635" r="2"/>
+    <circle cx="220" cy="685" r="2"/><circle cx="220" cy="705" r="2"/><circle cx="220" cy="725" r="2"/><circle cx="220" cy="745" r="2"/>
+  </g>
+
+  <!-- ==================== WIRES ON BREADBOARD ==================== -->
+
+  <!-- Step 11: row 8e→10a bridge (yellow) -->
+  <path d="M 340 360 L 340 385 L 220 385 L 220 410" stroke="#ffdd44" stroke-width="3" fill="none"/>
+  <text x="280" y="382" text-anchor="middle" fill="#ffdd44" font-size="7">11: bridge</text>
+
+  <!-- Step 14: row 15e→(-) rail (blue) -->
+  <path d="M 340 510 L 340 525 L 190 525" stroke="#3388ff" stroke-width="3" fill="none"/>
+  <text x="265" y="538" text-anchor="middle" fill="#3388ff" font-size="7">14: GND return</text>
+
+  <!-- Step 17: row 25a→(-) rail, open end (pink) -->
+  <path d="M 220 660 L 190 660 L 190 700" stroke="#ff44aa" stroke-width="3" fill="none"/>
+  <line x1="190" y1="700" x2="190" y2="750" stroke="#ff44aa" stroke-width="3" stroke-dasharray="6,4"/>
+
+  <!-- ==================== GLASS TRAY + CRYSTAL + PIEZO (left) ==================== -->
+  <rect x="720" y="540" width="300" height="180" rx="8" fill="url(#water)" stroke="#4488cc" stroke-width="2"/>
+  <text x="870" y="565" text-anchor="middle" fill="#6699cc" font-size="12" font-weight="bold">Glass Tray — Salt Water</text>
+  <text x="870" y="580" text-anchor="middle" fill="#4477aa" font-size="9">15.1ml + 5.4g NaCl</text>
+
+  <!-- Quartz crystal -->
+  <rect x="800" y="610" width="120" height="60" rx="4" fill="#2a1a3a" stroke="#bb88ff" stroke-width="2"/>
+  <text x="860" y="638" text-anchor="middle" fill="#cc99ff" font-size="13" font-weight="bold">QUARTZ</text>
+  <text x="860" y="655" text-anchor="middle" fill="#9966cc" font-size="9">Crystal</text>
+
+  <!-- Piezo disc on crystal face -->
+  <ellipse cx="800" cy="640" rx="22" ry="28" fill="none" stroke="#ff8844" stroke-width="2"/>
+  <text x="760" y="635" text-anchor="middle" fill="#ff8844" font-size="10">Piezo</text>
+  <text x="760" y="648" text-anchor="middle" fill="#ff8844" font-size="8">27mm</text>
+
+  <!-- LAST GATE wire endpoint — open end near water -->
+  <path d="M 190 750 L 190 820 L 720 820 L 720 720" stroke="#ff44aa" stroke-width="3" stroke-dasharray="6,4" fill="none"/>
+  <circle cx="720" cy="715" r="6" fill="none" stroke="#ff44aa" stroke-width="2" stroke-dasharray="3,2"/>
+  <text x="720" y="700" text-anchor="middle" fill="#ff44aa" font-size="9" font-weight="bold">LAST GATE</text>
+  <text x="720" y="740" text-anchor="middle" fill="#ff44aa" font-size="8">touch to water</text>
+
+  <!-- Step 1: Piezo red → row 5a (orange wire) -->
+  <path d="M 778 625 L 700 625 L 700 280 L 220 280" stroke="#ff8844" stroke-width="3" fill="none" marker-end="url(#arrO)"/>
+  <text x="700" y="450" fill="#ff8844" font-size="8" transform="rotate(-90,700,450)">Step 1: Piezo RED to 5a</text>
+
+  <!-- Step 2: Piezo black → (-) rail -->
+  <path d="M 778 655 L 680 655 L 680 280 L 680 200 L 190 200" stroke="#555" stroke-width="3" fill="none"/>
+  <text x="435" y="194" text-anchor="middle" fill="#888" font-size="8">Step 2: Piezo BLK to GND</text>
+
+  <!-- ==================== PAM8403 AMP (right side) ==================== -->
+  <rect x="720" y="160" width="200" height="140" rx="6" fill="#1a2a1a" stroke="#00cc66" stroke-width="2"/>
+  <text x="820" y="190" text-anchor="middle" fill="#00cc66" font-size="14" font-weight="bold">PAM8403</text>
+  <text x="820" y="207" text-anchor="middle" fill="#66aa66" font-size="10">3W+3W Amplifier</text>
+  <!-- Pot -->
+  <circle cx="820" cy="245" r="14" fill="none" stroke="#fbbf24" stroke-width="2"/>
+  <line x1="820" y1="245" x2="820" y2="234" stroke="#fbbf24" stroke-width="2"/>
+  <text x="820" y="275" text-anchor="middle" fill="#fbbf24" font-size="8">GAIN (start at 0)</text>
+
+  <!-- PAM input labels -->
+  <text x="730" y="230" fill="#aaddaa" font-size="9">L in</text>
+  <circle cx="724" cy="235" r="3" fill="#00cc66"/>
+  <text x="730" y="248" fill="#aaddaa" font-size="9">GND</text>
+  <circle cx="724" cy="252" r="3" fill="#888"/>
+
+  <!-- PAM output labels -->
+  <text x="895" y="230" fill="#aaddaa" font-size="9">L+</text>
+  <circle cx="916" cy="226" r="3" fill="#00cc66"/>
+  <text x="895" y="248" fill="#aaddaa" font-size="9">L-</text>
+  <circle cx="916" cy="244" r="3" fill="#888"/>
+
+  <!-- PAM power labels -->
+  <text x="770" y="295" fill="#ff6666" font-size="9">5V</text>
+  <circle cx="790" cy="296" r="3" fill="#ff4444"/>
+  <text x="830" y="295" fill="#888" font-size="9">GND</text>
+  <circle cx="860" cy="296" r="3" fill="#888"/>
+
+  <!-- Step 3: row 5j → PAM L input -->
+  <path d="M 580 280 L 660 280 L 660 235 L 724 235" stroke="#00cc66" stroke-width="3" fill="none" marker-end="url(#arrG)"/>
+  <text x="630" y="260" fill="#00cc66" font-size="8">3: 5j to L in</text>
+
+  <!-- Step 4: (-) rail → PAM input GND -->
+  <path d="M 190 252 L 660 252 L 724 252" stroke="#555" stroke-width="2" stroke-dasharray="4,3" fill="none"/>
+  <text x="430" y="262" text-anchor="middle" fill="#888" font-size="7">4: GND to PAM in GND</text>
+
+  <!-- Step 7: (+) rail → PAM 5V -->
+  <path d="M 170 296 L 660 296 L 790 296" stroke="#ff4444" stroke-width="2" stroke-dasharray="6,3" fill="none" marker-end="url(#arrR)"/>
+  <text x="430" y="308" text-anchor="middle" fill="#ff4444" font-size="7">7: 5V to PAM power</text>
+
+  <!-- Step 8: (-) rail → PAM power GND -->
+  <path d="M 190 312 L 660 312 L 660 296 L 860 296" stroke="#555" stroke-width="2" stroke-dasharray="4,3" fill="none"/>
+  <text x="430" y="322" text-anchor="middle" fill="#888" font-size="7">8: GND to PAM pwr GND</text>
+
+  <!-- Step 9: PAM L+ out → row 8a -->
+  <path d="M 916 226 L 960 226 L 960 340 L 660 340 L 660 360 L 220 360" stroke="#00cc66" stroke-width="3" fill="none" marker-end="url(#arrG)"/>
+  <text x="660" y="352" fill="#00cc66" font-size="7">9: PAM L+ to 8a</text>
+
+  <!-- Step 13: PAM L- out → row 15a -->
+  <path d="M 916 244 L 970 244 L 970 490 L 660 490 L 660 510 L 220 510" stroke="#00cc66" stroke-width="3" fill="none" marker-end="url(#arrG)"/>
+  <text x="660" y="502" fill="#00cc66" font-size="7">13: PAM L- to 15a</text>
+
+  <!-- ==================== 6V BULB ==================== -->
+  <circle cx="1080" cy="230" r="24" fill="none" stroke="#fbbf24" stroke-width="2.5"/>
+  <text x="1080" y="225" text-anchor="middle" fill="#fbbf24" font-size="16">*</text>
+  <text x="1080" y="238" text-anchor="middle" fill="#fbbf24" font-size="8">6V</text>
+  <text x="1080" y="200" text-anchor="middle" fill="#cc9900" font-size="9">Thermal Limiter</text>
+
+  <!-- Step 10: row 10c → bulb (alligator) -->
+  <path d="M 280 410 L 660 410 L 1056 410 L 1056 254" stroke="#ff6644" stroke-width="3" fill="none" marker-end="url(#arrR)"/>
+  <text x="660" y="404" fill="#ff6644" font-size="7">10: alligator to bulb</text>
+
+  <!-- ==================== SPEAKER ==================== -->
+  <path d="M 1160 200 L 1160 260 L 1200 280 L 1200 180 Z" fill="none" stroke="#00aadd" stroke-width="2"/>
+  <!-- sound lines -->
+  <line x1="1200" y1="195" x2="1212" y2="190" stroke="#00aadd" stroke-width="1.5"/>
+  <line x1="1200" y1="215" x2="1218" y2="210" stroke="#00aadd" stroke-width="1.5"/>
+  <line x1="1200" y1="235" x2="1222" y2="235" stroke="#00aadd" stroke-width="1.5"/>
+  <line x1="1200" y1="255" x2="1218" y2="260" stroke="#00aadd" stroke-width="1.5"/>
+  <line x1="1200" y1="270" x2="1212" y2="275" stroke="#00aadd" stroke-width="1.5"/>
+  <text x="1180" y="295" text-anchor="middle" fill="#00aadd" font-size="10">Speaker</text>
+  <text x="1180" y="308" text-anchor="middle" fill="#006688" font-size="8">PC68-4, 4 ohm</text>
+
+  <!-- Step 12: bulb → speaker (alligator) -->
+  <path d="M 1104 230 L 1160 230" stroke="#fbbf24" stroke-width="3" fill="none"/>
+  <text x="1132" y="222" text-anchor="middle" fill="#cc9900" font-size="7">12</text>
+
+  <!-- ==================== SOUND FEEDBACK ARC ==================== -->
+  <!-- Speaker aimed at crystal — the feedback loop -->
+  <path d="M 1220 250 C 1300 400, 1100 520, 920 610" stroke="#00aadd" stroke-width="2" stroke-dasharray="6,4" fill="none" marker-end="url(#arrC)"/>
+  <text x="1140" y="460" fill="#00aadd" font-size="10" transform="rotate(30,1140,460)">sound drives crystal</text>
+
+  <!-- Crystal vibration → piezo (feedback) -->
+  <path d="M 800 615 C 780 590, 770 580, 778 625" stroke="#ff8844" stroke-width="1.5" stroke-dasharray="3,3" fill="none"/>
+  <text x="755" y="600" text-anchor="middle" fill="#ff8844" font-size="7">vibration</text>
+
+  <!-- ==================== DSO-153 OSCILLOSCOPE (top center) ==================== -->
+  <rect x="380" y="70" width="120" height="65" rx="6" fill="#1a1a2a" stroke="#8888ff" stroke-width="2"/>
+  <text x="440" y="93" text-anchor="middle" fill="#aaaaff" font-size="12" font-weight="bold">DSO-153</text>
+  <text x="440" y="108" text-anchor="middle" fill="#6666aa" font-size="9">Oscilloscope</text>
+  <!-- Waveform -->
+  <path d="M 400 120 Q 410 110, 418 120 Q 426 130, 434 120 Q 442 110, 450 120 Q 458 130, 466 120 Q 474 110, 480 120" stroke="#44ff44" stroke-width="1.5" fill="none"/>
+
+  <!-- Step 15: DSO probe → row 5f -->
+  <path d="M 440 135 L 440 160 L 460 280" stroke="#8888ff" stroke-width="2" stroke-dasharray="5,3" fill="none"/>
+  <text x="455" y="210" fill="#8888ff" font-size="7">15: probe tip</text>
+
+  <!-- Step 16: DSO GND → (-) rail -->
+  <path d="M 400 135 L 400 160 L 190 220" stroke="#555" stroke-width="1.5" stroke-dasharray="4,3" fill="none"/>
+  <text x="295" y="185" fill="#888" font-size="7">16: probe GND</text>
+
+  <!-- ==================== SIGNAL FLOW LABELS ==================== -->
+  <!-- The feedback loop annotation -->
+  <rect x="1050" y="850" width="300" height="100" rx="8" fill="#111122" stroke="#333" stroke-width="1"/>
+  <text x="1200" y="875" text-anchor="middle" fill="#e0e0ff" font-size="11" font-weight="bold">THE FEEDBACK LOOP</text>
+  <text x="1200" y="895" text-anchor="middle" fill="#ff8844" font-size="9">Piezo picks up crystal vibration</text>
+  <text x="1200" y="910" text-anchor="middle" fill="#00cc66" font-size="9">Amp boosts it through the bulb</text>
+  <text x="1200" y="925" text-anchor="middle" fill="#00aadd" font-size="9">Speaker drives the crystal harder</text>
+  <text x="1200" y="940" text-anchor="middle" fill="#fbbf24" font-size="9">Bulb thermal AGC limits the gain</text>
+
+  <!-- ==================== LEGEND ==================== -->
+  <rect x="40" y="940" width="980" height="35" rx="4" fill="#111122"/>
+  <line x1="60" y1="957" x2="90" y2="957" stroke="#ff8844" stroke-width="3"/>
+  <text x="95" y="961" fill="#ccc" font-size="9">Piezo</text>
+  <line x1="145" y1="957" x2="175" y2="957" stroke="#00cc66" stroke-width="3"/>
+  <text x="180" y="961" fill="#ccc" font-size="9">PAM I/O</text>
+  <line x1="240" y1="957" x2="270" y2="957" stroke="#ffdd44" stroke-width="3"/>
+  <text x="275" y="961" fill="#ccc" font-size="9">Bridge</text>
+  <line x1="325" y1="957" x2="355" y2="957" stroke="#ff6644" stroke-width="3"/>
+  <text x="360" y="961" fill="#ccc" font-size="9">Bulb</text>
+  <line x1="400" y1="957" x2="430" y2="957" stroke="#fbbf24" stroke-width="3"/>
+  <text x="435" y="961" fill="#ccc" font-size="9">Bulb-Speaker</text>
+  <line x1="520" y1="957" x2="550" y2="957" stroke="#8888ff" stroke-width="2" stroke-dasharray="5,3"/>
+  <text x="555" y="961" fill="#ccc" font-size="9">DSO</text>
+  <line x1="590" y1="957" x2="620" y2="957" stroke="#00aadd" stroke-width="2" stroke-dasharray="6,4"/>
+  <text x="625" y="961" fill="#ccc" font-size="9">Sound</text>
+  <line x1="670" y1="957" x2="700" y2="957" stroke="#ff44aa" stroke-width="3" stroke-dasharray="6,4"/>
+  <text x="705" y="961" fill="#ccc" font-size="9">Last Gate</text>
+  <line x1="775" y1="957" x2="805" y2="957" stroke="#555" stroke-width="2"/>
+  <text x="810" y="961" fill="#ccc" font-size="9">GND</text>
+  <line x1="845" y1="957" x2="875" y2="957" stroke="#ff4444" stroke-width="2"/>
+  <text x="880" y="961" fill="#ccc" font-size="9">5V</text>
+
+  <!-- Step numbers key -->
+  <text x="935" y="961" fill="#888" font-size="8">Steps labeled on wires</text>
+</svg>

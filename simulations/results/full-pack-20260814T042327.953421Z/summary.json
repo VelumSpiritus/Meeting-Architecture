@@ -1,0 +1,2807 @@
+{
+  "model": "minute-stepped quartz array -> accumulator -> 250 W OEM charger -> 216 Wh pack",
+  "scenarios": 32,
+  "completed": 30,
+  "fastest": [
+    {
+      "parameters": {
+        "acoustic_w_per_crystal": 10.0,
+        "crystals": 64,
+        "contact_fraction": 0.5,
+        "resonance_capture_gain": 5,
+        "modal_fraction": 0.5,
+        "piezo_fraction": 0.1,
+        "rectifier_fraction": 0.88,
+        "harvester_fraction": 0.9,
+        "accumulator_wh": 300.0,
+        "inverter_fraction": 0.9,
+        "charger_input_w": 250.0,
+        "charger_fraction": 0.86,
+        "pack_wh": 216.0,
+        "maximum_days": 730.0,
+        "step_seconds": 60.0
+      },
+      "completed": true,
+      "elapsed_days": 0.45902777777777776,
+      "steps_executed": 661,
+      "charger_bursts": 67,
+      "power": {
+        "acoustic_w": 640.0,
+        "harvested_w": 25.344
+      },
+      "energy": {
+        "acoustic_wh": 7050.666666666667,
+        "harvested_wh": 279.20640000000003,
+        "pack_wh": 216.0,
+        "accumulator_wh": 0.039733333333296185,
+        "spill_wh": 0.0,
+        "closure_j": 0.0
+      },
+      "trace": [
+        {
+          "minute": 1,
+          "day": 0.0006944444444444445,
+          "accumulator_wh": 0.42240000000000005,
+          "pack_wh": 0.0,
+          "charger_minutes": 0
+        },
+        {
+          "minute": 10,
+          "day": 0.006944444444444444,
+          "accumulator_wh": 0.05733333333333273,
+          "pack_wh": 3.225,
+          "charger_minutes": 1
+        },
+        {
+          "minute": 661,
+          "day": 0.45902777777777776,
+          "accumulator_wh": 0.039733333333296185,
+          "pack_wh": 216.0,
+          "charger_minutes": 67
+        }
+      ]
+    },
+    {
+      "parameters": {
+        "acoustic_w_per_crystal": 10.0,
+        "crystals": 64,
+        "contact_fraction": 0.1,
+        "resonance_capture_gain": 5,
+        "modal_fraction": 0.5,
+        "piezo_fraction": 0.1,
+        "rectifier_fraction": 0.88,
+        "harvester_fraction": 0.9,
+        "accumulator_wh": 300.0,
+        "inverter_fraction": 0.9,
+        "charger_input_w": 250.0,
+        "charger_fraction": 0.86,
+        "pack_wh": 216.0,
+        "maximum_days": 730.0,
+        "step_seconds": 60.0
+      },
+      "completed": true,
+      "elapsed_days": 0.9180555555555555,
+      "steps_executed": 1322,
+      "charger_bursts": 67,
+      "power": {
+        "acoustic_w": 640.0,
+        "harvested_w": 12.672
+      },
+      "energy": {
+        "acoustic_wh": 14101.333333333334,
+        "harvested_wh": 279.20640000000003,
+        "pack_wh": 216.0,
+        "accumulator_wh": 0.039733333333261324,
+        "spill_wh": 0.0,
+        "closure_j": 0.0
+      },
+      "trace": [
+        {
+          "minute": 1,
+          "day": 0.0006944444444444445,
+          "accumulator_wh": 0.21120000000000003,
+          "pack_wh": 0.0,
+          "charger_minutes": 0
+        },
+        {
+          "minute": 10,
+          "day": 0.006944444444444444,
+          "accumulator_wh": 2.1119999999999997,
+          "pack_wh": 0.0,
+          "charger_minutes": 0
+        },
+        {
+          "minute": 1000,
+          "day": 0.6944444444444444,
+          "accumulator_wh": 2.866666666666612,
+          "pack_wh": 161.25,
+          "charger_minutes": 50
+        },
+        {
+          "minute": 1322,
+          "day": 0.9180555555555555,
+          "accumulator_wh": 0.039733333333261324,
+          "pack_wh": 216.0,
+          "charger_minutes": 67
+        }
+      ]
+    },
+    {
+      "parameters": {
+        "acoustic_w_per_crystal": 10.0,
+        "crystals": 64,
+        "contact_fraction": 0.5,
+        "resonance_capture_gain": 1,
+        "modal_fraction": 0.5,
+        "piezo_fraction": 0.1,
+        "rectifier_fraction": 0.88,
+        "harvester_fraction": 0.9,
+        "accumulator_wh": 300.0,
+        "inverter_fraction": 0.9,
+        "charger_input_w": 250.0,
+        "charger_fraction": 0.86,
+        "pack_wh": 216.0,
+        "maximum_days": 730.0,
+        "step_seconds": 60.0
+      },
+      "completed": true,
+      "elapsed_days": 0.9180555555555555,
+      "steps_executed": 1322,
+      "charger_bursts": 67,
+      "power": {
+        "acoustic_w": 640.0,
+        "harvested_w": 12.672
+      },
+      "energy": {
+        "acoustic_wh": 14101.333333333334,
+        "harvested_wh": 279.20640000000003,
+        "pack_wh": 216.0,
+        "accumulator_wh": 0.039733333333261324,
+        "spill_wh": 0.0,
+        "closure_j": 0.0
+      },
+      "trace": [
+        {
+          "minute": 1,
+          "day": 0.0006944444444444445,
+          "accumulator_wh": 0.21120000000000003,
+          "pack_wh": 0.0,
+          "charger_minutes": 0
+        },
+        {
+          "minute": 10,
+          "day": 0.006944444444444444,
+          "accumulator_wh": 2.1119999999999997,
+          "pack_wh": 0.0,
+          "charger_minutes": 0
+        },
+        {
+          "minute": 1000,
+          "day": 0.6944444444444444,
+          "accumulator_wh": 2.866666666666612,
+          "pack_wh": 161.25,
+          "charger_minutes": 50
+        },
+        {
+          "minute": 1322,
+          "day": 0.9180555555555555,
+          "accumulator_wh": 0.039733333333261324,
+          "pack_wh": 216.0,
+          "charger_minutes": 67
+        }
+      ]
+    },
+    {
+      "parameters": {
+        "acoustic_w_per_crystal": 10.0,
+        "crystals": 16,
+        "contact_fraction": 0.5,
+        "resonance_capture_gain": 5,
+        "modal_fraction": 0.5,
+        "piezo_fraction": 0.1,
+        "rectifier_fraction": 0.88,
+        "harvester_fraction": 0.9,
+        "accumulator_wh": 300.0,
+        "inverter_fraction": 0.9,
+        "charger_input_w": 250.0,
+        "charger_fraction": 0.86,
+        "pack_wh": 216.0,
+        "maximum_days": 730.0,
+        "step_seconds": 60.0
+      },
+      "completed": true,
+      "elapsed_days": 1.836111111111111,
+      "steps_executed": 2644,
+      "charger_bursts": 67,
+      "power": {
+        "acoustic_w": 160.0,
+        "harvested_w": 6.336
+      },
+      "energy": {
+        "acoustic_wh": 7050.666666666667,
+        "harvested_wh": 279.20640000000003,
+        "pack_wh": 216.0,
+        "accumulator_wh": 0.03973333333326031,
+        "spill_wh": 0.0,
+        "closure_j": 0.0
+      },
+      "trace": [
+        {
+          "minute": 1,
+          "day": 0.0006944444444444445,
+          "accumulator_wh": 0.10560000000000001,
+          "pack_wh": 0.0,
+          "charger_minutes": 0
+        },
+        {
+          "minute": 10,
+          "day": 0.006944444444444444,
+          "accumulator_wh": 1.0559999999999998,
+          "pack_wh": 0.0,
+          "charger_minutes": 0
+        },
+        {
+          "minute": 1000,
+          "day": 0.6944444444444444,
+          "accumulator_wh": 1.4333333333333058,
+          "pack_wh": 80.625,
+          "charger_minutes": 25
+        },
+        {
+          "minute": 2644,
+          "day": 1.836111111111111,
+          "accumulator_wh": 0.03973333333326031,
+          "pack_wh": 216.0,
+          "charger_minutes": 67
+        }
+      ]
+    },
+    {
+      "parameters": {
+        "acoustic_w_per_crystal": 10.0,
+        "crystals": 16,
+        "contact_fraction": 0.1,
+        "resonance_capture_gain": 5,
+        "modal_fraction": 0.5,
+        "piezo_fraction": 0.1,
+        "rectifier_fraction": 0.88,
+        "harvester_fraction": 0.9,
+        "accumulator_wh": 300.0,
+        "inverter_fraction": 0.9,
+        "charger_input_w": 250.0,
+        "charger_fraction": 0.86,
+        "pack_wh": 216.0,
+        "maximum_days": 730.0,
+        "step_seconds": 60.0
+      },
+      "completed": true,
+      "elapsed_days": 3.672222222222222,
+      "steps_executed": 5288,
+      "charger_bursts": 67,
+      "power": {
+        "acoustic_w": 160.0,
+        "harvested_w": 3.168
+      },
+      "energy": {
+        "acoustic_wh": 14101.333333333334,
+        "harvested_wh": 279.20640000000003,
+        "pack_wh": 216.0,
+        "accumulator_wh": 0.03973333333326031,
+        "spill_wh": 0.0,
+        "closure_j": 0.0
+      },
+      "trace": [
+        {
+          "minute": 1,
+          "day": 0.0006944444444444445,
+          "accumulator_wh": 0.05280000000000001,
+          "pack_wh": 0.0,
+          "charger_minutes": 0
+        },
+        {
+          "minute": 10,
+          "day": 0.006944444444444444,
+          "accumulator_wh": 0.5279999999999999,
+          "pack_wh": 0.0,
+          "charger_minutes": 0
+        },
+        {
+          "minute": 1000,
+          "day": 0.6944444444444444,
+          "accumulator_wh": 2.7999999999999865,
+          "pack_wh": 38.7,
+          "charger_minutes": 12
+        },
+        {
+          "minute": 5288,
+          "day": 3.672222222222222,
+          "accumulator_wh": 0.03973333333326031,
+          "pack_wh": 216.0,
+          "charger_minutes": 67
+        }
+      ]
+    },
+    {
+      "parameters": {
+        "acoustic_w_per_crystal": 10.0,
+        "crystals": 16,
+        "contact_fraction": 0.5,
+        "resonance_capture_gain": 1,
+        "modal_fraction": 0.5,
+        "piezo_fraction": 0.1,
+        "rectifier_fraction": 0.88,
+        "harvester_fraction": 0.9,
+        "accumulator_wh": 300.0,
+        "inverter_fraction": 0.9,
+        "charger_input_w": 250.0,
+        "charger_fraction": 0.86,
+        "pack_wh": 216.0,
+        "maximum_days": 730.0,
+        "step_seconds": 60.0
+      },
+      "completed": true,
+      "elapsed_days": 3.672222222222222,
+      "steps_executed": 5288,
+      "charger_bursts": 67,
+      "power": {
+        "acoustic_w": 160.0,
+        "harvested_w": 3.168
+      },
+      "energy": {
+        "acoustic_wh": 14101.333333333334,
+        "harvested_wh": 279.20640000000003,
+        "pack_wh": 216.0,
+        "accumulator_wh": 0.03973333333326031,
+        "spill_wh": 0.0,
+        "closure_j": 0.0
+      },
+      "trace": [
+        {
+          "minute": 1,
+          "day": 0.0006944444444444445,
+          "accumulator_wh": 0.05280000000000001,
+          "pack_wh": 0.0,
+          "charger_minutes": 0
+        },
+        {
+          "minute": 10,
+          "day": 0.006944444444444444,
+          "accumulator_wh": 0.5279999999999999,
+          "pack_wh": 0.0,
+          "charger_minutes": 0
+        },
+        {
+          "minute": 1000,
+          "day": 0.6944444444444444,
+          "accumulator_wh": 2.7999999999999865,
+          "pack_wh": 38.7,
+          "charger_minutes": 12
+        },
+        {
+          "minute": 5288,
+          "day": 3.672222222222222,
+          "accumulator_wh": 0.03973333333326031,
+          "pack_wh": 216.0,
+          "charger_minutes": 67
+        }
+      ]
+    },
+    {
+      "parameters": {
+        "acoustic_w_per_crystal": 10.0,
+        "crystals": 64,
+        "contact_fraction": 0.1,
+        "resonance_capture_gain": 1,
+        "modal_fraction": 0.5,
+        "piezo_fraction": 0.1,
+        "rectifier_fraction": 0.88,
+        "harvester_fraction": 0.9,
+        "accumulator_wh": 300.0,
+        "inverter_fraction": 0.9,
+        "charger_input_w": 250.0,
+        "charger_fraction": 0.86,
+        "pack_wh": 216.0,
+        "maximum_days": 730.0,
+        "step_seconds": 60.0
+      },
+      "completed": true,
+      "elapsed_days": 4.590277777777778,
+      "steps_executed": 6610,
+      "charger_bursts": 67,
+      "power": {
+        "acoustic_w": 640.0,
+        "harvested_w": 2.5344
+      },
+      "energy": {
+        "acoustic_wh": 70506.66666666667,
+        "harvested_wh": 279.20640000000003,
+        "pack_wh": 216.0,
+        "accumulator_wh": 0.03973333333372516,
+        "spill_wh": 0.0,
+        "closure_j": 0.0
+      },
+      "trace": [
+        {
+          "minute": 1,
+          "day": 0.0006944444444444445,
+          "accumulator_wh": 0.04224000000000001,
+          "pack_wh": 0.0,
+          "charger_minutes": 0
+        },
+        {
+          "minute": 10,
+          "day": 0.006944444444444444,
+          "accumulator_wh": 0.42240000000000016,
+          "pack_wh": 0.0,
+          "charger_minutes": 0
+        },
+        {
+          "minute": 1000,
+          "day": 0.6944444444444444,
+          "accumulator_wh": 0.5733333333333921,
+          "pack_wh": 32.25,
+          "charger_minutes": 10
+        },
+        {
+          "minute": 6610,
+          "day": 4.590277777777778,
+          "accumulator_wh": 0.03973333333372516,
+          "pack_wh": 216.0,
+          "charger_minutes": 67
+        }
+      ]
+    },
+    {
+      "parameters": {
+        "acoustic_w_per_crystal": 10.0,
+        "crystals": 64,
+        "contact_fraction": 0.5,
+        "resonance_capture_gain": 5,
+        "modal_fraction": 0.5,
+        "piezo_fraction": 0.01,
+        "rectifier_fraction": 0.88,
+        "harvester_fraction": 0.9,
+        "accumulator_wh": 300.0,
+        "inverter_fraction": 0.9,
+        "charger_input_w": 250.0,
+        "charger_fraction": 0.86,
+        "pack_wh": 216.0,
+        "maximum_days": 730.0,
+        "step_seconds": 60.0
+      },
+      "completed": true,
+      "elapsed_days": 4.590277777777778,
+      "steps_executed": 6610,
+      "charger_bursts": 67,
+      "power": {
+        "acoustic_w": 640.0,
+        "harvested_w": 2.5344
+      },
+      "energy": {
+        "acoustic_wh": 70506.66666666667,
+        "harvested_wh": 279.20640000000003,
+        "pack_wh": 216.0,
+        "accumulator_wh": 0.03973333333372516,
+        "spill_wh": 0.0,
+        "closure_j": 0.0
+      },
+      "trace": [
+        {
+          "minute": 1,
+          "day": 0.0006944444444444445,
+          "accumulator_wh": 0.04224000000000001,
+          "pack_wh": 0.0,
+          "charger_minutes": 0
+        },
+        {
+          "minute": 10,
+          "day": 0.006944444444444444,
+          "accumulator_wh": 0.42240000000000016,
+          "pack_wh": 0.0,
+          "charger_minutes": 0
+        },
+        {
+          "minute": 1000,
+          "day": 0.6944444444444444,
+          "accumulator_wh": 0.5733333333333921,
+          "pack_wh": 32.25,
+          "charger_minutes": 10
+        },
+        {
+          "minute": 6610,
+          "day": 4.590277777777778,
+          "accumulator_wh": 0.03973333333372516,
+          "pack_wh": 216.0,
+          "charger_minutes": 67
+        }
+      ]
+    },
+    {
+      "parameters": {
+        "acoustic_w_per_crystal": 10.0,
+        "crystals": 4,
+        "contact_fraction": 0.5,
+        "resonance_capture_gain": 5,
+        "modal_fraction": 0.5,
+        "piezo_fraction": 0.1,
+        "rectifier_fraction": 0.88,
+        "harvester_fraction": 0.9,
+        "accumulator_wh": 300.0,
+        "inverter_fraction": 0.9,
+        "charger_input_w": 250.0,
+        "charger_fraction": 0.86,
+        "pack_wh": 216.0,
+        "maximum_days": 730.0,
+        "step_seconds": 60.0
+      },
+      "completed": true,
+      "elapsed_days": 7.34375,
+      "steps_executed": 10575,
+      "charger_bursts": 67,
+      "power": {
+        "acoustic_w": 40.0,
+        "harvested_w": 1.584
+      },
+      "energy": {
+        "acoustic_wh": 7050.0,
+        "harvested_wh": 279.18,
+        "pack_wh": 216.0,
+        "accumulator_wh": 0.013333333334469191,
+        "spill_wh": 0.0,
+        "closure_j": 3.725290298461914e-09
+      },
+      "trace": [
+        {
+          "minute": 1,
+          "day": 0.0006944444444444445,
+          "accumulator_wh": 0.026400000000000003,
+          "pack_wh": 0.0,
+          "charger_minutes": 0
+        },
+        {
+          "minute": 10,
+          "day": 0.006944444444444444,
+          "accumulator_wh": 0.26399999999999996,
+          "pack_wh": 0.0,
+          "charger_minutes": 0
+        },
+        {
+          "minute": 1000,
+          "day": 0.6944444444444444,
+          "accumulator_wh": 1.4000000000001012,
+          "pack_wh": 19.35,
+          "charger_minutes": 6
+        },
+        {
+          "minute": 10575,
+          "day": 7.34375,
+          "accumulator_wh": 0.013333333334469191,
+          "pack_wh": 216.0,
+          "charger_minutes": 67
+        }
+      ]
+    },
+    {
+      "parameters": {
+        "acoustic_w_per_crystal": 10.0,
+        "crystals": 64,
+        "contact_fraction": 0.1,
+        "resonance_capture_gain": 5,
+        "modal_fraction": 0.5,
+        "piezo_fraction": 0.01,
+        "rectifier_fraction": 0.88,
+        "harvester_fraction": 0.9,
+        "accumulator_wh": 300.0,
+        "inverter_fraction": 0.9,
+        "charger_input_w": 250.0,
+        "charger_fraction": 0.86,
+        "pack_wh": 216.0,
+        "maximum_days": 730.0,
+        "step_seconds": 60.0
+      },
+      "completed": true,
+      "elapsed_days": 9.17986111111111,
+      "steps_executed": 13219,
+      "charger_bursts": 67,
+      "power": {
+        "acoustic_w": 640.0,
+        "harvested_w": 1.2672
+      },
+      "energy": {
+        "acoustic_wh": 141002.66666666666,
+        "harvested_wh": 279.18528000000003,
+        "pack_wh": 216.0,
+        "accumulator_wh": 0.0186133333322813,
+        "spill_wh": 0.0,
+        "closure_j": 0.0
+      },
+      "trace": [
+        {
+          "minute": 1,
+          "day": 0.0006944444444444445,
+          "accumulator_wh": 0.021120000000000003,
+          "pack_wh": 0.0,
+          "charger_minutes": 0
+        },
+        {
+          "minute": 10,
+          "day": 0.006944444444444444,
+          "accumulator_wh": 0.21120000000000008,
+          "pack_wh": 0.0,
+          "charger_minutes": 0
+        },
+        {
+          "minute": 1000,
+          "day": 0.6944444444444444,
+          "accumulator_wh": 0.28666666666658813,
+          "pack_wh": 16.125,
+          "charger_minutes": 5
+        },
+        {
+          "minute": 13219,
+          "day": 9.17986111111111,
+          "accumulator_wh": 0.0186133333322813,
+          "pack_wh": 216.0,
+          "charger_minutes": 67
+        }
+      ]
+    }
+  ],
+  "rows": [
+    {
+      "parameters": {
+        "acoustic_w_per_crystal": 10.0,
+        "crystals": 1,
+        "contact_fraction": 0.1,
+        "resonance_capture_gain": 1,
+        "modal_fraction": 0.5,
+        "piezo_fraction": 0.01,
+        "rectifier_fraction": 0.88,
+        "harvester_fraction": 0.9,
+        "accumulator_wh": 300.0,
+        "inverter_fraction": 0.9,
+        "charger_input_w": 250.0,
+        "charger_fraction": 0.86,
+        "pack_wh": 216.0,
+        "maximum_days": 730.0,
+        "step_seconds": 60.0
+      },
+      "completed": false,
+      "elapsed_days": 730.0,
+      "steps_executed": 1051200,
+      "charger_bursts": 16,
+      "power": {
+        "acoustic_w": 10.0,
+        "harvested_w": 0.00396
+      },
+      "energy": {
+        "acoustic_wh": 175200.0,
+        "harvested_wh": 69.3792,
+        "pack_wh": 51.6,
+        "accumulator_wh": 2.712533333410259,
+        "spill_wh": 0.0,
+        "closure_j": 2.384185791015625e-07
+      },
+      "trace": [
+        {
+          "minute": 1,
+          "day": 0.0006944444444444445,
+          "accumulator_wh": 6.6e-05,
+          "pack_wh": 0.0,
+          "charger_minutes": 0
+        },
+        {
+          "minute": 10,
+          "day": 0.006944444444444444,
+          "accumulator_wh": 0.00066,
+          "pack_wh": 0.0,
+          "charger_minutes": 0
+        },
+        {
+          "minute": 1000,
+          "day": 0.6944444444444444,
+          "accumulator_wh": 0.0659999999999983,
+          "pack_wh": 0.0,
+          "charger_minutes": 0
+        },
+        {
+          "minute": 100000,
+          "day": 69.44444444444444,
+          "accumulator_wh": 2.4333333333398572,
+          "pack_wh": 3.225,
+          "charger_minutes": 1
+        },
+        {
+          "minute": 1051200,
+          "day": 730.0,
+          "accumulator_wh": 2.712533333410259,
+          "pack_wh": 51.6,
+          "charger_minutes": 16
+        }
+      ]
+    },
+    {
+      "parameters": {
+        "acoustic_w_per_crystal": 10.0,
+        "crystals": 1,
+        "contact_fraction": 0.1,
+        "resonance_capture_gain": 5,
+        "modal_fraction": 0.5,
+        "piezo_fraction": 0.01,
+        "rectifier_fraction": 0.88,
+        "harvester_fraction": 0.9,
+        "accumulator_wh": 300.0,
+        "inverter_fraction": 0.9,
+        "charger_input_w": 250.0,
+        "charger_fraction": 0.86,
+        "pack_wh": 216.0,
+        "maximum_days": 730.0,
+        "step_seconds": 60.0
+      },
+      "completed": true,
+      "elapsed_days": 587.4722222222222,
+      "steps_executed": 845960,
+      "charger_bursts": 67,
+      "power": {
+        "acoustic_w": 10.0,
+        "harvested_w": 0.0198
+      },
+      "energy": {
+        "acoustic_wh": 140993.33333333334,
+        "harvested_wh": 279.1668,
+        "pack_wh": 216.0,
+        "accumulator_wh": 0.00013333335547587114,
+        "spill_wh": 0.0,
+        "closure_j": 5.960464477539063e-08
+      },
+      "trace": [
+        {
+          "minute": 1,
+          "day": 0.0006944444444444445,
+          "accumulator_wh": 0.00033000000000000005,
+          "pack_wh": 0.0,
+          "charger_minutes": 0
+        },
+        {
+          "minute": 10,
+          "day": 0.006944444444444444,
+          "accumulator_wh": 0.0033000000000000013,
+          "pack_wh": 0.0,
+          "charger_minutes": 0
+        },
+        {
+          "minute": 1000,
+          "day": 0.6944444444444444,
+          "accumulator_wh": 0.3300000000000015,
+          "pack_wh": 0.0,
+          "charger_minutes": 0
+        },
+        {
+          "minute": 100000,
+          "day": 69.44444444444444,
+          "accumulator_wh": 3.8333333333359487,
+          "pack_wh": 22.575,
+          "charger_minutes": 7
+        },
+        {
+          "minute": 845960,
+          "day": 587.4722222222222,
+          "accumulator_wh": 0.00013333335547587114,
+          "pack_wh": 216.0,
+          "charger_minutes": 67
+        }
+      ]
+    },
+    {
+      "parameters": {
+        "acoustic_w_per_crystal": 10.0,
+        "crystals": 1,
+        "contact_fraction": 0.1,
+        "resonance_capture_gain": 1,
+        "modal_fraction": 0.5,
+        "piezo_fraction": 0.1,
+        "rectifier_fraction": 0.88,
+        "harvester_fraction": 0.9,
+        "accumulator_wh": 300.0,
+        "inverter_fraction": 0.9,
+        "charger_input_w": 250.0,
+        "charger_fraction": 0.86,
+        "pack_wh": 216.0,
+        "maximum_days": 730.0,
+        "step_seconds": 60.0
+      },
+      "completed": true,
+      "elapsed_days": 293.7361111111111,
+      "steps_executed": 422980,
+      "charger_bursts": 67,
+      "power": {
+        "acoustic_w": 10.0,
+        "harvested_w": 0.0396
+      },
+      "energy": {
+        "acoustic_wh": 70496.66666666667,
+        "harvested_wh": 279.1668,
+        "pack_wh": 216.0,
+        "accumulator_wh": 0.0001333333536816402,
+        "spill_wh": 0.0,
+        "closure_j": 8.940696716308594e-08
+      },
+      "trace": [
+        {
+          "minute": 1,
+          "day": 0.0006944444444444445,
+          "accumulator_wh": 0.0006600000000000001,
+          "pack_wh": 0.0,
+          "charger_minutes": 0
+        },
+        {
+          "minute": 10,
+          "day": 0.006944444444444444,
+          "accumulator_wh": 0.0066000000000000026,
+          "pack_wh": 0.0,
+          "charger_minutes": 0
+        },
+        {
+          "minute": 1000,
+          "day": 0.6944444444444444,
+          "accumulator_wh": 0.660000000000003,
+          "pack_wh": 0.0,
+          "charger_minutes": 0
+        },
+        {
+          "minute": 100000,
+          "day": 69.44444444444444,
+          "accumulator_wh": 3.500000000004802,
+          "pack_wh": 48.375,
+          "charger_minutes": 15
+        },
+        {
+          "minute": 422980,
+          "day": 293.7361111111111,
+          "accumulator_wh": 0.0001333333536816402,
+          "pack_wh": 216.0,
+          "charger_minutes": 67
+        }
+      ]
+    },
+    {
+      "parameters": {
+        "acoustic_w_per_crystal": 10.0,
+        "crystals": 1,
+        "contact_fraction": 0.1,
+        "resonance_capture_gain": 5,
+        "modal_fraction": 0.5,
+        "piezo_fraction": 0.1,
+        "rectifier_fraction": 0.88,
+        "harvester_fraction": 0.9,
+        "accumulator_wh": 300.0,
+        "inverter_fraction": 0.9,
+        "charger_input_w": 250.0,
+        "charger_fraction": 0.86,
+        "pack_wh": 216.0,
+        "maximum_days": 730.0,
+        "step_seconds": 60.0
+      },
+      "completed": true,
+      "elapsed_days": 58.74722222222222,
+      "steps_executed": 84596,
+      "charger_bursts": 67,
+      "power": {
+        "acoustic_w": 10.0,
+        "harvested_w": 0.198
+      },
+      "energy": {
+        "acoustic_wh": 14099.333333333334,
+        "harvested_wh": 279.1668,
+        "pack_wh": 216.0,
+        "accumulator_wh": 0.0001333333260021795,
+        "spill_wh": 0.0,
+        "closure_j": -2.2351741790771484e-08
+      },
+      "trace": [
+        {
+          "minute": 1,
+          "day": 0.0006944444444444445,
+          "accumulator_wh": 0.0033000000000000004,
+          "pack_wh": 0.0,
+          "charger_minutes": 0
+        },
+        {
+          "minute": 10,
+          "day": 0.006944444444444444,
+          "accumulator_wh": 0.032999999999999995,
+          "pack_wh": 0.0,
+          "charger_minutes": 0
+        },
+        {
+          "minute": 1000,
+          "day": 0.6944444444444444,
+          "accumulator_wh": 3.2999999999999488,
+          "pack_wh": 0.0,
+          "charger_minutes": 0
+        },
+        {
+          "minute": 84596,
+          "day": 58.74722222222222,
+          "accumulator_wh": 0.0001333333260021795,
+          "pack_wh": 216.0,
+          "charger_minutes": 67
+        }
+      ]
+    },
+    {
+      "parameters": {
+        "acoustic_w_per_crystal": 10.0,
+        "crystals": 1,
+        "contact_fraction": 0.5,
+        "resonance_capture_gain": 1,
+        "modal_fraction": 0.5,
+        "piezo_fraction": 0.01,
+        "rectifier_fraction": 0.88,
+        "harvester_fraction": 0.9,
+        "accumulator_wh": 300.0,
+        "inverter_fraction": 0.9,
+        "charger_input_w": 250.0,
+        "charger_fraction": 0.86,
+        "pack_wh": 216.0,
+        "maximum_days": 730.0,
+        "step_seconds": 60.0
+      },
+      "completed": true,
+      "elapsed_days": 587.4722222222222,
+      "steps_executed": 845960,
+      "charger_bursts": 67,
+      "power": {
+        "acoustic_w": 10.0,
+        "harvested_w": 0.0198
+      },
+      "energy": {
+        "acoustic_wh": 140993.33333333334,
+        "harvested_wh": 279.1668,
+        "pack_wh": 216.0,
+        "accumulator_wh": 0.00013333335547587114,
+        "spill_wh": 0.0,
+        "closure_j": 5.960464477539063e-08
+      },
+      "trace": [
+        {
+          "minute": 1,
+          "day": 0.0006944444444444445,
+          "accumulator_wh": 0.00033000000000000005,
+          "pack_wh": 0.0,
+          "charger_minutes": 0
+        },
+        {
+          "minute": 10,
+          "day": 0.006944444444444444,
+          "accumulator_wh": 0.0033000000000000013,
+          "pack_wh": 0.0,
+          "charger_minutes": 0
+        },
+        {
+          "minute": 1000,
+          "day": 0.6944444444444444,
+          "accumulator_wh": 0.3300000000000015,
+          "pack_wh": 0.0,
+          "charger_minutes": 0
+        },
+        {
+          "minute": 100000,
+          "day": 69.44444444444444,
+          "accumulator_wh": 3.8333333333359487,
+          "pack_wh": 22.575,
+          "charger_minutes": 7
+        },
+        {
+          "minute": 845960,
+          "day": 587.4722222222222,
+          "accumulator_wh": 0.00013333335547587114,
+          "pack_wh": 216.0,
+          "charger_minutes": 67
+        }
+      ]
+    },
+    {
+      "parameters": {
+        "acoustic_w_per_crystal": 10.0,
+        "crystals": 1,
+        "contact_fraction": 0.5,
+        "resonance_capture_gain": 5,
+        "modal_fraction": 0.5,
+        "piezo_fraction": 0.01,
+        "rectifier_fraction": 0.88,
+        "harvester_fraction": 0.9,
+        "accumulator_wh": 300.0,
+        "inverter_fraction": 0.9,
+        "charger_input_w": 250.0,
+        "charger_fraction": 0.86,
+        "pack_wh": 216.0,
+        "maximum_days": 730.0,
+        "step_seconds": 60.0
+      },
+      "completed": true,
+      "elapsed_days": 293.7361111111111,
+      "steps_executed": 422980,
+      "charger_bursts": 67,
+      "power": {
+        "acoustic_w": 10.0,
+        "harvested_w": 0.0396
+      },
+      "energy": {
+        "acoustic_wh": 70496.66666666667,
+        "harvested_wh": 279.1668,
+        "pack_wh": 216.0,
+        "accumulator_wh": 0.0001333333536816402,
+        "spill_wh": 0.0,
+        "closure_j": 8.940696716308594e-08
+      },
+      "trace": [
+        {
+          "minute": 1,
+          "day": 0.0006944444444444445,
+          "accumulator_wh": 0.0006600000000000001,
+          "pack_wh": 0.0,
+          "charger_minutes": 0
+        },
+        {
+          "minute": 10,
+          "day": 0.006944444444444444,
+          "accumulator_wh": 0.0066000000000000026,
+          "pack_wh": 0.0,
+          "charger_minutes": 0
+        },
+        {
+          "minute": 1000,
+          "day": 0.6944444444444444,
+          "accumulator_wh": 0.660000000000003,
+          "pack_wh": 0.0,
+          "charger_minutes": 0
+        },
+        {
+          "minute": 100000,
+          "day": 69.44444444444444,
+          "accumulator_wh": 3.500000000004802,
+          "pack_wh": 48.375,
+          "charger_minutes": 15
+        },
+        {
+          "minute": 422980,
+          "day": 293.7361111111111,
+          "accumulator_wh": 0.0001333333536816402,
+          "pack_wh": 216.0,
+          "charger_minutes": 67
+        }
+      ]
+    },
+    {
+      "parameters": {
+        "acoustic_w_per_crystal": 10.0,
+        "crystals": 1,
+        "contact_fraction": 0.5,
+        "resonance_capture_gain": 1,
+        "modal_fraction": 0.5,
+        "piezo_fraction": 0.1,
+        "rectifier_fraction": 0.88,
+        "harvester_fraction": 0.9,
+        "accumulator_wh": 300.0,
+        "inverter_fraction": 0.9,
+        "charger_input_w": 250.0,
+        "charger_fraction": 0.86,
+        "pack_wh": 216.0,
+        "maximum_days": 730.0,
+        "step_seconds": 60.0
+      },
+      "completed": true,
+      "elapsed_days": 58.74722222222222,
+      "steps_executed": 84596,
+      "charger_bursts": 67,
+      "power": {
+        "acoustic_w": 10.0,
+        "harvested_w": 0.198
+      },
+      "energy": {
+        "acoustic_wh": 14099.333333333334,
+        "harvested_wh": 279.1668,
+        "pack_wh": 216.0,
+        "accumulator_wh": 0.0001333333260021795,
+        "spill_wh": 0.0,
+        "closure_j": -2.2351741790771484e-08
+      },
+      "trace": [
+        {
+          "minute": 1,
+          "day": 0.0006944444444444445,
+          "accumulator_wh": 0.0033000000000000004,
+          "pack_wh": 0.0,
+          "charger_minutes": 0
+        },
+        {
+          "minute": 10,
+          "day": 0.006944444444444444,
+          "accumulator_wh": 0.032999999999999995,
+          "pack_wh": 0.0,
+          "charger_minutes": 0
+        },
+        {
+          "minute": 1000,
+          "day": 0.6944444444444444,
+          "accumulator_wh": 3.2999999999999488,
+          "pack_wh": 0.0,
+          "charger_minutes": 0
+        },
+        {
+          "minute": 84596,
+          "day": 58.74722222222222,
+          "accumulator_wh": 0.0001333333260021795,
+          "pack_wh": 216.0,
+          "charger_minutes": 67
+        }
+      ]
+    },
+    {
+      "parameters": {
+        "acoustic_w_per_crystal": 10.0,
+        "crystals": 1,
+        "contact_fraction": 0.5,
+        "resonance_capture_gain": 5,
+        "modal_fraction": 0.5,
+        "piezo_fraction": 0.1,
+        "rectifier_fraction": 0.88,
+        "harvester_fraction": 0.9,
+        "accumulator_wh": 300.0,
+        "inverter_fraction": 0.9,
+        "charger_input_w": 250.0,
+        "charger_fraction": 0.86,
+        "pack_wh": 216.0,
+        "maximum_days": 730.0,
+        "step_seconds": 60.0
+      },
+      "completed": true,
+      "elapsed_days": 29.37361111111111,
+      "steps_executed": 42298,
+      "charger_bursts": 67,
+      "power": {
+        "acoustic_w": 10.0,
+        "harvested_w": 0.396
+      },
+      "energy": {
+        "acoustic_wh": 7049.666666666667,
+        "harvested_wh": 279.1668,
+        "pack_wh": 216.0,
+        "accumulator_wh": 0.00013333333552559957,
+        "spill_wh": 0.0,
+        "closure_j": 7.450580596923828e-09
+      },
+      "trace": [
+        {
+          "minute": 1,
+          "day": 0.0006944444444444445,
+          "accumulator_wh": 0.006600000000000001,
+          "pack_wh": 0.0,
+          "charger_minutes": 0
+        },
+        {
+          "minute": 10,
+          "day": 0.006944444444444444,
+          "accumulator_wh": 0.06599999999999999,
+          "pack_wh": 0.0,
+          "charger_minutes": 0
+        },
+        {
+          "minute": 1000,
+          "day": 0.6944444444444444,
+          "accumulator_wh": 2.433333333333383,
+          "pack_wh": 3.225,
+          "charger_minutes": 1
+        },
+        {
+          "minute": 42298,
+          "day": 29.37361111111111,
+          "accumulator_wh": 0.00013333333552559957,
+          "pack_wh": 216.0,
+          "charger_minutes": 67
+        }
+      ]
+    },
+    {
+      "parameters": {
+        "acoustic_w_per_crystal": 10.0,
+        "crystals": 4,
+        "contact_fraction": 0.1,
+        "resonance_capture_gain": 1,
+        "modal_fraction": 0.5,
+        "piezo_fraction": 0.01,
+        "rectifier_fraction": 0.88,
+        "harvester_fraction": 0.9,
+        "accumulator_wh": 300.0,
+        "inverter_fraction": 0.9,
+        "charger_input_w": 250.0,
+        "charger_fraction": 0.86,
+        "pack_wh": 216.0,
+        "maximum_days": 730.0,
+        "step_seconds": 60.0
+      },
+      "completed": false,
+      "elapsed_days": 730.0,
+      "steps_executed": 1051200,
+      "charger_bursts": 66,
+      "power": {
+        "acoustic_w": 40.0,
+        "harvested_w": 0.01584
+      },
+      "energy": {
+        "acoustic_wh": 700800.0,
+        "harvested_wh": 277.5168,
+        "pack_wh": 212.85,
+        "accumulator_wh": 2.5167999999454955,
+        "spill_wh": 0.0,
+        "closure_j": 0.0
+      },
+      "trace": [
+        {
+          "minute": 1,
+          "day": 0.0006944444444444445,
+          "accumulator_wh": 0.000264,
+          "pack_wh": 0.0,
+          "charger_minutes": 0
+        },
+        {
+          "minute": 10,
+          "day": 0.006944444444444444,
+          "accumulator_wh": 0.00264,
+          "pack_wh": 0.0,
+          "charger_minutes": 0
+        },
+        {
+          "minute": 1000,
+          "day": 0.6944444444444444,
+          "accumulator_wh": 0.2639999999999932,
+          "pack_wh": 0.0,
+          "charger_minutes": 0
+        },
+        {
+          "minute": 100000,
+          "day": 69.44444444444444,
+          "accumulator_wh": 1.399999999995076,
+          "pack_wh": 19.35,
+          "charger_minutes": 6
+        },
+        {
+          "minute": 1051200,
+          "day": 730.0,
+          "accumulator_wh": 2.5167999999454955,
+          "pack_wh": 212.85,
+          "charger_minutes": 66
+        }
+      ]
+    },
+    {
+      "parameters": {
+        "acoustic_w_per_crystal": 10.0,
+        "crystals": 4,
+        "contact_fraction": 0.1,
+        "resonance_capture_gain": 5,
+        "modal_fraction": 0.5,
+        "piezo_fraction": 0.01,
+        "rectifier_fraction": 0.88,
+        "harvester_fraction": 0.9,
+        "accumulator_wh": 300.0,
+        "inverter_fraction": 0.9,
+        "charger_input_w": 250.0,
+        "charger_fraction": 0.86,
+        "pack_wh": 216.0,
+        "maximum_days": 730.0,
+        "step_seconds": 60.0
+      },
+      "completed": true,
+      "elapsed_days": 146.86805555555554,
+      "steps_executed": 211490,
+      "charger_bursts": 67,
+      "power": {
+        "acoustic_w": 40.0,
+        "harvested_w": 0.0792
+      },
+      "energy": {
+        "acoustic_wh": 140993.33333333334,
+        "harvested_wh": 279.1668,
+        "pack_wh": 216.0,
+        "accumulator_wh": 0.00013333335009317832,
+        "spill_wh": 0.0,
+        "closure_j": 5.960464477539063e-08
+      },
+      "trace": [
+        {
+          "minute": 1,
+          "day": 0.0006944444444444445,
+          "accumulator_wh": 0.0013200000000000002,
+          "pack_wh": 0.0,
+          "charger_minutes": 0
+        },
+        {
+          "minute": 10,
+          "day": 0.006944444444444444,
+          "accumulator_wh": 0.013200000000000005,
+          "pack_wh": 0.0,
+          "charger_minutes": 0
+        },
+        {
+          "minute": 1000,
+          "day": 0.6944444444444444,
+          "accumulator_wh": 1.320000000000006,
+          "pack_wh": 0.0,
+          "charger_minutes": 0
+        },
+        {
+          "minute": 100000,
+          "day": 69.44444444444444,
+          "accumulator_wh": 2.8333333333412236,
+          "pack_wh": 99.975,
+          "charger_minutes": 31
+        },
+        {
+          "minute": 211490,
+          "day": 146.86805555555554,
+          "accumulator_wh": 0.00013333335009317832,
+          "pack_wh": 216.0,
+          "charger_minutes": 67
+        }
+      ]
+    },
+    {
+      "parameters": {
+        "acoustic_w_per_crystal": 10.0,
+        "crystals": 4,
+        "contact_fraction": 0.1,
+        "resonance_capture_gain": 1,
+        "modal_fraction": 0.5,
+        "piezo_fraction": 0.1,
+        "rectifier_fraction": 0.88,
+        "harvester_fraction": 0.9,
+        "accumulator_wh": 300.0,
+        "inverter_fraction": 0.9,
+        "charger_input_w": 250.0,
+        "charger_fraction": 0.86,
+        "pack_wh": 216.0,
+        "maximum_days": 730.0,
+        "step_seconds": 60.0
+      },
+      "completed": true,
+      "elapsed_days": 73.43402777777777,
+      "steps_executed": 105745,
+      "charger_bursts": 67,
+      "power": {
+        "acoustic_w": 40.0,
+        "harvested_w": 0.1584
+      },
+      "energy": {
+        "acoustic_wh": 70496.66666666667,
+        "harvested_wh": 279.1668,
+        "pack_wh": 216.0,
+        "accumulator_wh": 0.00013333334291625457,
+        "spill_wh": 0.0,
+        "closure_j": 5.960464477539063e-08
+      },
+      "trace": [
+        {
+          "minute": 1,
+          "day": 0.0006944444444444445,
+          "accumulator_wh": 0.0026400000000000004,
+          "pack_wh": 0.0,
+          "charger_minutes": 0
+        },
+        {
+          "minute": 10,
+          "day": 0.006944444444444444,
+          "accumulator_wh": 0.02640000000000001,
+          "pack_wh": 0.0,
+          "charger_minutes": 0
+        },
+        {
+          "minute": 1000,
+          "day": 0.6944444444444444,
+          "accumulator_wh": 2.640000000000012,
+          "pack_wh": 0.0,
+          "charger_minutes": 0
+        },
+        {
+          "minute": 100000,
+          "day": 69.44444444444444,
+          "accumulator_wh": 1.5000000000089992,
+          "pack_wh": 203.175,
+          "charger_minutes": 63
+        },
+        {
+          "minute": 105745,
+          "day": 73.43402777777777,
+          "accumulator_wh": 0.00013333334291625457,
+          "pack_wh": 216.0,
+          "charger_minutes": 67
+        }
+      ]
+    },
+    {
+      "parameters": {
+        "acoustic_w_per_crystal": 10.0,
+        "crystals": 4,
+        "contact_fraction": 0.1,
+        "resonance_capture_gain": 5,
+        "modal_fraction": 0.5,
+        "piezo_fraction": 0.1,
+        "rectifier_fraction": 0.88,
+        "harvester_fraction": 0.9,
+        "accumulator_wh": 300.0,
+        "inverter_fraction": 0.9,
+        "charger_input_w": 250.0,
+        "charger_fraction": 0.86,
+        "pack_wh": 216.0,
+        "maximum_days": 730.0,
+        "step_seconds": 60.0
+      },
+      "completed": true,
+      "elapsed_days": 14.686805555555555,
+      "steps_executed": 21149,
+      "charger_bursts": 67,
+      "power": {
+        "acoustic_w": 40.0,
+        "harvested_w": 0.792
+      },
+      "energy": {
+        "acoustic_wh": 14099.333333333334,
+        "harvested_wh": 279.1668,
+        "pack_wh": 216.0,
+        "accumulator_wh": 0.00013333333518049688,
+        "spill_wh": 0.0,
+        "closure_j": 7.450580596923828e-09
+      },
+      "trace": [
+        {
+          "minute": 1,
+          "day": 0.0006944444444444445,
+          "accumulator_wh": 0.013200000000000002,
+          "pack_wh": 0.0,
+          "charger_minutes": 0
+        },
+        {
+          "minute": 10,
+          "day": 0.006944444444444444,
+          "accumulator_wh": 0.13199999999999998,
+          "pack_wh": 0.0,
+          "charger_minutes": 0
+        },
+        {
+          "minute": 1000,
+          "day": 0.6944444444444444,
+          "accumulator_wh": 0.7000000000000823,
+          "pack_wh": 9.675,
+          "charger_minutes": 3
+        },
+        {
+          "minute": 21149,
+          "day": 14.686805555555555,
+          "accumulator_wh": 0.00013333333518049688,
+          "pack_wh": 216.0,
+          "charger_minutes": 67
+        }
+      ]
+    },
+    {
+      "parameters": {
+        "acoustic_w_per_crystal": 10.0,
+        "crystals": 4,
+        "contact_fraction": 0.5,
+        "resonance_capture_gain": 1,
+        "modal_fraction": 0.5,
+        "piezo_fraction": 0.01,
+        "rectifier_fraction": 0.88,
+        "harvester_fraction": 0.9,
+        "accumulator_wh": 300.0,
+        "inverter_fraction": 0.9,
+        "charger_input_w": 250.0,
+        "charger_fraction": 0.86,
+        "pack_wh": 216.0,
+        "maximum_days": 730.0,
+        "step_seconds": 60.0
+      },
+      "completed": true,
+      "elapsed_days": 146.86805555555554,
+      "steps_executed": 211490,
+      "charger_bursts": 67,
+      "power": {
+        "acoustic_w": 40.0,
+        "harvested_w": 0.0792
+      },
+      "energy": {
+        "acoustic_wh": 140993.33333333334,
+        "harvested_wh": 279.1668,
+        "pack_wh": 216.0,
+        "accumulator_wh": 0.00013333335009317832,
+        "spill_wh": 0.0,
+        "closure_j": 5.960464477539063e-08
+      },
+      "trace": [
+        {
+          "minute": 1,
+          "day": 0.0006944444444444445,
+          "accumulator_wh": 0.0013200000000000002,
+          "pack_wh": 0.0,
+          "charger_minutes": 0
+        },
+        {
+          "minute": 10,
+          "day": 0.006944444444444444,
+          "accumulator_wh": 0.013200000000000005,
+          "pack_wh": 0.0,
+          "charger_minutes": 0
+        },
+        {
+          "minute": 1000,
+          "day": 0.6944444444444444,
+          "accumulator_wh": 1.320000000000006,
+          "pack_wh": 0.0,
+          "charger_minutes": 0
+        },
+        {
+          "minute": 100000,
+          "day": 69.44444444444444,
+          "accumulator_wh": 2.8333333333412236,
+          "pack_wh": 99.975,
+          "charger_minutes": 31
+        },
+        {
+          "minute": 211490,
+          "day": 146.86805555555554,
+          "accumulator_wh": 0.00013333335009317832,
+          "pack_wh": 216.0,
+          "charger_minutes": 67
+        }
+      ]
+    },
+    {
+      "parameters": {
+        "acoustic_w_per_crystal": 10.0,
+        "crystals": 4,
+        "contact_fraction": 0.5,
+        "resonance_capture_gain": 5,
+        "modal_fraction": 0.5,
+        "piezo_fraction": 0.01,
+        "rectifier_fraction": 0.88,
+        "harvester_fraction": 0.9,
+        "accumulator_wh": 300.0,
+        "inverter_fraction": 0.9,
+        "charger_input_w": 250.0,
+        "charger_fraction": 0.86,
+        "pack_wh": 216.0,
+        "maximum_days": 730.0,
+        "step_seconds": 60.0
+      },
+      "completed": true,
+      "elapsed_days": 73.43402777777777,
+      "steps_executed": 105745,
+      "charger_bursts": 67,
+      "power": {
+        "acoustic_w": 40.0,
+        "harvested_w": 0.1584
+      },
+      "energy": {
+        "acoustic_wh": 70496.66666666667,
+        "harvested_wh": 279.1668,
+        "pack_wh": 216.0,
+        "accumulator_wh": 0.00013333334291625457,
+        "spill_wh": 0.0,
+        "closure_j": 5.960464477539063e-08
+      },
+      "trace": [
+        {
+          "minute": 1,
+          "day": 0.0006944444444444445,
+          "accumulator_wh": 0.0026400000000000004,
+          "pack_wh": 0.0,
+          "charger_minutes": 0
+        },
+        {
+          "minute": 10,
+          "day": 0.006944444444444444,
+          "accumulator_wh": 0.02640000000000001,
+          "pack_wh": 0.0,
+          "charger_minutes": 0
+        },
+        {
+          "minute": 1000,
+          "day": 0.6944444444444444,
+          "accumulator_wh": 2.640000000000012,
+          "pack_wh": 0.0,
+          "charger_minutes": 0
+        },
+        {
+          "minute": 100000,
+          "day": 69.44444444444444,
+          "accumulator_wh": 1.5000000000089992,
+          "pack_wh": 203.175,
+          "charger_minutes": 63
+        },
+        {
+          "minute": 105745,
+          "day": 73.43402777777777,
+          "accumulator_wh": 0.00013333334291625457,
+          "pack_wh": 216.0,
+          "charger_minutes": 67
+        }
+      ]
+    },
+    {
+      "parameters": {
+        "acoustic_w_per_crystal": 10.0,
+        "crystals": 4,
+        "contact_fraction": 0.5,
+        "resonance_capture_gain": 1,
+        "modal_fraction": 0.5,
+        "piezo_fraction": 0.1,
+        "rectifier_fraction": 0.88,
+        "harvester_fraction": 0.9,
+        "accumulator_wh": 300.0,
+        "inverter_fraction": 0.9,
+        "charger_input_w": 250.0,
+        "charger_fraction": 0.86,
+        "pack_wh": 216.0,
+        "maximum_days": 730.0,
+        "step_seconds": 60.0
+      },
+      "completed": true,
+      "elapsed_days": 14.686805555555555,
+      "steps_executed": 21149,
+      "charger_bursts": 67,
+      "power": {
+        "acoustic_w": 40.0,
+        "harvested_w": 0.792
+      },
+      "energy": {
+        "acoustic_wh": 14099.333333333334,
+        "harvested_wh": 279.1668,
+        "pack_wh": 216.0,
+        "accumulator_wh": 0.00013333333518049688,
+        "spill_wh": 0.0,
+        "closure_j": 7.450580596923828e-09
+      },
+      "trace": [
+        {
+          "minute": 1,
+          "day": 0.0006944444444444445,
+          "accumulator_wh": 0.013200000000000002,
+          "pack_wh": 0.0,
+          "charger_minutes": 0
+        },
+        {
+          "minute": 10,
+          "day": 0.006944444444444444,
+          "accumulator_wh": 0.13199999999999998,
+          "pack_wh": 0.0,
+          "charger_minutes": 0
+        },
+        {
+          "minute": 1000,
+          "day": 0.6944444444444444,
+          "accumulator_wh": 0.7000000000000823,
+          "pack_wh": 9.675,
+          "charger_minutes": 3
+        },
+        {
+          "minute": 21149,
+          "day": 14.686805555555555,
+          "accumulator_wh": 0.00013333333518049688,
+          "pack_wh": 216.0,
+          "charger_minutes": 67
+        }
+      ]
+    },
+    {
+      "parameters": {
+        "acoustic_w_per_crystal": 10.0,
+        "crystals": 4,
+        "contact_fraction": 0.5,
+        "resonance_capture_gain": 5,
+        "modal_fraction": 0.5,
+        "piezo_fraction": 0.1,
+        "rectifier_fraction": 0.88,
+        "harvester_fraction": 0.9,
+        "accumulator_wh": 300.0,
+        "inverter_fraction": 0.9,
+        "charger_input_w": 250.0,
+        "charger_fraction": 0.86,
+        "pack_wh": 216.0,
+        "maximum_days": 730.0,
+        "step_seconds": 60.0
+      },
+      "completed": true,
+      "elapsed_days": 7.34375,
+      "steps_executed": 10575,
+      "charger_bursts": 67,
+      "power": {
+        "acoustic_w": 40.0,
+        "harvested_w": 1.584
+      },
+      "energy": {
+        "acoustic_wh": 7050.0,
+        "harvested_wh": 279.18,
+        "pack_wh": 216.0,
+        "accumulator_wh": 0.013333333334469191,
+        "spill_wh": 0.0,
+        "closure_j": 3.725290298461914e-09
+      },
+      "trace": [
+        {
+          "minute": 1,
+          "day": 0.0006944444444444445,
+          "accumulator_wh": 0.026400000000000003,
+          "pack_wh": 0.0,
+          "charger_minutes": 0
+        },
+        {
+          "minute": 10,
+          "day": 0.006944444444444444,
+          "accumulator_wh": 0.26399999999999996,
+          "pack_wh": 0.0,
+          "charger_minutes": 0
+        },
+        {
+          "minute": 1000,
+          "day": 0.6944444444444444,
+          "accumulator_wh": 1.4000000000001012,
+          "pack_wh": 19.35,
+          "charger_minutes": 6
+        },
+        {
+          "minute": 10575,
+          "day": 7.34375,
+          "accumulator_wh": 0.013333333334469191,
+          "pack_wh": 216.0,
+          "charger_minutes": 67
+        }
+      ]
+    },
+    {
+      "parameters": {
+        "acoustic_w_per_crystal": 10.0,
+        "crystals": 16,
+        "contact_fraction": 0.1,
+        "resonance_capture_gain": 1,
+        "modal_fraction": 0.5,
+        "piezo_fraction": 0.01,
+        "rectifier_fraction": 0.88,
+        "harvester_fraction": 0.9,
+        "accumulator_wh": 300.0,
+        "inverter_fraction": 0.9,
+        "charger_input_w": 250.0,
+        "charger_fraction": 0.86,
+        "pack_wh": 216.0,
+        "maximum_days": 730.0,
+        "step_seconds": 60.0
+      },
+      "completed": true,
+      "elapsed_days": 183.58541666666667,
+      "steps_executed": 264363,
+      "charger_bursts": 67,
+      "power": {
+        "acoustic_w": 160.0,
+        "harvested_w": 0.06336
+      },
+      "energy": {
+        "acoustic_wh": 704968.0,
+        "harvested_wh": 279.167328,
+        "pack_wh": 216.0,
+        "accumulator_wh": 0.0006613333497933935,
+        "spill_wh": 0.0,
+        "closure_j": 4.76837158203125e-07
+      },
+      "trace": [
+        {
+          "minute": 1,
+          "day": 0.0006944444444444445,
+          "accumulator_wh": 0.001056,
+          "pack_wh": 0.0,
+          "charger_minutes": 0
+        },
+        {
+          "minute": 10,
+          "day": 0.006944444444444444,
+          "accumulator_wh": 0.01056,
+          "pack_wh": 0.0,
+          "charger_minutes": 0
+        },
+        {
+          "minute": 1000,
+          "day": 0.6944444444444444,
+          "accumulator_wh": 1.0559999999999727,
+          "pack_wh": 0.0,
+          "charger_minutes": 0
+        },
+        {
+          "minute": 100000,
+          "day": 69.44444444444444,
+          "accumulator_wh": 1.4333333333394263,
+          "pack_wh": 80.625,
+          "charger_minutes": 25
+        },
+        {
+          "minute": 264363,
+          "day": 183.58541666666667,
+          "accumulator_wh": 0.0006613333497933935,
+          "pack_wh": 216.0,
+          "charger_minutes": 67
+        }
+      ]
+    },
+    {
+      "parameters": {
+        "acoustic_w_per_crystal": 10.0,
+        "crystals": 16,
+        "contact_fraction": 0.1,
+        "resonance_capture_gain": 5,
+        "modal_fraction": 0.5,
+        "piezo_fraction": 0.01,
+        "rectifier_fraction": 0.88,
+        "harvester_fraction": 0.9,
+        "accumulator_wh": 300.0,
+        "inverter_fraction": 0.9,
+        "charger_input_w": 250.0,
+        "charger_fraction": 0.86,
+        "pack_wh": 216.0,
+        "maximum_days": 730.0,
+        "step_seconds": 60.0
+      },
+      "completed": true,
+      "elapsed_days": 36.71736111111111,
+      "steps_executed": 52873,
+      "charger_bursts": 67,
+      "power": {
+        "acoustic_w": 160.0,
+        "harvested_w": 0.3168
+      },
+      "energy": {
+        "acoustic_wh": 140994.66666666666,
+        "harvested_wh": 279.16944000000007,
+        "pack_wh": 216.0,
+        "accumulator_wh": 0.0027733333309950263,
+        "spill_wh": 0.0,
+        "closure_j": -5.960464477539063e-08
+      },
+      "trace": [
+        {
+          "minute": 1,
+          "day": 0.0006944444444444445,
+          "accumulator_wh": 0.005280000000000001,
+          "pack_wh": 0.0,
+          "charger_minutes": 0
+        },
+        {
+          "minute": 10,
+          "day": 0.006944444444444444,
+          "accumulator_wh": 0.05280000000000002,
+          "pack_wh": 0.0,
+          "charger_minutes": 0
+        },
+        {
+          "minute": 1000,
+          "day": 0.6944444444444444,
+          "accumulator_wh": 1.1133333333332938,
+          "pack_wh": 3.225,
+          "charger_minutes": 1
+        },
+        {
+          "minute": 52873,
+          "day": 36.71736111111111,
+          "accumulator_wh": 0.0027733333309950263,
+          "pack_wh": 216.0,
+          "charger_minutes": 67
+        }
+      ]
+    },
+    {
+      "parameters": {
+        "acoustic_w_per_crystal": 10.0,
+        "crystals": 16,
+        "contact_fraction": 0.1,
+        "resonance_capture_gain": 1,
+        "modal_fraction": 0.5,
+        "piezo_fraction": 0.1,
+        "rectifier_fraction": 0.88,
+        "harvester_fraction": 0.9,
+        "accumulator_wh": 300.0,
+        "inverter_fraction": 0.9,
+        "charger_input_w": 250.0,
+        "charger_fraction": 0.86,
+        "pack_wh": 216.0,
+        "maximum_days": 730.0,
+        "step_seconds": 60.0
+      },
+      "completed": true,
+      "elapsed_days": 18.35902777777778,
+      "steps_executed": 26437,
+      "charger_bursts": 67,
+      "power": {
+        "acoustic_w": 160.0,
+        "harvested_w": 0.6336
+      },
+      "energy": {
+        "acoustic_wh": 70498.66666666667,
+        "harvested_wh": 279.17472000000004,
+        "pack_wh": 216.0,
+        "accumulator_wh": 0.008053333331435068,
+        "spill_wh": 0.0,
+        "closure_j": -2.9802322387695312e-08
+      },
+      "trace": [
+        {
+          "minute": 1,
+          "day": 0.0006944444444444445,
+          "accumulator_wh": 0.010560000000000002,
+          "pack_wh": 0.0,
+          "charger_minutes": 0
+        },
+        {
+          "minute": 10,
+          "day": 0.006944444444444444,
+          "accumulator_wh": 0.10560000000000004,
+          "pack_wh": 0.0,
+          "charger_minutes": 0
+        },
+        {
+          "minute": 1000,
+          "day": 0.6944444444444444,
+          "accumulator_wh": 2.226666666666601,
+          "pack_wh": 6.45,
+          "charger_minutes": 2
+        },
+        {
+          "minute": 26437,
+          "day": 18.35902777777778,
+          "accumulator_wh": 0.008053333331435068,
+          "pack_wh": 216.0,
+          "charger_minutes": 67
+        }
+      ]
+    },
+    {
+      "parameters": {
+        "acoustic_w_per_crystal": 10.0,
+        "crystals": 16,
+        "contact_fraction": 0.1,
+        "resonance_capture_gain": 5,
+        "modal_fraction": 0.5,
+        "piezo_fraction": 0.1,
+        "rectifier_fraction": 0.88,
+        "harvester_fraction": 0.9,
+        "accumulator_wh": 300.0,
+        "inverter_fraction": 0.9,
+        "charger_input_w": 250.0,
+        "charger_fraction": 0.86,
+        "pack_wh": 216.0,
+        "maximum_days": 730.0,
+        "step_seconds": 60.0
+      },
+      "completed": true,
+      "elapsed_days": 3.672222222222222,
+      "steps_executed": 5288,
+      "charger_bursts": 67,
+      "power": {
+        "acoustic_w": 160.0,
+        "harvested_w": 3.168
+      },
+      "energy": {
+        "acoustic_wh": 14101.333333333334,
+        "harvested_wh": 279.20640000000003,
+        "pack_wh": 216.0,
+        "accumulator_wh": 0.03973333333326031,
+        "spill_wh": 0.0,
+        "closure_j": 0.0
+      },
+      "trace": [
+        {
+          "minute": 1,
+          "day": 0.0006944444444444445,
+          "accumulator_wh": 0.05280000000000001,
+          "pack_wh": 0.0,
+          "charger_minutes": 0
+        },
+        {
+          "minute": 10,
+          "day": 0.006944444444444444,
+          "accumulator_wh": 0.5279999999999999,
+          "pack_wh": 0.0,
+          "charger_minutes": 0
+        },
+        {
+          "minute": 1000,
+          "day": 0.6944444444444444,
+          "accumulator_wh": 2.7999999999999865,
+          "pack_wh": 38.7,
+          "charger_minutes": 12
+        },
+        {
+          "minute": 5288,
+          "day": 3.672222222222222,
+          "accumulator_wh": 0.03973333333326031,
+          "pack_wh": 216.0,
+          "charger_minutes": 67
+        }
+      ]
+    },
+    {
+      "parameters": {
+        "acoustic_w_per_crystal": 10.0,
+        "crystals": 16,
+        "contact_fraction": 0.5,
+        "resonance_capture_gain": 1,
+        "modal_fraction": 0.5,
+        "piezo_fraction": 0.01,
+        "rectifier_fraction": 0.88,
+        "harvester_fraction": 0.9,
+        "accumulator_wh": 300.0,
+        "inverter_fraction": 0.9,
+        "charger_input_w": 250.0,
+        "charger_fraction": 0.86,
+        "pack_wh": 216.0,
+        "maximum_days": 730.0,
+        "step_seconds": 60.0
+      },
+      "completed": true,
+      "elapsed_days": 36.71736111111111,
+      "steps_executed": 52873,
+      "charger_bursts": 67,
+      "power": {
+        "acoustic_w": 160.0,
+        "harvested_w": 0.3168
+      },
+      "energy": {
+        "acoustic_wh": 140994.66666666666,
+        "harvested_wh": 279.16944000000007,
+        "pack_wh": 216.0,
+        "accumulator_wh": 0.0027733333309950263,
+        "spill_wh": 0.0,
+        "closure_j": -5.960464477539063e-08
+      },
+      "trace": [
+        {
+          "minute": 1,
+          "day": 0.0006944444444444445,
+          "accumulator_wh": 0.005280000000000001,
+          "pack_wh": 0.0,
+          "charger_minutes": 0
+        },
+        {
+          "minute": 10,
+          "day": 0.006944444444444444,
+          "accumulator_wh": 0.05280000000000002,
+          "pack_wh": 0.0,
+          "charger_minutes": 0
+        },
+        {
+          "minute": 1000,
+          "day": 0.6944444444444444,
+          "accumulator_wh": 1.1133333333332938,
+          "pack_wh": 3.225,
+          "charger_minutes": 1
+        },
+        {
+          "minute": 52873,
+          "day": 36.71736111111111,
+          "accumulator_wh": 0.0027733333309950263,
+          "pack_wh": 216.0,
+          "charger_minutes": 67
+        }
+      ]
+    },
+    {
+      "parameters": {
+        "acoustic_w_per_crystal": 10.0,
+        "crystals": 16,
+        "contact_fraction": 0.5,
+        "resonance_capture_gain": 5,
+        "modal_fraction": 0.5,
+        "piezo_fraction": 0.01,
+        "rectifier_fraction": 0.88,
+        "harvester_fraction": 0.9,
+        "accumulator_wh": 300.0,
+        "inverter_fraction": 0.9,
+        "charger_input_w": 250.0,
+        "charger_fraction": 0.86,
+        "pack_wh": 216.0,
+        "maximum_days": 730.0,
+        "step_seconds": 60.0
+      },
+      "completed": true,
+      "elapsed_days": 18.35902777777778,
+      "steps_executed": 26437,
+      "charger_bursts": 67,
+      "power": {
+        "acoustic_w": 160.0,
+        "harvested_w": 0.6336
+      },
+      "energy": {
+        "acoustic_wh": 70498.66666666667,
+        "harvested_wh": 279.17472000000004,
+        "pack_wh": 216.0,
+        "accumulator_wh": 0.008053333331435068,
+        "spill_wh": 0.0,
+        "closure_j": -2.9802322387695312e-08
+      },
+      "trace": [
+        {
+          "minute": 1,
+          "day": 0.0006944444444444445,
+          "accumulator_wh": 0.010560000000000002,
+          "pack_wh": 0.0,
+          "charger_minutes": 0
+        },
+        {
+          "minute": 10,
+          "day": 0.006944444444444444,
+          "accumulator_wh": 0.10560000000000004,
+          "pack_wh": 0.0,
+          "charger_minutes": 0
+        },
+        {
+          "minute": 1000,
+          "day": 0.6944444444444444,
+          "accumulator_wh": 2.226666666666601,
+          "pack_wh": 6.45,
+          "charger_minutes": 2
+        },
+        {
+          "minute": 26437,
+          "day": 18.35902777777778,
+          "accumulator_wh": 0.008053333331435068,
+          "pack_wh": 216.0,
+          "charger_minutes": 67
+        }
+      ]
+    },
+    {
+      "parameters": {
+        "acoustic_w_per_crystal": 10.0,
+        "crystals": 16,
+        "contact_fraction": 0.5,
+        "resonance_capture_gain": 1,
+        "modal_fraction": 0.5,
+        "piezo_fraction": 0.1,
+        "rectifier_fraction": 0.88,
+        "harvester_fraction": 0.9,
+        "accumulator_wh": 300.0,
+        "inverter_fraction": 0.9,
+        "charger_input_w": 250.0,
+        "charger_fraction": 0.86,
+        "pack_wh": 216.0,
+        "maximum_days": 730.0,
+        "step_seconds": 60.0
+      },
+      "completed": true,
+      "elapsed_days": 3.672222222222222,
+      "steps_executed": 5288,
+      "charger_bursts": 67,
+      "power": {
+        "acoustic_w": 160.0,
+        "harvested_w": 3.168
+      },
+      "energy": {
+        "acoustic_wh": 14101.333333333334,
+        "harvested_wh": 279.20640000000003,
+        "pack_wh": 216.0,
+        "accumulator_wh": 0.03973333333326031,
+        "spill_wh": 0.0,
+        "closure_j": 0.0
+      },
+      "trace": [
+        {
+          "minute": 1,
+          "day": 0.0006944444444444445,
+          "accumulator_wh": 0.05280000000000001,
+          "pack_wh": 0.0,
+          "charger_minutes": 0
+        },
+        {
+          "minute": 10,
+          "day": 0.006944444444444444,
+          "accumulator_wh": 0.5279999999999999,
+          "pack_wh": 0.0,
+          "charger_minutes": 0
+        },
+        {
+          "minute": 1000,
+          "day": 0.6944444444444444,
+          "accumulator_wh": 2.7999999999999865,
+          "pack_wh": 38.7,
+          "charger_minutes": 12
+        },
+        {
+          "minute": 5288,
+          "day": 3.672222222222222,
+          "accumulator_wh": 0.03973333333326031,
+          "pack_wh": 216.0,
+          "charger_minutes": 67
+        }
+      ]
+    },
+    {
+      "parameters": {
+        "acoustic_w_per_crystal": 10.0,
+        "crystals": 16,
+        "contact_fraction": 0.5,
+        "resonance_capture_gain": 5,
+        "modal_fraction": 0.5,
+        "piezo_fraction": 0.1,
+        "rectifier_fraction": 0.88,
+        "harvester_fraction": 0.9,
+        "accumulator_wh": 300.0,
+        "inverter_fraction": 0.9,
+        "charger_input_w": 250.0,
+        "charger_fraction": 0.86,
+        "pack_wh": 216.0,
+        "maximum_days": 730.0,
+        "step_seconds": 60.0
+      },
+      "completed": true,
+      "elapsed_days": 1.836111111111111,
+      "steps_executed": 2644,
+      "charger_bursts": 67,
+      "power": {
+        "acoustic_w": 160.0,
+        "harvested_w": 6.336
+      },
+      "energy": {
+        "acoustic_wh": 7050.666666666667,
+        "harvested_wh": 279.20640000000003,
+        "pack_wh": 216.0,
+        "accumulator_wh": 0.03973333333326031,
+        "spill_wh": 0.0,
+        "closure_j": 0.0
+      },
+      "trace": [
+        {
+          "minute": 1,
+          "day": 0.0006944444444444445,
+          "accumulator_wh": 0.10560000000000001,
+          "pack_wh": 0.0,
+          "charger_minutes": 0
+        },
+        {
+          "minute": 10,
+          "day": 0.006944444444444444,
+          "accumulator_wh": 1.0559999999999998,
+          "pack_wh": 0.0,
+          "charger_minutes": 0
+        },
+        {
+          "minute": 1000,
+          "day": 0.6944444444444444,
+          "accumulator_wh": 1.4333333333333058,
+          "pack_wh": 80.625,
+          "charger_minutes": 25
+        },
+        {
+          "minute": 2644,
+          "day": 1.836111111111111,
+          "accumulator_wh": 0.03973333333326031,
+          "pack_wh": 216.0,
+          "charger_minutes": 67
+        }
+      ]
+    },
+    {
+      "parameters": {
+        "acoustic_w_per_crystal": 10.0,
+        "crystals": 64,
+        "contact_fraction": 0.1,
+        "resonance_capture_gain": 1,
+        "modal_fraction": 0.5,
+        "piezo_fraction": 0.01,
+        "rectifier_fraction": 0.88,
+        "harvester_fraction": 0.9,
+        "accumulator_wh": 300.0,
+        "inverter_fraction": 0.9,
+        "charger_input_w": 250.0,
+        "charger_fraction": 0.86,
+        "pack_wh": 216.0,
+        "maximum_days": 730.0,
+        "step_seconds": 60.0
+      },
+      "completed": true,
+      "elapsed_days": 45.89652777777778,
+      "steps_executed": 66091,
+      "charger_bursts": 67,
+      "power": {
+        "acoustic_w": 640.0,
+        "harvested_w": 0.25344
+      },
+      "energy": {
+        "acoustic_wh": 704970.6666666666,
+        "harvested_wh": 279.168384,
+        "pack_wh": 216.0,
+        "accumulator_wh": 0.0017173333262700098,
+        "spill_wh": 0.0,
+        "closure_j": -4.76837158203125e-07
+      },
+      "trace": [
+        {
+          "minute": 1,
+          "day": 0.0006944444444444445,
+          "accumulator_wh": 0.004224,
+          "pack_wh": 0.0,
+          "charger_minutes": 0
+        },
+        {
+          "minute": 10,
+          "day": 0.006944444444444444,
+          "accumulator_wh": 0.04224,
+          "pack_wh": 0.0,
+          "charger_minutes": 0
+        },
+        {
+          "minute": 1000,
+          "day": 0.6944444444444444,
+          "accumulator_wh": 0.05733333333322778,
+          "pack_wh": 3.225,
+          "charger_minutes": 1
+        },
+        {
+          "minute": 66091,
+          "day": 45.89652777777778,
+          "accumulator_wh": 0.0017173333262700098,
+          "pack_wh": 216.0,
+          "charger_minutes": 67
+        }
+      ]
+    },
+    {
+      "parameters": {
+        "acoustic_w_per_crystal": 10.0,
+        "crystals": 64,
+        "contact_fraction": 0.1,
+        "resonance_capture_gain": 5,
+        "modal_fraction": 0.5,
+        "piezo_fraction": 0.01,
+        "rectifier_fraction": 0.88,
+        "harvester_fraction": 0.9,
+        "accumulator_wh": 300.0,
+        "inverter_fraction": 0.9,
+        "charger_input_w": 250.0,
+        "charger_fraction": 0.86,
+        "pack_wh": 216.0,
+        "maximum_days": 730.0,
+        "step_seconds": 60.0
+      },
+      "completed": true,
+      "elapsed_days": 9.17986111111111,
+      "steps_executed": 13219,
+      "charger_bursts": 67,
+      "power": {
+        "acoustic_w": 640.0,
+        "harvested_w": 1.2672
+      },
+      "energy": {
+        "acoustic_wh": 141002.66666666666,
+        "harvested_wh": 279.18528000000003,
+        "pack_wh": 216.0,
+        "accumulator_wh": 0.0186133333322813,
+        "spill_wh": 0.0,
+        "closure_j": 0.0
+      },
+      "trace": [
+        {
+          "minute": 1,
+          "day": 0.0006944444444444445,
+          "accumulator_wh": 0.021120000000000003,
+          "pack_wh": 0.0,
+          "charger_minutes": 0
+        },
+        {
+          "minute": 10,
+          "day": 0.006944444444444444,
+          "accumulator_wh": 0.21120000000000008,
+          "pack_wh": 0.0,
+          "charger_minutes": 0
+        },
+        {
+          "minute": 1000,
+          "day": 0.6944444444444444,
+          "accumulator_wh": 0.28666666666658813,
+          "pack_wh": 16.125,
+          "charger_minutes": 5
+        },
+        {
+          "minute": 13219,
+          "day": 9.17986111111111,
+          "accumulator_wh": 0.0186133333322813,
+          "pack_wh": 216.0,
+          "charger_minutes": 67
+        }
+      ]
+    },
+    {
+      "parameters": {
+        "acoustic_w_per_crystal": 10.0,
+        "crystals": 64,
+        "contact_fraction": 0.1,
+        "resonance_capture_gain": 1,
+        "modal_fraction": 0.5,
+        "piezo_fraction": 0.1,
+        "rectifier_fraction": 0.88,
+        "harvester_fraction": 0.9,
+        "accumulator_wh": 300.0,
+        "inverter_fraction": 0.9,
+        "charger_input_w": 250.0,
+        "charger_fraction": 0.86,
+        "pack_wh": 216.0,
+        "maximum_days": 730.0,
+        "step_seconds": 60.0
+      },
+      "completed": true,
+      "elapsed_days": 4.590277777777778,
+      "steps_executed": 6610,
+      "charger_bursts": 67,
+      "power": {
+        "acoustic_w": 640.0,
+        "harvested_w": 2.5344
+      },
+      "energy": {
+        "acoustic_wh": 70506.66666666667,
+        "harvested_wh": 279.20640000000003,
+        "pack_wh": 216.0,
+        "accumulator_wh": 0.03973333333372516,
+        "spill_wh": 0.0,
+        "closure_j": 0.0
+      },
+      "trace": [
+        {
+          "minute": 1,
+          "day": 0.0006944444444444445,
+          "accumulator_wh": 0.04224000000000001,
+          "pack_wh": 0.0,
+          "charger_minutes": 0
+        },
+        {
+          "minute": 10,
+          "day": 0.006944444444444444,
+          "accumulator_wh": 0.42240000000000016,
+          "pack_wh": 0.0,
+          "charger_minutes": 0
+        },
+        {
+          "minute": 1000,
+          "day": 0.6944444444444444,
+          "accumulator_wh": 0.5733333333333921,
+          "pack_wh": 32.25,
+          "charger_minutes": 10
+        },
+        {
+          "minute": 6610,
+          "day": 4.590277777777778,
+          "accumulator_wh": 0.03973333333372516,
+          "pack_wh": 216.0,
+          "charger_minutes": 67
+        }
+      ]
+    },
+    {
+      "parameters": {
+        "acoustic_w_per_crystal": 10.0,
+        "crystals": 64,
+        "contact_fraction": 0.1,
+        "resonance_capture_gain": 5,
+        "modal_fraction": 0.5,
+        "piezo_fraction": 0.1,
+        "rectifier_fraction": 0.88,
+        "harvester_fraction": 0.9,
+        "accumulator_wh": 300.0,
+        "inverter_fraction": 0.9,
+        "charger_input_w": 250.0,
+        "charger_fraction": 0.86,
+        "pack_wh": 216.0,
+        "maximum_days": 730.0,
+        "step_seconds": 60.0
+      },
+      "completed": true,
+      "elapsed_days": 0.9180555555555555,
+      "steps_executed": 1322,
+      "charger_bursts": 67,
+      "power": {
+        "acoustic_w": 640.0,
+        "harvested_w": 12.672
+      },
+      "energy": {
+        "acoustic_wh": 14101.333333333334,
+        "harvested_wh": 279.20640000000003,
+        "pack_wh": 216.0,
+        "accumulator_wh": 0.039733333333261324,
+        "spill_wh": 0.0,
+        "closure_j": 0.0
+      },
+      "trace": [
+        {
+          "minute": 1,
+          "day": 0.0006944444444444445,
+          "accumulator_wh": 0.21120000000000003,
+          "pack_wh": 0.0,
+          "charger_minutes": 0
+        },
+        {
+          "minute": 10,
+          "day": 0.006944444444444444,
+          "accumulator_wh": 2.1119999999999997,
+          "pack_wh": 0.0,
+          "charger_minutes": 0
+        },
+        {
+          "minute": 1000,
+          "day": 0.6944444444444444,
+          "accumulator_wh": 2.866666666666612,
+          "pack_wh": 161.25,
+          "charger_minutes": 50
+        },
+        {
+          "minute": 1322,
+          "day": 0.9180555555555555,
+          "accumulator_wh": 0.039733333333261324,
+          "pack_wh": 216.0,
+          "charger_minutes": 67
+        }
+      ]
+    },
+    {
+      "parameters": {
+        "acoustic_w_per_crystal": 10.0,
+        "crystals": 64,
+        "contact_fraction": 0.5,
+        "resonance_capture_gain": 1,
+        "modal_fraction": 0.5,
+        "piezo_fraction": 0.01,
+        "rectifier_fraction": 0.88,
+        "harvester_fraction": 0.9,
+        "accumulator_wh": 300.0,
+        "inverter_fraction": 0.9,
+        "charger_input_w": 250.0,
+        "charger_fraction": 0.86,
+        "pack_wh": 216.0,
+        "maximum_days": 730.0,
+        "step_seconds": 60.0
+      },
+      "completed": true,
+      "elapsed_days": 9.17986111111111,
+      "steps_executed": 13219,
+      "charger_bursts": 67,
+      "power": {
+        "acoustic_w": 640.0,
+        "harvested_w": 1.2672
+      },
+      "energy": {
+        "acoustic_wh": 141002.66666666666,
+        "harvested_wh": 279.18528000000003,
+        "pack_wh": 216.0,
+        "accumulator_wh": 0.0186133333322813,
+        "spill_wh": 0.0,
+        "closure_j": 0.0
+      },
+      "trace": [
+        {
+          "minute": 1,
+          "day": 0.0006944444444444445,
+          "accumulator_wh": 0.021120000000000003,
+          "pack_wh": 0.0,
+          "charger_minutes": 0
+        },
+        {
+          "minute": 10,
+          "day": 0.006944444444444444,
+          "accumulator_wh": 0.21120000000000008,
+          "pack_wh": 0.0,
+          "charger_minutes": 0
+        },
+        {
+          "minute": 1000,
+          "day": 0.6944444444444444,
+          "accumulator_wh": 0.28666666666658813,
+          "pack_wh": 16.125,
+          "charger_minutes": 5
+        },
+        {
+          "minute": 13219,
+          "day": 9.17986111111111,
+          "accumulator_wh": 0.0186133333322813,
+          "pack_wh": 216.0,
+          "charger_minutes": 67
+        }
+      ]
+    },
+    {
+      "parameters": {
+        "acoustic_w_per_crystal": 10.0,
+        "crystals": 64,
+        "contact_fraction": 0.5,
+        "resonance_capture_gain": 5,
+        "modal_fraction": 0.5,
+        "piezo_fraction": 0.01,
+        "rectifier_fraction": 0.88,
+        "harvester_fraction": 0.9,
+        "accumulator_wh": 300.0,
+        "inverter_fraction": 0.9,
+        "charger_input_w": 250.0,
+        "charger_fraction": 0.86,
+        "pack_wh": 216.0,
+        "maximum_days": 730.0,
+        "step_seconds": 60.0
+      },
+      "completed": true,
+      "elapsed_days": 4.590277777777778,
+      "steps_executed": 6610,
+      "charger_bursts": 67,
+      "power": {
+        "acoustic_w": 640.0,
+        "harvested_w": 2.5344
+      },
+      "energy": {
+        "acoustic_wh": 70506.66666666667,
+        "harvested_wh": 279.20640000000003,
+        "pack_wh": 216.0,
+        "accumulator_wh": 0.03973333333372516,
+        "spill_wh": 0.0,
+        "closure_j": 0.0
+      },
+      "trace": [
+        {
+          "minute": 1,
+          "day": 0.0006944444444444445,
+          "accumulator_wh": 0.04224000000000001,
+          "pack_wh": 0.0,
+          "charger_minutes": 0
+        },
+        {
+          "minute": 10,
+          "day": 0.006944444444444444,
+          "accumulator_wh": 0.42240000000000016,
+          "pack_wh": 0.0,
+          "charger_minutes": 0
+        },
+        {
+          "minute": 1000,
+          "day": 0.6944444444444444,
+          "accumulator_wh": 0.5733333333333921,
+          "pack_wh": 32.25,
+          "charger_minutes": 10
+        },
+        {
+          "minute": 6610,
+          "day": 4.590277777777778,
+          "accumulator_wh": 0.03973333333372516,
+          "pack_wh": 216.0,
+          "charger_minutes": 67
+        }
+      ]
+    },
+    {
+      "parameters": {
+        "acoustic_w_per_crystal": 10.0,
+        "crystals": 64,
+        "contact_fraction": 0.5,
+        "resonance_capture_gain": 1,
+        "modal_fraction": 0.5,
+        "piezo_fraction": 0.1,
+        "rectifier_fraction": 0.88,
+        "harvester_fraction": 0.9,
+        "accumulator_wh": 300.0,
+        "inverter_fraction": 0.9,
+        "charger_input_w": 250.0,
+        "charger_fraction": 0.86,
+        "pack_wh": 216.0,
+        "maximum_days": 730.0,
+        "step_seconds": 60.0
+      },
+      "completed": true,
+      "elapsed_days": 0.9180555555555555,
+      "steps_executed": 1322,
+      "charger_bursts": 67,
+      "power": {
+        "acoustic_w": 640.0,
+        "harvested_w": 12.672
+      },
+      "energy": {
+        "acoustic_wh": 14101.333333333334,
+        "harvested_wh": 279.20640000000003,
+        "pack_wh": 216.0,
+        "accumulator_wh": 0.039733333333261324,
+        "spill_wh": 0.0,
+        "closure_j": 0.0
+      },
+      "trace": [
+        {
+          "minute": 1,
+          "day": 0.0006944444444444445,
+          "accumulator_wh": 0.21120000000000003,
+          "pack_wh": 0.0,
+          "charger_minutes": 0
+        },
+        {
+          "minute": 10,
+          "day": 0.006944444444444444,
+          "accumulator_wh": 2.1119999999999997,
+          "pack_wh": 0.0,
+          "charger_minutes": 0
+        },
+        {
+          "minute": 1000,
+          "day": 0.6944444444444444,
+          "accumulator_wh": 2.866666666666612,
+          "pack_wh": 161.25,
+          "charger_minutes": 50
+        },
+        {
+          "minute": 1322,
+          "day": 0.9180555555555555,
+          "accumulator_wh": 0.039733333333261324,
+          "pack_wh": 216.0,
+          "charger_minutes": 67
+        }
+      ]
+    },
+    {
+      "parameters": {
+        "acoustic_w_per_crystal": 10.0,
+        "crystals": 64,
+        "contact_fraction": 0.5,
+        "resonance_capture_gain": 5,
+        "modal_fraction": 0.5,
+        "piezo_fraction": 0.1,
+        "rectifier_fraction": 0.88,
+        "harvester_fraction": 0.9,
+        "accumulator_wh": 300.0,
+        "inverter_fraction": 0.9,
+        "charger_input_w": 250.0,
+        "charger_fraction": 0.86,
+        "pack_wh": 216.0,
+        "maximum_days": 730.0,
+        "step_seconds": 60.0
+      },
+      "completed": true,
+      "elapsed_days": 0.45902777777777776,
+      "steps_executed": 661,
+      "charger_bursts": 67,
+      "power": {
+        "acoustic_w": 640.0,
+        "harvested_w": 25.344
+      },
+      "energy": {
+        "acoustic_wh": 7050.666666666667,
+        "harvested_wh": 279.20640000000003,
+        "pack_wh": 216.0,
+        "accumulator_wh": 0.039733333333296185,
+        "spill_wh": 0.0,
+        "closure_j": 0.0
+      },
+      "trace": [
+        {
+          "minute": 1,
+          "day": 0.0006944444444444445,
+          "accumulator_wh": 0.42240000000000005,
+          "pack_wh": 0.0,
+          "charger_minutes": 0
+        },
+        {
+          "minute": 10,
+          "day": 0.006944444444444444,
+          "accumulator_wh": 0.05733333333333273,
+          "pack_wh": 3.225,
+          "charger_minutes": 1
+        },
+        {
+          "minute": 661,
+          "day": 0.45902777777777776,
+          "accumulator_wh": 0.039733333333296185,
+          "pack_wh": 216.0,
+          "charger_minutes": 67
+        }
+      ]
+    }
+  ],
+  "triple": {
+    "P": "full-size configurations that actually reach 216 Wh",
+    "q_minus_sigma": "brand-specific charger startup, measured stone coupling and resonance",
+    "Lambda_plus": "every accumulator and charger minute executed with a closed ledger"
+  }
+}

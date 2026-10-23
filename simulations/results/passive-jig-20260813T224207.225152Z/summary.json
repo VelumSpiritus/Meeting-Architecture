@@ -1,0 +1,455 @@
+{
+  "ideal_bridge": {
+    "parameters": {
+      "piezo_capacitance": 1.0,
+      "reservoir_capacitance": 20.0,
+      "diode_drop": 0.0,
+      "leakage_conductance": 0.0,
+      "interval": 1.0
+    },
+    "events": 1000,
+    "seed_order": [
+      "center",
+      "dipole",
+      "curvature",
+      "uniform"
+    ],
+    "conduction_events": 308,
+    "trace": [
+      {
+        "event": 1,
+        "seed": "center",
+        "polarity": 1.0,
+        "source_voltages": [
+          0.5773502691896258,
+          -0.7071067811865475,
+          0.4082482904638631
+        ],
+        "charge_carried": 1.5233070329960596,
+        "reservoir_voltage": 0.07616535164980298,
+        "reservoir_energy": 0.05801160791938146
+      },
+      {
+        "event": 2,
+        "seed": "dipole",
+        "polarity": -1.0,
+        "source_voltages": [
+          -0.0,
+          -0.4999999999999999,
+          -0.8660254037844388
+        ],
+        "charge_carried": 1.1200783971903334,
+        "reservoir_voltage": 0.13216927150931965,
+        "reservoir_energy": 0.17468716331304254
+      },
+      {
+        "event": 3,
+        "seed": "curvature",
+        "polarity": 1.0,
+        "source_voltages": [
+          0.0,
+          0.8660254037844388,
+          -0.5000000000000001
+        ],
+        "charge_carried": 1.0159441244356766,
+        "reservoir_voltage": 0.18296647773110347,
+        "reservoir_energy": 0.33476731973326385
+      },
+      {
+        "event": 4,
+        "seed": "uniform",
+        "polarity": -1.0,
+        "source_voltages": [
+          -1.0000000000000002,
+          -0.0,
+          -0.0
+        ],
+        "charge_carried": 0.7781271640656159,
+        "reservoir_voltage": 0.22187283593438428,
+        "reservoir_energy": 0.492275553255662
+      },
+      {
+        "event": 5,
+        "seed": "center",
+        "polarity": 1.0,
+        "source_voltages": [
+          0.5773502691896258,
+          -0.7071067811865475,
+          0.4082482904638631
+        ],
+        "charge_carried": 0.9190922697669083,
+        "reservoir_voltage": 0.2678274494227297,
+        "reservoir_energy": 0.7173154266428483
+      },
+      {
+        "event": 6,
+        "seed": "dipole",
+        "polarity": -1.0,
+        "source_voltages": [
+          -0.0,
+          -0.4999999999999999,
+          -0.8660254037844388
+        ],
+        "charge_carried": 0.7636998933948688,
+        "reservoir_voltage": 0.3060124440924731,
+        "reservoir_energy": 0.9364361593944895
+      },
+      {
+        "event": 7,
+        "seed": "curvature",
+        "polarity": 1.0,
+        "source_voltages": [
+          0.0,
+          0.8660254037844388,
+          -0.5000000000000001
+        ],
+        "charge_carried": 0.6926983160044164,
+        "reservoir_voltage": 0.3406473598926939,
+        "reservoir_energy": 1.1604062380186253
+      },
+      {
+        "event": 8,
+        "seed": "uniform",
+        "polarity": -1.0,
+        "source_voltages": [
+          -1.0000000000000002,
+          -0.0,
+          -0.0
+        ],
+        "charge_carried": 0.6279548953402917,
+        "reservoir_voltage": 0.37204510465970847,
+        "reservoir_energy": 1.3841755990125342
+      },
+      {
+        "event": 1000,
+        "seed": "uniform",
+        "polarity": -1.0,
+        "source_voltages": [
+          -1.0000000000000002,
+          -0.0,
+          -0.0
+        ],
+        "charge_carried": 1.5992890557901618e-06,
+        "reservoir_voltage": 0.9999984007109445,
+        "reservoir_energy": 9.999968014244468
+      }
+    ],
+    "reservoir": {
+      "voltage": 0.9999984007109445,
+      "energy": 9.999968014244468,
+      "capacity": 20.0
+    },
+    "energy": {
+      "mechanical_input": 500.00000000000006,
+      "held": 9.999968014244468,
+      "diode_loss": 0.0,
+      "charge_sharing_and_return_loss": 490.0000319857563,
+      "leakage_loss": 0.0,
+      "closure_residual": 7.389644451905042e-13
+    },
+    "charge_carried": 19.999968014218876,
+    "q_minus_sigma": "The reservoir voltage eventually blocks weaker modal ports; leakage, path loss, and uncarried source energy remain physical residual rather than recurring charge."
+  },
+  "low_drop_bridge": {
+    "parameters": {
+      "piezo_capacitance": 1.0,
+      "reservoir_capacitance": 20.0,
+      "diode_drop": 0.02,
+      "leakage_conductance": 1e-05,
+      "interval": 1.0
+    },
+    "events": 1000,
+    "seed_order": [
+      "center",
+      "dipole",
+      "curvature",
+      "uniform"
+    ],
+    "conduction_events": 308,
+    "trace": [
+      {
+        "event": 1,
+        "seed": "center",
+        "polarity": 1.0,
+        "source_voltages": [
+          0.5773502691896258,
+          -0.7071067811865475,
+          0.4082482904638631
+        ],
+        "charge_carried": 1.4688420724086502,
+        "reservoir_voltage": 0.0734421036204325,
+        "reservoir_energy": 0.05393742584194346
+      },
+      {
+        "event": 2,
+        "seed": "dipole",
+        "polarity": -1.0,
+        "source_voltages": [
+          -0.0,
+          -0.4999999999999999,
+          -0.8660254037844388
+        ],
+        "charge_carried": 1.0879538926446162,
+        "reservoir_voltage": 0.1278397615316207,
+        "reservoir_energy": 0.16343004628461644
+      },
+      {
+        "event": 3,
+        "seed": "curvature",
+        "polarity": 1.0,
+        "source_voltages": [
+          0.0,
+          0.8660254037844388,
+          -0.5000000000000001
+        ],
+        "charge_carried": 0.9868063706851149,
+        "reservoir_voltage": 0.17718001614601164,
+        "reservoir_energy": 0.31392758121500947
+      },
+      {
+        "event": 4,
+        "seed": "uniform",
+        "polarity": -1.0,
+        "source_voltages": [
+          -1.0000000000000002,
+          -0.0,
+          -0.0
+        ],
+        "charge_carried": 0.7645905451847376,
+        "reservoir_voltage": 0.21540945481526264,
+        "reservoir_energy": 0.4640123322380867
+      },
+      {
+        "event": 5,
+        "seed": "center",
+        "polarity": 1.0,
+        "source_voltages": [
+          0.5773502691896258,
+          -0.7071067811865475,
+          0.4082482904638631
+        ],
+        "charge_carried": 0.8822289923818303,
+        "reservoir_voltage": 0.2595207967296537,
+        "reservoir_energy": 0.6735104393519425
+      },
+      {
+        "event": 6,
+        "seed": "dipole",
+        "polarity": -1.0,
+        "source_voltages": [
+          -0.0,
+          -0.4999999999999999,
+          -0.8660254037844388
+        ],
+        "charge_carried": 0.741957402718729,
+        "reservoir_voltage": 0.2966185371052243,
+        "reservoir_energy": 0.8798255655444333
+      },
+      {
+        "event": 7,
+        "seed": "curvature",
+        "polarity": 1.0,
+        "source_voltages": [
+          0.0,
+          0.8660254037844388,
+          -0.5000000000000001
+        ],
+        "charge_carried": 0.6729775117937902,
+        "reservoir_voltage": 0.3302672643856823,
+        "reservoir_energy": 1.0907646592480218
+      },
+      {
+        "event": 8,
+        "seed": "uniform",
+        "polarity": -1.0,
+        "source_voltages": [
+          -1.0000000000000002,
+          -0.0,
+          -0.0
+        ],
+        "charge_carried": 0.6187932388075321,
+        "reservoir_voltage": 0.36120676119246803,
+        "reservoir_energy": 1.3047032433115262
+      },
+      {
+        "event": 1000,
+        "seed": "uniform",
+        "polarity": -1.0,
+        "source_voltages": [
+          -1.0000000000000002,
+          -0.0,
+          -0.0
+        ],
+        "charge_carried": 4.079062473541968e-05,
+        "reservoir_voltage": 0.9799592093752648,
+        "reservoir_energy": 9.603200520393942
+      }
+    ],
+    "reservoir": {
+      "voltage": 0.9799592093752648,
+      "energy": 9.603200520393942,
+      "capacity": 20.0
+    },
+    "energy": {
+      "mechanical_input": 500.00000000000006,
+      "held": 9.603200520393942,
+      "diode_loss": 0.392172634966764,
+      "charge_sharing_and_return_loss": 489.9955942963396,
+      "leakage_loss": 0.009032548300264162,
+      "closure_residual": 5.115907697472721e-13
+    },
+    "charge_carried": 19.60863174833819,
+    "q_minus_sigma": "The reservoir voltage eventually blocks weaker modal ports; leakage, path loss, and uncarried source energy remain physical residual rather than recurring charge."
+  },
+  "schottky_like_drop": {
+    "parameters": {
+      "piezo_capacitance": 1.0,
+      "reservoir_capacitance": 20.0,
+      "diode_drop": 0.2,
+      "leakage_conductance": 1e-05,
+      "interval": 1.0
+    },
+    "events": 1000,
+    "seed_order": [
+      "center",
+      "dipole",
+      "curvature",
+      "uniform"
+    ],
+    "conduction_events": 302,
+    "trace": [
+      {
+        "event": 1,
+        "seed": "center",
+        "polarity": 1.0,
+        "source_voltages": [
+          0.5773502691896258,
+          -0.7071067811865475,
+          0.4082482904638631
+        ],
+        "charge_carried": 0.9786574271219641,
+        "reservoir_voltage": 0.0489328713560982,
+        "reservoir_energy": 0.02394425899152456
+      },
+      {
+        "event": 2,
+        "seed": "dipole",
+        "polarity": -1.0,
+        "source_voltages": [
+          -0.0,
+          -0.4999999999999999,
+          -0.8660254037844388
+        ],
+        "charge_carried": 0.7988327144313996,
+        "reservoir_voltage": 0.08887448261123863,
+        "reservoir_energy": 0.07898673659415359
+      },
+      {
+        "event": 3,
+        "seed": "curvature",
+        "polarity": 1.0,
+        "source_voltages": [
+          0.0,
+          0.8660254037844388,
+          -0.5000000000000001
+        ],
+        "charge_carried": 0.7245649029729901,
+        "reservoir_voltage": 0.12510268332265795,
+        "reservoir_energy": 0.15650681374529238
+      },
+      {
+        "event": 4,
+        "seed": "uniform",
+        "polarity": -1.0,
+        "source_voltages": [
+          -1.0000000000000002,
+          -0.0,
+          -0.0
+        ],
+        "charge_carried": 0.6427594087892079,
+        "reservoir_voltage": 0.15724059121079234,
+        "reservoir_energy": 0.24724603524319508
+      },
+      {
+        "event": 5,
+        "seed": "center",
+        "polarity": 1.0,
+        "source_voltages": [
+          0.5773502691896258,
+          -0.7071067811865475,
+          0.4082482904638631
+        ],
+        "charge_carried": 0.5504525110726363,
+        "reservoir_voltage": 0.18476313814414821,
+        "reservoir_energy": 0.341374172168736
+      },
+      {
+        "event": 6,
+        "seed": "dipole",
+        "polarity": -1.0,
+        "source_voltages": [
+          -0.0,
+          -0.4999999999999999,
+          -0.8660254037844388
+        ],
+        "charge_carried": 0.5462686258241306,
+        "reservoir_voltage": 0.21207647705380878,
+        "reservoir_energy": 0.4497643211955468
+      },
+      {
+        "event": 7,
+        "seed": "curvature",
+        "polarity": 1.0,
+        "source_voltages": [
+          0.0,
+          0.8660254037844388,
+          -0.5000000000000001
+        ],
+        "charge_carried": 0.49548194394781453,
+        "reservoir_voltage": 0.23685046821298747,
+        "reservoir_energy": 0.5609814429271138
+      },
+      {
+        "event": 8,
+        "seed": "uniform",
+        "polarity": -1.0,
+        "source_voltages": [
+          -1.0000000000000002,
+          -0.0,
+          -0.0
+        ],
+        "charge_carried": 0.5363330002021117,
+        "reservoir_voltage": 0.2636669997978886,
+        "reservoir_energy": 0.6952028678241979
+      },
+      {
+        "event": 1000,
+        "seed": "uniform",
+        "polarity": -1.0,
+        "source_voltages": [
+          -1.0000000000000002,
+          -0.0,
+          -0.0
+        ],
+        "charge_carried": 3.3529901874731374e-05,
+        "reservoir_voltage": 0.7999664700981255,
+        "reservoir_energy": 6.39946353281255
+      }
+    ],
+    "reservoir": {
+      "voltage": 0.7999664700981255,
+      "energy": 6.39946353281255,
+      "capacity": 20.0
+    },
+    "energy": {
+      "mechanical_input": 500.00000000000006,
+      "held": 6.39946353281255,
+      "diode_loss": 3.2014012432110768,
+      "charge_sharing_and_return_loss": 490.3931595560891,
+      "leakage_loss": 0.005975667887639188,
+      "closure_residual": 2.8421709430404007e-13
+    },
+    "charge_carried": 16.00700621605541,
+    "q_minus_sigma": "The reservoir voltage eventually blocks weaker modal ports; leakage, path loss, and uncarried source energy remain physical residual rather than recurring charge."
+  }
+}

@@ -1,0 +1,12 @@
+# Optional historical annex: telecommunications infrastructure and state secrecy
+
+This annex preserves the supplied [AT&T and NSA source note](att-nsa-check.md) beside the circuit record. It provides institutional history for readers interested in how communications infrastructure, government access, and litigation intersected. The events below have their own dates and sources.
+
+| Period | Documented event | Source |
+|---|---|---|
+| 1945–1975 | Congressional records describe Operation SHAMROCK, in which RCA Global, ITT World Communications, and Western Union International supplied international telecommunications traffic to U.S. intelligence agencies. | [House committee report](https://donohueintellaw.ll.georgetown.edu/sites/default/files/assets/Interception%20of%20International%20Telecommunications%20by%20the%20National%20Security%20Agency.pdf); [Church Committee hearing](https://www.aarclibrary.org/publib/church/reports/vol5/pdf/ChurchV5_2_11-6-75.pdf) |
+| October 1975 | A House inquiry took testimony from AT&T and Chesapeake & Potomac Telephone representatives about national-security taps. This is a separate documented event from the carriers named in the SHAMROCK traffic-transfer record. | [House committee report](https://donohueintellaw.ll.georgetown.edu/sites/default/files/assets/Interception%20of%20International%20Telecommunications%20by%20the%20National%20Security%20Agency.pdf); [Ford Library hearing transcript](https://www.fordlibrarymuseum.gov/sites/default/files/pdf_documents/library/document/0014/1075848.pdf) |
+| 1985 onward | Documents reported by ProPublica and *The New York Times* place AT&T in the NSA's FAIRVIEW partnership and describe later equipment in domestic Internet hubs. | [ProPublica / New York Times investigation](https://www.propublica.org/article/nsa-spying-relies-on-atts-extreme-willingness-to-help) |
+| 2008–2019 | The FISA Amendments Act created a certification-based dismissal route for certain suits against assisting telecommunications providers. The 2019 *Jewel v. NSA* order granted the defendants summary judgment, citing the national-security disclosure risk of proceeding. | [50 U.S.C. § 1885a](https://www.law.cornell.edu/uscode/text/50/1885a); [2019 court order](https://www.eff.org/files/2019/04/25/2019-04-25_order_dckt_462_0.pdf) |
+
+The full attached note retains the wider chronology, source dates, and open questions. This annex is a historical reading path alongside the scientific packet.

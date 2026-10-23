@@ -1,0 +1,467 @@
+{
+  "1e-10_joule_per_event": {
+    "measure": {
+      "events": 36000,
+      "event_energy": 1e-10,
+      "buffer_energy": 3.6000000000000003e-06,
+      "buffer_voltage": 0.848528137423857,
+      "closure_residual": 0.0
+    },
+    "battery": {
+      "parameters": {
+        "buffer_capacitance": 1e-05,
+        "cold_start_voltage": 0.6,
+        "harvest_floor_voltage": 0.1,
+        "harvester_efficiency": 0.9,
+        "harvester_operating_current": 4.88e-07,
+        "input_clamp_voltage": 5.1,
+        "event_frequency": 10.0,
+        "duration": 3600.0,
+        "battery_nominal_voltage": 3.2,
+        "battery_capacity_ah": 0.05,
+        "initial_battery_soc": 0.5
+      },
+      "events": 36000,
+      "event_energy": 1e-10,
+      "cold_started": true,
+      "cold_start_event": 18000,
+      "cold_start_time": 1800.0,
+      "transfer_events": 1,
+      "trace": [
+        {
+          "event": 1,
+          "active": false,
+          "buffer_voltage": 0.004472135954999579,
+          "battery_gain": 0.0
+        },
+        {
+          "event": 2,
+          "active": false,
+          "buffer_voltage": 0.006324555320336759,
+          "battery_gain": 0.0
+        },
+        {
+          "event": 3,
+          "active": false,
+          "buffer_voltage": 0.007745966692414834,
+          "battery_gain": 0.0
+        },
+        {
+          "event": 4,
+          "active": false,
+          "buffer_voltage": 0.008944271909999158,
+          "battery_gain": 0.0
+        },
+        {
+          "event": 5,
+          "active": false,
+          "buffer_voltage": 0.01,
+          "battery_gain": 0.0
+        },
+        {
+          "event": 18000,
+          "active": true,
+          "buffer_voltage": 0.09999999999999994,
+          "battery_gain": 1.54864800000011e-06
+        },
+        {
+          "event": 36000,
+          "active": true,
+          "buffer_voltage": 0.0,
+          "battery_gain": 1.54864800000011e-06
+        }
+      ],
+      "buffer": {
+        "energy": 0.0,
+        "voltage": 0.0
+      },
+      "battery": {
+        "accepted_energy": 1.5486479938431332e-06,
+        "soc_gain": 2.6886250000001904e-09,
+        "final_soc": 0.500000002688625,
+        "capacity_energy": 576.0000000000001
+      },
+      "energy": {
+        "input": 3.6000000000000003e-06,
+        "conversion_loss": 1.7207200000001216e-07,
+        "harvester_operating_loss": 1.879280000000131e-06,
+        "input_clamp_loss": 0.0,
+        "battery_protection_residual": 6.156976826231339e-15,
+        "closure_residual": 2.5283933475540865e-19
+      },
+      "q_minus_sigma": "Event energy is the unmeasured physical variable. Battery CV taper, temperature, cell-specific limits, and board resistor configuration are not instantiated."
+    }
+  },
+  "1e-09_joule_per_event": {
+    "measure": {
+      "events": 36000,
+      "event_energy": 1e-09,
+      "buffer_energy": 3.6e-05,
+      "buffer_voltage": 2.6832815729997477,
+      "closure_residual": 0.0
+    },
+    "battery": {
+      "parameters": {
+        "buffer_capacitance": 1e-05,
+        "cold_start_voltage": 0.6,
+        "harvest_floor_voltage": 0.1,
+        "harvester_efficiency": 0.9,
+        "harvester_operating_current": 4.88e-07,
+        "input_clamp_voltage": 5.1,
+        "event_frequency": 10.0,
+        "duration": 3600.0,
+        "battery_nominal_voltage": 3.2,
+        "battery_capacity_ah": 0.05,
+        "initial_battery_soc": 0.5
+      },
+      "events": 36000,
+      "event_energy": 1e-09,
+      "cold_started": true,
+      "cold_start_event": 1800,
+      "cold_start_time": 180.0,
+      "transfer_events": 1,
+      "trace": [
+        {
+          "event": 1,
+          "active": false,
+          "buffer_voltage": 0.01414213562373095,
+          "battery_gain": 0.0
+        },
+        {
+          "event": 2,
+          "active": false,
+          "buffer_voltage": 0.02,
+          "battery_gain": 0.0
+        },
+        {
+          "event": 3,
+          "active": false,
+          "buffer_voltage": 0.024494897427831782,
+          "battery_gain": 0.0
+        },
+        {
+          "event": 4,
+          "active": false,
+          "buffer_voltage": 0.0282842712474619,
+          "battery_gain": 0.0
+        },
+        {
+          "event": 5,
+          "active": false,
+          "buffer_voltage": 0.03162277660168379,
+          "battery_gain": 0.0
+        },
+        {
+          "event": 18000,
+          "active": true,
+          "buffer_voltage": 0.014829497685777146,
+          "battery_gain": 1.5486480000000478e-06
+        },
+        {
+          "event": 36000,
+          "active": true,
+          "buffer_voltage": 0.014829497685777146,
+          "battery_gain": 1.5486480000000478e-06
+        }
+      ],
+      "buffer": {
+        "energy": 1.0995700080623489e-09,
+        "voltage": 0.014829497685777146
+      },
+      "battery": {
+        "accepted_energy": 1.5486479938431332e-06,
+        "soc_gain": 2.6886250000000824e-09,
+        "final_soc": 0.500000002688625,
+        "capacity_energy": 576.0000000000001
+      },
+      "energy": {
+        "input": 3.6e-05,
+        "conversion_loss": 1.7207200000000538e-07,
+        "harvester_operating_loss": 3.4278180429984626e-05,
+        "input_clamp_loss": 0.0,
+        "battery_protection_residual": 6.156914569309716e-15,
+        "closure_residual": -7.257378292074845e-18
+      },
+      "q_minus_sigma": "Event energy is the unmeasured physical variable. Battery CV taper, temperature, cell-specific limits, and board resistor configuration are not instantiated."
+    }
+  },
+  "1e-08_joule_per_event": {
+    "measure": {
+      "events": 36000,
+      "event_energy": 1e-08,
+      "buffer_energy": 0.00036,
+      "buffer_voltage": 8.48528137423857,
+      "closure_residual": 0.0
+    },
+    "battery": {
+      "parameters": {
+        "buffer_capacitance": 1e-05,
+        "cold_start_voltage": 0.6,
+        "harvest_floor_voltage": 0.1,
+        "harvester_efficiency": 0.9,
+        "harvester_operating_current": 4.88e-07,
+        "input_clamp_voltage": 5.1,
+        "event_frequency": 10.0,
+        "duration": 3600.0,
+        "battery_nominal_voltage": 3.2,
+        "battery_capacity_ah": 0.05,
+        "initial_battery_soc": 0.5
+      },
+      "events": 36000,
+      "event_energy": 1e-08,
+      "cold_started": true,
+      "cold_start_event": 181,
+      "cold_start_time": 18.1,
+      "transfer_events": 35820,
+      "trace": [
+        {
+          "event": 1,
+          "active": false,
+          "buffer_voltage": 0.044721359549995794,
+          "battery_gain": 0.0
+        },
+        {
+          "event": 2,
+          "active": false,
+          "buffer_voltage": 0.06324555320336758,
+          "battery_gain": 0.0
+        },
+        {
+          "event": 3,
+          "active": false,
+          "buffer_voltage": 0.07745966692414834,
+          "battery_gain": 0.0
+        },
+        {
+          "event": 4,
+          "active": false,
+          "buffer_voltage": 0.08944271909999159,
+          "battery_gain": 0.0
+        },
+        {
+          "event": 5,
+          "active": false,
+          "buffer_voltage": 0.09999999999999999,
+          "battery_gain": 0.0
+        },
+        {
+          "event": 18000,
+          "active": true,
+          "buffer_voltage": 0.1,
+          "battery_gain": 7.619789217418779e-05
+        },
+        {
+          "event": 36000,
+          "active": true,
+          "buffer_voltage": 0.1,
+          "battery_gain": 0.00015159638316199632
+        }
+      ],
+      "buffer": {
+        "energy": 5.000000000000001e-08,
+        "voltage": 0.1
+      },
+      "battery": {
+        "accepted_energy": 0.000151596383190622,
+        "soc_gain": 2.631881652117991e-07,
+        "final_soc": 0.5000002631881653,
+        "capacity_energy": 576.0000000000001
+      },
+      "energy": {
+        "input": 0.00036,
+        "conversion_loss": 1.684404257354822e-05,
+        "harvester_operating_loss": 0.00019150957426459508,
+        "input_clamp_loss": 0.0,
+        "battery_protection_residual": -2.862567496410284e-14,
+        "closure_residual": 1.395910297075087e-16
+      },
+      "q_minus_sigma": "Event energy is the unmeasured physical variable. Battery CV taper, temperature, cell-specific limits, and board resistor configuration are not instantiated."
+    }
+  },
+  "1e-07_joule_per_event": {
+    "measure": {
+      "events": 36000,
+      "event_energy": 1e-07,
+      "buffer_energy": 0.0036,
+      "buffer_voltage": 26.832815729997474,
+      "closure_residual": 0.0
+    },
+    "battery": {
+      "parameters": {
+        "buffer_capacitance": 1e-05,
+        "cold_start_voltage": 0.6,
+        "harvest_floor_voltage": 0.1,
+        "harvester_efficiency": 0.9,
+        "harvester_operating_current": 4.88e-07,
+        "input_clamp_voltage": 5.1,
+        "event_frequency": 10.0,
+        "duration": 3600.0,
+        "battery_nominal_voltage": 3.2,
+        "battery_capacity_ah": 0.05,
+        "initial_battery_soc": 0.5
+      },
+      "events": 36000,
+      "event_energy": 1e-07,
+      "cold_started": true,
+      "cold_start_event": 19,
+      "cold_start_time": 1.9000000000000001,
+      "transfer_events": 35982,
+      "trace": [
+        {
+          "event": 1,
+          "active": false,
+          "buffer_voltage": 0.1414213562373095,
+          "battery_gain": 0.0
+        },
+        {
+          "event": 2,
+          "active": false,
+          "buffer_voltage": 0.19999999999999998,
+          "battery_gain": 0.0
+        },
+        {
+          "event": 3,
+          "active": false,
+          "buffer_voltage": 0.2449489742783178,
+          "battery_gain": 0.0
+        },
+        {
+          "event": 4,
+          "active": false,
+          "buffer_voltage": 0.282842712474619,
+          "battery_gain": 0.0
+        },
+        {
+          "event": 5,
+          "active": false,
+          "buffer_voltage": 0.31622776601683794,
+          "battery_gain": 0.0
+        },
+        {
+          "event": 18000,
+          "active": true,
+          "buffer_voltage": 0.1,
+          "battery_gain": 0.0014831434534268739
+        },
+        {
+          "event": 36000,
+          "active": true,
+          "buffer_voltage": 0.1,
+          "battery_gain": 0.0029662144447855387
+        }
+      ],
+      "buffer": {
+        "energy": 5.000000000000001e-08,
+        "voltage": 0.1
+      },
+      "battery": {
+        "accepted_energy": 0.002966214444754201,
+        "soc_gain": 5.149677855530448e-06,
+        "final_soc": 0.5000051496778555,
+        "capacity_energy": 576.0000000000001
+      },
+      "energy": {
+        "input": 0.0036,
+        "conversion_loss": 0.00032957938275391925,
+        "harvester_operating_loss": 0.0003041561724630905,
+        "input_clamp_loss": 0.0,
+        "battery_protection_residual": 3.133777959352102e-14,
+        "closure_residual": 2.548742467078924e-15
+      },
+      "q_minus_sigma": "Event energy is the unmeasured physical variable. Battery CV taper, temperature, cell-specific limits, and board resistor configuration are not instantiated."
+    }
+  },
+  "1e-06_joule_per_event": {
+    "measure": {
+      "events": 36000,
+      "event_energy": 1e-06,
+      "buffer_energy": 0.036,
+      "buffer_voltage": 84.85281374238569,
+      "closure_residual": 0.0
+    },
+    "battery": {
+      "parameters": {
+        "buffer_capacitance": 1e-05,
+        "cold_start_voltage": 0.6,
+        "harvest_floor_voltage": 0.1,
+        "harvester_efficiency": 0.9,
+        "harvester_operating_current": 4.88e-07,
+        "input_clamp_voltage": 5.1,
+        "event_frequency": 10.0,
+        "duration": 3600.0,
+        "battery_nominal_voltage": 3.2,
+        "battery_capacity_ah": 0.05,
+        "initial_battery_soc": 0.5
+      },
+      "events": 36000,
+      "event_energy": 1e-06,
+      "cold_started": true,
+      "cold_start_event": 2,
+      "cold_start_time": 0.2,
+      "transfer_events": 35999,
+      "trace": [
+        {
+          "event": 1,
+          "active": false,
+          "buffer_voltage": 0.4472135954999579,
+          "battery_gain": 0.0
+        },
+        {
+          "event": 2,
+          "active": true,
+          "buffer_voltage": 0.09999999999999994,
+          "battery_gain": 1.727222553033081e-06
+        },
+        {
+          "event": 3,
+          "active": true,
+          "buffer_voltage": 0.09999999999999994,
+          "battery_gain": 2.607095880580835e-06
+        },
+        {
+          "event": 4,
+          "active": true,
+          "buffer_voltage": 0.09999999999999994,
+          "battery_gain": 3.486969208128589e-06
+        },
+        {
+          "event": 5,
+          "active": true,
+          "buffer_voltage": 0.09999999999999994,
+          "battery_gain": 4.366842535676343e-06
+        },
+        {
+          "event": 18000,
+          "active": true,
+          "buffer_voltage": 0.09999999999999994,
+          "battery_gain": 0.015837687371760334
+        },
+        {
+          "event": 36000,
+          "active": true,
+          "buffer_voltage": 0.09999999999999994,
+          "battery_gain": 0.03167540726762151
+        }
+      ],
+      "buffer": {
+        "energy": 4.9999999999999945e-08,
+        "voltage": 0.09999999999999994
+      },
+      "battery": {
+        "accepted_energy": 0.031675407267613316,
+        "soc_gain": 5.4992026506287336e-05,
+        "final_soc": 0.5000549920265063,
+        "capacity_energy": 576.0000000000001
+      },
+      "energy": {
+        "input": 0.036,
+        "conversion_loss": 0.0035194896964028353,
+        "harvester_operating_loss": 0.0008050530359816675,
+        "input_clamp_loss": 0.0,
+        "battery_protection_residual": 8.194833700514437e-15,
+        "closure_residual": 6.022959908591474e-15
+      },
+      "q_minus_sigma": "Event energy is the unmeasured physical variable. Battery CV taper, temperature, cell-specific limits, and board resistor configuration are not instantiated."
+    }
+  }
+}
