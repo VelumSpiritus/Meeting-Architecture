@@ -4,13 +4,23 @@
   "files": [
     {
       "path": "EVIDENCE.md",
-      "bytes": 18225,
-      "sha256": "69cca925bc0692c2dbbc99bfb1f836f101f2109145e8a47f62f29ddea6a10345"
+      "bytes": 34476,
+      "sha256": "8d6ac5d77ee4083b184dd8b872868a33dafc26d8f2a3c599323cf90b7f6aba4c"
+    },
+    {
+      "path": "LICENSE",
+      "bytes": 7169,
+      "sha256": "f4e7f373b9b996950337e8d41a4a2939c2d90b7725e9baf3d5084a22717ad328"
+    },
+    {
+      "path": "README.md",
+      "bytes": 2105,
+      "sha256": "126eb47fc3fae98ef55f8d0e28dd22cff262157cd8c7be469093ae08dd49316c"
     },
     {
       "path": "RUN_ME.md",
-      "bytes": 3081,
-      "sha256": "b7e4b96bba038a7d31a3bcb3e06126dceebdcca7f615ec80774a65f4eec738e2"
+      "bytes": 3363,
+      "sha256": "f483f78cc7218bc31cd5b915026217ad82167ed3de6b8e4e791097ef6052e513"
     },
     {
       "path": "annex/att-nsa-check.md",
@@ -19,8 +29,8 @@
     },
     {
       "path": "annex/exxon-lithium-check.md",
-      "bytes": 14937,
-      "sha256": "e1f2febdda1250568e78781d55dfd77989393fde1cd07378e36b9837594bc846"
+      "bytes": 14986,
+      "sha256": "44ee4f31d1c99f6cd07c240eaa38e25f17827ae418e4645d13e8b3515b6d6db3"
     },
     {
       "path": "annex/history.md",
@@ -34,43 +44,43 @@
     },
     {
       "path": "annex/iteration-circuit.html",
-      "bytes": 9858,
-      "sha256": "41ca3a86dddaa7fb90f0b6a1b1efef57ed47bf639be02f0e35cdeb3e06610dbd"
+      "bytes": 9862,
+      "sha256": "7e2488c0e859f9bbcadcb6fd7c2f64ed74ad51f4cd54d67663ac369ca0a08f52"
     },
     {
       "path": "annex/iteration-circuit.md",
-      "bytes": 7952,
-      "sha256": "d61e3e2d47f208063096197fe5f6b72e4ab7efc553e5bdedfb1bc804eccc0635"
+      "bytes": 7956,
+      "sha256": "7fa77d36b33ccc492b0306cbeaf9789cfea1760beeb029ff16c5d97213f8ecdb"
     },
     {
       "path": "code/README.md",
-      "bytes": 19810,
-      "sha256": "a50ec47564ad715c0024bb33c760336cec89e541d942f64be454fbb3bb7ac742"
+      "bytes": 20239,
+      "sha256": "bef08eeb946c4acf1c03c8b7296a720558585b173928f63706a76b59a90924cc"
     },
     {
       "path": "code/ablate_recurrence.py",
-      "bytes": 2509,
-      "sha256": "7555290d883d2a42660775d47c12fc0f8a445a121a22d0dc74608dac822df464"
+      "bytes": 2570,
+      "sha256": "23a0f4a268ef9d6fc29bfd72d7bed8f65aa2694d1b1bfa982b9169fc9aeb736b"
     },
     {
       "path": "code/acoustic.py",
-      "bytes": 12571,
-      "sha256": "d49adb87706d630157f4155d5de2c508c552dd00af8fde8eb5a4ffd3c927707f"
+      "bytes": 12835,
+      "sha256": "a27ef8ecb026316f9f6e84a249e8ac492c661764abdc37e9904ebdb4880a420f"
     },
     {
       "path": "code/battery_form.py",
-      "bytes": 8485,
-      "sha256": "72e803b9d26bef5d254859474d9e7e2853889c64a7c273d23cd1e1ff01381434"
+      "bytes": 8665,
+      "sha256": "b5e14dcf480c51d4434cfdcd10c37e257767d4c12474e267692ddb85e7aca4c5"
     },
     {
       "path": "code/carry.py",
-      "bytes": 7970,
-      "sha256": "72759373601900087ce3c437dc206285d5d6a7e6be43914acae4cec6eee0039a"
+      "bytes": 8140,
+      "sha256": "c38164307f9d9a83af7f944ed1b2d970b8d5150188cae34bd2923534d6de0fed"
     },
     {
       "path": "code/crystal/README.md",
-      "bytes": 666,
-      "sha256": "67314325bcb8455f32e8f760f39f51ae136e4c1c747fff0460dc03836ab04012"
+      "bytes": 680,
+      "sha256": "d782fb1210314d5de1462bbe63b1399bcd0b396d05593ec2dc0299d2059a3d7a"
     },
     {
       "path": "code/crystal/dimensional.json",
@@ -84,153 +94,158 @@
     },
     {
       "path": "code/crystal/geometry.json",
-      "bytes": 1545,
-      "sha256": "7c16aa6971111494d7a3d0d8e922a8f32f6cb9a7b0da5e8558373b1b19986257"
+      "bytes": 1584,
+      "sha256": "f0675d2be055bd11612c1cc8679890cf96624de24c5664706ec43caa8a7eba54"
     },
     {
       "path": "code/crystal/instruments.json",
-      "bytes": 1204,
-      "sha256": "d9a46da44966a2d01a545ac63ffdb7a1047ba0c4e59ecf75ac05c6e0f0eef772"
+      "bytes": 1235,
+      "sha256": "236d032ec7c11806de039a95debf58d18943f38dc03cb5e74addefb93de2a178"
     },
     {
       "path": "code/crystal/observations.jsonl",
-      "bytes": 8332,
-      "sha256": "1c18c5082448e3e71b6d03f11f81216d4b1ec80cb48d71c1f5e2bfcb49cf20ad"
+      "bytes": 8340,
+      "sha256": "60ce322e29cb797377871a64dff91630f3f9daaa46f10b1e0a460548d3f62fc4"
     },
     {
       "path": "code/dimensional.py",
-      "bytes": 7317,
-      "sha256": "e7c3e4f979d7863edbb572e47047acd564ef9283930a6195282f2dcea2da7e18"
+      "bytes": 7481,
+      "sha256": "9422d62082c65874bf31e43672826f09cbb34f486f0975cc77498b9c8f2cd352"
     },
     {
       "path": "code/dual_storage_jig.py",
-      "bytes": 5974,
-      "sha256": "aef2fdf9d162395e645e0b02dd1a393639caad6247a521d3e9bc1f79493bf971"
+      "bytes": 6102,
+      "sha256": "6d14d1b501c4bbe35e0f810c35fbb0e7e60c91ae0b993849640f1ae2c02800f1"
     },
     {
       "path": "code/engine.py",
-      "bytes": 8224,
-      "sha256": "f4be1c408847c4c735abd759069273c491e76d3b69d622b9fc7cf77b63188dae"
+      "bytes": 8424,
+      "sha256": "99f77cdf41938c4e29645bf0f2ba9dd3e8142255b96448d99c5354f43d1c8040"
     },
     {
       "path": "code/fisher_geodesic_coupling.py",
-      "bytes": 25304,
-      "sha256": "eb7c3be05e57ba7d44de9de8d4b13aa36261cc1c766c88127b0fb99bedffcc1b"
+      "bytes": 25945,
+      "sha256": "f7e1af3e21ee7841be745baad4d4846f81edb6d513ab0fd98b747f92e6a7284f"
     },
     {
       "path": "code/full_pack_accumulate_charge.py",
-      "bytes": 4246,
-      "sha256": "67c021cac81836a5bdedec80c56b96bf5739a1d5cd72bb96ccc79f666b80253c"
+      "bytes": 4331,
+      "sha256": "d85c869ed1becaa007a194534c9d410508d110fee245b5d2f7ef801263b098f4"
     },
     {
       "path": "code/joint_jig_battery_sweep.py",
-      "bytes": 5114,
-      "sha256": "d41aab0c36e1e41e700792afda32bee4936e2bf14b54c84f1e98209097f5a26b"
+      "bytes": 5221,
+      "sha256": "fe61e655d1803020879392875e6786a391a135d9b8fb260fef5341378ee64ef6"
     },
     {
       "path": "code/measured_crystal_surrogate.py",
-      "bytes": 5283,
-      "sha256": "e49edf8b4917c58984aa0f9cd2792580c51fe5c4688871c8df13667594751922"
+      "bytes": 5420,
+      "sha256": "dc73234e4cae67a74ba62f76fef11fef5824c8d0eca01e4e5cbb6b099c9e49f1"
     },
     {
       "path": "code/native/__init__.py",
-      "bytes": 73,
-      "sha256": "332d1c58c57ffcaadf643baebf998cb9d1b7640b5803293b5430ba53b1caad66"
+      "bytes": 75,
+      "sha256": "d7a60d8863368a48e87e8a12fe39a38d3e10c832528ef2ff38a742fa0ca634a7"
     },
     {
       "path": "code/native/matrix.py",
-      "bytes": 3760,
-      "sha256": "a635e21b08a103057c41fe5da6fdedf2b3a366db0d162aabcb04fa3f4b72cb2c"
+      "bytes": 3875,
+      "sha256": "6cccd19ace717486eea51ef2aa750be8e210011b30a3d05502ee319e2cce664f"
     },
     {
       "path": "code/passive_jig_circuit.py",
-      "bytes": 6063,
-      "sha256": "f526c801641cab683c2cddf25984a95cfd92c23c38cee574c215c788af0e5982"
+      "bytes": 6205,
+      "sha256": "25ab2f0abac304fd333f72352aa732895752b056e8d06c548d6af8d31aed9749"
     },
     {
       "path": "code/physical_slab_derivation.py",
-      "bytes": 11984,
-      "sha256": "5978a7181bedd6a1e0f3dd1aa4f189b11c88c21597869636503c9283772bed7c"
+      "bytes": 12260,
+      "sha256": "6baf85590b334494cafca5d3eaaf75e1b6259778e82a6d011d98c17353c83a5a"
     },
     {
       "path": "code/quartz_battery_sim.html",
-      "bytes": 42021,
-      "sha256": "4a05f1885e8b856afd5526f7520872a7df5089e67eb16c9462dbc7a710d64749"
+      "bytes": 43023,
+      "sha256": "063783b782e4d16edd5a1aa54807a0aeeb5b3b8b567ef0a8085de0dc70f866cd"
     },
     {
       "path": "code/quartz_tensor_orientation.py",
-      "bytes": 5343,
-      "sha256": "0c862dcc32b3c02c2bac41b0e790231640dc66b8876f3b6b57d9279488b5346c"
+      "bytes": 5456,
+      "sha256": "517b3b9310421b1c76136eb0cd310676a05186ffdc8676d01b678def15d9da07"
     },
     {
       "path": "code/recurrence.py",
-      "bytes": 3140,
-      "sha256": "198ec1b14e9b0e91b88736812afa6753de092b99187956b3f9340ac967eb81e6"
+      "bytes": 3211,
+      "sha256": "8ec51c9fe27dc87d03b7653cb2f23595592b57d70773006ffae654e51c968b93"
     },
     {
       "path": "code/simulate.py",
-      "bytes": 1522,
-      "sha256": "fb814778d4e4b48df18d13c4c11d392f7d503c387f1133f9bc954f4b78bddae6"
+      "bytes": 1560,
+      "sha256": "ac8c3342e1aab9a17ba40b879de106eb2365ab5641a4f99f8617baf34790fcd0"
     },
     {
       "path": "code/simulate_acoustic.py",
-      "bytes": 2075,
-      "sha256": "3397b9f1ee399f0d168a5232771bf9cb4538cde3dc1b8ad7dbabcd5045f6c801"
+      "bytes": 2120,
+      "sha256": "6845dade3d25dd6b9d035d19b12880196ee4a7e3db1552dceb27f211e7f95edc"
     },
     {
       "path": "code/simulate_battery_form.py",
-      "bytes": 997,
-      "sha256": "cde3c33b7f52f56a253b058851c1592a7e0460cec579281b4d72ce13b4eafb6a"
+      "bytes": 1025,
+      "sha256": "a4d6ae3262a08e139ec0f784e27278a14350b962dff5c8991b8cadebaa97175e"
     },
     {
       "path": "code/simulate_carry.py",
-      "bytes": 1767,
-      "sha256": "4866758810d70e0e70f72264c61ee940e76f739cbd6e9edf4a1693c996446be3"
+      "bytes": 1806,
+      "sha256": "02b44ef6bc2e8012c9372d501e799edbc026ad03ca7e590849c631cf065317e1"
     },
     {
       "path": "code/simulate_dual_storage_jig.py",
-      "bytes": 1492,
-      "sha256": "9ef96c1f3fa06a95e09079b1308be70b7b3e5eee5c68e144cc9e3ce5a98498fa"
+      "bytes": 1529,
+      "sha256": "9b9ba8786fc150eb67282367fee40240b4323a9e3ad959062142e0fd9b2d8360"
     },
     {
       "path": "code/simulate_full_pack_accumulate_charge.py",
-      "bytes": 776,
-      "sha256": "2c1e8430f8a0a342e813709f41d754b923cd875a549259353f252dff128b4aab"
+      "bytes": 790,
+      "sha256": "716111b1e5bd69fbf50381843df6e4a24e626b72ed79ba2106eed4f83ff59939"
     },
     {
       "path": "code/simulate_joint_jig_battery_sweep.py",
-      "bytes": 944,
-      "sha256": "18388fed9fe6f3402c5908ff5191eb6c4f40a8de8352ab5d046029e8819e46d2"
+      "bytes": 963,
+      "sha256": "8530294def7e30f9edf00912b2b7026a55d41a112e1f0e63a0aee320723dcc52"
     },
     {
       "path": "code/simulate_measured_crystal_surrogate.py",
-      "bytes": 2896,
-      "sha256": "ec719500a612ca0b60fa34ba09e0cbb8ff94b601d60fbcbc0825404bc86cc5ee"
+      "bytes": 2962,
+      "sha256": "440b8e85c21d1a6337a8c8348684aaf72f60dec1f3e862023d8b2210744f6280"
     },
     {
       "path": "code/simulate_passive_jig_circuit.py",
-      "bytes": 1452,
-      "sha256": "0786595108e77aeb7c51b3582a09093657bd6318580a1bffedce581bb64d810e"
+      "bytes": 1487,
+      "sha256": "56f85f1782b48b3a9a71dcab459aa9f3e4ce43dbb83fa99e0c293d9627f087a2"
     },
     {
       "path": "code/test_full_pack_accumulate_charge.py",
-      "bytes": 784,
-      "sha256": "6225f9d25e5e09ac1c62b396b2fdceb7a111138aa85ca5e1aebbb9179274c14c"
+      "bytes": 797,
+      "sha256": "6144ff120fe48319c0921e0485482bc2aba4d487adc40f818dc5d2456ab48340"
     },
     {
       "path": "code/test_joint_jig_battery_sweep.py",
-      "bytes": 866,
-      "sha256": "65d612c84132985fc913af185b55ce50bca09c3840d3591eef681fa58fcf5903"
+      "bytes": 884,
+      "sha256": "90fc27778360d396e9fdf9367372c5a47b895e13a1a59d212abf7b47763c2dbc"
     },
     {
       "path": "code/test_passive_jig_circuit.py",
-      "bytes": 1175,
-      "sha256": "3b6fe842599d452b7725268c95ff916e8a6489e55155d07fd16d3ee2b04ba4cb"
+      "bytes": 1204,
+      "sha256": "f96def48d06300e7a7dc6ba781a67e9b87ca177920e3a8a06acb9a93c8f1d900"
     },
     {
       "path": "code/topology_tournament.py",
-      "bytes": 6368,
-      "sha256": "7369c4855a18ef7a4e016ca4a1911abb1d56930aefdd9f82474a972f43222d72"
+      "bytes": 6546,
+      "sha256": "bd67574784c5e1257a49e1bd2fc0886880d8e351a40d1664134f336270d09ad1"
+    },
+    {
+      "path": "code/torus_fft.py",
+      "bytes": 11351,
+      "sha256": "35eae0a19b9d722af076ac415e45749a374ab83c9902646717961583adda2eed"
     },
     {
       "path": "context/README.md",
@@ -274,13 +289,13 @@
     },
     {
       "path": "context/the-practice-for-smarties-original.html",
-      "bytes": 51668,
-      "sha256": "a28ad09f95bed8e1b3364554dc02a1f6e3b1505954b62a4b6421bba7bb97f003"
+      "bytes": 52604,
+      "sha256": "9bef905effdd5778938c41589993adc0332ad89598a7089db437ec87a3982fe2"
     },
     {
       "path": "context/the-practice-for-smarties.html",
-      "bytes": 51723,
-      "sha256": "f7d4a19e55a148c2a760d06c3019966f702ab0875755cf3ec5ca2e40a5cc8554"
+      "bytes": 56186,
+      "sha256": "d05a566385fafa5735b82e9d5a833872e3df34e5378f7cca359082f949ab1caa"
     },
     {
       "path": "crystal_scope_sources/037e89d4-image.jpg",
@@ -319,8 +334,8 @@
     },
     {
       "path": "data/build_chronology_excerpt.md",
-      "bytes": 1420,
-      "sha256": "8d73e2f45b2cbf7785cef7383be1ecc0cd114a687ac4c04316419afac6a32ff3"
+      "bytes": 1440,
+      "sha256": "564fc28ae002cef648185b21a67c1efe1f9e3e3901db0ff9dc02d688601ef3f8"
     },
     {
       "path": "data/scope_readings.csv",
@@ -329,13 +344,13 @@
     },
     {
       "path": "f_operator_engine/README.md",
-      "bytes": 1071,
-      "sha256": "4d8af6b364a20c240153783cd45ebc3a19037a59cb16024939a1b4643f9f6501"
+      "bytes": 1085,
+      "sha256": "0c803d13086ea22f73fbff83568166ea9e3a1744171ad342a09323654dc4d0da"
     },
     {
       "path": "f_operator_engine/run_f_operator.py",
-      "bytes": 1130,
-      "sha256": "28c3f8539ee954a0005fb2d68195abb81a0ada170e48fa1c2cfc6619226b676a"
+      "bytes": 1167,
+      "sha256": "08a26eaefab97d19b44c9e46448fcffa1f85c64ac4cf16ff5b7fd16428368e69"
     },
     {
       "path": "f_operator_engine/src/ark_io.py",
@@ -344,8 +359,8 @@
     },
     {
       "path": "f_operator_engine/src/ark_native_math.py",
-      "bytes": 12823,
-      "sha256": "56b141c800e056180a226ca05d20c959e796c8fbfda81188463931257b388e6e"
+      "bytes": 13110,
+      "sha256": "fac59b692abda326fd26f5ecd2fa856f83bbad3f9d72de6be3b2c9b5e32fc1db"
     },
     {
       "path": "f_operator_engine/src/native_json.py",
@@ -364,13 +379,13 @@
     },
     {
       "path": "f_operator_engine/src/services/ark_coder/f_operator.py",
-      "bytes": 22645,
-      "sha256": "e2008bf7a2df6b643274ccc37835738e269a389b51789be7838b34438a5f8648"
+      "bytes": 23045,
+      "sha256": "c42377ec034fe0e4c157325323294da05a2c630b8c4f0573f96f58741725c59a"
     },
     {
       "path": "f_operator_engine/src/services/ark_coder/sigma_pages.py",
-      "bytes": 32172,
-      "sha256": "75ff32c5d1c8b721ed96032bd8a8cba5cb4a6576ab7b8b7e4ac6cc4a5118352f"
+      "bytes": 32926,
+      "sha256": "079ce59c8a9e5b7ca2ef9d164ae13b02819e4dcc3a74eadcbda346d1de041c5d"
     },
     {
       "path": "f_operator_engine/src/substrate_rung0/f_codec.py",
@@ -379,13 +394,18 @@
     },
     {
       "path": "index.html",
-      "bytes": 28238,
-      "sha256": "1f760af71f9fd70252d9a68f811df012de596f9d3eb1a965440855dce1dc438f"
+      "bytes": 82497,
+      "sha256": "97e6543ce4bce27129798b5a07c717fea67bbca5bb0a3e5703f04df6c8efefef"
+    },
+    {
+      "path": "meeting_architecture_brief.html",
+      "bytes": 82497,
+      "sha256": "97e6543ce4bce27129798b5a07c717fea67bbca5bb0a3e5703f04df6c8efefef"
     },
     {
       "path": "probes/README.md",
-      "bytes": 2890,
-      "sha256": "061b26ee6044531cc4a2b9d8532540de8c6abbdcb616ff07397f62ba6867b939"
+      "bytes": 2889,
+      "sha256": "6117a294c902cbd2d9c110c862e555af6790b3a5c33a39b4d91819de33b31b35"
     },
     {
       "path": "probes/atnf_pulsars.json",
@@ -394,33 +414,33 @@
     },
     {
       "path": "probes/black_hole_probe.py",
-      "bytes": 11042,
-      "sha256": "6ab558d539fd68dfa5d7d9c14d2132c069a28b281978a136c871780e96abaa6d"
+      "bytes": 11365,
+      "sha256": "bd4030f6c8a687db5d1bbb76765c5984c0b684138e910c557822a039fc2dfc7b"
     },
     {
       "path": "schematics/README.md",
-      "bytes": 2215,
-      "sha256": "879b59d408b816da080a38a2c097b5be78b84116e44916a0079fe1074af344f5"
+      "bytes": 2229,
+      "sha256": "86a6d638e0be43eccc3480d1e6b33ebbde554edc901a5baf4caba4f565c3994f"
     },
     {
       "path": "schematics/crystal_circuit_complete.svg",
-      "bytes": 22417,
-      "sha256": "15c973f154ff59629f3ad3ab23104532fbb9c828ade0de0eda1c1da1bfe3c4d4"
+      "bytes": 22744,
+      "sha256": "042c7632b51e670ef36c6c502b6c3d296a3e2689f305dbd9c6b8aecd4f2a359a"
     },
     {
       "path": "schematics/crystal_circuit_self_sustaining.svg",
-      "bytes": 27508,
-      "sha256": "de054842c321dcd896816ef60ee56162b06c4c97ff0f03147db3fc2e4f67c81c"
+      "bytes": 27908,
+      "sha256": "995b7d3afece60759c6c6d64745695b1db65a7b09090e1561287cef212026646"
     },
     {
       "path": "schematics/crystal_circuit_speaker_free_reconstruction.svg",
-      "bytes": 7507,
-      "sha256": "8d9ee36e8bbeaddb446f10723203e278a8e064f3b4320973a7b41ae9100c2ebd"
+      "bytes": 7599,
+      "sha256": "7e47ec45008e993bcfd9e594beaf99703fbbbddb7fd72bbf5d36cd66cf76cc3f"
     },
     {
       "path": "schematics/crystal_circuit_v2.svg",
-      "bytes": 28761,
-      "sha256": "2a2811b25a2dcd62481b5041e5b1bdfead4d0961b20a672f10f7f76f8c20b2b5"
+      "bytes": 29155,
+      "sha256": "3f5a3753022d6f1753f466b7d9ec7f090c3ad4369337696c8a973250e8f3b8f2"
     },
     {
       "path": "simulations/README.md",
@@ -458,19 +478,24 @@
       "sha256": "89a3d7a927b6faba1e9371561941366d64742785a4bd2c3b2612e83247a9939e"
     },
     {
+      "path": "the_border_is_the_function.md",
+      "bytes": 18841,
+      "sha256": "8171c9ac73ac7e95ca28e33df3c71bcae0db560c27545fb45ee9992ebcdc0608"
+    },
+    {
       "path": "void_filler/README.md",
       "bytes": 1285,
       "sha256": "5ae863d7a08faecd01223139e4df1943ade08fc455ce3f3aa8ecbe65f683c0b1"
     },
     {
       "path": "void_filler/closed_door_probe.py",
-      "bytes": 12577,
-      "sha256": "d79f6c6f4b22d8616cf3087645967786011e9d0457a048699ac556106f0ba312"
+      "bytes": 12924,
+      "sha256": "9b9ec50a7627ca663fe90af33abaff00d714827e36423fbe12c4279a9ad14304"
     },
     {
       "path": "void_filler/f_hook.py",
-      "bytes": 527,
-      "sha256": "59b52580c28f997935efa595fcaa5c36c3f9d958b385552a9f79df9bbe8fc49e"
+      "bytes": 544,
+      "sha256": "2ca985414d66b3bc756303eef9104ddff7d8d10840e818f14c4ac05cae85629c"
     },
     {
       "path": "void_filler/meeting_tracer.py",
@@ -479,18 +504,18 @@
     },
     {
       "path": "void_filler/original/closed_door_probe.py",
-      "bytes": 12577,
-      "sha256": "d79f6c6f4b22d8616cf3087645967786011e9d0457a048699ac556106f0ba312"
+      "bytes": 12924,
+      "sha256": "9b9ec50a7627ca663fe90af33abaff00d714827e36423fbe12c4279a9ad14304"
     },
     {
       "path": "void_filler/original/meeting_tracer.py",
-      "bytes": 21976,
-      "sha256": "1bf58023b7e16a582d6bebd241dd6e01597ecc55489f890f0b0e1bfcee0afae1"
+      "bytes": 22557,
+      "sha256": "c6bc932caf496a16a36fa9509e234f0058cbe8bea1192a95d78dec8e4580d967"
     },
     {
       "path": "void_filler/original/void_filler.py",
-      "bytes": 23819,
-      "sha256": "7b9f82933fd3e79b2508c3ae8e088ed9d0528157ad7c001c0df9bb1e2df424e6"
+      "bytes": 24427,
+      "sha256": "02be5124396bc6d63ed37e2f768e5185435ebe3f0b7a192ae0fb61684a7d356d"
     },
     {
       "path": "void_filler/void_filler.py",
