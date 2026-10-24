@@ -179,7 +179,7 @@ Noah's lead names "religious institution to the state and federal" as a connecti
 | 5 | Accounting adjustments, FY 2017–2019 | $94.7T gross (net unknown) | Confirmed gross; 96% without adequate documentation (GAO-20-96) |
 | 6 | National debt | ~$40T | Confirmed; holder decomposition now in §5 |
 | 7 | HFT/dark pool intermediary extraction | ~$100–200B/year (order-of-magnitude estimate) | Estimated from components; not yet sourced as a single figure |
-| 8 | Global illicit financial flows | ~$1.6–3.1T/year laundered | UNODC 2011 + GDP scaling |
+| 8 | Global illicit financial flows | **$4.4T/year** (2025) | [Nasdaq Verafin 2026 Report](https://verafin.com/news/nasdaq-verafin-2026-global-financial-crime-report/) |
 | 9 | US church revenue (no filing required) | ~$143.6B/year | Giving USA 2022 |
 | 10 | Estimated forgone church taxes | ~$71B/year | Cragun et al. 2012 |
 
