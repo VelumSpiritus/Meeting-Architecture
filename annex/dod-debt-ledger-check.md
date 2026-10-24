@@ -550,7 +550,7 @@ Before 2022, the Fed remitted ~$80–100B/yr to Treasury — public revenue. Sin
 | IORB to banks | $186B | Fed → banks (risk-free) |
 | Lost Fed remittances | $80–100B/yr | Public revenue eliminated |
 | Trade deficit | $901B | Dollars out, debt in |
-| Pentagon throughput (opaque trail) | $868B | 96% undocumented adjustments |
+| Pentagon throughput (opaque trail) | $868B/yr; **~$10.2T of $11.2T untraceable** (FY1998–2019) | 91% of cumulative appropriations |
 | Top 5 defense contractors | $207B | 24% of DoD budget to 5 companies |
 | US equity price-discovery costs | $135B | Academic estimate (2024); Citadel alone $12.2B |
 | Global illicit financial activity | $4.4T (2025) | Nasdaq Verafin; <1% seized |
