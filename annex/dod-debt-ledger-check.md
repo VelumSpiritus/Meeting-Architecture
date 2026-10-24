@@ -581,7 +581,13 @@ US equity price-discovery costs: ~$135B/yr (2024, academic estimate). Citadel Se
 **9. The Fed has stopped paying the public and started paying the banks.**
 Before 2022, the Fed remitted ~$80–100B/yr to Treasury — public revenue. Since September 2022: $0 remitted. The Fed's cumulative loss: $243.5B (deferred asset, end 2025). Cause: it pays banks more in IORB ($186B/yr) than it earns on its Treasuries (~$107B/yr). Projected return to remittances: ~2030. Until then, the public loses both the remittance AND pays the IORB.
 
-**10. The cartel's cumulative take, FY1998–2019 — the same 22 years.**
+**10. Healthcare extracts $5.7T/yr — 18% of GDP — and the US pays double what comparable countries pay.**
+$14,775 per person vs. $7,860 in peer countries = ~$6,900 excess per person = **~$2.3T/yr** in aggregate excess above comparable-nation cost. Six companies collect $1.65T of the $5.7T. The top 7 insurers posted $71B in profit (2024). Administrative overhead runs $599–$1,655 per enrollee. Same shareholders as the banks and the defence contractors. Same structure: extract, close the door, meter the output.
+
+**11. The scoreboard: the top 1% holds $54.8T. The bottom 50% holds $4.25T. Ratio: 13 to 1.**
+The Federal Reserve's own data (Distributional Financial Accounts, Q3 2025). The top 1% share hit a new record — 31.7% of all household wealth. The bottom half — 167 million people — hold 2.5%. This is the cumulative result of every flow traced above, compounding geometrically since 1979.
+
+**12. The cartel's cumulative take, FY1998–2019 — the same 22 years.**
 
 The Pentagon's ~$10.2T in untraceable throughput is not an anomaly. It is one pipe in a system with four. Here is every non-overlapping channel through which the public's money reached the extraction architecture over the same 22 fiscal years, each sourced independently:
 
