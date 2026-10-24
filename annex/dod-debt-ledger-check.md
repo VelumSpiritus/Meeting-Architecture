@@ -503,6 +503,49 @@ These five companies receive nearly a quarter of the entire defense budget. Thei
 
 The revolving door is documented: former Pentagon officials join defense contractor boards; former contractor executives serve in Pentagon leadership. The flow is circular: Congress appropriates → Pentagon spends → contractors receive → contractors lobby Congress → Congress appropriates.
 
+**M. Healthcare — the largest extraction the ledger didn't name**
+
+| Line | Amount | Source |
+|---|---|---|
+| National health expenditure (2025) | **~$5.7T (18.4% of GDP)** | [CMS NHE Projections](https://www.cms.gov/files/document/national-health-expenditure-projections-results-presentation.pdf); [CRFB](https://www.crfb.org/blogs/national-health-expenditures-continue-rise) |
+| Per capita (2024) | **$14,775** | [KFF/Health System Tracker](https://www.healthsystemtracker.org/chart-collection/health-spending-u-s-compare-countries/) (OECD data) |
+| Comparable-country average per capita (2024) | **$7,860** | Same |
+| **Excess per person above peer average** | **~$6,900** | $14,775 − $7,860 |
+| **Aggregate US excess** (~335M population) | **~$2.3T/yr** | Excess × population |
+| Projected NHE (2034) | $9.0T (20.6% of GDP) | CMS |
+
+The US spends almost **double** what comparable high-income countries spend per person on healthcare, for worse outcomes on most population-health metrics. The aggregate excess — ~$2.3T/yr — is the largest single extraction channel in the economy, larger than the defence budget ($868B), larger than the IRS tax gap ($696B), larger than the entire trade deficit ($901B).
+
+**Who collects:**
+
+| Company | Revenue (2025) | Source |
+|---|---|---|
+| UnitedHealth Group | $448B | [Fortune Global 500](https://www.beckershospitalreview.com/rankings-and-ratings/31-top-healthcare-organizations-on-the-fortune-global-500/) |
+| CVS Health | $402B | Same |
+| Cigna Group | $275B | Same |
+| Elevance Health | $199B | [Brookings](https://www.brookings.edu/articles/mapping-vertical-integration-in-us-health-insurance/) |
+| Centene | $195B | [Fortune US 500](https://www.beckerspayer.com/rankings-ratings/9-health-insurers-make-fortune-500/) |
+| Humana | $130B | Same |
+| **Top 6 health insurers** | **~$1.65T** | 29% of total NHE flows through six companies |
+
+Top 7 publicly traded health insurer profits: **$71 billion in 2024** ([KFF](https://www.kff.org/health-costs/are-health-insurers-providing-good-value/)), on ~$1.7T in revenue. Administrative costs: hundreds of billions annually — median $599–$1,655 per enrollee depending on market ([Health Affairs 2026](https://www.healthaffairs.org/doi/pdf/10.1377/hlthaff.2025.00779)). The same institutional shareholders (BlackRock, Vanguard, State Street) hold UnitedHealth, CVS, Cigna, and Elevance alongside the defence contractors and the banks.
+
+The structure is the same as every other pipe: extract (price above peer-country cost), close the door (opaque billing, PBM middlemen, surprise billing, prior authorization), meter the output (coverage denials, formulary restrictions, network exclusions). The patient pays; the insurer collects; the shareholders own both the insurer and the hospital chain.
+
+**N. The scoreboard — wealth concentration (the cumulative result)**
+
+The flows traced in §§A–M compound over decades into a stock. The Federal Reserve's Distributional Financial Accounts measure the result:
+
+| Group | Net worth (Q3 2025) | Share of total | Source |
+|---|---|---|---|
+| **Top 1%** | **~$54.8T** | **31.7%** (record) | [FRED WFRBLT01026](https://fred.stlouisfed.org/series/WFRBLT01026); [Statista/Fed DFA](https://statista.com/chart/19635/wealth-distribution-percentiles-in-the-us) |
+| **Bottom 50%** | **~$4.25T** | **2.5%** | [FRED WFRBLB50107](https://fred.stlouisfed.org/series/WFRBLB50107) |
+| **Ratio** | **~13 : 1** | | Top 1% holds 13× the bottom half |
+
+The top 1% holds $54.8 trillion. The bottom half — 167 million people — holds $4.25 trillion. The ratio is 13 to 1, and widening: the top 1% share hit a new record in Q3 2025.
+
+This is the scoreboard. Every extraction channel traced above — the 2%/yr market wedge, the $4.9T/yr financial sector interest take, the $2.3T/yr healthcare excess, the $2.2T/yr in tax expenditures, the $10.2T in untraceable Pentagon throughput — compounds into this stock. The flows are annual; the stock is cumulative. A 2%/yr wedge running for 56 years does not produce a 112% shift — it produces a **geometric** shift, because extraction compounds. That is why the top 1% share has been on a one-way trend since 1979, and why the extraction rate (~$600B/yr) looks modest next to the stock (~$54.8T) it has built.
+
 ### The full balance — everything traced
 
 **The economy produces $30T.** Here is where it goes and what is extracted along the way:
