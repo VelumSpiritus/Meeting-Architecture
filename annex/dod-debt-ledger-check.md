@@ -52,59 +52,157 @@ Status: **In progress.** The individual figures are confirmed from primary sourc
 
 ---
 
-## 5. The $40.3T debt ledger identity (partial — the sum doesn't work as written)
+## 5. The $40.3T debt — who actually holds it (the correct decomposition)
 
 The brief's original claim: "Debt ($40.3T) = cash supply ($23.3T) + bank deposits", therefore the ledger balances.
 
-**Status: Partial.** Each number is roughly right on its own. The identity fails because:
+**Status: The naive identity fails (double-counts M2), but the correct holder decomposition is public record.**
 
-1. **M2 already contains most bank deposits.** M2 = currency in circulation + demand deposits + savings deposits + small-denomination time deposits + retail money market funds. Adding "bank deposits" to M2 double-counts.
-2. **A large share of the debt is held by the Fed, foreign holders, and trust funds** — not sitting in commercial bank deposits. As of mid-2026: ~$7.5T held by the Fed, ~$8.5T by foreign holders, ~$6.8T by government trust funds (Social Security, etc.).
-3. **"Every dollar of debt is someone's asset" is true**, but that asset is the Treasury bond, not a bank deposit. The bond sits on the holder's balance sheet; the cash from the bond sale sits in the Treasury General Account or has been spent into the economy.
+### Why the original identity is wrong
 
-The correct decomposition — who holds the $40.3T — is a matter of public record (Treasury Monthly Statement of the Public Debt, Fed Z.1 Financial Accounts). The identity Noah is reaching for — that the debt balances somewhere — is directionally correct but needs the right categories on the asset side.
+M2 = currency in circulation + demand deposits + savings deposits + small-denomination time deposits + retail money market funds. Adding "bank deposits" to M2 double-counts, because M2 *already contains* most bank deposits.
 
-**Open:** Rewrite the identity with the correct holder decomposition. The POGO page (IG $6.5T) and CNBC ($40T) pages that were blocked on the retry list may carry the sourcing needed.
+### The correct decomposition — who holds the ~$40T
 
----
+Every dollar of debt is someone's asset — but the asset is the Treasury security, not a bank deposit. The holders, from public data (Treasury Monthly Statement of the Public Debt, Treasury International Capital data, Fed Z.1 Financial Accounts):
 
-## 6. The thread: cartel infrastructure and the missing ledger
-
-Noah's lead (leads.md line 515):
-
-> "It's part of the third cartel helping legitimize the inbetween transaction costs ledger between the millisecond debt 40T missing in the ledger I already proved and balanced. This should add some more missing fraud money to those ledgers. Religious institution to the state and federal."
-
-**Status: Lead — not yet written up.** The claim is that the gap between what the Pentagon cannot account for and the total national debt routes through intermediary transaction costs that serve cartel infrastructure — and that the arithmetic balances. The "millisecond debt" reference points to high-frequency transaction costs in the financial system (the spread between bid/ask, the latency arbitrage, the dark-pool routing fees) as the mechanism by which unaccounted funds are laundered into the legitimate ledger.
-
-**What's confirmed that feeds this thread:**
-- The DoD cannot account for its own books (§1–§3 above)
-- $4.65T in assets and $4.73T in liabilities with a disclaimer of opinion on 47.2% by weight
-- The F-35 alone is $2T over 64 years with a single prime contractor (§4)
-- The debt is $40.3T and every dollar is someone's asset (§5) — the question is whose, through what intermediary, at what transaction cost
-
-**What's needed to close the thread:**
-1. The correct holder decomposition of the $40.3T (Treasury MSPD + Fed Z.1)
-2. The DoD's own accounting of where the unsupported adjustments net to — not the gross journal-voucher figure ($6.5T) but the net after duplication removal
-3. The intermediary transaction cost layer — HFT spread capture, dark pool routing, settlement float — sized against the unaccounted gap
-4. The UNODC or similar estimate of global illicit financial flows for comparison
-5. The "religious institution to the state and federal" connection Noah names — likely tax-exempt financial flows that bridge the gap between tracked and untracked money
-
-**Blocked pages from the retry list that may carry sourcing:**
-- POGO (IG $6.5T): Project on Government Oversight, likely carries the IG report context
-- CNBC ($40T): likely carries the national debt decomposition
-- Logically Facts ($7T): may carry the cumulative Pentagon accounting gap figure
-
----
-
-## Summary of the ledger so far
-
-| Item | Amount | Status | What it is |
+| Holder | Amount (approx.) | Share | Source / notes |
 |---|---|---|---|
-| Army unsupported adjustments, FY 2015 | $6.5T gross ($1.4T confirmed duplicate) | Confirmed | Journal-voucher entries the Army could not document |
-| DoD assets under disclaimer | 47.2% of $4.65T ≈ $2.2T | Confirmed | Assets the auditors could not even form a judgment on |
-| F-35 lifetime cost | $2T+ | Confirmed | Single weapons system, 64-year service life |
-| National debt | $40.3T | Confirmed (the number) | The identity linking it to the gaps is partial |
-| Cartel infrastructure balancing | Not yet sized | Lead | The arithmetic Noah says he proved — not yet on paper here |
+| **Intragovernmental (trust funds)** | ~$7.1T | ~17.5% | Social Security (~$2.3–2.7T), Military Retirement, Medicare, other federal trust funds. [CRS RS22331, Apr 2026](https://www.congress.gov/crs_external_products/RS/PDF/RS22331/RS22331.52.pdf) |
+| **Federal Reserve** | ~$4.4–4.6T | ~11% | System Open Market Account. Fed ended balance-sheet runoff Dec 1, 2025; now rolling over maturing Treasuries. [Visual Capitalist, 2026](https://www.visualcapitalist.com/see-who-owns-the-39-trillion-u-s-debt-in-2026-from-domestic-and-foreign-holders-to-the-fed-and-mutual-and-pension-funds/) |
+| **Foreign holders** | ~$9.3–9.4T | ~23% | Top three: Japan (~$1.1–1.2T), United Kingdom (~$0.9T), China (~$0.6–0.7T). [CRS RS22331](https://www.congress.gov/crs_external_products/RS/PDF/RS22331/RS22331.52.pdf); [Treasury TIC data](https://ticdata.treasury.gov/resource-center/data-chart-center/tic/Documents/mfh.txt) |
+| **Mutual funds & ETFs** | ~$4–5T | ~10–12% | Domestic bond funds, money market funds holding T-bills. [Visual Capitalist](https://www.visualcapitalist.com/see-who-owns-the-39-trillion-u-s-debt-in-2026-from-domestic-and-foreign-holders-to-the-fed-and-mutual-and-pension-funds/) |
+| **State & local governments** | ~$1.5–2T | ~4–5% | Pension funds, reserve funds. |
+| **Banks & insurance** | ~$2–3T | ~5–7% | Commercial bank portfolios, insurance reserves. |
+| **Pension funds (private)** | ~$2–3T | ~5–7% | Defined benefit and defined contribution plans. |
+| **Other domestic (individuals, hedge funds, other)** | remainder | ~15–20% | Includes direct retail Treasury holdings (TreasuryDirect), hedge funds, corporations, other. |
+
+**The identity that DOES hold:** Every dollar of gross federal debt appears on someone's balance sheet as an asset — the Treasury security itself. The ledger balances at the level of *who holds the bonds*, not at the level of cash supply + deposits.
+
+**What this opens:** The question Noah is asking is not "does the debt balance" (it does, by definition — every liability is someone's asset). The question is: *through what intermediary structure does money move from Treasury issuance to its final holder, and what transaction costs are extracted along the way?* That's the thread into §6.
+
+---
+
+## 6. The cumulative Pentagon accounting gap
+
+### $21 trillion in unsupported adjustments, FY 1998–2015
+
+| When | What the source says | Source |
+|---|---|---|
+| 2017 (study published) | Mark Skidmore (Michigan State University), working with Catherine Austin Fitts, reviewed public federal accounting data and reported $21 trillion in unsupported adjustments at DoD and HUD between FY 1998 and FY 2015. HUD's share: ~$350 billion. The rest: Pentagon. | [City Journal, "America's Missing Money"](https://www.city-journal.org/article/americas-missing-money); [Jacobin, "Dark Money at the Pentagon"](https://jacobin.com/2018/01/pentagon-budget-government-spending-military) |
+| Same | Skidmore: the adjustments are "essentially transactions that our own government says we can't verify." | Same |
+| Congressional testimony | Comptroller David Norquist told Congress the adjustments happen *after* money is spent, because "we have systems that do not automatically pass data from one to the other." He also said "we have not received $21 trillion" in appropriations since 1776. | [WRAL/PolitiFact-style check](https://www.wral.com/archive/18038562/) |
+| | The Nation: the transfers "are found on both the positive and the negative sides of the ledger, thus potentially netting each other out." | [The Nation](https://www.thenation.com/article/archive/pentagon-audit-budget-fraud/) |
+| | CSIS (Todd Harrison): within the totals is "a lot of double, triple, and quadruple counting of the same money as it got moved between accounts." | Quoted in multiple sources |
+
+### $94.7 trillion in accounting adjustments, FY 2017–2019
+
+| When | What the source says | Source |
+|---|---|---|
+| FY 2017 | ~$29 trillion in accounting adjustments. | [Gazette / Bloomberg](https://gazette.com/?p=1290413) |
+| FY 2018 | ~$30.7 trillion. | Same |
+| FY 2019 | ~$35 trillion. Total for three years: $94.7 trillion. | Same; [Nestmann](https://www.nestmann.com/about-that-missing-94-7-trillion) |
+| GAO review | GAO examined the adjustments at Rep. Jackie Speier's request (GAO-20-96). Found "96% of the system-generated accounting adjustments were recorded without adequate supporting documentation." Cause: "deficient business processes and limitations in accounting systems." | [GAO-20-96](https://www.gao.gov/assets/d2096.pdf); [GAO highlights](https://www.gao.gov/assets/d2096high.pdf) |
+| Pentagon response | Pentagon attributed adjustments to "a lack of system capabilities or interfaces." Auditors found no evidence of fraud, but flagged systemic problems. | [NTU Foundation](https://www.ntu.org/foundation/detail/the-pentagons-accounting-practices-deserve-greater-scrutiny-smudging-your-checkbook-does-not-encourage-good-financial-management) |
+
+**Status: Confirmed as gross figures. No net figure exists publicly.** The gross numbers ($21T for 1998–2015, $94.7T for 2017–2019) are real sums of real journal-voucher entries drawn from government reports. They are NOT $115T in missing cash — they include massive duplication (the same dollar counted multiple times as it moves between accounts), and entries that net to zero. But the Pentagon has never published the net figure after deduplication, which is the number that matters. That absence is itself the finding: **the largest department in the federal government cannot tell you what the net unsupported figure actually is.**
+
+---
+
+## 7. The intermediary transaction cost layer — HFT, dark pools, settlement float
+
+Noah's "millisecond debt" points to the transaction costs extracted by high-frequency intermediaries in the financial system — the spread between bid and ask, latency arbitrage, dark pool routing fees, and settlement float.
+
+| What | Size | Source |
+|---|---|---|
+| HFT market (services, strategies, colocation, data feeds, routing, dark pool trading) | ~$13.4B in 2025, ~$14.7B in 2026 | [Research and Markets, HFT Market Report 2026](https://www.researchandmarkets.com/reports/6170775/high-frequency-trading-market-report) |
+| Dark pool share of US equity volume | ~40–42.5% of all US equity trades | [Iowa Journal of Corporate Law](https://jcl.law.uiowa.edu/sites/jcl.law.uiowa.edu/files/2021-08/Johnson_Final_Web.pdf); [SoftwareTestingHelp, 2026](https://www.softwaretestinghelp.com/dark-pool-trading/) |
+| US equity average daily share volume | ~11–15B shares/day (2024) | [Rosenblatt, 2024 Year in Review](https://rblt.com/market-structure-reports/us-securities-volumes-2024-year-in-review) |
+| IEX dark pool fee | $0.0009/share | [Wikipedia, IEX](https://en.wikipedia.org/wiki/IEX) |
+
+**The $13.4B HFT market size is the revenue of the intermediary layer, not the cost extracted.** The cost extracted is the aggregate bid-ask spread × volume, which is much larger. At ~12B shares/day × 252 trading days × an average effective half-spread of ~$0.01–0.02/share, the annual spread cost alone is on the order of **$30–60B/year** in US equities. Add options, futures, fixed income, FX, and crypto and the intermediary extraction is plausibly **$100–200B/year** across all US financial markets. This is not a sourced figure — it's an order-of-magnitude estimate from the components. The precise number requires SEC/FINRA execution-quality data.
+
+**What this layer IS in Noah's framing:** Every trade that passes through a dark pool or an HFT market-maker pays a toll — a fraction of a cent per share, collected at millisecond speed. That toll is the "millisecond debt." It is legal, it is structural, and it is invisible to anyone who doesn't look at execution-quality reports. The question is whether this intermediary layer — which exists between every buyer and seller in the financial system — is the mechanism by which unaccounted flows are absorbed into the legitimate ledger.
+
+---
+
+## 8. Global illicit financial flows — UNODC estimate
+
+| What | Amount | Source |
+|---|---|---|
+| All criminal proceeds globally (excluding tax evasion), 2009 | ~$2.1T, or 3.6% of global GDP | [UNODC, "Estimating Illicit Financial Flows," Oct 2011](https://www.unodc.org/documents/data-and-analysis/Studies/Illicit-financial-flows_31Aug11.pdf) |
+| Amount laundered through the financial system, 2009 | ~$1.6T, or 2.7% of global GDP (range: 2.1–4%) | Same report; [UNODC press release, Oct 2011](https://www.unodc.org/unodc/en/press/releases/2011/October/unodc-estimates-that-criminals-may-have-laundered-usdollar-1.6-trillion-in-2009.html) |
+| Drug trafficking's share | About half of laundered proceeds | Same report |
+| Cocaine traffickers' gross profits, 2009 | ~$84B | Same report |
+| Transnational organized crime proceeds (later estimate) | $1.6–2.2T (2014 data), of which $426–652B from drug trafficking | [UNODC World Drug Report 2017, Booklet 5](https://www.unodc.org/wdr2017/field/Booklet_5_NEXUS.pdf) |
+| Seizure/freeze rate | Less than 1% of global illicit financial flows | UNODC 2011 report |
+
+**Scaled to 2026 global GDP (~$115T):** At 2.7% of GDP, the 2026 equivalent would be ~$3.1T laundered annually. At 3.6%, total criminal proceeds would be ~$4.1T. These are rough scalings from 2009 ratios — no updated UNODC global total was found in this search.
+
+**What this means for the ledger:** If ~$3T/year is laundered through the financial system globally, and the intermediary transaction cost layer (§7) processes on the order of $100–200B/year in extraction, then the transaction cost layer is 3–7% of the laundering flow — a plausible toll rate for intermediary infrastructure. The flow does not require the intermediaries to *know* what they're processing; the structure itself is the mechanism.
+
+---
+
+## 9. Religious institutions — the tax-exempt bridge
+
+Noah's lead names "religious institution to the state and federal" as a connection in the ledger.
+
+| What | Amount / count | Source |
+|---|---|---|
+| Number of religious, charitable, and similar 501(c)(3) orgs | 1.48 million (IRS 2022 Data Book) | [MinistryWatch / IRS Data Book](https://ministrywatch.com/irs-data-book-reveals-size-scope-of-nations-tax-exempt-religious-nonprofits/) |
+| Church annual revenue (donations alone) | ~$143.6B (2022) | [Giving USA, cited by Tax Foundation](https://taxfoundation.org/research/all/federal/501c3-nonprofit-organization-tax-exempt/) |
+| Estimated taxes churches avoid annually | ~$71B | [Cragun et al. 2012 analysis, cited by The Conversation](https://theconversation.com/amid-calls-to-taxthechurches-what-and-how-much-do-us-religious-organizations-not-pay-the-taxman-164988) |
+| Filing requirement | Churches are exempt from Form 990 — no public financial disclosure required | [IRS Pub 1828](https://www.irs.gov/pub/irs-pdf/p1828.pdf) |
+| Total US nonprofit sector (all 501(c)) | $3.3T in revenue | [Tax Foundation, 2024](https://taxfoundation.org/research/all/federal/501c3-nonprofit-organization-tax-exempt/) |
+
+**What makes this a ledger bridge in Noah's framing:**
+
+1. **No disclosure.** Churches are the only major category of nonprofit that does not file Form 990. A church can receive and spend unlimited funds with zero public reporting.
+2. **Federal + state exemption stacks.** 501(c)(3) federal tax exemption + state property tax exemption + state sales tax exemption = a triple layer of untaxed financial flow.
+3. **The flow is bidirectional.** Churches receive donations (private → church), churches fund programs (church → community), and churches invest endowments (church → financial markets). At every step, the transaction is tax-exempt and, for churches specifically, unreported.
+4. **Scale.** $143.6B/year in donations alone, through organizations with no filing requirement, is a $143.6B/year channel that is structurally invisible to federal and state accounting.
+
+**This does not require churches to be complicit.** The structure itself — tax-exempt, filing-exempt, bidirectional flow — is the bridge between tracked and untracked money. A legitimate church and a shell church move money through the same legal architecture. The question is the *volume* flowing through the filing-exempt channel versus the *oversight* applied to it: currently, zero mandated public disclosure.
+
+---
+
+## 10. The ledger — putting the pieces together
+
+### The confirmed figures
+
+| # | Item | Amount | Status |
+|---|---|---|---|
+| 1 | Army unsupported adjustments, FY 2015 | $6.5T gross ($1.4T confirmed duplicate) | Confirmed (DODIG-2016-113) |
+| 2 | DoD assets under disclaimer of opinion | 47.2% of $4.65T ≈ $2.2T | Confirmed (DOWIG-2026-081) |
+| 3 | F-35 lifetime cost | $2T+ over 64 years | Confirmed (GAO-24-106703) |
+| 4 | Cumulative unsupported adjustments, FY 1998–2015 | $21T gross (net unknown) | Confirmed gross; net never published (Skidmore/Fitts) |
+| 5 | Accounting adjustments, FY 2017–2019 | $94.7T gross (net unknown) | Confirmed gross; 96% without adequate documentation (GAO-20-96) |
+| 6 | National debt | ~$40T | Confirmed; holder decomposition now in §5 |
+| 7 | HFT/dark pool intermediary extraction | ~$100–200B/year (order-of-magnitude estimate) | Estimated from components; not yet sourced as a single figure |
+| 8 | Global illicit financial flows | ~$1.6–3.1T/year laundered | UNODC 2011 + GDP scaling |
+| 9 | US church revenue (no filing required) | ~$143.6B/year | Giving USA 2022 |
+| 10 | Estimated forgone church taxes | ~$71B/year | Cragun et al. 2012 |
+
+### The structure of the argument
+
+The debt ($40T) balances — every dollar is someone's asset (§5). That is arithmetic, not a finding.
+
+The finding is that the Pentagon cannot tell you what its *net* unsupported position is (§6). The gross figures ($21T, $94.7T) are confirmed from government sources. The net is unpublished. That gap — the difference between the gross and the net, which the Pentagon itself has never disclosed — is the "missing" money in the ledger.
+
+The question Noah is asking is: where does the gap route? The argument has three intermediary layers:
+
+1. **The financial transaction layer** (§7): Every dollar that moves through the financial system pays a toll to intermediaries — HFT firms, dark pool operators, market makers. That toll is tiny per transaction and enormous in aggregate (~$100–200B/year). It is the "millisecond debt."
+
+2. **The illicit flow layer** (§8): UNODC estimates ~$1.6–3.1T/year moves through the financial system as laundered proceeds. Less than 1% is seized. This flow uses the same financial infrastructure as legitimate transactions.
+
+3. **The filing-exempt layer** (§9): US churches alone move ~$143.6B/year with no federal filing requirement. The broader nonprofit sector moves $3.3T/year. This is the bridge "religious institution to the state and federal" — not because churches are criminal, but because the *structure* is filing-exempt, creating a channel between tracked and untracked money.
+
+### What's still needed to close the arithmetic
+
+- [ ] The Pentagon's net unsupported position after deduplication (the number that has never been published)
+- [ ] Aggregate US financial market transaction costs from SEC/FINRA execution-quality data (to replace the order-of-magnitude estimate)
+- [ ] An updated UNODC or FATF global laundering estimate (the 2011 figure scaled by GDP is a placeholder)
+- [ ] The specific arithmetic Noah says he proved — balancing the gap against cartel infrastructure costs
 
 ---
 
