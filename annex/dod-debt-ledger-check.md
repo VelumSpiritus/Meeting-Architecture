@@ -358,10 +358,15 @@ The trade deficit is the pump: $901B/yr flows abroad to buy imports, and those d
 
 | Line | Amount | Source |
 |---|---|---|
-| HFT/dark pool intermediary extraction (US) | ~$100–200B/yr (order-of-magnitude) | §7 component estimate |
-| Global criminal proceeds (excl. tax evasion) | ~$2.1T (2009) → scaled ~$4.1T (2026) | [UNODC 2011](https://www.unodc.org/documents/data-and-analysis/Studies/Illicit-financial-flows_31Aug11.pdf), 3.6% of GDP |
-| Laundered through the financial system | ~$1.6T (2009) → scaled ~$3.1T (2026) | Same, 2.7% of GDP |
-| Seized/frozen | <1% of flows | Same |
+| US equity price-discovery costs (total) | **~$135B/yr** (2024) | arXiv preprint (2026), up from $7B in 1980 |
+| Citadel Securities trading revenue | $12.2B (2025) | [Bloomberg/HedgeWeek](https://www.hedgeweek.com/citadel-securities-smashes-q1-records-with-3-4bn-in-trading-revenue/) |
+| Virtu Financial net trading income | $2.4B (2025) | [Virtu IR](https://ir.virtu.com/node/12356/pdf) |
+| PFOF to brokers | ~$4.8B/yr (2025, ~$1.2B/quarter) | [GlobalTrading](https://www.globaltrading.net/?p=39306) |
+| Global illicit financial activity | **$4.4T** (2025) | [Nasdaq Verafin 2026 Report](https://verafin.com/news/nasdaq-verafin-2026-global-financial-crime-report/) |
+| — Drug trafficking | $1.1T | Same |
+| — Human trafficking | $528.5B | Same |
+| — Fraud/scam losses | $579.4B | Same |
+| Seized/frozen | <1% of flows | UNODC (unchanged since 2011) |
 | Filing-exempt religious institution flow | ~$143.6B/yr (zero Form 990) | [Giving USA 2022](https://taxfoundation.org/research/all/federal/501c3-nonprofit-organization-tax-exempt/) |
 
 **H. The Pentagon's opaque throughput**
