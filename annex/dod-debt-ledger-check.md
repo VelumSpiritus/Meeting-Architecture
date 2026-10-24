@@ -604,6 +604,48 @@ The enforcement-to-fraud ratio: DOJ's record-breaking $14.6B takedown is **4.7%*
 
 The $94B/yr in Medicare and Medicaid improper payments flows through the same six health insurers that collect $1.65T (§M). The $3T cumulative since 2003 overlaps the same 22-year window as the Pentagon's $10.2T (§H) and the four-channel $68T extraction total (point 12). The insurance industry collects **$2.5T in premiums annually** (NAIC, 2024) — $308.6B in fraud is 12% of the premium base. The same institutional shareholders own the insurers, the banks, and the defence contractors. And the government counts every dollar of it, publishes the reports, and recovers less than 5%.
 
+**P. Credit bureaus — the pricing layer of the debt machine**
+
+Three companies — Equifax, Experian, and TransUnion — hold credit files on over 200 million Americans. They are not neutral record-keepers. They are the **scoring layer** that determines the price of the $73T in private debt (§J): your score sets your interest rate, your rate sets your payment, your payment flows to the banks. The consumer is the product; the bank is the customer. No American chose to be in the system, and none can leave it.
+
+**The three bureaus:**
+
+| Company | Revenue (FY2025) | Source |
+|---|---|---|
+| Experian | **~$7.5B** | [Macrotrends / Experian filings](https://macrotrends.net/stocks/charts/EXPGY/experian/revenue) |
+| Equifax | **~$6.1B** | [Macrotrends / Equifax filings](https://macrotrends.net/stocks/charts/EFX/equifax/revenue); ~40% from Workforce Solutions (income verification) |
+| TransUnion | **~$4.6B** | [Macrotrends / TransUnion filings](https://macrotrends.net/stocks/charts/TRU/transunion/revenue) |
+| **Three-bureau total** | **~$18.2B** | — |
+
+The broader US credit reporting and rating agency industry: **~$17.6B** (IBISWorld, 2026). Including data brokers and specialty bureaus: the [Mordor Intelligence estimate](https://www.mordorintelligence.com/industry-reports/united-states-credit-agency-market) puts the US credit agency market at **~$18.8B** (2025), growing to $26.3B by 2031.
+
+**The error rate — the government's own measurement:**
+
+| Finding | Source |
+|---|---|
+| **1 in 5 consumers** has a verified error on at least one credit report | [FTC Credit Report Accuracy Study (2012–2013)](https://www.ftc.gov/sites/default/files/documents/public_statements/prepared-statement-federal-trade-commission-discussing-most-recent-commission-report-congress-under/130507fcra.pdf) |
+| **1 in 20** has an error serious enough to be denied credit or charged a higher rate | Same |
+| **5% of consumers** who disputed errors received a score change large enough to lower their credit-risk tier — meaning they had been paying a higher interest rate on every loan | Same |
+| **85% of all CFPB complaints** (2025) are about credit reporting — 4.76M of 5.6M total | [NCLC / CFPB data](https://www.nclc.org/cfpb-takes-steps-to-reduce-the-number-of-people-who-seek-help-from-the-consumer-agency/) |
+
+**The extraction mechanism:** A credit score error that lowers your tier by one notch raises your mortgage rate by 50–150 basis points. On a $300,000 mortgage, that's $1,500–$4,500/yr in excess interest — paid to the bank, not the bureau. The bureau profits from selling the file; the bank profits from the higher rate the file produces. The incentive is aligned: errors that raise rates generate revenue for the bank, which is the bureau's paying customer. No one in the chain profits from fixing the error except the consumer — who has no market power, no alternative provider, and since 2025, a gutted regulator.
+
+**The accountability record:**
+
+| Event | Amount | Source |
+|---|---|---|
+| Equifax breach (2017): **147 million consumers' data exposed** — names, SSNs, birth dates, addresses, driver's licences | Settlement: **$700M** (= **$4.76 per person**) | [CFPB / FTC settlement (Jul 2019)](https://consumerfinance.gov/about-us/newsroom/cfpb-ftc-states-announce-settlement-with-equifax-over-2017-data-breach) |
+| Equifax CFPB settlement (2025): improper dispute investigations | **$15M** | [CFPB (Jan 2025)](https://www.consumerfinance.gov/archive/newsroom/cfpb-ftc-states-announce-settlement-with-equifax-over-2017-data-breach/) |
+| Experian complaint-resolution rate (2024 → 2025) | **Dropped from ~20% to <1%** | [ProPublica analysis of CFPB data](https://propublica.org/article/credit-report-mistakes-cfpb-experian-transunion) |
+| TransUnion complaint-resolution rate (2025) | **Cut in half** by October 2025 | Same |
+| CFPB (Feb 2026) | Began discouraging consumer complaints about credit reporting — adding warning screens before filing | [NCLC (Feb 2026)](https://www.nclc.org/consumer-financial-protection-bureau-moves-to-protect-credit-reporting-companies-from-consumers-complaints/) |
+
+Equifax exposed 147 million people's most sensitive data, paid $4.76 per person, saw no executive criminal charges, and its stock price fully recovered. The breach penalty was **0.4%** of the company's market cap — a rounding error. The bureaus' complaint-resolution rates collapsed in 2025, and the CFPB — the only federal regulator with jurisdiction — began discouraging consumers from filing complaints.
+
+**The connection to every other pipe:**
+
+The credit bureaus are the pricing mechanism for the $3.7T/yr in private debt service (§J, point 3). Every basis point of interest that flows from a scored consumer to a bank passes through their files. The $18.2B the bureaus earn is a small toll on a $73T debt stock — but the toll sets the price on the whole stock. The same institutional shareholders (BlackRock, Vanguard, State Street) own Equifax, Experian, and TransUnion alongside the banks that pay them, the insurers that use their scores, and the defence contractors. The scoring layer is not separate from the extraction architecture — it is the valve that sets the flow rate.
+
 ### The full balance — everything traced
 
 **The economy produces $30T.** Here is where it goes and what is extracted along the way:
