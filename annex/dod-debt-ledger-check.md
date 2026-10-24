@@ -712,6 +712,11 @@ The Pentagon's $10.2T is 15% of the total $68T. The other 85% is perfectly visib
 | Top 6 health insurers revenue | ~$1.65T | 29% of NHE through 6 companies; $71B profit (2024) |
 | **Top 1% net worth** | **$54.8T (31.7%)** | Record share (Q3 2025); 13× the bottom 50% |
 | Bottom 50% net worth | $4.25T (2.5%) | 167 million people |
+| **Federal improper payments (GAO, FY2025)** | **$186B/yr** | 64 programs; ~$153B overpayments; cumulative ~$3T since FY2003 |
+| Medicare + Medicaid improper payments | $94B/yr | $57B Medicare + $37B Medicaid (CMS FY2025) |
+| CRS fraud estimate (subset of improper payments) | $233B–$521B/yr | 2024 CRS analysis |
+| Total insurance fraud, all lines (CAIF 2022) | $308.6B/yr | $2.5T premium base; fraud = 12% of premiums |
+| DOJ healthcare fraud takedown (2025, record) | $14.6B charged | 324 defendants; $245M seized (0.08% of charged amount) |
 
 ### The two faces
 
