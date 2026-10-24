@@ -455,15 +455,63 @@ The revolving door is documented: former Pentagon officials join defense contrac
 
 ### The full balance — everything traced
 
-The arithmetic:
+**The economy produces $30T.** Here is where it goes and what is extracted along the way:
 
-1. **The wedge** (~$600B/yr, US) sits between two numbers the government does report: corporate pre-tax profits ($4.2T) and GDP (~$30T). The profit share is ~14% pre-tax — roughly double its historical ~6–7% level. The *excess* profit share above the pre-1979 baseline (~7% × $30T = ~$2.1T → current $4.2T − $2.1T = **~$2.1T/yr** in excess corporate profits) is the wedge's cumulative expression in earnings. The ~$600B/yr is the *rate of widening*; the ~$2.1T is its *stock* in any given year.
+**1. Labour gets 52%, down from ~64% in 1979.**
+Employee compensation: ~$15.7T. But productivity rose 90% while pay rose 33% — the gap is the ILO's $2.4T/yr shortfall. That missing $2.4T didn't disappear; it moved to the capital side.
 
-2. **The Pentagon's opacity is not in the budget — it is in the accounting trail after the money is spent.** The DoD receives a set budget through congressional appropriation and executive signature — $868B in FY2025, a public number approved through the normal legislative process. The money *in* is known. What is opaque is what happens *after*: the journal-voucher adjustments that should trace each appropriated dollar to its final destination. Comptroller David Norquist told Congress directly: "we have not received $21 trillion" in appropriations since 1776 — the $21T (and $94.7T) are post-hoc accounting entries generated because "we have systems that do not automatically pass data from one to the other." Those adjustments are 96% without adequate documentation (GAO-20-96), and the net after deduplication has never been published. The Pentagon is the federal government's largest discretionary spender, the only one of 24 major agencies never to pass an audit (§2, §3), and its $868B/yr flows through contractors into the same corporate sector whose profit share doubled since 1979. The input is transparent; the throughput is not.
+**2. The corporate sector claims 14%, doubled from ~7% pre-1979.**
+Corporate pre-tax profits: $4.2T. The excess above the pre-1979 baseline: ~$2.1T/yr. The extraction wedge (~2%/yr × GDP = ~$600B/yr) is the rate at which this share is still widening.
 
-3. **The intermediary layer** (§7, ~$100–200B/yr in transaction costs) is the millisecond-scale mechanism: the spread extracted on every trade, invisible below the line of individual perception. The **illicit flow layer** (§8, ~$1.6–3.1T/yr laundered globally) uses the same pipes. The **filing-exempt layer** (§9, ~$143.6B/yr through churches with zero disclosure) is the quietest channel — structurally invisible to both state and federal reporting.
+**3. The financial sector collects ~$4.9T/yr in interest — 16% of GDP — for intermediating.**
+- Private debt service (households + business): ~$3.7T/yr — on $73T in private debt
+- Public debt interest: $970B/yr — on $40T in federal debt
+- IORB to banks: $186B/yr — risk-free, from the Fed
 
-4. **The net interest on the debt** (~$970B/yr, now exceeding the entire defense budget) is the government paying the holders of §5 for the privilege of running a deficit ($1.8T/yr). That interest payment is itself an extraction: it flows from taxpayers to bondholders, predominantly the institutional holders in the §5 decomposition.
+The same institutions collect from all three streams. The five largest US banks (JPMorgan, BofA, Citi, Wells Fargo, US Bank) received $136B in IORB alone since 2013 — 12% of their profits. The Big Three asset managers (BlackRock $14T, Vanguard $12T, State Street $5.7T = $31T+ AUM) hold both the Treasury bonds and the corporate equities. The financial sector doubled its share of GDP from 4% (1970) to 8% (2025) — an additional ~$1.2T/yr above its historical share.
+
+**4. The government collects $5.2T and chooses not to collect $2.9T more.**
+Tax expenditures: $2.2T/yr in revenue legislatively foregone — the three largest items ($847B: retirement exclusion, capital gains rate, employer health) nearly equal the defense budget ($868B). The reduced capital gains rate alone ($252B/yr) subsidizes exactly the asset class the extraction wedge concentrates into. The IRS tax gap: $696B/yr owed but uncollected. Total foregone + uncollected: $2.9T — 56% of what the government does collect.
+
+**5. The government spends $11.4T across all levels, borrows $1.8T, and pays $970B in interest.**
+Federal spending: $7.0T. State & local: $4.4T. The deficit ($1.8T) accrues to the $40T debt. The interest on that debt ($970B/yr) now exceeds the defense budget ($868B) — the government pays more to its creditors than to its military.
+
+**6. The Pentagon's $868B flows through the one department whose books can't be traced.**
+Congress appropriates the budget. The executive signs it. The input is public. What is opaque is the throughput: the post-hoc journal-voucher adjustments ($21T gross FY1998–2015, $94.7T gross FY2017–2019) that should trace each dollar to its destination are 96% undocumented (GAO-20-96), and the net after deduplication has never been published. 24% of the budget ($207B) flows to five companies: Lockheed Martin, RTX, Northrop Grumman, General Dynamics, Boeing — all publicly traded, all held by the same institutional investors (BlackRock, Vanguard, State Street) that manage the Treasury bond funds.
+
+**7. The trade deficit ($901B/yr) recycles dollars through foreign holders back into US debt.**
+$1.24T flows out for goods, $340B comes back for services, net $901B. Those dollars return as foreign purchases of US Treasuries — that's how foreign holders accumulated $9.4T, including the Cayman Islands ($453B — the 6th-largest holder is a tax haven). The US pays ~$223B/yr in interest to foreign holders for carrying the debt their trade surplus funded.
+
+**8. The intermediary and illicit layers use the same pipes.**
+HFT/dark pool extraction: $100–200B/yr at millisecond speed on every trade. UNODC global laundering: ~$3.1T/yr, less than 1% seized. Filing-exempt religious institutions: $143.6B/yr with zero Form 990 — the quietest channel between tracked and untracked money. The structure does not require complicity; the architecture itself is the mechanism.
+
+**9. The Fed has stopped paying the public and started paying the banks.**
+Before 2022, the Fed remitted ~$80–100B/yr to Treasury — public revenue. Since September 2022: $0 remitted. The Fed's cumulative loss: $243.5B (deferred asset, end 2025). Cause: it pays banks more in IORB ($186B/yr) than it earns on its Treasuries (~$107B/yr). Projected return to remittances: ~2030. Until then, the public loses both the remittance AND pays the IORB.
+
+### The summary identity
+
+| What | Annual flow | Direction |
+|---|---|---|
+| GDP (total output) | $30T | Produced |
+| Employee compensation | $15.7T (52%) | To labour — down from 64% |
+| Corporate profits (pre-tax) | $4.2T (14%) | To capital — up from 7% |
+| Excess profits above pre-1979 share | $2.1T | The extraction stock |
+| Extraction rate (deliberate line wedge) | $600B/yr | The rate of widening |
+| ILO labour shortfall (global) | $2.4T/yr | What workers lost |
+| Financial sector interest take (all streams) | $4.9T (16% of GDP) | Private debt service + public interest + IORB |
+| Government revenue collected | $5.2T | Taxes collected |
+| Government revenue foregone (tax expenditures + gap) | $2.9T | Revenue not collected — 56% of what IS collected |
+| Federal deficit | $1.8T | Borrowed, accruing to $40T debt |
+| Debt interest | $970B | Taxpayers → bondholders (exceeds defense budget) |
+| IORB to banks | $186B | Fed → banks (risk-free) |
+| Lost Fed remittances | $80–100B/yr | Public revenue eliminated |
+| Trade deficit | $901B | Dollars out, debt in |
+| Pentagon throughput (opaque trail) | $868B | 96% undocumented adjustments |
+| Top 5 defense contractors | $207B | 24% of DoD budget to 5 companies |
+| HFT/dark pool extraction | $100–200B | Millisecond toll |
+| Global illicit flows laundered | $3.1T | <1% seized |
+| Filing-exempt channel (churches) | $143.6B | Zero disclosure |
+| Private debt outstanding | $73T | 2.4× the federal debt |
 
 ### The two faces
 
