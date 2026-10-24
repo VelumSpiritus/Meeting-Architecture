@@ -595,6 +595,9 @@ The Pentagon's $10.2T is 15% of the total $68T. The other 85% is perfectly visib
 | Global illicit financial activity | $4.4T (2025) | Nasdaq Verafin; <1% seized |
 | Filing-exempt channel (churches) | $143.6B | Zero disclosure |
 | Private debt outstanding | $73T | 2.4× the federal debt |
+| **Cumulative extraction throughput (FY1998–2019)** | **~$68T** | **Four non-overlapping channels: debt service $30.6T + tax expenditures $22T + Pentagon $10.2T + fed interest $5.0T** |
+| Financial sector excess GDP share (FY1998–2019) | ~$9.8T | Same magnitude as the Pentagon's untraceable throughput |
+| Corporate profits after tax (FY1998–2019) | ~$23T | What the corporate sector retained — the NET of the $68T GROSS |
 
 ### The two faces
 
