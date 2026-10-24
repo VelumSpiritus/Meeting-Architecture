@@ -408,15 +408,21 @@ The trade deficit is the pump: $901B/yr flows abroad to buy imports, and those d
 | Seized/frozen | <1% of flows | UNODC (unchanged since 2011) |
 | Filing-exempt religious institution flow | ~$143.6B/yr (zero Form 990) | [Giving USA 2022](https://taxfoundation.org/research/all/federal/501c3-nonprofit-organization-tax-exempt/) |
 
-**H. The Pentagon's opaque throughput**
+**H. The Pentagon's opaque throughput — bounded**
 
 | Line | Amount | Source |
 |---|---|---|
-| DoD budget (appropriated, known input) | $868B/yr | Congress appropriates, executive signs |
-| Cumulative unsupported adjustments (FY1998–2015) | $21T gross | Skidmore/Fitts (Michigan State) |
-| Accounting adjustments (FY2017–2019) | $94.7T gross | [Bloomberg/Gazette](https://gazette.com/?p=1290413) |
-| Documentation rate | **96% without adequate documentation** | [GAO-20-96](https://www.gao.gov/assets/d2096.pdf) |
-| Net after deduplication | **Never published** | — |
+| DoD budget (appropriated, known input) | $868B/yr (FY2025) | Congress appropriates, executive signs |
+| Cumulative appropriations FY1998–2015 | ~$9.2T | CRS/OMB Historical Tables; DoD Green Book |
+| Cumulative appropriations FY2017–2019 | ~$2.0T | Same |
+| Gross unsupported adjustments (FY1998–2015) | $21T | [Skidmore/MSU](https://msutoday.msu.edu/news/2017/12/msu-scholars-find-21-trillion-in-unauthorized-government-spending-defense-department-to-conduct) |
+| Gross accounting adjustments (FY2017–2019) | $94.7T | [Bloomberg/Gazette](https://gazette.com/?p=1290413) |
+| — FY2019 alone | $35T | [WION / Ellen Brown](https://ellenbrown.com/2025/08/27/unaudited-power-the-military-budget-nobody-controls/) |
+| Multiplier: adjustments ÷ appropriations | **2.3×** (FY1998–2015); **47×** (FY2017–2019) | Computed |
+| Documentation rate (FY2015 Army sample) | **~90% unsupported** | [DODIG-2016-113](https://media.defense.gov/2016/Jul/26/2001714261/-1/-1/1/DODIG-2016-113.pdf) |
+| Documentation rate (FY2019 DoD-wide) | **96% without adequate documentation** | [GAO-20-96](https://www.gao.gov/assets/d2096.pdf) |
+| **Net after dedup (bounded)** | **~$10.2T of $11.2T (91%)** | Appropriations × unsupported rate |
+| Meaning | 91% of 20 years of Pentagon spending passed through systems that cannot trace the path from appropriation to expenditure | The system doesn't lose money; it loses the trail |
 | Audit status | 8 consecutive failures; target 2028 | §2, §3 |
 
 **I. The income side of GDP — where the $30T actually goes**
