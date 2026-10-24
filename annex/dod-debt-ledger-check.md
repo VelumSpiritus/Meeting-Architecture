@@ -178,7 +178,7 @@ Noah's lead names "religious institution to the state and federal" as a connecti
 | 4 | Cumulative unsupported adjustments, FY 1998–2015 | $21T gross (net unknown) | Confirmed gross; net never published (Skidmore/Fitts) |
 | 5 | Accounting adjustments, FY 2017–2019 | $94.7T gross (net unknown) | Confirmed gross; 96% without adequate documentation (GAO-20-96) |
 | 6 | National debt | ~$40T | Confirmed; holder decomposition now in §5 |
-| 7 | HFT/dark pool intermediary extraction | ~$100–200B/year (order-of-magnitude estimate) | Estimated from components; not yet sourced as a single figure |
+| 7 | Financial intermediary extraction (US equities) | **~$135B/year** (2024); Citadel $12.2B + Virtu $2.4B = $14.6B visible | arXiv preprint (2026); [HedgeWeek](https://www.hedgeweek.com/citadel-securities-smashes-q1-records-with-3-4bn-in-trading-revenue/); [Virtu IR](https://ir.virtu.com/node/12356/pdf) |
 | 8 | Global illicit financial flows | **$4.4T/year** (2025) | [Nasdaq Verafin 2026 Report](https://verafin.com/news/nasdaq-verafin-2026-global-financial-crime-report/) |
 | 9 | US church revenue (no filing required) | ~$143.6B/year | Giving USA 2022 |
 | 10 | Estimated forgone church taxes | ~$71B/year | Cragun et al. 2012 |
