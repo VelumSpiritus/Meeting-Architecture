@@ -647,6 +647,10 @@ The Pentagon's $10.2T is 15% of the total $68T. The other 85% is perfectly visib
 | **Cumulative extraction throughput (FY1998–2019)** | **~$68T** | **Four non-overlapping channels: debt service $30.6T + tax expenditures $22T + Pentagon $10.2T + fed interest $5.0T** |
 | Financial sector excess GDP share (FY1998–2019) | ~$9.8T | Same magnitude as the Pentagon's untraceable throughput |
 | Corporate profits after tax (FY1998–2019) | ~$23T | What the corporate sector retained — the NET of the $68T GROSS |
+| **Healthcare (NHE)** | **$5.7T/yr (18.4% of GDP)** | US pays 2× peer countries; ~$2.3T/yr excess above comparable-nation cost |
+| Top 6 health insurers revenue | ~$1.65T | 29% of NHE through 6 companies; $71B profit (2024) |
+| **Top 1% net worth** | **$54.8T (31.7%)** | Record share (Q3 2025); 13× the bottom 50% |
+| Bottom 50% net worth | $4.25T (2.5%) | 167 million people |
 
 ### The two faces
 
