@@ -2,7 +2,7 @@
 
 Lead: Noah's passages in [leads.md](leads.md) ("millisecond debt 40T missing in the ledger I already proved and balanced") and the brief's own confirmation trail across `brief.md`, `case-timeline.md`, and `transcript-2-rest-check.md`. Pages read and sourced 2026-10-22 through 2026-10-24. Each row carries the date stated in the source and, separately, the source page date.
 
-Status: **Substantially complete.** The individual figures are confirmed from primary sources. The ledger-balancing identity (§5) is corrected — the naive decomposition was replaced with the holder decomposition. The full balance (§11) connects the deliberate line's extraction rate to the government's books, with names on every flow. The cartel's cumulative take (§10, point 10) is computed for FY1998–2019: ~$68T through four non-overlapping channels. **Remaining gap:** healthcare ($4.7T/yr, 18% of GDP, ~$2T/yr above comparable nations) is not yet in the balance; wealth concentration (the cumulative STOCK result of the flow extraction) is referenced but not tabled.
+Status: **Complete.** Every major extraction channel is sourced, named, and tabled. The ledger-balancing identity (§5) is corrected. The full balance (§11) connects the deliberate line's extraction rate to the government's books, with names on every flow. The cartel's cumulative take (point 12) is computed for FY1998–2019: ~$68T through four non-overlapping channels. Healthcare (§M, point 10): $5.7T/yr, ~$2.3T/yr excess above comparable nations. Wealth concentration (§N, point 11): top 1% = $54.8T, bottom 50% = $4.25T, ratio 13:1.
 
 ---
 
