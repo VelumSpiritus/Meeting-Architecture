@@ -303,6 +303,33 @@ To put that in proportion: the government collects $5.2T and *chooses not to col
 | Holders: foreign | ~$9.4T (23%) | §5 |
 | Holders: mutual funds, pensions, banks, other domestic | remainder (~49%) | §5 |
 
+**D2. Who collects the interest — names on the $970B/yr**
+
+The $970B/yr in net interest is not an abstraction. It flows to specific accounts. Computed from the holder shares in §5:
+
+| Holder class | Share of ~$40T | Interest received (~$970B × share) | Who, specifically |
+|---|---|---|---|
+| Intragovernmental trust funds | ~$7.1T (17.5%) | ~$170B/yr | Social Security, Military Retirement, Medicare trust funds — the government paying itself, but the interest still accrues as a claim |
+| Federal Reserve | ~$4.5T (11%) | ~$107B/yr *notional* — **but the Fed has remitted $0 to Treasury since September 2022** | The Fed earns interest on its Treasuries but is paying MORE in IORB to banks than it earns, running cumulative losses of **$243.5B** (deferred asset, end of 2025). [Wolf Street](https://wolfstreet.com/2024/01/12/fed-reports-operating-loss-of-114-billion-for-2023-as-interest-expense-blows-out/); [Cato](https://www.cato.org/publications/reforming-federal-reserve-part-5.md) |
+| Foreign holders | ~$9.4T (23%) | ~$223B/yr flowing OUT of the US | Japan (~$1.1T), UK (~$940B), China (~$633B), **Cayman Islands (~$453B — the 6th-largest foreign holder is a tax haven)**, Canada (~$460B), Belgium (~$483B). [Treasury TIC data](https://ticdata.treasury.gov/resource-center/data-chart-center/tic/Documents/mfh.txt); [Voronoi/TIC](https://www.voronoiapp.com/debt/Top-Foreign-Holders-of-US-Debt--8940) |
+| Mutual funds, ETFs, money markets | ~$4–5T (10–12%) | ~$107B/yr | Managed by the Big Three: **BlackRock (~$14T AUM), Vanguard (~$12T), State Street (~$5.7T)** — combined $31T+, more than US GDP. [investingintheweb.com](https://investingintheweb.com/blog/largest-asset-managers/); [walnutinvest.com](https://walnutinvest.com/stats/largest-asset-manager-statistics) |
+| Banks & insurance | ~$2–3T (5–7%) | ~$58B/yr | JPMorgan Chase, Bank of America, Citigroup, Wells Fargo — the same banks that receive IORB (below) |
+| Private pensions | ~$2–3T (5–7%) | ~$58B/yr | Defined benefit and contribution plans — workers' retirement, invested in the same line |
+| Other domestic | remainder (~15–20%) | ~$170B/yr | Hedge funds, corporations, individuals via TreasuryDirect |
+
+**The Fed's IORB — a second payment stream to the same banks:**
+
+On top of the debt interest, the Federal Reserve pays **Interest on Reserve Balances (IORB)** to banks that hold reserves at the Fed. In 2024 alone: **$186 billion** in IORB payments. Cumulative since 2013: **$607 billion**. The five largest US recipients — JPMorgan Chase, Bank of America, Citigroup, Wells Fargo, and US Bank — received **$136 billion** of that, which equates to **12% of their combined profits** over the same period. Source: [Sen. Rand Paul, obtained from the Fed](https://www.paul.senate.gov/op_eds/a-600-billion-gift-to-wall-street-paid-for-by-the-public).
+
+The mechanism: the Fed buys Treasuries (earning ~$107B/yr in interest from Treasury), then pays banks MORE than that in IORB ($186B/yr) to park reserves. The difference is a loss. The Fed's cumulative deferred asset: **$243.5 billion** by end of 2025 — meaning the Fed has sent **$0 to Treasury since September 2022**, and will not resume remittances until that $243B hole is filled (projected ~2030). Before this, the Fed remitted ~$80–100B/yr to Treasury as revenue.
+
+**So the public pays three times:**
+1. **Debt interest** ($970B/yr) — taxpayers pay bondholders for carrying the debt
+2. **IORB** ($186B/yr) — the Fed pays banks risk-free interest for holding reserves
+3. **Lost remittances** (~$80–100B/yr that Treasury no longer receives) — because the Fed's losses from IORB ate the surplus
+
+Total direct transfer to the financial sector from these three channels: ~$1.2 trillion/year.
+
 **E. The trade deficit — the dollar recycling loop**
 
 | Line | Amount | Source |
