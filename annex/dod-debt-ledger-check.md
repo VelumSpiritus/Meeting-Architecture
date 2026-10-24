@@ -255,43 +255,100 @@ Now compare to the government's reported statistics for FY 2025:
 | Federal revenue | ~$5.2T | Same |
 | US corporate profits (pre-tax, 2025 SAAR) | $4.2T | [FRED A053RC1Q027SBEA](https://fred.stlouisfed.org/series/A053RC1Q027SBEA) |
 
-### The balancing identity — from the government's own reported numbers
+### The full ledger — every input and output, from reported sources
 
-Start with what the government itself publishes. No secret data, no inference — just the reported statistics and the peer-reviewed/journalistic cartel figures, assembled:
+A balance is all of it. These are the government's own reported numbers, the BEA/FRED national accounts, the IRS's own gap estimate, and the peer-reviewed/journalistic cartel statistics — assembled into one table.
 
-**The US ledger (FY 2025, all from government sources):**
-
-| Line | Amount | What it tells you |
-|---|---|---|
-| GDP | ~$30T | The economy's total output in a year |
-| Federal revenue | ~$5.2T (17% of GDP) | What the government collects |
-| Federal spending | ~$7.0T (23% of GDP) | What the government spends |
-| Deficit | ~$1.8T (6% of GDP) | The gap — funded by issuing more debt |
-| Accumulated debt | ~$40T | The sum of all deficits, owed to the holders in §5 |
-| Net interest on that debt | ~$970B/yr | What taxpayers pay bondholders for carrying the debt |
-| DoD budget (appropriated, public) | $868B | Known input — Congress approves it, the executive signs it |
-| Corporate pre-tax profits | $4.2T (14% of GDP) | What the corporate sector claims from the economy |
-| Corporate pre-tax profits, pre-1979 baseline | ~$2.1T (~7% of GDP) | What the share was before the distributional break |
-| **Excess corporate profits above baseline** | **~$2.1T/yr** | The extraction wedge's cumulative expression in earnings |
-
-The ~2%/yr extraction wedge on $30T GDP = ~$600B/yr. That is the *rate* at which financial claims outrun the real economy. The *stock* — the excess corporate profit share above the pre-1979 baseline — is ~$2.1T/yr in any given year. The ILO's $2.4T/yr global labour shortfall is the same quantity, read from the wage side.
-
-**The variating debt accrual:** The debt grows by roughly the deficit each year (~$1.8T). The interest on the existing pile (~$970B/yr) now exceeds the entire defense budget ($868B). That interest payment flows from taxpayers to the bondholders decomposed in §5 — predominantly institutional holders (trust funds, the Fed, foreign governments, mutual funds). The debt *accrues* at a rate governed by the deficit, and the *cost of carrying it* (the interest) is itself a redistribution from public revenue to private/institutional holders.
-
-**The cartel and illicit flow statistics (peer-reviewed and journalistic sources):**
+**A. What the economy produces**
 
 | Line | Amount | Source |
 |---|---|---|
+| US GDP (2025) | ~$30T | BEA |
+
+**B. What the government collects and spends**
+
+| Line | Amount | Source |
+|---|---|---|
+| Federal revenue | ~$5.2T (17% of GDP) | [Treasury / American Action Forum](https://www.americanactionforum.org/insight/u-s-treasury-fy-2025-deficit-totaled-1-8-trillion/) |
+| Federal spending | ~$7.0T (23% of GDP) | [Treasury Combined Statement FY2025](https://fiscal.treasury.gov/files/reports-statements/combined-statement/cs2025/outlay.pdf) |
+| Federal deficit | ~$1.8T (6% of GDP) | Same |
+| State & local government spending | ~$4.4T | [BEA via FRED W079RC1A027NBEA](https://fred.stlouisfed.org/series/W079RC1A027NBEA): $4,387B (2025) |
+| **Total government spending (all levels)** | **~$11.4T (~38% of GDP)** | Federal + state/local |
+| DoD budget (appropriated, public) | $868B | [PGPF / OMB](https://www.pgpf.org/budget-basics/budget-explainer-national-defense) |
+| Federal aid to state/local/tribal | ~$1.1T | [GovInfo FY2025 budget](https://www.govinfo.gov/content/pkg/BUDGET-2025-PER/pdf/BUDGET-2025-PER-3-5.pdf) (overlap with federal spending above) |
+
+**C. Revenue the government does NOT collect**
+
+| Line | Amount | Source |
+|---|---|---|
+| Federal tax expenditures (deductions, exemptions, credits) | ~$2.2T (FY2025); $2.3T projected FY2026 | [JCT via CRFB](https://www.crfb.org/blogs/jct-projects-tax-expenditures-will-be-23t-2026); [PGPF](https://www.pgpf.org/article/8-key-charts-on-tax-breaks/) |
+| — of which: individual income tax breaks | ~$2.0T | Same |
+| — of which: corporate tax breaks | ~$264B | Same |
+| Top 3 items alone (retirement exclusion, capital gains rate, employer health) | ~$847B | JCT FY2026: $355B + $252B + $240B |
+| IRS tax gap (taxes owed but uncollected) | ~$696B gross / ~$606B net (TY2022, latest) | [IRS Tax Gap Report, Oct 2024](https://dontmesswithtaxes.com/?p=4112); [CFO Dive](https://www.cfodive.com/news/irs-budget-staff-cuts-perpetuate-700b-lost-tax-revenues-treasury/809803/) |
+| **Total revenue foregone + uncollected** | **~$2.9T/yr** | Tax expenditures + tax gap |
+| Church-specific exemption (zero Form 990, triple tax exemption) | ~$71B/yr in estimated forgone taxes | [Cragun et al. 2012 / The Conversation](https://theconversation.com/amid-calls-to-taxthechurches-what-and-how-much-do-us-religious-organizations-not-pay-the-taxman-164988) (subset of tax expenditures above) |
+
+To put that in proportion: the government collects $5.2T and *chooses not to collect* another $2.9T. The revenue it foregoes is **56% of the revenue it takes in** — and the three largest tax expenditures alone ($847B) nearly equal the entire defense budget ($868B).
+
+**D. The debt circuit**
+
+| Line | Amount | Source |
+|---|---|---|
+| Accumulated federal debt | ~$40T | Treasury |
+| Net interest on that debt | ~$970B/yr | [American Action Forum](https://www.americanactionforum.org/insight/u-s-treasury-fy-2025-deficit-totaled-1-8-trillion/) |
+| Debt accrual rate | ~$1.8T/yr (the deficit) | Same |
+| Holders: intragovernmental trust funds | ~$7.1T (17.5%) | §5 decomposition |
+| Holders: Federal Reserve | ~$4.5T (11%) | §5 |
+| Holders: foreign | ~$9.4T (23%) | §5 |
+| Holders: mutual funds, pensions, banks, other domestic | remainder (~49%) | §5 |
+
+**E. The trade deficit — the dollar recycling loop**
+
+| Line | Amount | Source |
+|---|---|---|
+| US trade deficit (2025, goods + services) | ~$901B | [AP / WTOP](https://wtop.com/business-finance/2026/02/u-s-trade-deficit-slipped-to-901-billion-last-year-amid-trump-tariffs/) |
+| — Goods deficit (record) | ~$1.24T | Same |
+| — Services surplus (offset) | ~$340B | BEA |
+| Current account deficit (Q1 2025, annualized peak) | ~6% of GDP | [Argaam / BEA](https://www.argaam.com/en/article/articledetail/id/1823284) |
+
+The trade deficit is the pump: $901B/yr flows abroad to buy imports, and those dollars come *back* as foreign purchases of US debt and assets — that's how foreign holders accumulated $9.4T in Treasuries (§5). The interest the US pays on that foreign-held debt (~$220B/yr at their 23% share of ~$970B) is the cost of the loop.
+
+**F. The extraction wedge (the deliberate line)**
+
+| Line | Amount | Source |
+|---|---|---|
+| S&P 500 trend | ~8.2%/yr, R² = 0.962 (56 years) | [Deliberate line module](../../../court/ground/scratchpad/deliberate-line-share-20261011/market/) (`line.py`) |
+| Decomposition | Nominal GDP ~6.4% + ~2%/yr extraction | `forward.py` |
+| Extraction rate × US GDP | ~2% × $30T = **~$600B/yr** | The rate of widening |
+| Corporate pre-tax profits | $4.2T (14% of GDP) | [FRED A053RC1Q027SBEA](https://fred.stlouisfed.org/series/A053RC1Q027SBEA) |
+| Pre-1979 baseline profit share | ~7% of GDP → ~$2.1T | FRED historical |
+| **Excess corporate profits above baseline** | **~$2.1T/yr** | Current $4.2T − baseline $2.1T |
+| Labour income shortfall (global) | $2.4T/yr (2024) | [ILO WESO 2024](https://www.ilo.org/publications/flagship-reports/world-employment-and-social-outlook-trends-2024) |
+| Productivity vs. pay gap (US, since 1979) | +90% productivity vs. +33% pay | EPI |
+
+**G. The intermediary and illicit flow layer**
+
+| Line | Amount | Source |
+|---|---|---|
+| HFT/dark pool intermediary extraction (US) | ~$100–200B/yr (order-of-magnitude) | §7 component estimate |
 | Global criminal proceeds (excl. tax evasion) | ~$2.1T (2009) → scaled ~$4.1T (2026) | [UNODC 2011](https://www.unodc.org/documents/data-and-analysis/Studies/Illicit-financial-flows_31Aug11.pdf), 3.6% of GDP |
 | Laundered through the financial system | ~$1.6T (2009) → scaled ~$3.1T (2026) | Same, 2.7% of GDP |
 | Seized/frozen | <1% of flows | Same |
-| Pentagon cumulative unsupported adjustments | $21T gross (FY1998–2015), $94.7T gross (FY2017–2019) | Skidmore/Fitts (Michigan State); [GAO-20-96](https://www.gao.gov/assets/d2096.pdf); [Bloomberg/Gazette](https://gazette.com/?p=1290413) |
-| Documentation rate on those adjustments | 4% adequate, **96% without** | GAO-20-96 |
-| Net after deduplication | **Never published** | — |
-| HFT/dark pool intermediary extraction | ~$100–200B/yr (US markets, order-of-magnitude) | Component estimate from §7 |
-| Filing-exempt religious institution flow | ~$143.6B/yr (zero Form 990 required) | [Giving USA 2022](https://taxfoundation.org/research/all/federal/501c3-nonprofit-organization-tax-exempt/) |
+| Filing-exempt religious institution flow | ~$143.6B/yr (zero Form 990) | [Giving USA 2022](https://taxfoundation.org/research/all/federal/501c3-nonprofit-organization-tax-exempt/) |
 
-**The balance:**
+**H. The Pentagon's opaque throughput**
+
+| Line | Amount | Source |
+|---|---|---|
+| DoD budget (appropriated, known input) | $868B/yr | Congress appropriates, executive signs |
+| Cumulative unsupported adjustments (FY1998–2015) | $21T gross | Skidmore/Fitts (Michigan State) |
+| Accounting adjustments (FY2017–2019) | $94.7T gross | [Bloomberg/Gazette](https://gazette.com/?p=1290413) |
+| Documentation rate | **96% without adequate documentation** | [GAO-20-96](https://www.gao.gov/assets/d2096.pdf) |
+| Net after deduplication | **Never published** | — |
+| Audit status | 8 consecutive failures; target 2028 | §2, §3 |
+
+### The balance
 
 The arithmetic:
 
