@@ -690,7 +690,10 @@ The Federal Reserve's own data (Distributional Financial Accounts, Q3 2025). The
 **12. Insurance fraud and improper payments: $186B/yr the government measures, $308.6B/yr the industry estimates, ~$3T cumulative since 2003.**
 GAO counts $186B/yr in federal improper payments (FY2025) — $94B from Medicare and Medicaid alone. CMS publishes the rates for every program. The Congressional Research Service estimates actual fraud at $233B–$521B/yr. The Coalition Against Insurance Fraud puts total insurance fraud across all lines at $308.6B/yr. DOJ's record-breaking 2025 healthcare fraud takedown charged $14.6B — less than 5% of the annual total. The government counts every dollar, publishes the reports, and recovers less than 5%.
 
-**13. The cartel's cumulative take, FY1998–2019 — the same 22 years.**
+**13. Credit bureaus: three companies price the $73T debt stock. 1 in 5 reports has errors. The consumer is the product.**
+Equifax, Experian, and TransUnion — combined revenue ~$18.2B/yr — hold files on 200M+ Americans and set the interest rate on every consumer loan. The FTC found 1 in 5 reports has verified errors; 5% of consumers were in a wrong credit tier, paying a higher rate. 85% of all CFPB complaints are credit reporting. Equifax exposed 147 million people's data in 2017, paid $4.76 per person, saw no criminal charges, and fully recovered its stock price. The bureaus are the valve that sets the flow rate on the $3.7T/yr in private debt service — owned by the same shareholders as the banks they serve.
+
+**14. The cartel's cumulative take, FY1998–2019 — the same 22 years.**
 
 The Pentagon's ~$10.2T in untraceable throughput is not an anomaly. It is one pipe in a system with four. Here is every non-overlapping channel through which the public's money reached the extraction architecture over the same 22 fiscal years, each sourced independently:
 
