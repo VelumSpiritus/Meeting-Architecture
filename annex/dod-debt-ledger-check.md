@@ -762,6 +762,9 @@ The Pentagon's $10.2T is 15% of the total $68T. The other 85% is perfectly visib
 | CRS fraud estimate (subset of improper payments) | $233B–$521B/yr | 2024 CRS analysis |
 | Total insurance fraud, all lines (CAIF 2022) | $308.6B/yr | $2.5T premium base; fraud = 12% of premiums |
 | DOJ healthcare fraud takedown (2025, record) | $14.6B charged | 324 defendants; $245M seized (0.08% of charged amount) |
+| **Credit bureau industry (3 bureaus)** | **~$18.2B/yr** | Experian $7.5B + Equifax $6.1B + TransUnion $4.6B — the pricing layer on $73T private debt |
+| Credit report error rate | 1 in 5 verified errors | FTC study; 5% in wrong credit tier; 85% of all CFPB complaints |
+| Equifax breach penalty (2017, 147M people) | $700M = $4.76/person | 0.4% of market cap; no criminal charges; stock fully recovered |
 
 ### The two faces
 
