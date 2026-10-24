@@ -645,7 +645,10 @@ $14,775 per person vs. $7,860 in peer countries = ~$6,900 excess per person = **
 **11. The scoreboard: the top 1% holds $54.8T. The bottom 50% holds $4.25T. Ratio: 13 to 1.**
 The Federal Reserve's own data (Distributional Financial Accounts, Q3 2025). The top 1% share hit a new record — 31.7% of all household wealth. The bottom half — 167 million people — hold 2.5%. This is the cumulative result of every flow traced above, compounding geometrically since 1979.
 
-**12. The cartel's cumulative take, FY1998–2019 — the same 22 years.**
+**12. Insurance fraud and improper payments: $186B/yr the government measures, $308.6B/yr the industry estimates, ~$3T cumulative since 2003.**
+GAO counts $186B/yr in federal improper payments (FY2025) — $94B from Medicare and Medicaid alone. CMS publishes the rates for every program. The Congressional Research Service estimates actual fraud at $233B–$521B/yr. The Coalition Against Insurance Fraud puts total insurance fraud across all lines at $308.6B/yr. DOJ's record-breaking 2025 healthcare fraud takedown charged $14.6B — less than 5% of the annual total. The government counts every dollar, publishes the reports, and recovers less than 5%.
+
+**13. The cartel's cumulative take, FY1998–2019 — the same 22 years.**
 
 The Pentagon's ~$10.2T in untraceable throughput is not an anomaly. It is one pipe in a system with four. Here is every non-overlapping channel through which the public's money reached the extraction architecture over the same 22 fiscal years, each sourced independently:
 
