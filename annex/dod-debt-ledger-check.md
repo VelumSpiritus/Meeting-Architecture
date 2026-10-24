@@ -546,6 +546,64 @@ The top 1% holds $54.8 trillion. The bottom half — 167 million people — hold
 
 This is the scoreboard. Every extraction channel traced above — the 2%/yr market wedge, the $4.9T/yr financial sector interest take, the $2.3T/yr healthcare excess, the $2.2T/yr in tax expenditures, the $10.2T in untraceable Pentagon throughput — compounds into this stock. The flows are annual; the stock is cumulative. A 2%/yr wedge running for 56 years does not produce a 112% shift — it produces a **geometric** shift, because extraction compounds. That is why the top 1% share has been on a one-way trend since 1979, and why the extraction rate (~$600B/yr) looks modest next to the stock (~$54.8T) it has built.
 
+**O. Insurance fraud and improper payments — what the government's own auditors count**
+
+The government measures its own leakage. Three independent data streams:
+
+**Stream 1: Federal improper payments (GAO)**
+
+| Fiscal year | Government-wide total | Notes | Source |
+|---|---|---|---|
+| FY 2025 | **~$186B** | 64 programs, 15 agencies; ~$153B (82%) overpayments | [GAO-26-108694 (Apr 2026)](https://www.gao.gov/press-release/gao-reports-improper-payments-rose-estimated-186-billion-across-federal-government-fiscal-year-2025) |
+| FY 2024 | **~$162B** | 68 programs, 16 agencies; ~84% overpayments | [GAO-25-107753 (Mar 2025)](https://gao.gov/assets/gao-25-107753.pdf) |
+| **Cumulative since FY 2003** | **~$3T** | Government's own running total | [CRFB summary of GAO data](https://www.crfb.org/blogs/federal-improper-payments-total-186-billion-fy-2025) |
+| CRS fraud subset estimate (2024 analysis) | **$233B–$521B/yr** | Actual fraud (a subset of improper payments) may be 1.4× to 3.2× the reported figure | [CRS R48296 (Jun 2026)](https://www.everycrsreport.com/files/2026-06-02_R48296_8eaf327d0204b3aeb33815f045ba5b527e7e332b.html) |
+
+More than half of the $186B comes from two programs: Medicare (~$57B) and Medicaid (~$37B).
+
+**Stream 2: Medicare and Medicaid improper payments (CMS)**
+
+| Program | FY 2025 estimate | Rate | Source |
+|---|---|---|---|
+| Traditional Medicare (FFS) | **$28.8B** | 6.55% | [Fierce Healthcare / CMS](https://www.fiercehealthcare.com/regulatory/cms-estimates-medicare-made-288b-improper-payments-fy2025) |
+| Medicare Advantage (Part C) | **$23.7B** | 6.09% | Same |
+| Medicare Part D | **$4.2B** | 4.00% | Same |
+| Medicaid | **$37.4B** | 6.12% | [TechTarget / CMS](https://www.techtarget.com/healthcarepayers/news/366637488/Medicaid-improper-payments-increase-reaching-3739B) |
+| **Medicare + Medicaid total** | **~$94B/yr** | — | Sum of CMS estimates |
+
+CMS says 77% of Medicaid improper payments are "insufficient documentation" — exactly the same language used in the Pentagon audit findings (§§2–3). The label is the same: the trail ends, the money doesn't come back, and the system classifies the loss as a paperwork error.
+
+**Stream 3: Total insurance fraud across all lines (Coalition Against Insurance Fraud, 2022)**
+
+| Line of insurance | Annual fraud estimate | Source |
+|---|---|---|
+| Medicare & Medicaid | $68.7B | [CAIF / CSU 2022 study](https://insurancefraud.org/wp-content/uploads/The-Impact-of-Insurance-Fraud-on-the-U.S.-Economy-Report-2022-8.26.2022.pdf) |
+| Other healthcare | $36.3B | Same |
+| Life insurance | $74.7B | Same |
+| Property & casualty | $45B | Same |
+| Workers' compensation | $34B | Same |
+| Premium avoidance | $35.1B | Same |
+| Disability | $7.4B | Same |
+| Auto theft | $7.4B | Same |
+| **Total** | **~$308.6B/yr** | [CAIF 2022](https://insurancefraud.org/wp-content/uploads/The-Impact-of-Insurance-Fraud-on-the-U.S.-Economy-Report-2022-8.26.2022.pdf) |
+
+The FBI's own estimate (non-health insurance fraud only): **>$40B/yr** — from a 2010 document that notably describes fraud *by* insurers (premium diversion, fee churning, asset stripping), not fraud *against* them. The CAIF says the true figure is impossible to measure accurately; a [Rutgers Law critique (Nov 2024)](https://crr.rutgers.edu/wp-content/uploads/sites/22/Misinformation-About-Insurance-Fraud-11-2024.pdf) calls the $308.6B methodology "indefensible" and notes that fraud *by* insurers is excluded from the industry's own count.
+
+**Stream 4: DOJ enforcement (the visible tip)**
+
+| Action | Amount | Source |
+|---|---|---|
+| 2025 National Health Care Fraud Takedown (Jun 30, 2025) | **$14.6B** in alleged intended losses; 324 defendants; 50 federal districts | [DOJ / Hall Render](https://hallrender.com/2025/07/03/coordinated-government-effort-combats-over-14-6-billion-in-alleged-fraud-as-part-of-the-2025-national-health-care-fraud-takedown/) |
+| DOJ fraud settlements (FY 2025) | **Record $6.8B** — healthcare the primary focus | [Health Exec](https://healthexec.com/topics/healthcare-management/legal-news/doj-fraud-settlements-hit-record-68b-2025-healthcare-primary-focus) |
+| HHS-OIG monetary impact (FY 2025) | **$19B** in savings and recoveries | [HHS-OIG Impact Brief 2025](https://www.oig.hhs.gov/documents/impact-briefs/11446/impact-brief-2025-overview--final--508.pdf) |
+| CMS fraud prevention (FY 2025) | **$4B** in fraudulent claims blocked | [Axios](https://www.axios.com/2026/01/21/hhs-watchdog-waste-fraud-savings) |
+
+The enforcement-to-fraud ratio: DOJ's record-breaking $14.6B takedown is **4.7%** of the $308.6B annual total, and **1.5%** of CRS's midpoint fraud estimate (~$377B). The seizure from the takedown: $245M — **0.08%** of the alleged fraud amount.
+
+**The connection to every other pipe:**
+
+The $94B/yr in Medicare and Medicaid improper payments flows through the same six health insurers that collect $1.65T (§M). The $3T cumulative since 2003 overlaps the same 22-year window as the Pentagon's $10.2T (§H) and the four-channel $68T extraction total (point 12). The insurance industry collects **$2.5T in premiums annually** (NAIC, 2024) — $308.6B in fraud is 12% of the premium base. The same institutional shareholders own the insurers, the banks, and the defence contractors. And the government counts every dollar of it, publishes the reports, and recovers less than 5%.
+
 ### The full balance — everything traced
 
 **The economy produces $30T.** Here is where it goes and what is extracted along the way:
