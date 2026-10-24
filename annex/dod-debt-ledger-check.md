@@ -191,7 +191,7 @@ The finding is that the Pentagon cannot tell you what its *net* unsupported posi
 
 The question Noah is asking is: where does the gap route? The argument has three intermediary layers:
 
-1. **The financial transaction layer** (§7): Every dollar that moves through the financial system pays a toll to intermediaries — HFT firms, dark pool operators, market makers. That toll is tiny per transaction and enormous in aggregate (~$100–200B/year). It is the "millisecond debt."
+1. **The financial transaction layer** (§7): Every dollar that moves through the financial system pays a toll to intermediaries — HFT firms, dark pool operators, market makers. That toll is tiny per transaction and enormous in aggregate: **~$135B/year** in US equity price-discovery costs alone (2024 academic estimate), with the two largest wholesalers (Citadel Securities $12.2B, Virtu $2.4B) posting their names on $14.6B of it. It is the "millisecond debt."
 
 2. **The illicit flow layer** (§8): Nasdaq Verafin's 2026 Global Financial Crime Report estimates **$4.4 trillion** in illicit financial activity in 2025 — $1.1T drug trafficking, $528.5B human trafficking, $579.4B fraud/scam losses. Less than 1% is seized. This flow uses the same financial infrastructure as legitimate transactions.
 
