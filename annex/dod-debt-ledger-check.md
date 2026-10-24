@@ -538,6 +538,39 @@ US equity price-discovery costs: ~$135B/yr (2024, academic estimate). Citadel Se
 **9. The Fed has stopped paying the public and started paying the banks.**
 Before 2022, the Fed remitted ~$80–100B/yr to Treasury — public revenue. Since September 2022: $0 remitted. The Fed's cumulative loss: $243.5B (deferred asset, end 2025). Cause: it pays banks more in IORB ($186B/yr) than it earns on its Treasuries (~$107B/yr). Projected return to remittances: ~2030. Until then, the public loses both the remittance AND pays the IORB.
 
+**10. The cartel's cumulative take, FY1998–2019 — the same 22 years.**
+
+The Pentagon's ~$10.2T in untraceable throughput is not an anomaly. It is one pipe in a system with four. Here is every non-overlapping channel through which the public's money reached the extraction architecture over the same 22 fiscal years, each sourced independently:
+
+| Channel | Cumulative FY1998–2019 | Source | What it is |
+|---|---|---|---|
+| **Private debt service** (household → financial sector) | **~$30.6T** | FRED BOGZ1FA154104023A | Every mortgage, car loan, student loan, credit card payment — households paying banks |
+| **Tax expenditures** (revenue foregone → private sector) | **~$22T** (nominal) | GAO/OMB tax expenditure budgets | Revenue the government chose not to collect: capital gains preferences, retirement deferrals, employer health exclusion, corporate breaks |
+| **Pentagon opaque throughput** (taxpayers → untraceable) | **~$10.2T** | Bounded computation (§H above) | 91% of cumulative appropriations passed through systems that cannot document the path |
+| **Federal debt interest** (taxpayers → bondholders) | **~$5.0T** | FRED FYOINT, OMB Historical Tables | Taxpayer money → banks, pension funds, foreign governments — for carrying the debt |
+| **Total outflow from the public** | **~$68T** | — | Four non-overlapping channels, each independently documented |
+
+The four channels do not overlap: debt service is a private-sector flow (household → bank); tax expenditures are forgone public revenue (never collected); federal interest is a budget outlay (collected and paid to bondholders); and the Pentagon throughput is a separate appropriations line whose documentation trail ends. Each dollar is counted once.
+
+**What the corporate sector retained:** ~$23T in after-tax profits over the same 22 years (FRED A448RC1A027NBEA). This is the NET — what stayed after wages, materials, and taxes. The $68T is the GROSS — what the public sent. The difference (~$45T) was consumed as cost of funds, financial sector wages, and operating costs — the overhead of the extraction machinery itself.
+
+**What the financial sector extracted above its historical share:** Finance & insurance averaged ~7% of US GDP over 1998–2019, against a 1970 baseline of ~4%. Cumulative GDP for the period: ~$325T. Excess share: ~3% × $325T = **~$9.8T** in value added above the historical norm — captured by the financial sector's growth from intermediary to the economy's largest profit centre.
+
+**The comparison the arithmetic demands:**
+
+| Item | 22-year total | Ratio to Pentagon |
+|---|---|---|
+| Pentagon untraceable throughput | $10.2T | **1.0×** |
+| Financial sector excess GDP share | ~$9.8T | ~1.0× |
+| Federal debt interest | ~$5.0T | 0.5× |
+| Tax expenditures | ~$22T | 2.2× |
+| Private debt service | ~$30.6T | 3.0× |
+| **All four channels** | **~$68T** | **6.7×** |
+
+The financial sector's excess alone (~$9.8T) is the same magnitude as the Pentagon's untraceable throughput (~$10.2T). They are the same number — because they are the same architecture read from two sides. One is the income the financial sector earned above what it earned before it captured the regulatory apparatus; the other is the budget the Pentagon spent without documenting the path. Both serve the same institutional shareholders: BlackRock, Vanguard, and State Street hold both the defence contractors and the bank stocks.
+
+The Pentagon's $10.2T is 15% of the total $68T. The other 85% is perfectly visible, perfectly legal, and documented in public databases. The architecture does not need to hide — it is legislated.
+
 ### The summary identity
 
 | What | Annual flow | Direction |
