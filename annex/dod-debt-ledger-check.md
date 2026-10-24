@@ -375,7 +375,85 @@ The trade deficit is the pump: $901B/yr flows abroad to buy imports, and those d
 | Net after deduplication | **Never published** | — |
 | Audit status | 8 consecutive failures; target 2028 | §2, §3 |
 
-### The balance
+**I. The income side of GDP — where the $30T actually goes**
+
+GDP can be read from the income side (BEA Table 1.12, [Fed Z.1](https://www.federalreserve.gov/apps/fof/guide/f3.pdf)). Every dollar produced is someone's income:
+
+| Component | Amount (2024/2025) | Share of GDP | Source |
+|---|---|---|---|
+| Employee compensation | ~$15.7T (2025) | ~52% | [FRED A033RC1A027NBEA](https://fred.stlouisfed.org/series/A033RC1A027NBEA) |
+| — of which: wages and salaries | ~$12.4T (2024) | ~41% | [FRED A034RC1A027NBEA](https://fred.stlouisfed.org/series/A034RC1A027NBEA) |
+| Corporate profits (pre-tax) | ~$4.2T | ~14% | FRED (in §F above) |
+| Proprietors' income | ~$2.0T | ~7% | [Fed Z.1 / BEA](https://www.federalreserve.gov/apps/fof/guide/f3.pdf) |
+| Rental income | ~$1T | ~3% | BEA Table 1.12 |
+| Net interest & miscellaneous | ~$1T | ~3% | BEA Table 1.12 |
+| Taxes on production/imports less subsidies | ~$1.5T | ~5% | BEA |
+| Consumption of fixed capital (depreciation) | ~$5–6T | ~18% | BEA |
+| **Total** | **~$30T** | **100%** | — |
+
+Depreciation (~$5–6T) is the largest component people never see. Everything wears out — machines, buildings, software, roads. The replacement spending flows to the same corporate sector that claims the $4.2T in profits.
+
+**J. Private debt — the $73T the federal ledger doesn't show**
+
+The federal debt ($40T) gets all the headlines. Private debt is nearly **twice as large** and its interest flows to the same financial institutions:
+
+| Sector | Debt outstanding (2025 Q4) | Source |
+|---|---|---|
+| Households (mortgages, auto, student, credit card) | ~$21T | [Fed Z.1 D.3](https://www.federalreserve.gov/releases/z1/20260319/html/d3.htm) |
+| Nonfinancial business | ~$22T | Same |
+| Financial sector (interfinancial) | ~$26T | Same |
+| **Total private debt** | **~$69–73T** (revisions vary by release) | Fed Z.1, Sep 2026 release |
+
+**Debt service — what households and businesses pay the financial sector each year:**
+
+| Flow | Amount | Source |
+|---|---|---|
+| Household debt service ratio | ~11.3% of disposable income (Q4 2025) | [FRED TDSP](https://fred.stlouisfed.org/series/TDSP) |
+| Household debt service (estimated $) | **~$2.5T/yr** | ~11.3% × ~$22T disposable personal income |
+| — Consumer debt service component | ~5.4% of DPI → ~$1.2T/yr | [FRED CDSP](https://fred.stlouisfed.org/series/CDSP) |
+| — Mortgage debt service component | ~5.9% of DPI → ~$1.3T/yr | Remainder |
+| Nonfinancial business interest (estimated) | **~$1.1–1.3T/yr** | ~$22T × ~5–6% blended rate |
+| **Total private debt service** | **~$3.6–3.8T/yr** | Household + nonfinancial business |
+
+Add the public debt interest ($970B) and IORB ($186B), and the financial sector's total interest take is:
+
+| Stream | Annual flow |
+|---|---|
+| Private debt service (household + business) | ~$3.7T |
+| Public debt interest | $970B |
+| IORB to banks | $186B |
+| **Total interest flowing to the financial sector** | **~$4.9T/yr** |
+
+That is **~16% of GDP** — collected by the financial sector for the act of intermediating.
+
+**K. The financial sector's total take**
+
+| Measure | Amount | Source |
+|---|---|---|
+| Finance & insurance value added (GDP share) | **~8.0%** of GDP → **~$2.4T** (Q3 2025) | [FRED VAPGDPFI](https://fred.stlouisfed.org/series/VAPGDPFI); [Advisor Perspectives](https://www.advisorperspectives.com/articles/2026/04/17/how-much-finance-too-much-for-economy) |
+| Finance, insurance, real estate & rental (FIRE) | **~22% of GDP → ~$6.6T** | Same (Advisor Perspectives: "closing in on a whopping 22% of US economic activity") |
+| Historical comparison | ~4% in 1970 → 8% in 2025 | The sector doubled its share of GDP over 55 years |
+
+The financial sector went from 4% to 8% of GDP — it doubled its claim on the economy. In dollar terms, the growth from 4% to 8% is an **additional ~$1.2T/yr** the sector now extracts above its 1970 share. That mirrors the ~$2.1T in excess corporate profits above the pre-1979 baseline (§F) — the financial sector's expansion IS a large fraction of the corporate profit expansion.
+
+**L. Where the Pentagon's $868B lands — defense contractor accounts**
+
+The DoD budget is appropriated by Congress and spent by the Pentagon. It lands in specific corporate accounts (2024 defense-segment revenue, latest available):
+
+| Contractor | Defense revenue (2024) | Source |
+|---|---|---|
+| Lockheed Martin | $64.7B | [US Funds / Advisor Perspectives](https://www.advisorperspectives.com/commentaries/2025/01/13/top-10-u-s-aerospace-defense-contractors) |
+| RTX (Raytheon) | $40.6B | Same |
+| Northrop Grumman | $35.2B | Same |
+| General Dynamics | $33.7B | Same |
+| Boeing (defense segment) | $32.7B | Same |
+| **Top 5 total** | **~$207B** | **24% of the DoD budget flows to five companies** |
+
+These five companies receive nearly a quarter of the entire defense budget. Their total revenue (defense + commercial) is higher: Lockheed $75B, General Dynamics $53B, Northrop $42B (2025 figures). They are all publicly traded, held by the same institutional investors (BlackRock, Vanguard, State Street) that manage $31T+ in assets and hold large Treasury positions.
+
+The revolving door is documented: former Pentagon officials join defense contractor boards; former contractor executives serve in Pentagon leadership. The flow is circular: Congress appropriates → Pentagon spends → contractors receive → contractors lobby Congress → Congress appropriates.
+
+### The full balance — everything traced
 
 The arithmetic:
 
