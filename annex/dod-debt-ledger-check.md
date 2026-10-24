@@ -193,7 +193,7 @@ The question Noah is asking is: where does the gap route? The argument has three
 
 1. **The financial transaction layer** (§7): Every dollar that moves through the financial system pays a toll to intermediaries — HFT firms, dark pool operators, market makers. That toll is tiny per transaction and enormous in aggregate (~$100–200B/year). It is the "millisecond debt."
 
-2. **The illicit flow layer** (§8): UNODC estimates ~$1.6–3.1T/year moves through the financial system as laundered proceeds. Less than 1% is seized. This flow uses the same financial infrastructure as legitimate transactions.
+2. **The illicit flow layer** (§8): Nasdaq Verafin's 2026 Global Financial Crime Report estimates **$4.4 trillion** in illicit financial activity in 2025 — $1.1T drug trafficking, $528.5B human trafficking, $579.4B fraud/scam losses. Less than 1% is seized. This flow uses the same financial infrastructure as legitimate transactions.
 
 3. **The filing-exempt layer** (§9): US churches alone move ~$143.6B/year with no federal filing requirement. The broader nonprofit sector moves $3.3T/year. This is the bridge "religious institution to the state and federal" — not because churches are criminal, but because the *structure* is filing-exempt, creating a channel between tracked and untracked money.
 
