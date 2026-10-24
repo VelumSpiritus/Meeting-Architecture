@@ -513,8 +513,8 @@ Before 2022, the Fed remitted ~$80–100B/yr to Treasury — public revenue. Sin
 | Trade deficit | $901B | Dollars out, debt in |
 | Pentagon throughput (opaque trail) | $868B | 96% undocumented adjustments |
 | Top 5 defense contractors | $207B | 24% of DoD budget to 5 companies |
-| HFT/dark pool extraction | $100–200B | Millisecond toll |
-| Global illicit flows laundered | $3.1T | <1% seized |
+| US equity price-discovery costs | $135B | Academic estimate (2024); Citadel alone $12.2B |
+| Global illicit financial activity | $4.4T (2025) | Nasdaq Verafin; <1% seized |
 | Filing-exempt channel (churches) | $143.6B | Zero disclosure |
 | Private debt outstanding | $73T | 2.4× the federal debt |
 
