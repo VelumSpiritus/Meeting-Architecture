@@ -255,9 +255,43 @@ Now compare to the government's reported statistics for FY 2025:
 | Federal revenue | ~$5.2T | Same |
 | US corporate profits (pre-tax, 2025 SAAR) | $4.2T | [FRED A053RC1Q027SBEA](https://fred.stlouisfed.org/series/A053RC1Q027SBEA) |
 
-### The balancing identity
+### The balancing identity — from the government's own reported numbers
 
-The extraction wedge (~$600B/yr on US GDP) does not appear as a line item in any government report. It is not "missing money" — it is structural reallocation that moves through the financial system as expanded valuations, widened margins, and compressed labour share. It is legal. It is measurable. And it routes through the same intermediary infrastructure (§7) that the Pentagon's unauditable books (§6) make opaque.
+Start with what the government itself publishes. No secret data, no inference — just the reported statistics and the peer-reviewed/journalistic cartel figures, assembled:
+
+**The US ledger (FY 2025, all from government sources):**
+
+| Line | Amount | What it tells you |
+|---|---|---|
+| GDP | ~$30T | The economy's total output in a year |
+| Federal revenue | ~$5.2T (17% of GDP) | What the government collects |
+| Federal spending | ~$7.0T (23% of GDP) | What the government spends |
+| Deficit | ~$1.8T (6% of GDP) | The gap — funded by issuing more debt |
+| Accumulated debt | ~$40T | The sum of all deficits, owed to the holders in §5 |
+| Net interest on that debt | ~$970B/yr | What taxpayers pay bondholders for carrying the debt |
+| DoD budget (appropriated, public) | $868B | Known input — Congress approves it, the executive signs it |
+| Corporate pre-tax profits | $4.2T (14% of GDP) | What the corporate sector claims from the economy |
+| Corporate pre-tax profits, pre-1979 baseline | ~$2.1T (~7% of GDP) | What the share was before the distributional break |
+| **Excess corporate profits above baseline** | **~$2.1T/yr** | The extraction wedge's cumulative expression in earnings |
+
+The ~2%/yr extraction wedge on $30T GDP = ~$600B/yr. That is the *rate* at which financial claims outrun the real economy. The *stock* — the excess corporate profit share above the pre-1979 baseline — is ~$2.1T/yr in any given year. The ILO's $2.4T/yr global labour shortfall is the same quantity, read from the wage side.
+
+**The variating debt accrual:** The debt grows by roughly the deficit each year (~$1.8T). The interest on the existing pile (~$970B/yr) now exceeds the entire defense budget ($868B). That interest payment flows from taxpayers to the bondholders decomposed in §5 — predominantly institutional holders (trust funds, the Fed, foreign governments, mutual funds). The debt *accrues* at a rate governed by the deficit, and the *cost of carrying it* (the interest) is itself a redistribution from public revenue to private/institutional holders.
+
+**The cartel and illicit flow statistics (peer-reviewed and journalistic sources):**
+
+| Line | Amount | Source |
+|---|---|---|
+| Global criminal proceeds (excl. tax evasion) | ~$2.1T (2009) → scaled ~$4.1T (2026) | [UNODC 2011](https://www.unodc.org/documents/data-and-analysis/Studies/Illicit-financial-flows_31Aug11.pdf), 3.6% of GDP |
+| Laundered through the financial system | ~$1.6T (2009) → scaled ~$3.1T (2026) | Same, 2.7% of GDP |
+| Seized/frozen | <1% of flows | Same |
+| Pentagon cumulative unsupported adjustments | $21T gross (FY1998–2015), $94.7T gross (FY2017–2019) | Skidmore/Fitts (Michigan State); [GAO-20-96](https://www.gao.gov/assets/d2096.pdf); [Bloomberg/Gazette](https://gazette.com/?p=1290413) |
+| Documentation rate on those adjustments | 4% adequate, **96% without** | GAO-20-96 |
+| Net after deduplication | **Never published** | — |
+| HFT/dark pool intermediary extraction | ~$100–200B/yr (US markets, order-of-magnitude) | Component estimate from §7 |
+| Filing-exempt religious institution flow | ~$143.6B/yr (zero Form 990 required) | [Giving USA 2022](https://taxfoundation.org/research/all/federal/501c3-nonprofit-organization-tax-exempt/) |
+
+**The balance:**
 
 The arithmetic:
 
