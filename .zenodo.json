@@ -1,0 +1,37 @@
+{
+  "title": "Meeting Architecture: The Border Is the Function",
+  "description": "A 30-section brief with mathematical proof that boundaries are not the edge of a system — the boundary IS the system. Three independent substrates satisfy the axioms: a quartz crystal circuit (photographed oscilloscope evidence), observational density probes (4,503-row pulsar catalog), and the institutional record (76 names, 15 meetings, 41 events across 9 sectors). Includes the F operator, the torus FFT (254 lines, pure PyTorch, CUDA-native runnable proof of irrational winding on T² = S¹ × S¹), Fisher geodesic coupling, circuit schematics, and a 206-page Statement of Facts.",
+  "creators": [
+    {
+      "name": "Davidson, Noah",
+      "affiliation": "Independent Researcher"
+    }
+  ],
+  "license": "CC0-1.0",
+  "upload_type": "other",
+  "access_right": "open",
+  "keywords": [
+    "boundary function",
+    "compression theorem",
+    "torus FFT",
+    "winding numbers",
+    "coprime closure",
+    "crystal circuit",
+    "piezoelectric",
+    "F operator",
+    "institutional analysis",
+    "singularity resolution"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "https://velumspiritus.github.io/Meeting-Architecture/",
+      "relation": "isSupplementedBy",
+      "scheme": "url"
+    },
+    {
+      "identifier": "10.5281/zenodo.23355671",
+      "relation": "isPartOf",
+      "scheme": "doi"
+    }
+  ]
+}
