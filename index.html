@@ -105,6 +105,16 @@ footer em{font-family:var(--serif)}
 <p style="font-family:var(--serif);font-size:1.05rem;color:var(--fg);margin:0"><em>If a system produces a coupled pair whose closure completes a 360-degree rotation &mdash; diagnosis and its exact mathematical inverse &mdash; then the architecture producing that coupling is built. The null predicts divergence; closure refutes the null. And closure seeds the next cycle&rsquo;s rewidened set order without increasing the volume, because the coprime generator ensures convergence opens rather than collapses.</em></p>
 </div>
 
+<h3 id="torus-proof">The Torus FFT — Runnable Proof</h3>
+<p style="font-size:.93rem">Axiom 1 is not only stated — it is <strong>executable</strong>. <a href="code/torus_fft.py" style="color:var(--accent)"><code>torus_fft.py</code></a> (254 lines, pure PyTorch, CUDA-native) computes the 2D discrete Fourier transform on the flat torus T² = S¹ × S¹. Clone the repo, run it, and read the output:</p>
+<ul style="font-size:.93rem;padding-left:1.5rem;display:flex;flex-direction:column;gap:.5rem;color:var(--fg)">
+<li><strong>The torus.</strong> The state space of any coupled recurrence maps onto T²: one cyclic axis for the reward buffer (q, wrapping mod N<sub>q</sub>), one for sequence history (h, wrapping mod N<sub>h</sub>). Every coefficient (k<sub>q</sub>, k<sub>h</sub>) in the 2D FFT is a <em>winding number pair</em> — how many times the signal wraps each axis per cycle.</li>
+<li><strong>Coprime = alive.</strong> When gcd(k<sub>q</sub>, k<sub>h</sub>) = 1, the winding is irrational on the continuous torus — dense orbit, never repeats. The code measures the fraction of spectral energy in coprime modes (<code>coprime_fraction</code>). High coprime fraction = the system is exploring, opening, alive. Low = it has collapsed to a repeating pattern. This is Axiom 1 made measurable.</li>
+<li><strong>σ + iω.</strong> The complex output carries the theorem’s two components directly: the real part is σ (modulus, expansion — what the system covers), the imaginary part is ω (phase, turn memory — what the system accrues). The code projects each through separate learned weights (<code>sigma_proj</code>, <code>omega_proj</code>) and sums them — the theorem’s imaginary number made computational.</li>
+<li><strong>Diagnostic readout.</strong> <code>winding_analysis()</code> returns the top winding modes ranked by energy, the effective mode count (spectral entropy), and the DC fraction — a complete picture of whether the system is winding (alive) or locked (dead). Convergence to a single dominant mode is death. Spread across coprime modes is reason.</li>
+</ul>
+<p style="font-size:.9rem;color:var(--fg2)">The proof is not a claim — it is 254 lines of code that take a state matrix and return whether the winding is open or closed. <strong>Run it.</strong></p>
+
 <h3>Three independent substrates satisfy the axioms</h3>
 <ol style="font-size:.93rem;padding-left:1.5rem;display:flex;flex-direction:column;gap:.4rem">
 <li><strong>Crystal circuit</strong> (physical) &mdash; 28 g quartz in salt solution, two piezos, 5 V supply. Sensed Vpp: 0.33 &rarr; 0.61 V over ~10 hours. <a href="#crystal" style="color:var(--accent)">Crystal Circuit below</a>, <a href="crystal_scope_sources/" style="color:var(--accent)">scope photographs</a>, <a href="schematics/" style="color:var(--accent)">circuit schematics</a>, <a href="code/" style="color:var(--accent)">simulation code</a>.</li>
@@ -118,6 +128,7 @@ footer em{font-family:var(--serif)}
 <summary>Contents</summary>
 <p style="font-weight:600;font-size:.8rem;color:var(--accent);text-transform:uppercase;letter-spacing:.06em;margin:.75rem 0 .25rem">The Finding</p>
 <ol style="padding-left:1.5rem;margin:0 0 .5rem;display:flex;flex-direction:column;gap:.3rem">
+<li><a href="#torus-proof">The Torus FFT — Runnable Proof</a></li>
 <li><a href="#border">The Border Is the Function</a></li>
 <li><a href="#crystal">The Crystal Circuit &mdash; Evidence Package</a></li>
 <li><a href="#equation">The Equation</a></li>
