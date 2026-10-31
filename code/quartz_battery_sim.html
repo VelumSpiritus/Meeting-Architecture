@@ -1,0 +1,1002 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Quartz Slab Battery — Drive to LED (Closed Loop)</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  background: #0a0a0f;
+  color: #e0e0e0;
+  font-family: 'Segoe UI', system-ui, sans-serif;
+  overflow: hidden;
+  height: 100vh;
+}
+canvas { display: block; }
+#controls {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 215px;
+  max-height: calc(100vh - 30px);
+  overflow-y: auto;
+}
+#controls::-webkit-scrollbar { width: 4px; }
+#controls::-webkit-scrollbar-thumb { background: #334; border-radius: 2px; }
+.sec-label {
+  font-size: 9px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #445;
+  padding: 2px 0;
+  text-align: center;
+}
+.sec-label.drv { color: #5a9fff; }
+.sec-label.cry { color: #c90; }
+.sec-label.led { color: #0c6; }
+.sec-label.cav { color: #c6f; }
+.sec-label.fb { color: #f80; }
+.ctrl {
+  background: rgba(30,35,50,0.85);
+  border: 1px solid #334;
+  border-radius: 8px;
+  padding: 8px 12px;
+  font-size: 12px;
+  color: #aaa;
+}
+.ctrl.drive { border-color: #4a8fff55; }
+.ctrl.crystal { border-color: #fa455; }
+.ctrl.cavity { border-color: #c6f44; }
+.ctrl.feedback { border-color: #f8044; }
+.ctrl label { display: block; margin-bottom: 3px; color: #8ab; font-size: 10px; text-transform: uppercase; letter-spacing: 1px; }
+.ctrl.drive label { color: #8bf; }
+.ctrl.crystal label { color: #da8; }
+.ctrl.cavity label { color: #c8f; }
+.ctrl.feedback label { color: #fa8; }
+.ctrl input[type=range] { width: 100%; accent-color: #4a8fff; }
+.ctrl.crystal input[type=range] { accent-color: #fa4; }
+.ctrl.cavity input[type=range] { accent-color: #c6f; }
+.ctrl.feedback input[type=range] { accent-color: #f80; }
+.ctrl .val { float: right; color: #cde; font-weight: 600; font-size: 11px; }
+.ctrl.crystal .val { color: #fc8; }
+.ctrl.cavity .val { color: #e9f; }
+.ctrl.feedback .val { color: #fb8; }
+.ctrl .sub { font-size: 9px; color: #556; margin-top: 2px; }
+#title {
+  position: absolute;
+  top: 15px;
+  left: 20px;
+  font-size: 20px;
+  font-weight: 300;
+  color: #c0d8ff;
+  letter-spacing: 1px;
+}
+#subtitle {
+  position: absolute;
+  top: 42px;
+  left: 20px;
+  font-size: 12px;
+  color: #556;
+}
+#audioBtn {
+  position: absolute;
+  top: 68px;
+  left: 20px;
+  background: rgba(40,60,100,0.8);
+  border: 1px solid #4a8fff;
+  color: #8cf;
+  padding: 8px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 13px;
+  font-family: inherit;
+  letter-spacing: 1px;
+  transition: all 0.2s;
+}
+#audioBtn:hover { background: rgba(60,90,140,0.9); }
+#audioBtn.active { background: rgba(30,70,30,0.8); border-color: #4f4; color: #8f8; }
+#resBar {
+  position: absolute;
+  top: 105px;
+  left: 20px;
+  width: 260px;
+}
+#resBar .bg { width:100%; height:14px; background:rgba(20,20,30,0.8); border:1px solid #334; border-radius:7px; overflow:hidden; }
+#resBar .fill { height:100%; border-radius:7px; transition:width 0.06s, background 0.1s; }
+#resBar .lbl { font-size:10px; color:#778; margin-top:2px; }
+#resBar .lbl span { font-weight:600; color:#aac8ff; }
+#matchTxt {
+  position: absolute;
+  top: 140px;
+  left: 20px;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+#powerPanel {
+  position: absolute;
+  top: 170px;
+  left: 20px;
+  width: 260px;
+  background: rgba(15,20,30,0.85);
+  border: 1px solid #334;
+  border-radius: 8px;
+  padding: 10px 12px;
+  font-size: 11px;
+}
+#powerPanel .row { display:flex; justify-content:space-between; margin:2px 0; color:#889; }
+#powerPanel .row .v { color:#cde; font-weight:600; }
+#powerPanel .row.target .v { color:#0c6; }
+#powerPanel .row.deficit .v { color:#f66; }
+#powerPanel .row.surplus .v { color:#4f4; }
+#powerPanel .row.cavity .v { color:#c8f; }
+#powerPanel .row.loop .v { color:#f80; }
+#powerPanel .row.loopok .v { color:#4f4; }
+#ledStatus {
+  margin-top: 6px;
+  padding: 4px 8px;
+  border-radius: 4px;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+#loopStatus {
+  margin-top: 4px;
+  padding: 4px 8px;
+  border-radius: 4px;
+  text-align: center;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+#info {
+  position: absolute;
+  bottom: 15px;
+  left: 20px;
+  font-size: 11px;
+  color: #556;
+  line-height: 1.5;
+  max-width: 600px;
+}
+#info span { color: #8ab; }
+</style>
+</head>
+<body>
+<div id="title">Quartz Slab Battery</div>
+<div id="subtitle">Tune drive to shear resonance &mdash; closed-loop acoustic cavity</div>
+<button id="audioBtn" onclick="toggleAudio()">&#9654; DRIVE</button>
+<div id="resBar">
+  <div class="bg"><div class="fill" id="resFill"></div></div>
+  <div class="lbl">Resonance: <span id="resPct">0%</span></div>
+</div>
+<div id="matchTxt"></div>
+<div id="powerPanel">
+  <div class="row"><span>V<sub>out</sub> (peak)</span><span class="v" id="pwVout">--</span></div>
+  <div class="row"><span>I<sub>out</sub></span><span class="v" id="pwIout">--</span></div>
+  <div class="row"><span>P<sub>out</sub></span><span class="v" id="pwPout">--</span></div>
+  <div class="row target"><span>LED needs</span><span class="v">1.8 V / 20 mA = 36 mW</span></div>
+  <div class="row" id="pwGapRow"><span>Gap</span><span class="v" id="pwGap">--</span></div>
+  <div class="row cavity"><span>Cavity coupling</span><span class="v" id="pwCavity">--</span></div>
+  <div class="row cavity"><span>&lambda;/2 distance</span><span class="v" id="pwHalfWave">--</span></div>
+  <div class="row" id="pwLoopRow"><span>Loop gain</span><span class="v" id="pwLoop">--</span></div>
+  <div id="ledStatus">LED OFF</div>
+  <div id="loopStatus">OPEN LOOP</div>
+</div>
+<div id="controls">
+  <div class="sec-label drv">&#9654; Drive (audio input)</div>
+  <div class="ctrl drive">
+    <label>Drive freq <span class="val" id="vDriveHz">375 Hz</span></label>
+    <input type="range" id="driveFreq" min="100" max="800" value="375" step="0.5">
+    <div class="sub">&rarr; <span id="physHz">150.0</span> kHz on slab</div>
+  </div>
+  <div class="ctrl drive">
+    <label>Sound level <span class="val" id="vSPL">100 dB</span></label>
+    <input type="range" id="spl" min="60" max="140" value="100" step="1">
+    <div class="sub" id="splDesc">loud speaker at 1m</div>
+  </div>
+  <div class="sec-label cry">&#9670; Crystal (hypothesis)</div>
+  <div class="ctrl crystal">
+    <label>Cut angle (&theta;) <span class="val" id="vTheta">35.3&deg;</span></label>
+    <input type="range" id="theta" min="0" max="90" value="35.25" step="0.25">
+    <div class="sub">Shear f<sub>0</sub>: <span id="shearF0">191.7</span> kHz</div>
+  </div>
+  <div class="ctrl crystal">
+    <label>Electrode overlap <span class="val" id="vOlap">80%</span></label>
+    <input type="range" id="olap" min="10" max="100" value="80" step="1">
+  </div>
+  <div class="sec-label cav">&#9684; Air Cavity</div>
+  <div class="ctrl cavity">
+    <label>Air gap <span class="val" id="vGapMM">10 mm</span></label>
+    <input type="range" id="airGap" min="0.5" max="100" value="10" step="0.5">
+    <div class="sub" id="gapDesc">gap / &lambda;: <span id="gapRatio">--</span></div>
+  </div>
+  <div class="sec-label fb">&#8634; Feedback</div>
+  <div class="ctrl feedback">
+    <label>Feedback <span class="val" id="vFeedback">0%</span></label>
+    <input type="range" id="feedback" min="0" max="100" value="0" step="1">
+    <div class="sub" id="fbDesc">fraction of P<sub>out</sub> to speaker</div>
+  </div>
+  <div class="sec-label led">&#9678; Load</div>
+  <div class="ctrl">
+    <label>LED type <span class="val" id="vLED">standard</span></label>
+    <input type="range" id="ledType" min="0" max="2" value="1" step="1">
+    <div class="sub" id="ledDesc">1.8V / 20mA = 36 mW</div>
+  </div>
+  <div class="ctrl">
+    <label>Anim speed <span class="val" id="vSpd">1.0x</span></label>
+    <input type="range" id="spd" min="0.1" max="3" value="1" step="0.1">
+  </div>
+</div>
+<div id="info">
+  <span>Drive:</span> <span id="iDrive">--</span> &nbsp;|&nbsp;
+  <span>Resonance:</span> <span id="iRes">--</span> &nbsp;|&nbsp;
+  <span>Q:</span> 10,000 &nbsp;|&nbsp;
+  <span>k&sup2;:</span> <span id="iK2">--</span> &nbsp;|&nbsp;
+  <span>Cavity Q:</span> <span id="iQcav">15</span>
+</div>
+<canvas id="c"></canvas>
+<script>
+const canvas = document.getElementById('c');
+const ctx = canvas.getContext('2d');
+let W, H;
+function resize() { W = canvas.width = innerWidth; H = canvas.height = innerHeight; }
+resize(); addEventListener('resize', resize);
+
+// ── PHYSICAL CONSTANTS ────────────────────────────────────────────
+const RHO = 2649;
+const SLAB_L = 38.1e-3, SLAB_W = 31.75e-3, SLAB_T = 12.7e-3;
+const C11 = 86.74e9, C12 = 6.99e9, C13 = 11.91e9, C14 = -17.91e9;
+const C33 = 107.2e9, C44 = 57.94e9, C66 = (C11 - C12) / 2;
+const Q = 10000;
+const Q_CAVITY = 15; // acoustic cavity Q (open-sided, moderate)
+const RHO_AIR = 1.225, C_AIR = 343;
+const EPS0 = 8.854e-12, EPS_R = 4.5;
+const PITCH_SCALE = 400;
+const SPEAKER_EFF = 0.02; // speaker electrical-to-acoustic efficiency (~2%)
+
+const LEDS = [
+  ['low-power', 1.8, 0.002, 0.0036],
+  ['standard',  1.8, 0.020, 0.036],
+  ['high-power', 3.0, 0.350, 1.05],
+];
+
+function splDesc(db) {
+  if (db < 70) return 'quiet conversation';
+  if (db < 85) return 'busy traffic';
+  if (db < 95) return 'food blender';
+  if (db < 105) return 'loud speaker at 1m';
+  if (db < 115) return 'rock concert front row';
+  if (db < 125) return 'air horn / siren';
+  if (db < 135) return 'jet takeoff at 100m';
+  return 'threshold of pain';
+}
+
+// ── CRYSTAL PHYSICS ───────────────────────────────────────────────
+function getShearFreqAndK2(thetaDeg) {
+  const th = thetaDeg * Math.PI / 180;
+  const c = Math.cos(th), s = Math.sin(th);
+  const c66r = C66 * c*c + C44 * s*s + 2 * C14 * c * s * (c*c - s*s);
+  const fT = Math.sqrt(Math.abs(c66r) / RHO) / (2 * SLAB_T);
+  const k2_base = 0.003;
+  const k2_at_boost = 0.005 * Math.exp(-((thetaDeg - 35.25) * (thetaDeg - 35.25)) / 200);
+  const k2 = k2_base + k2_at_boost;
+  return { fT, k2, c66r };
+}
+
+function resonanceResponse(fDrive, f0) {
+  if (f0 === 0) return 0;
+  const r = fDrive / f0;
+  const d = r - 1/r;
+  return 1 / Math.sqrt(1 + Q * Q * d * d);
+}
+
+// ── AIR CAVITY COUPLING ──────────────────────────────────────────
+function cavityCoupling(gapM, freq) {
+  // Standing wave between speaker cone and crystal face
+  // Resonance at gap = n·λ/2 (closed-closed cavity)
+  // coupling = 1 / sqrt(1 + Q_cav² · sin²(2π·gap·f/c))
+  if (freq <= 0 || gapM <= 0) return 1;
+  const phi = 2 * Math.PI * gapM * freq / C_AIR;
+  const sinPhi = Math.sin(phi);
+  return 1 / Math.sqrt(1 + Q_CAVITY * Q_CAVITY * sinPhi * sinPhi);
+}
+
+function computePower(spl_dB, fDrive, f0, k2, overlap, gapM, feedbackFrac) {
+  const p = 20e-6 * Math.pow(10, spl_dB / 20);
+  const A = SLAB_L * SLAB_W * overlap;
+  const P_in_raw = (p * p * A) / (RHO_AIR * C_AIR);
+
+  // Cavity coupling modulates effective acoustic pressure at crystal face
+  const cavCoup = cavityCoupling(gapM, fDrive);
+
+  // At cavity resonance, pressure builds up by Q_cavity factor
+  // Effective input power is amplified by cavity coupling²
+  const P_in = P_in_raw * cavCoup * cavCoup * Q_CAVITY;
+
+  const resp = resonanceResponse(fDrive, f0);
+  const P_out = k2 * Q * resp * resp * P_in;
+
+  const C0 = EPS0 * EPS_R * A / SLAB_T;
+  const omega = 2 * Math.PI * f0;
+  const Z_res = (omega > 0 && k2 > 0) ? 1 / (omega * C0 * k2 * Q) : 1e9;
+  const V_out = Math.sqrt(P_out * Z_res * resp);
+  const I_out = (V_out > 0) ? P_out / V_out : 0;
+
+  // Feedback loop gain: fraction of P_out → speaker → acoustic → cavity → crystal → P_out
+  // loop_gain = feedbackFrac × k² × Q × resp² × cavCoup² × Q_cav × speaker_eff
+  // (the speaker converts electrical back to acoustic, then cavity couples it back)
+  const loopGain = feedbackFrac * k2 * Q * resp * resp * cavCoup * cavCoup * Q_CAVITY * SPEAKER_EFF;
+
+  // Effective power with feedback: P_eff = P_out / (1 - loopGain) when loopGain < 1
+  // When loopGain >= 1: self-sustaining (we cap the display)
+  const selfSustaining = loopGain >= 1;
+  const P_eff = selfSustaining ? P_out * 100 : P_out / (1 - loopGain);
+  const V_eff = selfSustaining ? V_out * 10 : Math.sqrt(P_eff * Z_res * resp);
+  const I_eff = (V_eff > 0) ? P_eff / V_eff : 0;
+
+  const lambda = C_AIR / fDrive;
+  const halfWave = lambda / 2;
+  const gapRatio = gapM / lambda;
+
+  return { P_in: P_in_raw, P_out: P_eff, V_out: V_eff, I_out: I_eff, resp,
+           C0, Z_res, cavCoup, loopGain, selfSustaining, lambda, halfWave, gapRatio,
+           P_out_raw: P_out };
+}
+
+// ── AUDIO ENGINE ──────────────────────────────────────────────────
+let audioCtx = null, osc = null, gainNode = null, masterGain = null;
+let audioActive = false;
+function initAudio() {
+  audioCtx = new (AudioContext || webkitAudioContext)();
+  masterGain = audioCtx.createGain();
+  masterGain.gain.value = 0;
+  masterGain.connect(audioCtx.destination);
+  osc = audioCtx.createOscillator();
+  gainNode = audioCtx.createGain();
+  osc.type = 'sine';
+  osc.connect(gainNode);
+  gainNode.connect(masterGain);
+  osc.start();
+}
+function toggleAudio() {
+  const btn = document.getElementById('audioBtn');
+  if (!audioActive) {
+    if (!audioCtx) initAudio();
+    if (audioCtx.state === 'suspended') audioCtx.resume();
+    masterGain.gain.linearRampToValueAtTime(0.3, audioCtx.currentTime + 0.1);
+    audioActive = true;
+    btn.innerHTML = '&#9724; MUTE';
+    btn.classList.add('active');
+  } else {
+    masterGain.gain.linearRampToValueAtTime(0, audioCtx.currentTime + 0.1);
+    audioActive = false;
+    btn.innerHTML = '&#9654; DRIVE';
+    btn.classList.remove('active');
+  }
+}
+function updateAudio(freqHz, amp, resp) {
+  if (!audioCtx || !audioActive) return;
+  const now = audioCtx.currentTime;
+  osc.frequency.linearRampToValueAtTime(freqHz, now + 0.03);
+  gainNode.gain.linearRampToValueAtTime(amp * (0.15 + 0.85 * resp), now + 0.03);
+}
+
+// ── CONTROLS ──────────────────────────────────────────────────────
+const slDriveFreq = document.getElementById('driveFreq');
+const slSPL = document.getElementById('spl');
+const slTheta = document.getElementById('theta');
+const slOlap = document.getElementById('olap');
+const slLED = document.getElementById('ledType');
+const slSpd = document.getElementById('spd');
+const slAirGap = document.getElementById('airGap');
+const slFeedback = document.getElementById('feedback');
+
+// ── 3D DRAWING ────────────────────────────────────────────────────
+const ISO_A = Math.PI / 6, SC = 1.7;
+function iso(x, y, z) {
+  return [
+    W * 0.42 + (x - y) * Math.cos(ISO_A) * SC,
+    H * 0.46 - ((x + y) * Math.sin(ISO_A) + z) * SC
+  ];
+}
+function face(pts, fill, stroke, lw) {
+  ctx.beginPath();
+  ctx.moveTo(pts[0][0], pts[0][1]);
+  for (let i = 1; i < pts.length; i++) ctx.lineTo(pts[i][0], pts[i][1]);
+  ctx.closePath();
+  if (fill) { ctx.fillStyle = fill; ctx.fill(); }
+  if (stroke) { ctx.strokeStyle = stroke; ctx.lineWidth = lw||1; ctx.stroke(); }
+}
+function rRect(x, y, w, h, r) {
+  ctx.beginPath();
+  ctx.moveTo(x+r,y); ctx.lineTo(x+w-r,y);
+  ctx.arcTo(x+w,y,x+w,y+r,r); ctx.lineTo(x+w,y+h-r);
+  ctx.arcTo(x+w,y+h,x+w-r,y+h,r); ctx.lineTo(x+r,y+h);
+  ctx.arcTo(x,y+h,x,y+h-r,r); ctx.lineTo(x,y+r);
+  ctx.arcTo(x,y,x+r,y,r); ctx.closePath(); ctx.fill(); ctx.stroke();
+}
+
+let t = 0;
+function draw() {
+  const driveAudio = parseFloat(slDriveFreq.value);
+  const spl = parseFloat(slSPL.value);
+  const theta = parseFloat(slTheta.value);
+  const overlap = parseFloat(slOlap.value) / 100;
+  const ledIdx = parseInt(slLED.value);
+  const speed = parseFloat(slSpd.value);
+  const gapMM = parseFloat(slAirGap.value);
+  const gapM = gapMM / 1000;
+  const feedbackPct = parseFloat(slFeedback.value);
+  const feedbackFrac = feedbackPct / 100;
+
+  const drivePhys = driveAudio * PITCH_SCALE;
+  const { fT, k2 } = getShearFreqAndK2(theta);
+  const resAudio = fT / PITCH_SCALE;
+  const pw = computePower(spl, drivePhys, fT, k2, overlap, gapM, feedbackFrac);
+  const led = LEDS[ledIdx];
+  const ledLit = pw.P_out >= led[3] && pw.V_out >= led[1];
+
+  const driveAmpNorm = Math.pow(10, (spl - 94) / 20);
+
+  // ── UPDATE LABELS ───────────────────────────────────────────────
+  document.getElementById('vDriveHz').textContent = driveAudio.toFixed(0) + ' Hz';
+  document.getElementById('physHz').textContent = (drivePhys / 1e3).toFixed(1);
+  document.getElementById('vSPL').textContent = spl + ' dB';
+  document.getElementById('splDesc').textContent = splDesc(spl);
+  document.getElementById('vTheta').textContent = theta.toFixed(1) + '°';
+  document.getElementById('shearF0').textContent = (fT / 1e3).toFixed(1);
+  document.getElementById('vOlap').textContent = Math.round(overlap * 100) + '%';
+  document.getElementById('vSpd').textContent = speed.toFixed(1) + 'x';
+  const ledLabels = ['low-power', 'standard', 'high-power'];
+  document.getElementById('vLED').textContent = ledLabels[ledIdx];
+  document.getElementById('ledDesc').textContent =
+    led[1].toFixed(1) + 'V / ' + (led[2]*1e3).toFixed(0) + 'mA = ' + (led[3]*1e3).toFixed(1) + ' mW';
+
+  // Cavity controls
+  document.getElementById('vGapMM').textContent = gapMM.toFixed(1) + ' mm';
+  document.getElementById('gapRatio').textContent = pw.gapRatio.toFixed(3);
+  document.getElementById('vFeedback').textContent = feedbackPct.toFixed(0) + '%';
+
+  document.getElementById('iDrive').textContent = (drivePhys/1e3).toFixed(1) + ' kHz (' + driveAudio.toFixed(0) + ' Hz)';
+  document.getElementById('iRes').textContent = (fT/1e3).toFixed(1) + ' kHz (' + resAudio.toFixed(0) + ' Hz)';
+  document.getElementById('iK2').textContent = (k2 * 100).toFixed(2) + '%';
+
+  // Resonance bar
+  const pct = Math.min(100, pw.resp * 100);
+  const fill = document.getElementById('resFill');
+  fill.style.width = pct + '%';
+  fill.style.background = pct > 90 ? 'linear-gradient(90deg,#2a6,#4f4)' :
+    pct > 50 ? 'linear-gradient(90deg,#a84,#da4)' :
+    pct > 10 ? 'linear-gradient(90deg,#644,#a44)' : '#433';
+  document.getElementById('resPct').textContent = pct.toFixed(1) + '%';
+
+  const detuneKhz = (drivePhys - fT) / 1e3;
+  const mt = document.getElementById('matchTxt');
+  if (pct > 95) { mt.textContent = 'ON RESONANCE'; mt.style.color = '#4f4'; }
+  else if (pct > 50) { mt.textContent = 'NEAR (' + (detuneKhz>0?'+':'') + detuneKhz.toFixed(1) + ' kHz)'; mt.style.color = '#da4'; }
+  else { mt.textContent = (detuneKhz>0?'+':'') + detuneKhz.toFixed(1) + ' kHz off'; mt.style.color = '#644'; }
+
+  // Power panel
+  document.getElementById('pwVout').textContent = pw.V_out >= 0.001 ? pw.V_out.toFixed(3) + ' V' : (pw.V_out * 1e3).toFixed(2) + ' mV';
+  document.getElementById('pwIout').textContent = pw.I_out >= 0.001 ? (pw.I_out * 1e3).toFixed(1) + ' mA' : (pw.I_out * 1e6).toFixed(1) + ' µA';
+  document.getElementById('pwPout').textContent = pw.P_out >= 0.001 ? (pw.P_out * 1e3).toFixed(2) + ' mW' : (pw.P_out * 1e6).toFixed(1) + ' µW';
+
+  const gapRow = document.getElementById('pwGapRow');
+  const gapEl = document.getElementById('pwGap');
+  const gap = led[3] - pw.P_out;
+  if (gap > 0) {
+    gapRow.className = 'row deficit';
+    gapEl.textContent = '-' + (gap >= 0.001 ? (gap*1e3).toFixed(2) + ' mW' : (gap*1e6).toFixed(1) + ' µW');
+  } else {
+    gapRow.className = 'row surplus';
+    gapEl.textContent = '+' + ((-gap) >= 0.001 ? ((-gap)*1e3).toFixed(2) + ' mW' : ((-gap)*1e6).toFixed(1) + ' µW') + ' surplus';
+  }
+
+  // Cavity coupling display
+  document.getElementById('pwCavity').textContent = (pw.cavCoup * 100).toFixed(1) + '%';
+  document.getElementById('pwHalfWave').textContent = (pw.halfWave * 1e3).toFixed(2) + ' mm';
+
+  // Loop gain
+  const loopEl = document.getElementById('pwLoop');
+  const loopRow = document.getElementById('pwLoopRow');
+  if (feedbackFrac > 0) {
+    loopEl.textContent = pw.loopGain.toFixed(4);
+    loopRow.className = pw.selfSustaining ? 'row loopok' : 'row loop';
+  } else {
+    loopEl.textContent = 'off';
+    loopRow.className = 'row';
+  }
+
+  const ls = document.getElementById('ledStatus');
+  if (ledLit) {
+    ls.textContent = '⬤ LED ON';
+    ls.style.background = 'rgba(0,180,60,0.25)';
+    ls.style.color = '#4f4';
+    ls.style.border = '1px solid #4f4';
+  } else {
+    const frac = Math.min(1, pw.P_out / led[3]);
+    ls.textContent = 'LED OFF — ' + (frac * 100).toFixed(1) + '% of threshold';
+    ls.style.background = 'rgba(60,20,20,0.3)';
+    ls.style.color = '#866';
+    ls.style.border = '1px solid #433';
+  }
+
+  // Loop status
+  const los = document.getElementById('loopStatus');
+  if (feedbackFrac <= 0) {
+    los.textContent = 'OPEN LOOP';
+    los.style.background = 'rgba(40,40,50,0.3)';
+    los.style.color = '#556';
+    los.style.border = '1px solid #334';
+  } else if (pw.selfSustaining) {
+    los.textContent = '⬤ SELF-SUSTAINING';
+    los.style.background = 'rgba(200,120,0,0.25)';
+    los.style.color = '#fa4';
+    los.style.border = '1px solid #f80';
+  } else {
+    los.textContent = 'FEEDBACK ACTIVE (gain < 1)';
+    los.style.background = 'rgba(100,60,0,0.15)';
+    los.style.color = '#a86';
+    los.style.border = '1px solid #864';
+  }
+
+  // Audio
+  updateAudio(driveAudio, Math.min(1, driveAmpNorm * 0.3), pw.resp);
+
+  // ── CANVAS ──────────────────────────────────────────────────────
+  t += 0.02 * speed;
+  const shearMag = 12 * Math.min(3, driveAmpNorm) * (0.04 + 0.96 * pw.resp);
+  const shear = Math.sin(t * 4) * shearMag;
+
+  ctx.clearRect(0, 0, W, H);
+
+  // BG glow
+  const gr = 30 + pw.resp * 25, gg = 50 + pw.resp * 70, gb = 80 - pw.resp * 40;
+  const bg = ctx.createRadialGradient(W*0.42, H*0.46, 50, W*0.42, H*0.46, 450);
+  bg.addColorStop(0, `rgba(${gr|0},${gg|0},${gb|0},0.18)`);
+  bg.addColorStop(1, 'rgba(10,10,15,0)');
+  ctx.fillStyle = bg; ctx.fillRect(0, 0, W, H);
+
+  const SL = 150, SW = 125, ST = 75;
+  const shT = shear, shB = -shear;
+
+  // ── SPEAKER (to the left of crystal) ────────────────────────────
+  const spkOff = -180; // speaker offset left of crystal
+  const spkCx = iso(spkOff + SL/2, SW/2, ST/2);
+
+  // Speaker cone (circle)
+  const spkR = 50;
+  ctx.beginPath();
+  ctx.arc(spkCx[0] - 30, spkCx[1], spkR, 0, Math.PI * 2);
+  const spkGrad = ctx.createRadialGradient(spkCx[0]-35, spkCx[1]-5, 3, spkCx[0]-30, spkCx[1], spkR);
+  spkGrad.addColorStop(0, 'rgba(80,80,90,0.9)');
+  spkGrad.addColorStop(0.3, 'rgba(50,50,60,0.85)');
+  spkGrad.addColorStop(0.7, 'rgba(35,35,45,0.8)');
+  spkGrad.addColorStop(1, 'rgba(60,60,70,0.85)');
+  ctx.fillStyle = spkGrad;
+  ctx.fill();
+  ctx.strokeStyle = 'rgba(100,100,120,0.6)'; ctx.lineWidth = 2; ctx.stroke();
+
+  // Speaker dust cap
+  ctx.beginPath();
+  ctx.arc(spkCx[0] - 30, spkCx[1], 12, 0, Math.PI * 2);
+  ctx.fillStyle = 'rgba(40,40,50,0.9)'; ctx.fill();
+  ctx.strokeStyle = 'rgba(80,80,100,0.5)'; ctx.lineWidth = 1; ctx.stroke();
+
+  // Speaker cone ridges
+  ctx.strokeStyle = 'rgba(90,90,110,0.3)'; ctx.lineWidth = 0.5;
+  for (let r = 20; r < spkR; r += 10) {
+    ctx.beginPath(); ctx.arc(spkCx[0]-30, spkCx[1], r, 0, Math.PI*2); ctx.stroke();
+  }
+
+  // Speaker animation (cone pumping)
+  const pump = Math.sin(t * 4) * driveAmpNorm * 3 * (0.3 + 0.7 * pw.cavCoup);
+  ctx.beginPath();
+  ctx.arc(spkCx[0] - 30 + pump, spkCx[1], 8, 0, Math.PI * 2);
+  ctx.fillStyle = `rgba(100,120,200,${0.2 + 0.3 * Math.abs(Math.sin(t*4))})`; ctx.fill();
+
+  // Speaker label
+  ctx.fillStyle = '#556'; ctx.font = '10px "Segoe UI"';
+  ctx.fillText('Speaker', spkCx[0] - 55, spkCx[1] + spkR + 18);
+
+  // ── STANDING WAVE IN AIR GAP ────────────────────────────────────
+  const waveStartX = spkCx[0] - 30 + spkR + 5;
+  const crystalLeftEdge = iso(0, SW/2, ST/2);
+  const waveEndX = crystalLeftEdge[0] - 10;
+  const waveY = spkCx[1];
+  const waveLen = waveEndX - waveStartX;
+
+  if (waveLen > 20) {
+    // Draw standing wave pattern
+    const nPoints = Math.max(60, Math.round(waveLen));
+    const lambda_px = waveLen; // visual gap maps to physical gap
+    const cavPhase = 2 * Math.PI * gapM * drivePhys / C_AIR;
+
+    // Pressure amplitude envelope (standing wave)
+    ctx.beginPath();
+    const waveAlpha = 0.15 + pw.cavCoup * 0.5;
+    const waveColor = pw.cavCoup > 0.8 ? `rgba(180,120,255,${waveAlpha})` :
+                      pw.cavCoup > 0.4 ? `rgba(120,100,200,${waveAlpha})` :
+                                          `rgba(80,70,140,${waveAlpha})`;
+
+    // Draw the traveling/standing wave
+    for (let i = 0; i <= nPoints; i++) {
+      const frac = i / nPoints;
+      const x = waveStartX + frac * waveLen;
+      // Standing wave: amplitude envelope × time oscillation
+      const spatialPhase = frac * cavPhase;
+      const envelope = Math.abs(Math.sin(spatialPhase));
+      const instantaneous = Math.sin(spatialPhase) * Math.cos(t * 4);
+      const amp = instantaneous * 18 * Math.min(2, driveAmpNorm) * (0.3 + 0.7 * pw.cavCoup);
+      const y = waveY + amp;
+      if (i === 0) ctx.moveTo(x, y); else ctx.lineTo(x, y);
+    }
+    ctx.strokeStyle = waveColor; ctx.lineWidth = 2; ctx.stroke();
+
+    // Draw envelope (dashed)
+    ctx.setLineDash([3, 3]);
+    ctx.beginPath();
+    for (let i = 0; i <= nPoints; i++) {
+      const frac = i / nPoints;
+      const x = waveStartX + frac * waveLen;
+      const envelope = Math.abs(Math.sin(frac * cavPhase)) * 18 * Math.min(2, driveAmpNorm) * (0.3 + 0.7 * pw.cavCoup);
+      if (i === 0) ctx.moveTo(x, waveY - envelope); else ctx.lineTo(x, waveY - envelope);
+    }
+    ctx.strokeStyle = `rgba(180,140,255,${0.15 + pw.cavCoup * 0.2})`; ctx.lineWidth = 1; ctx.stroke();
+
+    ctx.beginPath();
+    for (let i = 0; i <= nPoints; i++) {
+      const frac = i / nPoints;
+      const x = waveStartX + frac * waveLen;
+      const envelope = Math.abs(Math.sin(frac * cavPhase)) * 18 * Math.min(2, driveAmpNorm) * (0.3 + 0.7 * pw.cavCoup);
+      if (i === 0) ctx.moveTo(x, waveY + envelope); else ctx.lineTo(x, waveY + envelope);
+    }
+    ctx.stroke();
+    ctx.setLineDash([]);
+
+    // Node/antinode markers
+    const numHalfWaves = gapM / (pw.halfWave);
+    if (numHalfWaves > 0.3 && numHalfWaves < 20) {
+      // Mark nodes (zero pressure points)
+      for (let n = 0; n <= Math.ceil(numHalfWaves); n++) {
+        const nodeFrac = n / (gapM / pw.halfWave);
+        if (nodeFrac >= 0 && nodeFrac <= 1) {
+          const nx = waveStartX + nodeFrac * waveLen;
+          ctx.beginPath();
+          ctx.arc(nx, waveY, 3, 0, Math.PI * 2);
+          ctx.fillStyle = 'rgba(100,80,180,0.6)'; ctx.fill();
+        }
+      }
+      // Mark antinodes (max pressure)
+      for (let n = 0; n < Math.ceil(numHalfWaves); n++) {
+        const antiFrac = (n + 0.5) / (gapM / pw.halfWave);
+        if (antiFrac >= 0 && antiFrac <= 1) {
+          const ax = waveStartX + antiFrac * waveLen;
+          ctx.beginPath();
+          ctx.arc(ax, waveY, 3, 0, Math.PI * 2);
+          ctx.fillStyle = 'rgba(200,140,255,0.7)'; ctx.fill();
+        }
+      }
+    }
+
+    // Cavity coupling label
+    const cavLabel = (pw.cavCoup * 100).toFixed(0) + '% coupling';
+    ctx.fillStyle = pw.cavCoup > 0.8 ? 'rgba(180,140,255,0.8)' : 'rgba(120,100,180,0.5)';
+    ctx.font = '10px "Segoe UI"';
+    ctx.fillText(cavLabel, waveStartX + waveLen/2 - 30, waveY - 28);
+
+    // Gap distance label
+    ctx.fillStyle = '#667'; ctx.font = '9px "Segoe UI"';
+    ctx.fillText(gapMM.toFixed(1) + ' mm', waveStartX + waveLen/2 - 15, waveY + 32);
+  }
+
+  // ── FEEDBACK ARROW (when active) ────────────────────────────────
+  if (feedbackFrac > 0) {
+    const fbAlpha = 0.2 + Math.min(0.6, pw.loopGain * 0.6);
+    const fbColor = pw.selfSustaining ? `rgba(255,170,0,${fbAlpha})` : `rgba(200,130,50,${fbAlpha})`;
+
+    // Draw curved feedback arrow from crystal output back to speaker
+    const arrowStartX = crystalLeftEdge[0];
+    const arrowStartY = crystalLeftEdge[1] + 80;
+    const arrowEndX = spkCx[0] - 30;
+    const arrowEndY = spkCx[1] + spkR + 30;
+    const arrowMidX = (arrowStartX + arrowEndX) / 2;
+    const arrowMidY = arrowStartY + 40;
+
+    ctx.beginPath();
+    ctx.moveTo(arrowStartX, arrowStartY);
+    ctx.quadraticCurveTo(arrowMidX, arrowMidY, arrowEndX, arrowEndY);
+    ctx.strokeStyle = fbColor;
+    ctx.lineWidth = 2;
+    ctx.setLineDash([6, 4]);
+    ctx.stroke();
+    ctx.setLineDash([]);
+
+    // Arrowhead
+    ctx.beginPath();
+    ctx.moveTo(arrowEndX, arrowEndY);
+    ctx.lineTo(arrowEndX + 8, arrowEndY + 6);
+    ctx.lineTo(arrowEndX + 8, arrowEndY - 6);
+    ctx.closePath();
+    ctx.fillStyle = fbColor; ctx.fill();
+
+    // Feedback label
+    ctx.fillStyle = fbColor; ctx.font = '10px "Segoe UI"';
+    ctx.fillText('feedback ' + feedbackPct.toFixed(0) + '%', arrowMidX - 25, arrowMidY + 15);
+
+    // Animated dots along feedback path
+    const dotCount = 5;
+    for (let d = 0; d < dotCount; d++) {
+      const dt = ((t * 0.5 + d / dotCount) % 1);
+      const dx = arrowStartX + (arrowEndX - arrowStartX) * dt;
+      const dy = arrowStartY + (arrowMidY - arrowStartY) * 4 * dt * (1 - dt) + (arrowEndY - arrowStartY) * dt;
+      ctx.beginPath();
+      ctx.arc(dx, dy, 2.5, 0, Math.PI * 2);
+      ctx.fillStyle = pw.selfSustaining ? `rgba(255,200,50,${0.6 + 0.4*Math.sin(t*6+d)})` : `rgba(200,150,80,0.4)`;
+      ctx.fill();
+    }
+
+    if (pw.selfSustaining) {
+      ctx.fillStyle = 'rgba(255,180,0,0.7)'; ctx.font = 'bold 11px "Segoe UI"';
+      ctx.fillText('G ≥ 1', arrowMidX - 12, arrowMidY + 28);
+    }
+  }
+
+  // Electrode pad
+  const ep = (1 - Math.sqrt(overlap)) * 0.5;
+  const eL0 = SL*ep, eL1 = SL*(1-ep), eW0 = SW*ep, eW1 = SW*(1-ep);
+
+  // Bottom electrode
+  face([iso(eL0+shB,eW0,0),iso(eL1+shB,eW0,0),iso(eL1+shB,eW1,0),iso(eL0+shB,eW1,0)],
+    'rgba(180,160,120,0.5)', 'rgba(200,180,140,0.7)', 1.5);
+
+  const ch = 210 - pw.resp * 45, cs = 20 + pw.resp * 15, cl = 40 + pw.resp * 10, ca = 0.7 + pw.resp * 0.1;
+  const b0=iso(shB,0,0), b1=iso(SL+shB,0,0), b2=iso(SL+shB,SW,0), b3=iso(shB,SW,0);
+  const t0=iso(shT,0,ST), t1=iso(SL+shT,0,ST), t2=iso(SL+shT,SW,ST), t3=iso(shT,SW,ST);
+
+  // Right face
+  let g = ctx.createLinearGradient(b1[0],b1[1],t2[0],t2[1]);
+  g.addColorStop(0,`hsla(${ch},${cs}%,${cl+10}%,${ca})`); g.addColorStop(1,`hsla(${ch},${cs}%,${cl-10}%,${ca})`);
+  face([b1,b2,t2,t1], g, `hsla(${ch},30%,60%,0.4)`, 1);
+  // Back face
+  g = ctx.createLinearGradient(b2[0],b2[1],t3[0],t3[1]);
+  g.addColorStop(0,`hsla(${ch+5},${cs-2}%,${cl+5}%,${ca-0.1})`); g.addColorStop(1,`hsla(${ch+5},${cs-2}%,${cl-12}%,${ca-0.1})`);
+  face([b2,b3,t3,t2], g, `hsla(${ch},20%,50%,0.3)`, 1);
+
+  // Nodal plane
+  const mZ = ST/2;
+  const nAlpha = 0.1 + pw.resp * 0.35 + 0.1 * Math.abs(Math.sin(t*4)) * pw.resp;
+  face([iso(0,0,mZ),iso(SL,0,mZ),iso(SL,SW,mZ),iso(0,SW,mZ)],
+    `rgba(255,180,60,${nAlpha})`, `rgba(255,200,80,${nAlpha+0.12})`, 1.5);
+  const nm = iso(SL/2, SW+18, mZ);
+  ctx.fillStyle = `rgba(255,200,80,${0.4+pw.resp*0.4})`; ctx.font = '10px "Segoe UI"';
+  ctx.fillText('nodal plane', nm[0], nm[1]);
+
+  // Shear arrows
+  if (shearMag > 0.5) {
+    const aa = Math.min(1, Math.abs(Math.sin(t*4))*1.5) * (0.2 + 0.8*pw.resp);
+    const ac = pw.resp > 0.9 ? `rgba(100,255,100,${aa})` : `rgba(100,200,255,${aa})`;
+    ctx.strokeStyle = ac; ctx.lineWidth = 2;
+    const d = Math.sign(Math.sin(t*4));
+    for (let i = 0; i < 3; i++) {
+      const f = 0.25 + i*0.25;
+      const a2 = iso(SL*f+shT-d*14, SW*0.5, ST+3), b2 = iso(SL*f+shT+d*14, SW*0.5, ST+3);
+      ctx.beginPath(); ctx.moveTo(a2[0],a2[1]); ctx.lineTo(b2[0],b2[1]); ctx.stroke();
+      const h1 = iso(SL*f+shT+d*8, SW*0.5-4, ST+3), h2 = iso(SL*f+shT+d*8, SW*0.5+4, ST+3);
+      ctx.beginPath(); ctx.moveTo(b2[0],b2[1]); ctx.lineTo(h1[0],h1[1]); ctx.stroke();
+      ctx.beginPath(); ctx.moveTo(b2[0],b2[1]); ctx.lineTo(h2[0],h2[1]); ctx.stroke();
+    }
+  }
+
+  // Top face
+  g = ctx.createLinearGradient(t0[0],t0[1],t2[0],t2[1]);
+  g.addColorStop(0,`hsla(${ch-5},${cs+5}%,${cl+15}%,${ca+0.05})`); g.addColorStop(1,`hsla(${ch-5},${cs+5}%,${cl}%,${ca})`);
+  face([t0,t1,t2,t3], g, `hsla(${ch},30%,65%,0.5)`, 1.5);
+  // Left face
+  g = ctx.createLinearGradient(b0[0],b0[1],t1[0],t1[1]);
+  g.addColorStop(0,`hsla(${ch-3},${cs+2}%,${cl+8}%,${ca})`); g.addColorStop(1,`hsla(${ch-3},${cs+2}%,${cl-5}%,${ca})`);
+  face([b0,b1,t1,t0], g, `hsla(${ch},25%,55%,0.4)`, 1);
+
+  // Sparkles
+  const spk = 3 + Math.round(pw.resp * 7);
+  ctx.globalAlpha = 0.04 + pw.resp * 0.09;
+  for (let i = 0; i < spk; i++) {
+    const fx=SL*(0.15+Math.random()*0.7), fy=SW*(0.15+Math.random()*0.7), fz=ST*(0.15+Math.random()*0.7);
+    const fs = (fz/ST)*shT + (1-fz/ST)*shB;
+    const fp = iso(fx+fs, fy, fz); const sz = 3+Math.random()*8;
+    const hg = ctx.createRadialGradient(fp[0],fp[1],0,fp[0],fp[1],sz);
+    const sc2 = pw.resp > 0.8 ? '180,255,200' : '200,220,255';
+    hg.addColorStop(0,`rgba(${sc2},1)`); hg.addColorStop(1,`rgba(${sc2},0)`);
+    ctx.fillStyle = hg; ctx.fillRect(fp[0]-sz,fp[1]-sz,sz*2,sz*2);
+  }
+  ctx.globalAlpha = 1;
+
+  // Top electrode
+  const teg = ctx.createLinearGradient(
+    iso(eL0+shT,eW0,ST)[0], iso(eL0+shT,eW0,ST)[1],
+    iso(eL1+shT,eW1,ST)[0], iso(eL1+shT,eW1,ST)[1]
+  );
+  teg.addColorStop(0,'rgba(210,195,150,0.85)'); teg.addColorStop(0.4,'rgba(240,225,170,0.9)');
+  teg.addColorStop(0.7,'rgba(200,185,130,0.85)'); teg.addColorStop(1,'rgba(170,155,110,0.8)');
+  face([iso(eL0+shT,eW0,ST),iso(eL1+shT,eW0,ST),iso(eL1+shT,eW1,ST),iso(eL0+shT,eW1,ST)],
+    teg, 'rgba(230,215,160,0.9)', 1.5);
+
+  // Charges
+  const cs2 = Math.sin(t*4);
+  const ca2 = Math.abs(cs2) * pw.resp * 0.9;
+  if (ca2 > 0.04) {
+    ctx.font = 'bold 15px monospace';
+    const ts = cs2>0?'+':'–', bs = cs2>0?'–':'+';
+    const tc = cs2>0?`rgba(255,100,100,${ca2})`:`rgba(100,150,255,${ca2})`;
+    const bc = cs2>0?`rgba(100,150,255,${ca2})`:`rgba(255,100,100,${ca2})`;
+    for (let i = 0; i < 3; i++) {
+      const px = eL0+(eL1-eL0)*(0.25+i*0.25), py = (eW0+eW1)/2;
+      ctx.fillStyle = tc; const pt = iso(px+shT, py, ST+5); ctx.fillText(ts, pt[0]-5, pt[1]);
+      ctx.fillStyle = bc; const pb = iso(px+shB, py, -7); ctx.fillText(bs, pb[0]-5, pb[1]);
+    }
+  }
+
+  // ── WIRES TO LED ────────────────────────────────────────────────
+  const wt = iso(SL*0.5+shT, SW*0.15, ST);
+  const wb = iso(SL*0.5+shB, SW*0.15, 0);
+  const ledX = wt[0] + 190, ledY = (wt[1]+wb[1])/2;
+
+  ctx.beginPath(); ctx.moveTo(wt[0],wt[1]);
+  ctx.quadraticCurveTo(wt[0]+90, wt[1]-60, ledX-15, ledY-25);
+  ctx.strokeStyle = '#cc4444'; ctx.lineWidth = 2.5; ctx.stroke();
+  ctx.beginPath(); ctx.moveTo(wb[0],wb[1]);
+  ctx.quadraticCurveTo(wb[0]+110, wb[1]+50, ledX-15, ledY+25);
+  ctx.strokeStyle = '#555'; ctx.lineWidth = 2.5; ctx.stroke();
+
+  // ── LED BULB ────────────────────────────────────────────────────
+  const ledR = 22;
+  if (ledLit) {
+    const ledGlow = ctx.createRadialGradient(ledX, ledY, ledR, ledX, ledY, ledR * 4);
+    const glowAlpha = Math.min(1, pw.P_out / led[3]);
+    ledGlow.addColorStop(0, `rgba(80,255,80,${glowAlpha * 0.4})`);
+    ledGlow.addColorStop(0.5, `rgba(40,200,40,${glowAlpha * 0.15})`);
+    ledGlow.addColorStop(1, 'rgba(0,100,0,0)');
+    ctx.fillStyle = ledGlow;
+    ctx.fillRect(ledX - ledR*4, ledY - ledR*4, ledR*8, ledR*8);
+  }
+
+  ctx.beginPath();
+  ctx.arc(ledX, ledY, ledR, 0, Math.PI * 2);
+  if (ledLit) {
+    const lg = ctx.createRadialGradient(ledX-5, ledY-5, 2, ledX, ledY, ledR);
+    lg.addColorStop(0, 'rgba(200,255,200,0.95)');
+    lg.addColorStop(0.4, 'rgba(80,220,80,0.9)');
+    lg.addColorStop(1, 'rgba(30,150,30,0.85)');
+    ctx.fillStyle = lg;
+  } else {
+    const frac = Math.min(1, pw.P_out / led[3]);
+    const lg = ctx.createRadialGradient(ledX-3, ledY-3, 2, ledX, ledY, ledR);
+    lg.addColorStop(0, `rgba(${80+frac*60},${60+frac*40},${60+frac*40},0.8)`);
+    lg.addColorStop(1, `rgba(40,30,30,0.85)`);
+    ctx.fillStyle = lg;
+  }
+  ctx.fill();
+  ctx.strokeStyle = 'rgba(150,150,150,0.4)'; ctx.lineWidth = 1.5; ctx.stroke();
+
+  ctx.strokeStyle = '#888'; ctx.lineWidth = 2;
+  ctx.beginPath(); ctx.moveTo(ledX-6, ledY+ledR); ctx.lineTo(ledX-6, ledY+ledR+18); ctx.stroke();
+  ctx.beginPath(); ctx.moveTo(ledX+6, ledY+ledR); ctx.lineTo(ledX+6, ledY+ledR+14); ctx.stroke();
+
+  ctx.fillStyle = '#778'; ctx.font = '10px "Segoe UI"';
+  ctx.fillText(led[1].toFixed(1) + 'V / ' + (led[2]*1e3).toFixed(0) + 'mA', ledX - 25, ledY + ledR + 35);
+
+  // ── SCOPE ───────────────────────────────────────────────────────
+  const sx = ledX + 55, sy = ledY - 60;
+  const sw = 200, sh = 55;
+  ctx.fillStyle = 'rgba(15,20,30,0.85)';
+  ctx.strokeStyle = 'rgba(50,60,80,0.5)'; ctx.lineWidth = 1;
+  rRect(sx-8, sy-sh-8, sw+16, sh*2+16, 5);
+
+  ctx.strokeStyle = 'rgba(80,100,140,0.4)'; ctx.lineWidth = 0.5;
+  ctx.beginPath(); ctx.moveTo(sx, sy); ctx.lineTo(sx+sw, sy); ctx.stroke();
+
+  // Drive (dim)
+  ctx.beginPath(); ctx.strokeStyle = 'rgba(70,110,200,0.35)'; ctx.lineWidth = 1;
+  for (let i = 0; i <= sw; i++) {
+    const v = Math.sin(t*4 - (i/sw)*Math.PI*5) * Math.min(1, driveAmpNorm*0.4) * sh * 0.5;
+    if (i===0) ctx.moveTo(sx+i, sy-v); else ctx.lineTo(sx+i, sy-v);
+  }
+  ctx.stroke();
+
+  // Output
+  const oc = ledLit ? '#4f4' : pw.resp > 0.5 ? '#da4' : '#a44';
+  ctx.beginPath(); ctx.strokeStyle = oc; ctx.lineWidth = 2;
+  ctx.shadowColor = oc; ctx.shadowBlur = pw.resp > 0.5 ? 6 : 2;
+  for (let i = 0; i <= sw; i++) {
+    const v = Math.sin(t*4 - (i/sw)*Math.PI*5) * pw.resp * Math.min(1, driveAmpNorm) * overlap * pw.cavCoup * sh * 0.7;
+    if (i===0) ctx.moveTo(sx+i, sy-v); else ctx.lineTo(sx+i, sy-v);
+  }
+  ctx.stroke(); ctx.shadowBlur = 0;
+
+  ctx.font = '9px "Segoe UI"';
+  ctx.fillStyle = 'rgba(70,110,200,0.5)'; ctx.fillText('drive', sx+2, sy-sh+2);
+  ctx.fillStyle = oc; ctx.fillText('V_out', sx+sw-25, sy-sh+2);
+
+  // ── RESPONSE CURVE ──────────────────────────────────────────────
+  const rx = sx, ry = sy + sh + 30, rw = 200, rh = 40;
+  ctx.fillStyle = 'rgba(15,20,30,0.7)';
+  ctx.strokeStyle = 'rgba(50,60,80,0.4)'; ctx.lineWidth = 1;
+  rRect(rx-5, ry-5, rw+10, rh+10, 4);
+
+  ctx.font = '8px "Segoe UI"'; ctx.fillStyle = '#445';
+  ctx.fillText('Q=10,000 response', rx+2, ry+8);
+
+  const fMin = fT * 0.997, fMax = fT * 1.003;
+  ctx.beginPath(); ctx.strokeStyle = 'rgba(100,180,255,0.4)'; ctx.lineWidth = 1;
+  for (let i = 0; i <= rw; i++) {
+    const f = fMin + (fMax-fMin)*(i/rw);
+    const r = resonanceResponse(f, fT);
+    const y = ry + rh - r * (rh-10);
+    if (i===0) ctx.moveTo(rx+i,y); else ctx.lineTo(rx+i,y);
+  }
+  ctx.stroke();
+
+  const p_acoustic = 20e-6 * Math.pow(10, spl/20);
+  const P_in = (p_acoustic * p_acoustic * SLAB_L * SLAB_W * overlap) / (RHO_AIR * C_AIR);
+  const cavC = cavityCoupling(gapM, drivePhys);
+  const kQP = k2 * Q * P_in * cavC * cavC * Q_CAVITY;
+  if (kQP > 0) {
+    const resp_thresh = Math.sqrt(led[3] / kQP);
+    if (resp_thresh <= 1) {
+      const thY = ry + rh - resp_thresh * (rh - 10);
+      ctx.strokeStyle = 'rgba(0,200,80,0.4)'; ctx.lineWidth = 0.5;
+      ctx.setLineDash([3,3]);
+      ctx.beginPath(); ctx.moveTo(rx, thY); ctx.lineTo(rx+rw, thY); ctx.stroke();
+      ctx.setLineDash([]);
+      ctx.fillStyle = 'rgba(0,200,80,0.5)'; ctx.font = '7px "Segoe UI"';
+      ctx.fillText('LED threshold', rx+rw-48, thY-2);
+    }
+  }
+
+  const dn = (drivePhys - fMin) / (fMax - fMin);
+  if (dn >= 0 && dn <= 1) {
+    const dx = rx + dn * rw, dy = ry + rh - pw.resp * (rh-10);
+    ctx.beginPath(); ctx.arc(dx, dy, 3.5, 0, Math.PI*2);
+    ctx.fillStyle = oc; ctx.fill();
+    ctx.strokeStyle = '#fff'; ctx.lineWidth = 0.8; ctx.stroke();
+  } else {
+    const side = drivePhys < fMin ? 'left' : 'right';
+    ctx.fillStyle = '#844'; ctx.font = '12px sans-serif';
+    ctx.fillText(side==='left'?'◀':'▶', side==='left'?rx+2:rx+rw-12, ry+rh-3);
+    ctx.font = '8px "Segoe UI"'; ctx.fillStyle = '#755';
+    ctx.fillText(Math.abs(detuneKhz).toFixed(1)+' kHz '+(side==='left'?'low':'high'),
+      side==='left'?rx+14:rx+rw-62, ry+rh-3);
+  }
+
+  const rcx = rx + ((fT-fMin)/(fMax-fMin))*rw;
+  ctx.strokeStyle = 'rgba(255,200,80,0.3)'; ctx.lineWidth = 0.5;
+  ctx.setLineDash([2,2]);
+  ctx.beginPath(); ctx.moveTo(rcx, ry); ctx.lineTo(rcx, ry+rh); ctx.stroke();
+  ctx.setLineDash([]);
+  ctx.fillStyle = '#a94'; ctx.font = '7px "Segoe UI"'; ctx.fillText('f₀', rcx-4, ry+rh+9);
+
+  // Dimension labels on crystal
+  ctx.fillStyle = 'rgba(200,200,200,0.4)'; ctx.font = '10px "Segoe UI"';
+  const dl1=iso(-10,-8,0), dl2=iso(SL+8,-8,0);
+  ctx.fillText('1.5"', (dl1[0]+dl2[0])/2-8, (dl1[1]+dl2[1])/2+16);
+  const dw1=iso(SL+12,0,0), dw2=iso(SL+12,SW,0);
+  ctx.fillText('1.25"', (dw1[0]+dw2[0])/2+8, (dw1[1]+dw2[1])/2);
+  const dt1=iso(-16,0,0), dt2=iso(-16,0,ST);
+  ctx.fillText('0.5"', (dt1[0]+dt2[0])/2-32, (dt1[1]+dt2[1])/2);
+
+  // Cut label
+  ctx.fillStyle = 'rgba(255,200,100,0.5)'; ctx.font = '11px "Segoe UI"';
+  const cutL = theta===35.25?'AT-cut (hypothesis)':theta===0?'Z-cut':theta===90?'Y-cut':'θ='+theta.toFixed(1)+'°';
+  const cp = iso(-25, SW/2, ST/2);
+  ctx.fillText(cutL, cp[0]-65, cp[1]);
+
+  requestAnimationFrame(draw);
+}
+draw();
+</script>
+</body>
+</html>

@@ -1,0 +1,670 @@
+{
+  "indispensable_functions": [
+    "supplied_actuation",
+    "resonant_clamp",
+    "electrode_pair",
+    "polarity_capture",
+    "buffer",
+    "cc_cv_converter",
+    "pack_protection"
+  ],
+  "minimum_external_jig_organs_if_pack_protection_is_verified": [
+    "resonant_clamp",
+    "electrode_pair",
+    "polarity_capture",
+    "buffer",
+    "cc_cv_converter"
+  ],
+  "rows": {
+    "full": {
+      "formation": {
+        "applications_to_cold_start": 1471,
+        "applications_to_target_soc": 254023320424422,
+        "buffer_cold_start_joule": 5e-06,
+        "observer_seconds_at_supplied_rate": null,
+        "pack_label_capacity_joule": 864000.0,
+        "target_stored_delta_joule": 691200.0
+      },
+      "jig": {
+        "buffer": true,
+        "cc_cv_converter": true,
+        "electrode_pair": true,
+        "pack_protection": true,
+        "polarity_capture": true,
+        "resonant_clamp": true,
+        "supplied_actuation": true
+      },
+      "ledger": {
+        "clamp_residual_joule": 1.4040299376975505e-09,
+        "closure_residual_joule": 0.0,
+        "conversion_residual_joule": 6.802525048144629e-10,
+        "electrode_residual_joule": 2.106044906546324e-10,
+        "polarity_residual_joule": 6.002227983657027e-10,
+        "unconverted_mechanical_joule": 6.654690128493792e-07
+      },
+      "material_event": {
+        "coupling_fraction": 0.008368714307572462,
+        "face_charge_coulomb": [
+          4.17837289142184e-27,
+          4.82829208496814e-27,
+          -2.047140233901392e-10
+        ],
+        "face_voltage_volt": [
+          1.0079079531341098e-14,
+          8.088066613343225e-15,
+          -54.867953428741224
+        ],
+        "mechanical_energy_joule": 6.710851326001694e-07,
+        "open_circuit_electrical_joule": 5.6161197507902004e-09
+      },
+      "parameters": {
+        "buffer_capacitance_f": 1e-05,
+        "charger_cold_start_voltage_v": 1.0,
+        "converter_efficiency": 0.8,
+        "electrode_collection_efficiency": 0.95,
+        "euler_degrees": [
+          0.0,
+          90.0,
+          0.0
+        ],
+        "force_n": 100.0,
+        "initial_soc": 0.2,
+        "observer_event_rate_hz": null,
+        "pack_capacity_ah": 6.0,
+        "pack_charge_voltage_v": 42.0,
+        "pack_marketing_voltage_v": 40.0,
+        "polarity_capture_efficiency": 0.85,
+        "resonant_strain_capture": 0.75,
+        "target_soc": 1.0
+      },
+      "per_application": {
+        "accepted_by_pack_joule": 2.721010019257852e-09,
+        "buffer_dc_joule": 3.4012625240723147e-09,
+        "quartz_open_circuit_joule": 5.6161197507902004e-09,
+        "supplied_mechanical_joule": 6.710851326001694e-07
+      },
+      "rho3": {
+        "ledger_closed": true,
+        "pack_voltage_warning": "40 V is treated as a marketing/label value; 42 V charge voltage is a configurable hypothesis, not permission to charge the unidentified pack",
+        "refuter": "pack energy cannot exceed explicitly supplied mechanical energy"
+      },
+      "status": "battery-form-path-closed",
+      "triple": {
+        "Lambda_plus": "every supplied, carried, accepted and residual joule retained",
+        "P_being": "energy accepted under the pack's protected CC/CV boundary",
+        "q_minus_sigma_emergence": [
+          "actual pack series count, chemistry, cell voltages and temperature limits",
+          "measured resonant clamp transfer and Q",
+          "measured electrode/contact and harvester cold-start curves"
+        ]
+      }
+    },
+    "without_buffer": {
+      "formation": {
+        "applications_to_cold_start": 1471,
+        "applications_to_target_soc": null,
+        "buffer_cold_start_joule": 5e-06,
+        "observer_seconds_at_supplied_rate": null,
+        "pack_label_capacity_joule": 864000.0,
+        "target_stored_delta_joule": 691200.0
+      },
+      "jig": {
+        "buffer": false,
+        "cc_cv_converter": true,
+        "electrode_pair": true,
+        "pack_protection": true,
+        "polarity_capture": true,
+        "resonant_clamp": true,
+        "supplied_actuation": true
+      },
+      "ledger": {
+        "clamp_residual_joule": 1.4040299376975505e-09,
+        "closure_residual_joule": 0.0,
+        "conversion_residual_joule": 3.4012625240723147e-09,
+        "electrode_residual_joule": 2.106044906546324e-10,
+        "polarity_residual_joule": 6.002227983657027e-10,
+        "unconverted_mechanical_joule": 6.654690128493792e-07
+      },
+      "material_event": {
+        "coupling_fraction": 0.008368714307572462,
+        "face_charge_coulomb": [
+          4.17837289142184e-27,
+          4.82829208496814e-27,
+          -2.047140233901392e-10
+        ],
+        "face_voltage_volt": [
+          1.0079079531341098e-14,
+          8.088066613343225e-15,
+          -54.867953428741224
+        ],
+        "mechanical_energy_joule": 6.710851326001694e-07,
+        "open_circuit_electrical_joule": 5.6161197507902004e-09
+      },
+      "parameters": {
+        "buffer_capacitance_f": 1e-05,
+        "charger_cold_start_voltage_v": 1.0,
+        "converter_efficiency": 0.8,
+        "electrode_collection_efficiency": 0.95,
+        "euler_degrees": [
+          0.0,
+          90.0,
+          0.0
+        ],
+        "force_n": 100.0,
+        "initial_soc": 0.2,
+        "observer_event_rate_hz": null,
+        "pack_capacity_ah": 6.0,
+        "pack_charge_voltage_v": 42.0,
+        "pack_marketing_voltage_v": 40.0,
+        "polarity_capture_efficiency": 0.85,
+        "resonant_strain_capture": 0.75,
+        "target_soc": 1.0
+      },
+      "per_application": {
+        "accepted_by_pack_joule": 0.0,
+        "buffer_dc_joule": 3.4012625240723147e-09,
+        "quartz_open_circuit_joule": 5.6161197507902004e-09,
+        "supplied_mechanical_joule": 6.710851326001694e-07
+      },
+      "rho3": {
+        "ledger_closed": true,
+        "pack_voltage_warning": "40 V is treated as a marketing/label value; 42 V charge voltage is a configurable hypothesis, not permission to charge the unidentified pack",
+        "refuter": "pack energy cannot exceed explicitly supplied mechanical energy"
+      },
+      "status": "open",
+      "triple": {
+        "Lambda_plus": "every supplied, carried, accepted and residual joule retained",
+        "P_being": "energy accepted under the pack's protected CC/CV boundary",
+        "q_minus_sigma_emergence": [
+          "intermittent charge cannot accumulate to converter cold start"
+        ]
+      }
+    },
+    "without_cc_cv_converter": {
+      "formation": {
+        "applications_to_cold_start": 1471,
+        "applications_to_target_soc": null,
+        "buffer_cold_start_joule": 5e-06,
+        "observer_seconds_at_supplied_rate": null,
+        "pack_label_capacity_joule": 864000.0,
+        "target_stored_delta_joule": 691200.0
+      },
+      "jig": {
+        "buffer": true,
+        "cc_cv_converter": false,
+        "electrode_pair": true,
+        "pack_protection": true,
+        "polarity_capture": true,
+        "resonant_clamp": true,
+        "supplied_actuation": true
+      },
+      "ledger": {
+        "clamp_residual_joule": 1.4040299376975505e-09,
+        "closure_residual_joule": 0.0,
+        "conversion_residual_joule": 3.4012625240723147e-09,
+        "electrode_residual_joule": 2.106044906546324e-10,
+        "polarity_residual_joule": 6.002227983657027e-10,
+        "unconverted_mechanical_joule": 6.654690128493792e-07
+      },
+      "material_event": {
+        "coupling_fraction": 0.008368714307572462,
+        "face_charge_coulomb": [
+          4.17837289142184e-27,
+          4.82829208496814e-27,
+          -2.047140233901392e-10
+        ],
+        "face_voltage_volt": [
+          1.0079079531341098e-14,
+          8.088066613343225e-15,
+          -54.867953428741224
+        ],
+        "mechanical_energy_joule": 6.710851326001694e-07,
+        "open_circuit_electrical_joule": 5.6161197507902004e-09
+      },
+      "parameters": {
+        "buffer_capacitance_f": 1e-05,
+        "charger_cold_start_voltage_v": 1.0,
+        "converter_efficiency": 0.8,
+        "electrode_collection_efficiency": 0.95,
+        "euler_degrees": [
+          0.0,
+          90.0,
+          0.0
+        ],
+        "force_n": 100.0,
+        "initial_soc": 0.2,
+        "observer_event_rate_hz": null,
+        "pack_capacity_ah": 6.0,
+        "pack_charge_voltage_v": 42.0,
+        "pack_marketing_voltage_v": 40.0,
+        "polarity_capture_efficiency": 0.85,
+        "resonant_strain_capture": 0.75,
+        "target_soc": 1.0
+      },
+      "per_application": {
+        "accepted_by_pack_joule": 0.0,
+        "buffer_dc_joule": 3.4012625240723147e-09,
+        "quartz_open_circuit_joule": 5.6161197507902004e-09,
+        "supplied_mechanical_joule": 6.710851326001694e-07
+      },
+      "rho3": {
+        "ledger_closed": true,
+        "pack_voltage_warning": "40 V is treated as a marketing/label value; 42 V charge voltage is a configurable hypothesis, not permission to charge the unidentified pack",
+        "refuter": "pack energy cannot exceed explicitly supplied mechanical energy"
+      },
+      "status": "open",
+      "triple": {
+        "Lambda_plus": "every supplied, carried, accepted and residual joule retained",
+        "P_being": "energy accepted under the pack's protected CC/CV boundary",
+        "q_minus_sigma_emergence": [
+          "buffer has no regulated CC/CV path into pack chemistry"
+        ]
+      }
+    },
+    "without_electrode_pair": {
+      "formation": {
+        "applications_to_cold_start": null,
+        "applications_to_target_soc": null,
+        "buffer_cold_start_joule": 5e-06,
+        "observer_seconds_at_supplied_rate": null,
+        "pack_label_capacity_joule": 864000.0,
+        "target_stored_delta_joule": 691200.0
+      },
+      "jig": {
+        "buffer": true,
+        "cc_cv_converter": true,
+        "electrode_pair": false,
+        "pack_protection": true,
+        "polarity_capture": true,
+        "resonant_clamp": true,
+        "supplied_actuation": true
+      },
+      "ledger": {
+        "clamp_residual_joule": 0.0,
+        "closure_residual_joule": 0.0,
+        "conversion_residual_joule": 0.0,
+        "electrode_residual_joule": 0.0,
+        "polarity_residual_joule": 0.0,
+        "unconverted_mechanical_joule": 6.710851326001694e-07
+      },
+      "material_event": {
+        "coupling_fraction": 0.008368714307572462,
+        "face_charge_coulomb": [
+          4.17837289142184e-27,
+          4.82829208496814e-27,
+          -2.047140233901392e-10
+        ],
+        "face_voltage_volt": [
+          1.0079079531341098e-14,
+          8.088066613343225e-15,
+          -54.867953428741224
+        ],
+        "mechanical_energy_joule": 6.710851326001694e-07,
+        "open_circuit_electrical_joule": 5.6161197507902004e-09
+      },
+      "parameters": {
+        "buffer_capacitance_f": 1e-05,
+        "charger_cold_start_voltage_v": 1.0,
+        "converter_efficiency": 0.8,
+        "electrode_collection_efficiency": 0.95,
+        "euler_degrees": [
+          0.0,
+          90.0,
+          0.0
+        ],
+        "force_n": 100.0,
+        "initial_soc": 0.2,
+        "observer_event_rate_hz": null,
+        "pack_capacity_ah": 6.0,
+        "pack_charge_voltage_v": 42.0,
+        "pack_marketing_voltage_v": 40.0,
+        "polarity_capture_efficiency": 0.85,
+        "resonant_strain_capture": 0.75,
+        "target_soc": 1.0
+      },
+      "per_application": {
+        "accepted_by_pack_joule": 0.0,
+        "buffer_dc_joule": 0.0,
+        "quartz_open_circuit_joule": 0.0,
+        "supplied_mechanical_joule": 6.710851326001694e-07
+      },
+      "rho3": {
+        "ledger_closed": true,
+        "pack_voltage_warning": "40 V is treated as a marketing/label value; 42 V charge voltage is a configurable hypothesis, not permission to charge the unidentified pack",
+        "refuter": "pack energy cannot exceed explicitly supplied mechanical energy"
+      },
+      "status": "open",
+      "triple": {
+        "Lambda_plus": "every supplied, carried, accepted and residual joule retained",
+        "P_being": "energy accepted under the pack's protected CC/CV boundary",
+        "q_minus_sigma_emergence": [
+          "piezoelectric charge has no collection boundary"
+        ]
+      }
+    },
+    "without_pack_protection": {
+      "formation": {
+        "applications_to_cold_start": 1471,
+        "applications_to_target_soc": null,
+        "buffer_cold_start_joule": 5e-06,
+        "observer_seconds_at_supplied_rate": null,
+        "pack_label_capacity_joule": 864000.0,
+        "target_stored_delta_joule": 691200.0
+      },
+      "jig": {
+        "buffer": true,
+        "cc_cv_converter": true,
+        "electrode_pair": true,
+        "pack_protection": false,
+        "polarity_capture": true,
+        "resonant_clamp": true,
+        "supplied_actuation": true
+      },
+      "ledger": {
+        "clamp_residual_joule": 1.4040299376975505e-09,
+        "closure_residual_joule": 0.0,
+        "conversion_residual_joule": 3.4012625240723147e-09,
+        "electrode_residual_joule": 2.106044906546324e-10,
+        "polarity_residual_joule": 6.002227983657027e-10,
+        "unconverted_mechanical_joule": 6.654690128493792e-07
+      },
+      "material_event": {
+        "coupling_fraction": 0.008368714307572462,
+        "face_charge_coulomb": [
+          4.17837289142184e-27,
+          4.82829208496814e-27,
+          -2.047140233901392e-10
+        ],
+        "face_voltage_volt": [
+          1.0079079531341098e-14,
+          8.088066613343225e-15,
+          -54.867953428741224
+        ],
+        "mechanical_energy_joule": 6.710851326001694e-07,
+        "open_circuit_electrical_joule": 5.6161197507902004e-09
+      },
+      "parameters": {
+        "buffer_capacitance_f": 1e-05,
+        "charger_cold_start_voltage_v": 1.0,
+        "converter_efficiency": 0.8,
+        "electrode_collection_efficiency": 0.95,
+        "euler_degrees": [
+          0.0,
+          90.0,
+          0.0
+        ],
+        "force_n": 100.0,
+        "initial_soc": 0.2,
+        "observer_event_rate_hz": null,
+        "pack_capacity_ah": 6.0,
+        "pack_charge_voltage_v": 42.0,
+        "pack_marketing_voltage_v": 40.0,
+        "polarity_capture_efficiency": 0.85,
+        "resonant_strain_capture": 0.75,
+        "target_soc": 1.0
+      },
+      "per_application": {
+        "accepted_by_pack_joule": 0.0,
+        "buffer_dc_joule": 3.4012625240723147e-09,
+        "quartz_open_circuit_joule": 5.6161197507902004e-09,
+        "supplied_mechanical_joule": 6.710851326001694e-07
+      },
+      "rho3": {
+        "ledger_closed": true,
+        "pack_voltage_warning": "40 V is treated as a marketing/label value; 42 V charge voltage is a configurable hypothesis, not permission to charge the unidentified pack",
+        "refuter": "pack energy cannot exceed explicitly supplied mechanical energy"
+      },
+      "status": "open",
+      "triple": {
+        "Lambda_plus": "every supplied, carried, accepted and residual joule retained",
+        "P_being": "energy accepted under the pack's protected CC/CV boundary",
+        "q_minus_sigma_emergence": [
+          "cell-level voltage/temperature/protection boundary is absent"
+        ]
+      }
+    },
+    "without_polarity_capture": {
+      "formation": {
+        "applications_to_cold_start": null,
+        "applications_to_target_soc": null,
+        "buffer_cold_start_joule": 5e-06,
+        "observer_seconds_at_supplied_rate": null,
+        "pack_label_capacity_joule": 864000.0,
+        "target_stored_delta_joule": 691200.0
+      },
+      "jig": {
+        "buffer": true,
+        "cc_cv_converter": true,
+        "electrode_pair": true,
+        "pack_protection": true,
+        "polarity_capture": false,
+        "resonant_clamp": true,
+        "supplied_actuation": true
+      },
+      "ledger": {
+        "clamp_residual_joule": 1.4040299376975505e-09,
+        "closure_residual_joule": 0.0,
+        "conversion_residual_joule": 0.0,
+        "electrode_residual_joule": 2.106044906546324e-10,
+        "polarity_residual_joule": 4.0014853224380175e-09,
+        "unconverted_mechanical_joule": 6.654690128493792e-07
+      },
+      "material_event": {
+        "coupling_fraction": 0.008368714307572462,
+        "face_charge_coulomb": [
+          4.17837289142184e-27,
+          4.82829208496814e-27,
+          -2.047140233901392e-10
+        ],
+        "face_voltage_volt": [
+          1.0079079531341098e-14,
+          8.088066613343225e-15,
+          -54.867953428741224
+        ],
+        "mechanical_energy_joule": 6.710851326001694e-07,
+        "open_circuit_electrical_joule": 5.6161197507902004e-09
+      },
+      "parameters": {
+        "buffer_capacitance_f": 1e-05,
+        "charger_cold_start_voltage_v": 1.0,
+        "converter_efficiency": 0.8,
+        "electrode_collection_efficiency": 0.95,
+        "euler_degrees": [
+          0.0,
+          90.0,
+          0.0
+        ],
+        "force_n": 100.0,
+        "initial_soc": 0.2,
+        "observer_event_rate_hz": null,
+        "pack_capacity_ah": 6.0,
+        "pack_charge_voltage_v": 42.0,
+        "pack_marketing_voltage_v": 40.0,
+        "polarity_capture_efficiency": 0.85,
+        "resonant_strain_capture": 0.75,
+        "target_soc": 1.0
+      },
+      "per_application": {
+        "accepted_by_pack_joule": 0.0,
+        "buffer_dc_joule": 0.0,
+        "quartz_open_circuit_joule": 5.6161197507902004e-09,
+        "supplied_mechanical_joule": 6.710851326001694e-07
+      },
+      "rho3": {
+        "ledger_closed": true,
+        "pack_voltage_warning": "40 V is treated as a marketing/label value; 42 V charge voltage is a configurable hypothesis, not permission to charge the unidentified pack",
+        "refuter": "pack energy cannot exceed explicitly supplied mechanical energy"
+      },
+      "status": "open",
+      "triple": {
+        "Lambda_plus": "every supplied, carried, accepted and residual joule retained",
+        "P_being": "energy accepted under the pack's protected CC/CV boundary",
+        "q_minus_sigma_emergence": [
+          "alternating charge is not folded toward one DC ground"
+        ]
+      }
+    },
+    "without_resonant_clamp": {
+      "formation": {
+        "applications_to_cold_start": null,
+        "applications_to_target_soc": null,
+        "buffer_cold_start_joule": 5e-06,
+        "observer_seconds_at_supplied_rate": null,
+        "pack_label_capacity_joule": 864000.0,
+        "target_stored_delta_joule": 691200.0
+      },
+      "jig": {
+        "buffer": true,
+        "cc_cv_converter": true,
+        "electrode_pair": true,
+        "pack_protection": true,
+        "polarity_capture": true,
+        "resonant_clamp": false,
+        "supplied_actuation": true
+      },
+      "ledger": {
+        "clamp_residual_joule": 0.0,
+        "closure_residual_joule": 0.0,
+        "conversion_residual_joule": 0.0,
+        "electrode_residual_joule": 0.0,
+        "polarity_residual_joule": 0.0,
+        "unconverted_mechanical_joule": 6.710851326001694e-07
+      },
+      "material_event": {
+        "coupling_fraction": 0.008368714307572462,
+        "face_charge_coulomb": [
+          4.17837289142184e-27,
+          4.82829208496814e-27,
+          -2.047140233901392e-10
+        ],
+        "face_voltage_volt": [
+          1.0079079531341098e-14,
+          8.088066613343225e-15,
+          -54.867953428741224
+        ],
+        "mechanical_energy_joule": 6.710851326001694e-07,
+        "open_circuit_electrical_joule": 5.6161197507902004e-09
+      },
+      "parameters": {
+        "buffer_capacitance_f": 1e-05,
+        "charger_cold_start_voltage_v": 1.0,
+        "converter_efficiency": 0.8,
+        "electrode_collection_efficiency": 0.95,
+        "euler_degrees": [
+          0.0,
+          90.0,
+          0.0
+        ],
+        "force_n": 100.0,
+        "initial_soc": 0.2,
+        "observer_event_rate_hz": null,
+        "pack_capacity_ah": 6.0,
+        "pack_charge_voltage_v": 42.0,
+        "pack_marketing_voltage_v": 40.0,
+        "polarity_capture_efficiency": 0.85,
+        "resonant_strain_capture": 0.75,
+        "target_soc": 1.0
+      },
+      "per_application": {
+        "accepted_by_pack_joule": 0.0,
+        "buffer_dc_joule": 0.0,
+        "quartz_open_circuit_joule": 0.0,
+        "supplied_mechanical_joule": 6.710851326001694e-07
+      },
+      "rho3": {
+        "ledger_closed": true,
+        "pack_voltage_warning": "40 V is treated as a marketing/label value; 42 V charge voltage is a configurable hypothesis, not permission to charge the unidentified pack",
+        "refuter": "pack energy cannot exceed explicitly supplied mechanical energy"
+      },
+      "status": "open",
+      "triple": {
+        "Lambda_plus": "every supplied, carried, accepted and residual joule retained",
+        "P_being": "energy accepted under the pack's protected CC/CV boundary",
+        "q_minus_sigma_emergence": [
+          "source does not form controlled strain in the quartz"
+        ]
+      }
+    },
+    "without_supplied_actuation": {
+      "formation": {
+        "applications_to_cold_start": null,
+        "applications_to_target_soc": null,
+        "buffer_cold_start_joule": 5e-06,
+        "observer_seconds_at_supplied_rate": null,
+        "pack_label_capacity_joule": 864000.0,
+        "target_stored_delta_joule": 691200.0
+      },
+      "jig": {
+        "buffer": true,
+        "cc_cv_converter": true,
+        "electrode_pair": true,
+        "pack_protection": true,
+        "polarity_capture": true,
+        "resonant_clamp": true,
+        "supplied_actuation": false
+      },
+      "ledger": {
+        "clamp_residual_joule": 0.0,
+        "closure_residual_joule": 0.0,
+        "conversion_residual_joule": 0.0,
+        "electrode_residual_joule": 0.0,
+        "polarity_residual_joule": 0.0,
+        "unconverted_mechanical_joule": 0.0
+      },
+      "material_event": {
+        "coupling_fraction": 0.008368714307572462,
+        "face_charge_coulomb": [
+          4.17837289142184e-27,
+          4.82829208496814e-27,
+          -2.047140233901392e-10
+        ],
+        "face_voltage_volt": [
+          1.0079079531341098e-14,
+          8.088066613343225e-15,
+          -54.867953428741224
+        ],
+        "mechanical_energy_joule": 6.710851326001694e-07,
+        "open_circuit_electrical_joule": 5.6161197507902004e-09
+      },
+      "parameters": {
+        "buffer_capacitance_f": 1e-05,
+        "charger_cold_start_voltage_v": 1.0,
+        "converter_efficiency": 0.8,
+        "electrode_collection_efficiency": 0.95,
+        "euler_degrees": [
+          0.0,
+          90.0,
+          0.0
+        ],
+        "force_n": 100.0,
+        "initial_soc": 0.2,
+        "observer_event_rate_hz": null,
+        "pack_capacity_ah": 6.0,
+        "pack_charge_voltage_v": 42.0,
+        "pack_marketing_voltage_v": 40.0,
+        "polarity_capture_efficiency": 0.85,
+        "resonant_strain_capture": 0.75,
+        "target_soc": 1.0
+      },
+      "per_application": {
+        "accepted_by_pack_joule": 0.0,
+        "buffer_dc_joule": 0.0,
+        "quartz_open_circuit_joule": 0.0,
+        "supplied_mechanical_joule": 0.0
+      },
+      "rho3": {
+        "ledger_closed": true,
+        "pack_voltage_warning": "40 V is treated as a marketing/label value; 42 V charge voltage is a configurable hypothesis, not permission to charge the unidentified pack",
+        "refuter": "pack energy cannot exceed explicitly supplied mechanical energy"
+      },
+      "status": "open",
+      "triple": {
+        "Lambda_plus": "every supplied, carried, accepted and residual joule retained",
+        "P_being": "energy accepted under the pack's protected CC/CV boundary",
+        "q_minus_sigma_emergence": [
+          "no fresh mechanical/acoustic energy enters"
+        ]
+      }
+    }
+  }
+}

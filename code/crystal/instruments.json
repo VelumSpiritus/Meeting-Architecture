@@ -1,0 +1,31 @@
+{
+  "voltmeter": {
+    "manufacturer": "Kobalt",
+    "model": "DT-103",
+    "type": "manual-ranging 2000-count mini digital multimeter",
+    "identified_from": "owner-supplied product image and official Lowe's model listing",
+    "dc_ranges_visible": [
+      {"full_scale": "200 mV", "resolution": "0.1 mV"},
+      {"full_scale": "2000 mV", "resolution": "1 mV"},
+      {"full_scale": "20 V", "resolution": "10 mV"},
+      {"full_scale": "200 V", "resolution": "0.1 V"},
+      {"full_scale": "500 V", "resolution": "1 V"}
+    ],
+    "input_impedance_ohm": {
+      "value": 1000000,
+      "status": "provisional specification for DT-103 family; verify against the Kobalt operating manual or back label"
+    },
+    "initial_crystal_setting": "200 mV DC",
+    "lead_connections": {
+      "black": "COM",
+      "red": "V/ohm/mA/uA"
+    },
+    "simulation_status": "dimensional.py now derives the 1 Mohm RC loading range separately from normalized modal dynamics",
+    "measurement_residual": [
+      "sample/update rate not established",
+      "input capacitance not established",
+      "actual unit input impedance not independently measured",
+      "probe-to-quartz contact geometry not built"
+    ]
+  }
+}

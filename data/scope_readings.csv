@@ -1,0 +1,5 @@
+session_order,approx_local_time,speaker_present,vpp_v,vmax_v,vrms_v,vertical_scale_mv,horizontal_scale_ms,displayed_cycle_ms,image
+1,2026-10-19 00:48,False,0.33,0.16,0.03,200,200,8,8719a4f5-image.jpg
+2,2026-10-19 00:50,False,0.35,0.18,0.12,200,200,8,33238142-image.jpg
+3,2026-10-19 02:20,False,0.47,0.3,0.1,500,200,8,e6ab644b-image.jpg
+4,2026-10-19 10:30,False,0.61,0.32,0.08,500,200,8,67b51fe5-image.jpg

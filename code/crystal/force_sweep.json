@@ -1,0 +1,259 @@
+{
+  "model": "Q=dF; C=epsilon*A/t; V=Q/C; tau=R*C",
+  "residual": [
+    "Face A <-> Face B crystallographic projection and sign",
+    "actual force transmitted through the compliant contact",
+    "actual electrode area",
+    "strain distribution around internal fractures"
+  ],
+  "rho3": {
+    "claim_refuted": "DT-103 display can be treated as the open-circuit peak",
+    "witness": "derived RC is microseconds while a handheld display is not a microsecond peak instrument"
+  },
+  "rows": [
+    {
+      "area_fraction": 0.25,
+      "area_mm2": 302.41875000000005,
+      "charge_pc": {
+        "high": 0.45999999999999996,
+        "low": 0.067
+      },
+      "dt103_tau_microseconds": {
+        "high": 0.9770268750000001,
+        "low": 0.9336881250000002
+      },
+      "force_n": 0.1,
+      "open_circuit_voltage_v": {
+        "high": 0.49266986232688764,
+        "low": 0.06857539103005739
+      },
+      "resistance_for_hold_ohm": {
+        "0.1": {
+          "high": 107102143984.10603,
+          "low": 102351329895.60803
+        },
+        "1.0": {
+          "high": 1071021439841.0602,
+          "low": 1023513298956.0802
+        }
+      }
+    },
+    {
+      "area_fraction": 0.25,
+      "area_mm2": 302.41875000000005,
+      "charge_pc": {
+        "high": 4.6,
+        "low": 0.6699999999999999
+      },
+      "dt103_tau_microseconds": {
+        "high": 0.9770268750000001,
+        "low": 0.9336881250000002
+      },
+      "force_n": 1.0,
+      "open_circuit_voltage_v": {
+        "high": 4.9266986232688765,
+        "low": 0.6857539103005738
+      },
+      "resistance_for_hold_ohm": {
+        "0.1": {
+          "high": 107102143984.10603,
+          "low": 102351329895.60803
+        },
+        "1.0": {
+          "high": 1071021439841.0602,
+          "low": 1023513298956.0802
+        }
+      }
+    },
+    {
+      "area_fraction": 0.25,
+      "area_mm2": 302.41875000000005,
+      "charge_pc": {
+        "high": 22.999999999999996,
+        "low": 3.35
+      },
+      "dt103_tau_microseconds": {
+        "high": 0.9770268750000001,
+        "low": 0.9336881250000002
+      },
+      "force_n": 5.0,
+      "open_circuit_voltage_v": {
+        "high": 24.633493116344383,
+        "low": 3.428769551502869
+      },
+      "resistance_for_hold_ohm": {
+        "0.1": {
+          "high": 107102143984.10603,
+          "low": 102351329895.60803
+        },
+        "1.0": {
+          "high": 1071021439841.0602,
+          "low": 1023513298956.0802
+        }
+      }
+    },
+    {
+      "area_fraction": 0.5,
+      "area_mm2": 604.8375000000001,
+      "charge_pc": {
+        "high": 0.45999999999999996,
+        "low": 0.067
+      },
+      "dt103_tau_microseconds": {
+        "high": 1.9540537500000001,
+        "low": 1.8673762500000004
+      },
+      "force_n": 0.1,
+      "open_circuit_voltage_v": {
+        "high": 0.24633493116344382,
+        "low": 0.03428769551502869
+      },
+      "resistance_for_hold_ohm": {
+        "0.1": {
+          "high": 53551071992.05302,
+          "low": 51175664947.804016
+        },
+        "1.0": {
+          "high": 535510719920.5301,
+          "low": 511756649478.0401
+        }
+      }
+    },
+    {
+      "area_fraction": 0.5,
+      "area_mm2": 604.8375000000001,
+      "charge_pc": {
+        "high": 4.6,
+        "low": 0.6699999999999999
+      },
+      "dt103_tau_microseconds": {
+        "high": 1.9540537500000001,
+        "low": 1.8673762500000004
+      },
+      "force_n": 1.0,
+      "open_circuit_voltage_v": {
+        "high": 2.4633493116344383,
+        "low": 0.3428769551502869
+      },
+      "resistance_for_hold_ohm": {
+        "0.1": {
+          "high": 53551071992.05302,
+          "low": 51175664947.804016
+        },
+        "1.0": {
+          "high": 535510719920.5301,
+          "low": 511756649478.0401
+        }
+      }
+    },
+    {
+      "area_fraction": 0.5,
+      "area_mm2": 604.8375000000001,
+      "charge_pc": {
+        "high": 22.999999999999996,
+        "low": 3.35
+      },
+      "dt103_tau_microseconds": {
+        "high": 1.9540537500000001,
+        "low": 1.8673762500000004
+      },
+      "force_n": 5.0,
+      "open_circuit_voltage_v": {
+        "high": 12.316746558172191,
+        "low": 1.7143847757514346
+      },
+      "resistance_for_hold_ohm": {
+        "0.1": {
+          "high": 53551071992.05302,
+          "low": 51175664947.804016
+        },
+        "1.0": {
+          "high": 535510719920.5301,
+          "low": 511756649478.0401
+        }
+      }
+    },
+    {
+      "area_fraction": 1.0,
+      "area_mm2": 1209.6750000000002,
+      "charge_pc": {
+        "high": 0.45999999999999996,
+        "low": 0.067
+      },
+      "dt103_tau_microseconds": {
+        "high": 3.9081075000000003,
+        "low": 3.734752500000001
+      },
+      "force_n": 0.1,
+      "open_circuit_voltage_v": {
+        "high": 0.12316746558172191,
+        "low": 0.017143847757514347
+      },
+      "resistance_for_hold_ohm": {
+        "0.1": {
+          "high": 26775535996.02651,
+          "low": 25587832473.902008
+        },
+        "1.0": {
+          "high": 267755359960.26505,
+          "low": 255878324739.02005
+        }
+      }
+    },
+    {
+      "area_fraction": 1.0,
+      "area_mm2": 1209.6750000000002,
+      "charge_pc": {
+        "high": 4.6,
+        "low": 0.6699999999999999
+      },
+      "dt103_tau_microseconds": {
+        "high": 3.9081075000000003,
+        "low": 3.734752500000001
+      },
+      "force_n": 1.0,
+      "open_circuit_voltage_v": {
+        "high": 1.2316746558172191,
+        "low": 0.17143847757514344
+      },
+      "resistance_for_hold_ohm": {
+        "0.1": {
+          "high": 26775535996.02651,
+          "low": 25587832473.902008
+        },
+        "1.0": {
+          "high": 267755359960.26505,
+          "low": 255878324739.02005
+        }
+      }
+    },
+    {
+      "area_fraction": 1.0,
+      "area_mm2": 1209.6750000000002,
+      "charge_pc": {
+        "high": 22.999999999999996,
+        "low": 3.35
+      },
+      "dt103_tau_microseconds": {
+        "high": 3.9081075000000003,
+        "low": 3.734752500000001
+      },
+      "force_n": 5.0,
+      "open_circuit_voltage_v": {
+        "high": 6.158373279086096,
+        "low": 0.8571923878757173
+      },
+      "resistance_for_hold_ohm": {
+        "0.1": {
+          "high": 26775535996.02651,
+          "low": 25587832473.902008
+        },
+        "1.0": {
+          "high": 267755359960.26505,
+          "low": 255878324739.02005
+        }
+      }
+    }
+  ],
+  "status": "orientation envelope, not a prediction for Face A <-> Face B"
+}

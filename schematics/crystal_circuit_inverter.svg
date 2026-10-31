@@ -1,0 +1,361 @@
+<svg viewBox="0 0 1400 1000" xmlns="http://www.w3.org/2000/svg" font-family="monospace" font-size="11">
+  <defs>
+    <marker id="arr" markerWidth="7" markerHeight="5" refX="7" refY="2.5" orient="auto">
+      <polygon points="0 0, 7 2.5, 0 5" fill="#888"/>
+    </marker>
+    <marker id="arrR" markerWidth="7" markerHeight="5" refX="7" refY="2.5" orient="auto">
+      <polygon points="0 0, 7 2.5, 0 5" fill="#ff4444"/>
+    </marker>
+    <marker id="arrG" markerWidth="7" markerHeight="5" refX="7" refY="2.5" orient="auto">
+      <polygon points="0 0, 7 2.5, 0 5" fill="#00cc66"/>
+    </marker>
+    <marker id="arrO" markerWidth="7" markerHeight="5" refX="7" refY="2.5" orient="auto">
+      <polygon points="0 0, 7 2.5, 0 5" fill="#ff8844"/>
+    </marker>
+    <marker id="arrP" markerWidth="7" markerHeight="5" refX="7" refY="2.5" orient="auto">
+      <polygon points="0 0, 7 2.5, 0 5" fill="#bb55ff"/>
+    </marker>
+    <marker id="arrB" markerWidth="7" markerHeight="5" refX="7" refY="2.5" orient="auto">
+      <polygon points="0 0, 7 2.5, 0 5" fill="#3388ff"/>
+    </marker>
+    <pattern id="water" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+      <rect width="20" height="20" fill="#1a3355" opacity="0.5"/>
+      <path d="M 0 10 Q 5 7, 10 10 Q 15 13, 20 10" stroke="#4488aa" stroke-width="0.5" fill="none" opacity="0.4"/>
+    </pattern>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1400" height="1000" fill="#1a1a2e"/>
+
+  <!-- Title -->
+  <text x="700" y="30" text-anchor="middle" fill="#e0e0ff" font-size="20" font-weight="bold">Crystal Oscillator — CD4069 Inverter Swap</text>
+  <text x="700" y="50" text-anchor="middle" fill="#888" font-size="12">PAM8403 out, CD4069 in. No pot, no bulb, no speaker. The crystal IS the gain.</text>
+
+  <!-- ==================== USB POWER (top-left) ==================== -->
+  <rect x="40" y="80" width="80" height="50" rx="6" fill="#222" stroke="#666" stroke-width="2"/>
+  <rect x="75" y="72" width="20" height="10" rx="2" fill="#444" stroke="#666" stroke-width="1"/>
+  <text x="80" y="102" text-anchor="middle" fill="#ccc" font-size="10" font-weight="bold">USB</text>
+  <text x="80" y="115" text-anchor="middle" fill="#ff6666" font-size="9">5V Power</text>
+
+  <!-- USB red wire to (+) rail -->
+  <path d="M 120 95 L 200 95 L 200 160" stroke="#ff4444" stroke-width="3" fill="none" marker-end="url(#arrR)"/>
+  <text x="160" y="88" text-anchor="middle" fill="#ff4444" font-size="8">RED 5V</text>
+
+  <!-- USB black wire to (-) rail -->
+  <path d="M 120 110 L 170 110 L 170 160" stroke="#555" stroke-width="3" fill="none"/>
+  <text x="145" y="124" text-anchor="middle" fill="#888" font-size="8">BLK GND</text>
+
+  <!-- ==================== BREADBOARD ==================== -->
+  <rect x="150" y="160" width="500" height="620" rx="10" fill="#d4c89a" stroke="#a09060" stroke-width="3"/>
+  <!-- Center channel -->
+  <rect x="355" y="175" width="90" height="590" rx="3" fill="#b8a878"/>
+
+  <!-- Power rails -->
+  <line x1="170" y1="175" x2="170" y2="760" stroke="#ff4444" stroke-width="2" opacity="0.4"/>
+  <text x="170" y="772" text-anchor="middle" fill="#ff4444" font-size="7">(+) 5V</text>
+  <line x1="190" y1="175" x2="190" y2="760" stroke="#3388ff" stroke-width="2" opacity="0.4"/>
+  <text x="190" y="772" text-anchor="middle" fill="#3388ff" font-size="7">(-) GND</text>
+
+  <!-- Column headers -->
+  <text x="220" y="188" text-anchor="middle" fill="#776644" font-size="9" font-weight="bold">a</text>
+  <text x="250" y="188" text-anchor="middle" fill="#776644" font-size="9" font-weight="bold">b</text>
+  <text x="280" y="188" text-anchor="middle" fill="#776644" font-size="9" font-weight="bold">c</text>
+  <text x="310" y="188" text-anchor="middle" fill="#776644" font-size="9" font-weight="bold">d</text>
+  <text x="340" y="188" text-anchor="middle" fill="#776644" font-size="9" font-weight="bold">e</text>
+  <text x="460" y="188" text-anchor="middle" fill="#776644" font-size="9" font-weight="bold">f</text>
+  <text x="490" y="188" text-anchor="middle" fill="#776644" font-size="9" font-weight="bold">g</text>
+  <text x="520" y="188" text-anchor="middle" fill="#776644" font-size="9" font-weight="bold">h</text>
+  <text x="550" y="188" text-anchor="middle" fill="#776644" font-size="9" font-weight="bold">i</text>
+  <text x="580" y="188" text-anchor="middle" fill="#776644" font-size="9" font-weight="bold">j</text>
+
+  <!-- Filler rows (context dots) -->
+  <g fill="#555" stroke="none">
+    <circle cx="220" cy="200" r="2.5"/><circle cx="250" cy="200" r="2.5"/><circle cx="280" cy="200" r="2.5"/><circle cx="310" cy="200" r="2.5"/><circle cx="340" cy="200" r="2.5"/>
+    <circle cx="460" cy="200" r="2.5"/><circle cx="490" cy="200" r="2.5"/><circle cx="520" cy="200" r="2.5"/><circle cx="550" cy="200" r="2.5"/><circle cx="580" cy="200" r="2.5"/>
+    <text x="162" y="204" text-anchor="end" fill="#999" font-size="8">1</text>
+
+    <circle cx="220" cy="220" r="2.5"/><circle cx="250" cy="220" r="2.5"/><circle cx="280" cy="220" r="2.5"/><circle cx="310" cy="220" r="2.5"/><circle cx="340" cy="220" r="2.5"/>
+    <circle cx="460" cy="220" r="2.5"/><circle cx="490" cy="220" r="2.5"/><circle cx="520" cy="220" r="2.5"/><circle cx="550" cy="220" r="2.5"/><circle cx="580" cy="220" r="2.5"/>
+
+    <circle cx="220" cy="240" r="2.5"/><circle cx="250" cy="240" r="2.5"/><circle cx="280" cy="240" r="2.5"/><circle cx="310" cy="240" r="2.5"/><circle cx="340" cy="240" r="2.5"/>
+    <circle cx="460" cy="240" r="2.5"/><circle cx="490" cy="240" r="2.5"/><circle cx="520" cy="240" r="2.5"/><circle cx="550" cy="240" r="2.5"/><circle cx="580" cy="240" r="2.5"/>
+
+    <circle cx="220" cy="260" r="2.5"/><circle cx="250" cy="260" r="2.5"/><circle cx="280" cy="260" r="2.5"/><circle cx="310" cy="260" r="2.5"/><circle cx="340" cy="260" r="2.5"/>
+    <circle cx="460" cy="260" r="2.5"/><circle cx="490" cy="260" r="2.5"/><circle cx="520" cy="260" r="2.5"/><circle cx="550" cy="260" r="2.5"/><circle cx="580" cy="260" r="2.5"/>
+  </g>
+
+  <!-- ==================== CD4069 CHIP ON BREADBOARD ==================== -->
+  <!-- Chip straddles center gap at rows 5-11 -->
+  <!-- Chip body -->
+  <rect x="345" y="270" width="110" height="200" rx="4" fill="#1a1a22" stroke="#666" stroke-width="2"/>
+  <!-- Notch -->
+  <path d="M 393 270 A 7 7 0 0 0 407 270" fill="none" stroke="#888" stroke-width="1.5"/>
+  <text x="400" y="345" text-anchor="middle" fill="#ccc" font-size="14" font-weight="bold">CD4069</text>
+  <text x="400" y="365" text-anchor="middle" fill="#888" font-size="9">HEX INVERTER</text>
+  <text x="400" y="380" text-anchor="middle" fill="#666" font-size="8">CMOS ~1uW</text>
+
+  <!-- Top pins (1-7, left to right = rows 5-11, column e side) -->
+  <!-- Pin 1 = Input A (row 5e) — ACTIVE: sense piezo in -->
+  <circle cx="340" cy="280" r="5" fill="#bb55ff" stroke="#fff" stroke-width="1.5"/>
+  <text x="330" y="284" text-anchor="end" fill="#bb55ff" font-size="9" font-weight="bold">1 IN A</text>
+  <text x="162" y="284" text-anchor="end" fill="#bb55ff" font-size="9" font-weight="bold">5</text>
+
+  <!-- Pin 2 = Output A (row 6e) — ACTIVE: drive piezo out -->
+  <circle cx="340" cy="310" r="5" fill="#ff8844" stroke="#fff" stroke-width="1.5"/>
+  <text x="330" y="314" text-anchor="end" fill="#ff8844" font-size="9" font-weight="bold">2 OUT A</text>
+  <text x="162" y="314" text-anchor="end" fill="#ff8844" font-size="9" font-weight="bold">6</text>
+
+  <!-- Pin 3 = Input B (row 7e) — tied to GND -->
+  <circle cx="340" cy="340" r="3.5" fill="#3388ff" opacity="0.5"/>
+  <text x="330" y="344" text-anchor="end" fill="#3388ff" font-size="7" opacity="0.7">3 IN B→GND</text>
+  <text x="162" y="344" text-anchor="end" fill="#999" font-size="8">7</text>
+
+  <!-- Pin 4 = Output B (row 8e) — open -->
+  <circle cx="340" cy="370" r="2.5" fill="#555"/>
+  <text x="162" y="374" text-anchor="end" fill="#999" font-size="8">8</text>
+
+  <!-- Pin 5 = Input C (row 9e) — tied to GND -->
+  <circle cx="340" cy="400" r="3.5" fill="#3388ff" opacity="0.5"/>
+  <text x="330" y="404" text-anchor="end" fill="#3388ff" font-size="7" opacity="0.7">5 IN C→GND</text>
+  <text x="162" y="404" text-anchor="end" fill="#999" font-size="8">9</text>
+
+  <!-- Pin 6 = Output C (row 10e) — open -->
+  <circle cx="340" cy="430" r="2.5" fill="#555"/>
+  <text x="162" y="434" text-anchor="end" fill="#999" font-size="8">10</text>
+
+  <!-- Pin 7 = VSS/GND (row 11e) — ACTIVE -->
+  <circle cx="340" cy="460" r="5" fill="#3388ff" stroke="#fff" stroke-width="1.5"/>
+  <text x="330" y="464" text-anchor="end" fill="#3388ff" font-size="9" font-weight="bold">7 GND</text>
+  <text x="162" y="464" text-anchor="end" fill="#3388ff" font-size="9" font-weight="bold">11</text>
+
+  <!-- Bottom pins (14-8, left to right = rows 5-11, column f side) -->
+  <!-- Pin 14 = VDD/+5V (row 5f) — ACTIVE -->
+  <circle cx="460" cy="280" r="5" fill="#ff4444" stroke="#fff" stroke-width="1.5"/>
+  <text x="470" y="284" fill="#ff4444" font-size="9" font-weight="bold">14 +5V</text>
+
+  <!-- Pin 13 = Input F (row 6f) — tied to GND -->
+  <circle cx="460" cy="310" r="3.5" fill="#3388ff" opacity="0.5"/>
+  <text x="470" y="314" fill="#3388ff" font-size="7" opacity="0.7">13 IN F→GND</text>
+
+  <!-- Pin 12 = Output F (row 7f) — open -->
+  <circle cx="460" cy="340" r="2.5" fill="#555"/>
+
+  <!-- Pin 11 = Input E (row 8f) — tied to GND -->
+  <circle cx="460" cy="370" r="3.5" fill="#3388ff" opacity="0.5"/>
+  <text x="470" y="374" fill="#3388ff" font-size="7" opacity="0.7">11 IN E→GND</text>
+
+  <!-- Pin 10 = Output E (row 9f) — open -->
+  <circle cx="460" cy="400" r="2.5" fill="#555"/>
+
+  <!-- Pin 9 = Input D (row 10f) — tied to GND -->
+  <circle cx="460" cy="430" r="3.5" fill="#3388ff" opacity="0.5"/>
+  <text x="470" y="434" fill="#3388ff" font-size="7" opacity="0.7">9 IN D→GND</text>
+
+  <!-- Pin 8 = Output D (row 11f) — open -->
+  <circle cx="460" cy="460" r="2.5" fill="#555"/>
+
+  <!-- Row holes for Pin 1 row (row 5) -->
+  <g fill="#333" stroke="#555" stroke-width="0.5">
+    <circle cx="170" cy="280" r="3"/><circle cx="190" cy="280" r="3"/>
+    <circle cx="220" cy="280" r="4" fill="#bb55ff" stroke="#bb55ff" stroke-width="1.5"/>
+    <circle cx="250" cy="280" r="3"/><circle cx="280" cy="280" r="3"/><circle cx="310" cy="280" r="3"/>
+    <circle cx="490" cy="280" r="3"/><circle cx="520" cy="280" r="3"/><circle cx="550" cy="280" r="3"/>
+    <circle cx="580" cy="280" r="3"/>
+  </g>
+  <rect x="214" y="274" width="132" height="12" rx="2" fill="none" stroke="#bb55ff" stroke-width="1" stroke-dasharray="2,2" opacity="0.6"/>
+  <text x="400" y="265" text-anchor="middle" fill="#bb55ff" font-size="8" font-weight="bold">← SENSE PIEZO IN</text>
+
+  <!-- Row holes for Pin 2 row (row 6) -->
+  <g fill="#333" stroke="#555" stroke-width="0.5">
+    <circle cx="170" cy="310" r="3"/><circle cx="190" cy="310" r="3"/>
+    <circle cx="220" cy="310" r="4" fill="#ff8844" stroke="#ff8844" stroke-width="1.5"/>
+    <circle cx="250" cy="310" r="3"/><circle cx="280" cy="310" r="3"/><circle cx="310" cy="310" r="3"/>
+    <circle cx="490" cy="310" r="3"/><circle cx="520" cy="310" r="3"/><circle cx="550" cy="310" r="3"/>
+    <circle cx="580" cy="310" r="4" fill="#ff8844" stroke="#ff8844" stroke-width="1.5"/>
+  </g>
+  <rect x="454" y="304" width="132" height="12" rx="2" fill="none" stroke="#ff8844" stroke-width="1" stroke-dasharray="2,2" opacity="0.6"/>
+  <text x="400" y="330" text-anchor="middle" fill="#ff8844" font-size="8" font-weight="bold">DRIVE PIEZO OUT →</text>
+
+  <!-- Filler rows below chip -->
+  <g fill="#555" stroke="none">
+    <circle cx="220" cy="490" r="2"/><circle cx="220" cy="510" r="2"/><circle cx="220" cy="530" r="2"/>
+    <circle cx="220" cy="550" r="2"/><circle cx="220" cy="570" r="2"/><circle cx="220" cy="590" r="2"/>
+    <circle cx="220" cy="610" r="2"/><circle cx="220" cy="630" r="2"/><circle cx="220" cy="650" r="2"/>
+    <circle cx="220" cy="670" r="2"/><circle cx="220" cy="690" r="2"/><circle cx="220" cy="710" r="2"/>
+    <circle cx="220" cy="730" r="2"/><circle cx="220" cy="750" r="2"/>
+  </g>
+
+  <!-- ==================== WIRES ==================== -->
+
+  <!-- Wire 1: (+) rail → Pin 14 (VDD) row 5f — jumper wire RED -->
+  <path d="M 170 280 L 170 205 L 490 205 L 490 280" stroke="#ff4444" stroke-width="3" fill="none" marker-end="url(#arrR)"/>
+  <text x="330" y="200" text-anchor="middle" fill="#ff4444" font-size="8">1: (+) rail → row 5j → Pin 14 VDD</text>
+
+  <!-- Wire 2: (-) rail → Pin 7 (VSS) row 11 — jumper wire BLUE -->
+  <path d="M 190 460 L 220 460" stroke="#3388ff" stroke-width="3" fill="none"/>
+  <text x="145" y="475" fill="#3388ff" font-size="7">2: GND → Pin 7</text>
+
+  <!-- Wire 3: Unused inputs (3,5,9,11,13) → GND — short jumpers -->
+  <!-- Pin 3 (row 7) to GND row 11 via column a -->
+  <path d="M 220 340 L 210 340 L 210 460 L 220 460" stroke="#3388ff" stroke-width="1.5" stroke-dasharray="3,2" fill="none" opacity="0.5"/>
+  <!-- Pin 5 (row 9) to GND row 11 via column a -->
+  <path d="M 220 400 L 210 400 L 210 460" stroke="#3388ff" stroke-width="1.5" stroke-dasharray="3,2" fill="none" opacity="0.5"/>
+  <!-- Pin 13 (row 6f) to GND — jumper to (-) rail -->
+  <path d="M 490 310 L 580 310 L 580 460 L 520 460 L 520 700 L 190 700" stroke="#3388ff" stroke-width="1.5" stroke-dasharray="3,2" fill="none" opacity="0.4"/>
+  <!-- Pin 11 (row 8f) tied similarly -->
+  <path d="M 490 370 L 560 370 L 560 460 L 520 460" stroke="#3388ff" stroke-width="1.5" stroke-dasharray="3,2" fill="none" opacity="0.4"/>
+  <!-- Pin 9 (row 10f) tied similarly -->
+  <path d="M 490 430 L 540 430 L 540 460" stroke="#3388ff" stroke-width="1.5" stroke-dasharray="3,2" fill="none" opacity="0.4"/>
+  <text x="560" y="500" fill="#3388ff" font-size="7" opacity="0.7">3: unused inputs → GND</text>
+
+  <!-- ==================== GLASS TRAY + CRYSTAL + TWO PIEZOS ==================== -->
+  <rect x="720" y="420" width="380" height="260" rx="8" fill="url(#water)" stroke="#4488cc" stroke-width="2"/>
+  <text x="910" y="448" text-anchor="middle" fill="#6699cc" font-size="12" font-weight="bold">Glass Tray — Salt Water</text>
+  <text x="910" y="463" text-anchor="middle" fill="#4477aa" font-size="9">15.1ml + 5.4g NaCl</text>
+
+  <!-- Quartz crystal (center of tray) -->
+  <rect x="840" y="510" width="140" height="70" rx="4" fill="#2a1a3a" stroke="#bb88ff" stroke-width="2"/>
+  <text x="910" y="540" text-anchor="middle" fill="#cc99ff" font-size="14" font-weight="bold">QUARTZ</text>
+  <text x="910" y="558" text-anchor="middle" fill="#9966cc" font-size="9">Crystal (Q = 10,000)</text>
+  <text x="910" y="573" text-anchor="middle" fill="#7744aa" font-size="8">610mV = 3.1x past threshold</text>
+
+  <!-- SENSE piezo (top, faces up under crystal) -->
+  <ellipse cx="870" cy="498" rx="28" ry="16" fill="none" stroke="#bb55ff" stroke-width="2.5"/>
+  <text x="870" y="485" text-anchor="middle" fill="#bb55ff" font-size="10" font-weight="bold">SENSE</text>
+  <text x="870" y="475" text-anchor="middle" fill="#bb55ff" font-size="8">Piezo 27mm</text>
+  <text x="945" y="498" fill="#9944dd" font-size="8">faces up</text>
+
+  <!-- DRIVE piezo (bottom, faces down onto crystal) -->
+  <ellipse cx="870" cy="593" rx="28" ry="16" fill="none" stroke="#ff8844" stroke-width="2.5"/>
+  <text x="870" y="616" text-anchor="middle" fill="#ff8844" font-size="10" font-weight="bold">DRIVE</text>
+  <text x="870" y="628" text-anchor="middle" fill="#ff8844" font-size="8">Piezo 27mm</text>
+  <text x="945" y="593" fill="#cc6622" font-size="8">faces down</text>
+
+  <!-- Crystal vibration arrows between piezos -->
+  <path d="M 870 514 L 870 508" stroke="#bb88ff" stroke-width="1" stroke-dasharray="2,2" fill="none"/>
+  <path d="M 870 580 L 870 586" stroke="#bb88ff" stroke-width="1" stroke-dasharray="2,2" fill="none"/>
+
+  <!-- ==================== PIEZO WIRING ==================== -->
+
+  <!-- Wire 4: Sense piezo RED → row 5a (Pin 1 Input A) — PURPLE, gator clip -->
+  <path d="M 842 490 L 760 490 L 760 280 L 700 280 L 220 280" stroke="#bb55ff" stroke-width="3" fill="none" marker-end="url(#arrP)"/>
+  <text x="700" y="400" fill="#bb55ff" font-size="8" transform="rotate(-90,700,400)">4: Sense RED → 5a (Pin 1)</text>
+  <!-- Gator clip indicator -->
+  <rect x="735" y="274" width="50" height="12" rx="3" fill="none" stroke="#bb55ff" stroke-width="1" stroke-dasharray="3,2"/>
+  <text x="760" y="283" text-anchor="middle" fill="#bb55ff" font-size="6">GATOR</text>
+
+  <!-- Wire 5: row 6j → Drive piezo RED (Pin 2 Output A) — ORANGE, gator clip -->
+  <path d="M 580 310 L 660 310 L 660 593 L 842 593" stroke="#ff8844" stroke-width="3" fill="none" marker-end="url(#arrO)"/>
+  <text x="660" y="450" fill="#ff8844" font-size="8" transform="rotate(-90,660,450)">5: Pin 2 (6j) → Drive RED</text>
+  <!-- Gator clip indicator -->
+  <rect x="635" y="304" width="50" height="12" rx="3" fill="none" stroke="#ff8844" stroke-width="1" stroke-dasharray="3,2"/>
+  <text x="660" y="313" text-anchor="middle" fill="#ff8844" font-size="6">GATOR</text>
+
+  <!-- Wire 6: Sense piezo BLK → (-) rail — GREY -->
+  <path d="M 842 506 L 730 506 L 730 650 L 680 650 L 680 750 L 190 750" stroke="#555" stroke-width="2.5" fill="none"/>
+  <text x="435" y="742" text-anchor="middle" fill="#888" font-size="8">6: Sense BLK → GND rail</text>
+  <!-- Gator clip -->
+  <rect x="705" y="644" width="50" height="12" rx="3" fill="none" stroke="#888" stroke-width="1" stroke-dasharray="3,2"/>
+  <text x="730" y="653" text-anchor="middle" fill="#888" font-size="6">GATOR</text>
+
+  <!-- Wire 7: Drive piezo BLK → (-) rail — GREY -->
+  <path d="M 842 601 L 730 601 L 730 670 L 700 670 L 700 750 L 190 750" stroke="#555" stroke-width="2.5" fill="none"/>
+  <text x="435" y="762" text-anchor="middle" fill="#888" font-size="8">7: Drive BLK → GND rail</text>
+  <!-- Gator clip -->
+  <rect x="705" y="595" width="50" height="12" rx="3" fill="none" stroke="#888" stroke-width="1" stroke-dasharray="3,2"/>
+  <text x="730" y="604" text-anchor="middle" fill="#888" font-size="6">GATOR</text>
+
+  <!-- ==================== DSO-153 OSCILLOSCOPE ==================== -->
+  <rect x="380" y="70" width="120" height="65" rx="6" fill="#1a1a2a" stroke="#8888ff" stroke-width="2"/>
+  <text x="440" y="93" text-anchor="middle" fill="#aaaaff" font-size="12" font-weight="bold">DSO-153</text>
+  <text x="440" y="108" text-anchor="middle" fill="#6666aa" font-size="9">Oscilloscope</text>
+  <path d="M 400 120 Q 410 110, 418 120 Q 426 130, 434 120 Q 442 110, 450 120 Q 458 130, 466 120 Q 474 110, 480 120" stroke="#44ff44" stroke-width="1.5" fill="none"/>
+
+  <!-- DSO probe → row 5f (sense signal) -->
+  <path d="M 440 135 L 440 160 L 460 280" stroke="#8888ff" stroke-width="2" stroke-dasharray="5,3" fill="none"/>
+  <text x="455" y="210" fill="#8888ff" font-size="7">probe: Pin 1 row</text>
+
+  <!-- DSO GND → (-) rail -->
+  <path d="M 400 135 L 400 160 L 190 220" stroke="#555" stroke-width="1.5" stroke-dasharray="4,3" fill="none"/>
+  <text x="295" y="185" fill="#888" font-size="7">probe GND clip</text>
+
+  <!-- ==================== SIGNAL FLOW LOOP ==================== -->
+  <!-- Crystal → Sense (vibration couples into sense piezo) -->
+  <path d="M 870 500 C 840 470, 790 460, 760 490" stroke="#bb55ff" stroke-width="1.5" stroke-dasharray="3,3" fill="none"/>
+  <text x="790" y="470" text-anchor="middle" fill="#bb88ff" font-size="7">vibration</text>
+
+  <!-- Drive → Crystal (drive piezo pushes crystal) -->
+  <path d="M 870 607 C 900 620, 920 620, 920 595" stroke="#ff8844" stroke-width="1.5" stroke-dasharray="3,3" fill="none"/>
+  <text x="940" y="618" fill="#ff8844" font-size="7">pushes</text>
+
+  <!-- The loop annotation -->
+  <rect x="720" y="700" width="380" height="100" rx="8" fill="#111122" stroke="#333" stroke-width="1"/>
+  <text x="910" y="725" text-anchor="middle" fill="#e0e0ff" font-size="12" font-weight="bold">THE SUSTAINING LOOP</text>
+  <text x="910" y="745" text-anchor="middle" fill="#bb55ff" font-size="9">1. Crystal vibrates → sense piezo picks it up (610mV)</text>
+  <text x="910" y="760" text-anchor="middle" fill="#44ee66" font-size="9">2. CD4069 inverts → buffered output (~5V swing)</text>
+  <text x="910" y="775" text-anchor="middle" fill="#ff8844" font-size="9">3. Drive piezo pushes crystal harder</text>
+  <text x="910" y="790" text-anchor="middle" fill="#fbbf24" font-size="9">4. Crystal Q=10,000 IS the gain — no amp needed</text>
+
+  <!-- ==================== REMOVED COMPONENTS (greyed, struck) ==================== -->
+  <rect x="720" y="160" width="380" height="230" rx="8" fill="#111118" stroke="#333" stroke-width="1" stroke-dasharray="8,4"/>
+  <text x="910" y="185" text-anchor="middle" fill="#ff4444" font-size="11" font-weight="bold">REMOVED</text>
+
+  <!-- PAM8403 (greyed out) -->
+  <rect x="740" y="200" width="160" height="60" rx="4" fill="none" stroke="#333" stroke-width="1"/>
+  <text x="820" y="225" text-anchor="middle" fill="#444" font-size="12" text-decoration="line-through">PAM8403</text>
+  <text x="820" y="240" text-anchor="middle" fill="#333" font-size="9">100mW draw</text>
+  <line x1="740" y1="225" x2="900" y2="225" stroke="#ff4444" stroke-width="1.5" opacity="0.4"/>
+
+  <!-- Bulb (greyed out) -->
+  <circle cx="780" cy="310" r="18" fill="none" stroke="#333" stroke-width="1"/>
+  <text x="780" y="305" text-anchor="middle" fill="#444" font-size="12" text-decoration="line-through">6V Bulb</text>
+  <text x="780" y="318" text-anchor="middle" fill="#333" font-size="8">thermal limiter</text>
+  <line x1="762" y1="308" x2="798" y2="308" stroke="#ff4444" stroke-width="1.5" opacity="0.4"/>
+
+  <!-- Speaker (greyed out) -->
+  <path d="M 870 290 L 870 330 L 900 345 L 900 275 Z" fill="none" stroke="#333" stroke-width="1"/>
+  <text x="910" y="315" fill="#444" font-size="9" text-decoration="line-through">Speaker</text>
+  <text x="910" y="330" fill="#333" font-size="7">2% efficient</text>
+  <line x1="870" y1="310" x2="930" y2="310" stroke="#ff4444" stroke-width="1.5" opacity="0.4"/>
+
+  <!-- Pot (greyed out) -->
+  <circle cx="1040" cy="250" r="12" fill="none" stroke="#333" stroke-width="1"/>
+  <line x1="1040" y1="250" x2="1040" y2="240" stroke="#333" stroke-width="1"/>
+  <text x="1040" y="275" text-anchor="middle" fill="#444" font-size="8" text-decoration="line-through">Pot</text>
+
+  <!-- 470uF cap (greyed out) -->
+  <text x="1040" y="310" text-anchor="middle" fill="#444" font-size="9" text-decoration="line-through">470uF cap</text>
+
+  <!-- ==================== ENERGY COMPARISON ==================== -->
+  <rect x="720" y="825" width="380" height="80" rx="6" fill="#0a1a0a" stroke="#44ee66" stroke-width="1"/>
+  <text x="910" y="847" text-anchor="middle" fill="#44ee66" font-size="11" font-weight="bold">ENERGY BUDGET</text>
+  <text x="760" y="867" fill="#ff4444" font-size="9">OLD: PAM8403 = 100mW + speaker loss + bulb heat</text>
+  <text x="760" y="885" fill="#44ee66" font-size="9">NEW: CD4069 = ~1uW. 100,000x less power draw.</text>
+  <text x="760" y="900" fill="#fbbf24" font-size="9">Surplus at 610mV: 34.8x what the inverter needs.</text>
+
+  <!-- ==================== LEGEND ==================== -->
+  <rect x="40" y="940" width="650" height="35" rx="4" fill="#111122"/>
+  <line x1="60" y1="957" x2="90" y2="957" stroke="#bb55ff" stroke-width="3"/>
+  <text x="95" y="961" fill="#ccc" font-size="9">Sense piezo</text>
+  <line x1="170" y1="957" x2="200" y2="957" stroke="#ff8844" stroke-width="3"/>
+  <text x="205" y="961" fill="#ccc" font-size="9">Drive piezo</text>
+  <line x1="280" y1="957" x2="310" y2="957" stroke="#ff4444" stroke-width="3"/>
+  <text x="315" y="961" fill="#ccc" font-size="9">+5V</text>
+  <line x1="350" y1="957" x2="380" y2="957" stroke="#3388ff" stroke-width="3"/>
+  <text x="385" y="961" fill="#ccc" font-size="9">GND</text>
+  <line x1="420" y1="957" x2="450" y2="957" stroke="#3388ff" stroke-width="1.5" stroke-dasharray="3,2" opacity="0.5"/>
+  <text x="455" y="961" fill="#ccc" font-size="9">Unused input ties</text>
+  <line x1="555" y1="957" x2="585" y2="957" stroke="#8888ff" stroke-width="2" stroke-dasharray="5,3"/>
+  <text x="590" y="961" fill="#ccc" font-size="9">DSO probe</text>
+  <line x1="640" y1="957" x2="670" y2="957" stroke="#555" stroke-width="2"/>
+  <text x="675" y="961" fill="#ccc" font-size="9">GND wire</text>
+
+  <!-- Tool indicators -->
+  <rect x="40" y="880" width="300" height="50" rx="6" fill="#111122" stroke="#333" stroke-width="1"/>
+  <text x="190" y="898" text-anchor="middle" fill="#aaa" font-size="10" font-weight="bold">YOUR TOOLS</text>
+  <rect x="55" y="908" width="40" height="12" rx="3" fill="none" stroke="#bb55ff" stroke-width="1" stroke-dasharray="3,2"/>
+  <text x="75" y="917" text-anchor="middle" fill="#bb55ff" font-size="7">GATOR</text>
+  <text x="102" y="917" fill="#999" font-size="8">= alligator clip</text>
+  <line x1="175" y1="914" x2="205" y2="914" stroke="#ffdd44" stroke-width="3"/>
+  <text x="212" y="917" fill="#999" font-size="8">= jumper wire</text>
+</svg>

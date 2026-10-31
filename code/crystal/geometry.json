@@ -1,0 +1,39 @@
+{
+  "shape": "irregular rectangular quartz slab",
+  "broad_face_pair": ["Face A", "Face B"],
+  "dimensions": {
+    "length": {"in": 1.5, "mm": 38.1, "status": "owner direct rereading"},
+    "width": {"in": 1.25, "mm": 31.75, "status": "owner direct rereading"},
+    "face_a_to_b": {"in": 0.5, "mm": 12.7, "status": "owner confirmed perpendicular thickness"}
+  },
+  "nominal_box_volume_cm3": 15.360453,
+  "volume_status": "upper-envelope box only; true irregular crystal volume is smaller",
+  "mass_g": {
+    "value": 28.0,
+    "uncertainty": null,
+    "status": "owner exact measurement; admitted as total body evidence but not yet distributed among modal masses"
+  },
+  "geometry_mass_reading": {
+    "box_averaged_mass_density_g_cm3": 1.822863,
+    "quartz_reference_density_g_cm3": 2.649,
+    "inferred_material_volume_cm3": 10.570026,
+    "inferred_box_occupancy_fraction": 0.688133,
+    "status": "consistent; inferred from reference density rather than direct water displacement",
+    "address": "obtain displaced volume only if independent density verification is desired"
+  },
+  "electrode_geometry": {
+    "physical_pairs_observed": 1,
+    "pair": "Face A <-> Face B",
+    "separation_mm": 12.7,
+    "maximum_broad_face_area_mm2": 1209.675,
+    "effective_area_mm2": null
+  },
+  "unresolved": [
+    "effective parallel overlap area of Face A and Face B",
+    "true displaced volume",
+    "true displaced volume if independently desired",
+    "crystallographic orientation",
+    "electrical polarity",
+    "safe loading magnitude"
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "area": {
+    "maximum_broad_face_m2": 0.0012096750000000001,
+    "modeled_effective_fraction_range": [
+      0.25,
+      1.0
+    ],
+    "status": "range assumption only; electrode overlap is not measured"
+  },
+  "capacitance_f": {
+    "high": 3.9081075000000006e-12,
+    "low": 9.336881250000002e-13
+  },
+  "capacitance_pf": {
+    "high": 3.9081075000000007,
+    "low": 0.9336881250000002
+  },
+  "evidence": {
+    "length_m": 0.0381,
+    "mass_kg": 0.028,
+    "meter_resistance_ohm": 1000000.0,
+    "permittivity_high_f_m": 4.103e-11,
+    "permittivity_low_f_m": 3.921e-11,
+    "piezo_d_high_c_n": 4.6e-12,
+    "piezo_d_low_c_n": 6.7e-13,
+    "quartz_density_kg_m3": 2649.0,
+    "thickness_m": 0.0127,
+    "width_m": 0.03175
+  },
+  "mass_geometry": {
+    "bounding_box_volume_cm3": 15.3628725,
+    "box_averaged_mass_density_g_cm3": 1.8225758236293377,
+    "inferred_box_occupancy_fraction": 0.6880240934803087,
+    "inferred_quartz_material_volume_cm3": 10.570026425066063,
+    "status": "volume and occupancy inferred from exact mass plus reference alpha-quartz density; not a direct displacement reading"
+  },
+  "measurement_projection": "DT-103 is a load, not an open-circuit witness; a static piezo charge decays on the derived RC scale before an ordinary display can be relied upon",
+  "meter_rc_microseconds": {
+    "high": 3.9081075000000003,
+    "low": 0.9336881250000002
+  },
+  "meter_rc_seconds": {
+    "high": 3.9081075000000004e-06,
+    "low": 9.336881250000002e-07
+  },
+  "residual": [
+    "crystallographic axis through Face A and Face B",
+    "actual electrode overlap area",
+    "meter input capacitance and update aperture",
+    "contact leakage and surface moisture",
+    "applied force profile"
+  ]
+}

@@ -1,0 +1,1004 @@
+{
+  "source_specimen": {
+    "dimensions_mm": [
+      15.06,
+      30.1,
+      20.03
+    ],
+    "mass_g": 24.03,
+    "measured_modes_khz": [
+      50,
+      310
+    ],
+    "temperature_c": 25,
+    "source": "Xie, Bai & Li, arXiv:2212.00284"
+  },
+  "owner_surrogate": {
+    "dimensions_mm": [
+      38.1,
+      31.75,
+      12.7
+    ],
+    "mass_g": 28.0
+  },
+  "materials": {
+    "PE_EMIS_free": {
+      "orientation_count": 6912,
+      "cases": {
+        "p05": {
+          "euler_degrees": [
+            150,
+            156.44353569089878,
+            165
+          ],
+          "first_event": {
+            "mechanical_energy_joule": 4.834201058455054e-07,
+            "open_circuit_electrical_joule": 2.394045454977769e-10,
+            "coupling_fraction": 0.0004952308408419558,
+            "face_voltage_volt": [
+              -8.456429235007253,
+              26.12636803319825,
+              3.342448002462541
+            ],
+            "face_charge_coulomb": [
+              -3.50568864586387e-12,
+              1.559652535199794e-11,
+              1.2470776396737539e-11
+            ]
+          },
+          "recurrence": {
+            "material": {
+              "name": "PE_EMIS_free",
+              "c11": 86.72,
+              "c12": 6.802,
+              "c13": 11.81,
+              "c14": -18.1,
+              "c33": 105.22,
+              "c44": 58.22,
+              "e11": 0.153,
+              "e14": -0.04,
+              "epsilon11_relative": 4.424,
+              "epsilon33_relative": 4.632
+            },
+            "run": {
+              "length": 0.038099999999999995,
+              "width": 0.03175,
+              "thickness": 0.0127,
+              "mass": 0.028,
+              "force": 100.0,
+              "mechanical_q": 2127.6595744680853,
+              "capture_efficiency": 0.9,
+              "cycles": 1000
+            },
+            "one_newton_event": {
+              "mechanical_energy_joule": 4.8342010584550536e-11,
+              "open_circuit_electrical_joule": 2.3940454549777666e-14,
+              "coupling_fraction": 0.0004952308408419553,
+              "face_voltage_volt": [
+                -0.08456429235007254,
+                0.26126368033198233,
+                0.0334244800246254
+              ],
+              "face_charge_coulomb": [
+                -3.5056886458638735e-14,
+                1.5596525351997933e-13,
+                1.2470776396737537e-13
+              ]
+            },
+            "initial_mechanical_joule": 4.834201058455054e-07,
+            "trace": [
+              {
+                "cycle": 1,
+                "dynamic_force_amplitude_newton": 100.00000000000001,
+                "contact_force_max_newton": 200.0,
+                "mechanical_joule": 4.834201058455054e-07,
+                "stored_joule": 2.154640909479991e-10
+              },
+              {
+                "cycle": 2,
+                "dynamic_force_amplitude_newton": 99.82772603212179,
+                "contact_force_max_newton": 199.8277260321218,
+                "mechanical_joule": 4.817559265594431e-07,
+                "stored_joule": 2.1472235333156547e-10
+              },
+              {
+                "cycle": 3,
+                "dynamic_force_amplitude_newton": 99.65574884744366,
+                "contact_force_max_newton": 199.65574884744365,
+                "mechanical_joule": 4.800974762297537e-07,
+                "stored_joule": 2.1398316915542549e-10
+              },
+              {
+                "cycle": 4,
+                "dynamic_force_amplitude_newton": 99.48406793468541,
+                "contact_force_max_newton": 199.4840679346854,
+                "mechanical_joule": 4.784447351344389e-07,
+                "stored_joule": 2.1324652962933128e-10
+              },
+              {
+                "cycle": 5,
+                "dynamic_force_amplitude_newton": 99.31268278344767,
+                "contact_force_max_newton": 199.31268278344766,
+                "mechanical_joule": 4.7679768361939337e-07,
+                "stored_joule": 2.125124259932959e-10
+              },
+              {
+                "cycle": 500,
+                "dynamic_force_amplitude_newton": 42.2997747365872,
+                "contact_force_max_newton": 142.2997747365872,
+                "mechanical_joule": 8.64969548538237e-08,
+                "stored_joule": 3.855236371427498e-11
+              },
+              {
+                "cycle": 1000,
+                "dynamic_force_amplitude_newton": 17.861884947168246,
+                "contact_force_max_newton": 117.86188494716825,
+                "mechanical_joule": 1.542337025391255e-08,
+                "stored_joule": 6.874315757515723e-12
+              }
+            ],
+            "energy": {
+              "held_joule": 6.059919873980978e-08,
+              "final_mechanical_joule": 1.5370275124050423e-08,
+              "circuit_loss_joule": 6.733244304423307e-09,
+              "q_loss_joule": 4.007173876772221e-07,
+              "closure_residual_joule": 2.117582368135751e-22
+            }
+          }
+        },
+        "median": {
+          "euler_degrees": [
+            0,
+            41.40962210927086,
+            120
+          ],
+          "first_event": {
+            "mechanical_energy_joule": 5.17251069309812e-07,
+            "open_circuit_electrical_joule": 6.011336105889022e-09,
+            "coupling_fraction": 0.011621698750493022,
+            "face_voltage_volt": [
+              116.04985007077535,
+              59.2708684617798,
+              -34.11544921928924
+            ],
+            "face_charge_coulomb": [
+              4.810950703201537e-11,
+              3.538262958802549e-11,
+              -1.272857913046258e-10
+            ]
+          },
+          "recurrence": {
+            "material": {
+              "name": "PE_EMIS_free",
+              "c11": 86.72,
+              "c12": 6.802,
+              "c13": 11.81,
+              "c14": -18.1,
+              "c33": 105.22,
+              "c44": 58.22,
+              "e11": 0.153,
+              "e14": -0.04,
+              "epsilon11_relative": 4.424,
+              "epsilon33_relative": 4.632
+            },
+            "run": {
+              "length": 0.038099999999999995,
+              "width": 0.03175,
+              "thickness": 0.0127,
+              "mass": 0.028,
+              "force": 100.0,
+              "mechanical_q": 2127.6595744680853,
+              "capture_efficiency": 0.9,
+              "cycles": 1000
+            },
+            "one_newton_event": {
+              "mechanical_energy_joule": 5.172510693098119e-11,
+              "open_circuit_electrical_joule": 6.011336105889021e-13,
+              "coupling_fraction": 0.011621698750493023,
+              "face_voltage_volt": [
+                1.1604985007077535,
+                0.592708684617798,
+                -0.3411544921928924
+              ],
+              "face_charge_coulomb": [
+                4.810950703201536e-13,
+                3.5382629588025493e-13,
+                -1.2728579130462578e-12
+              ]
+            },
+            "initial_mechanical_joule": 5.172510693098119e-07,
+            "trace": [
+              {
+                "cycle": 1,
+                "dynamic_force_amplitude_newton": 100.0,
+                "contact_force_max_newton": 200.0,
+                "mechanical_joule": 5.172510693098119e-07,
+                "stored_joule": 5.410202495300119e-09
+              },
+              {
+                "cycle": 2,
+                "dynamic_force_amplitude_newton": 99.27053085567786,
+                "contact_force_max_newton": 199.27053085567786,
+                "mechanical_joule": 5.097322196457818e-07,
+                "stored_joule": 5.331558870129076e-09
+              },
+              {
+                "cycle": 3,
+                "dynamic_force_amplitude_newton": 98.5463829636809,
+                "contact_force_max_newton": 198.5463829636809,
+                "mechanical_joule": 5.023226652614031e-07,
+                "stored_joule": 5.2540584220914976e-09
+              },
+              {
+                "cycle": 4,
+                "dynamic_force_amplitude_newton": 97.82751750711532,
+                "contact_force_max_newton": 197.82751750711532,
+                "mechanical_joule": 4.950208174218713e-07,
+                "stored_joule": 5.177684533769817e-09
+              },
+              {
+                "cycle": 5,
+                "dynamic_force_amplitude_newton": 97.11389595224458,
+                "contact_force_max_newton": 197.11389595224458,
+                "mechanical_joule": 4.878251104865008e-07,
+                "stored_joule": 5.10242082930008e-09
+              },
+              {
+                "cycle": 500,
+                "dynamic_force_amplitude_newton": 2.5903103907599423,
+                "contact_force_max_newton": 102.59031039075994,
+                "mechanical_joule": 3.470603596624238e-10,
+                "stored_joule": 3.630087853411005e-12
+              },
+              {
+                "cycle": 1000,
+                "dynamic_force_amplitude_newton": 0.0666076267152489,
+                "contact_force_max_newton": 100.06660762671525,
+                "mechanical_joule": 2.2948236473001547e-13,
+                "stored_joule": 2.4002774202987046e-15
+              }
+            ],
+            "energy": {
+              "held_joule": 3.7218882241593994e-07,
+              "final_mechanical_joule": 2.2614656998095205e-13,
+              "circuit_loss_joule": 4.135431360177116e-08,
+              "q_loss_joule": 1.0370770714553008e-07,
+              "closure_residual_joule": -7.411538288475128e-22
+            }
+          }
+        },
+        "p95": {
+          "euler_degrees": [
+            180,
+            104.47751218592992,
+            135
+          ],
+          "first_event": {
+            "mechanical_energy_joule": 5.694404844335502e-07,
+            "open_circuit_electrical_joule": 1.8070816250002927e-08,
+            "coupling_fraction": 0.031734337027299414,
+            "face_voltage_volt": [
+              53.601613816078455,
+              -169.17034249669086,
+              -69.19938587983775
+            ],
+            "face_charge_coulomb": [
+              2.2221030145573618e-11,
+              -1.0098876094079223e-10,
+              -2.581850390681388e-10
+            ]
+          },
+          "recurrence": {
+            "material": {
+              "name": "PE_EMIS_free",
+              "c11": 86.72,
+              "c12": 6.802,
+              "c13": 11.81,
+              "c14": -18.1,
+              "c33": 105.22,
+              "c44": 58.22,
+              "e11": 0.153,
+              "e14": -0.04,
+              "epsilon11_relative": 4.424,
+              "epsilon33_relative": 4.632
+            },
+            "run": {
+              "length": 0.038099999999999995,
+              "width": 0.03175,
+              "thickness": 0.0127,
+              "mass": 0.028,
+              "force": 100.0,
+              "mechanical_q": 2127.6595744680853,
+              "capture_efficiency": 0.9,
+              "cycles": 1000
+            },
+            "one_newton_event": {
+              "mechanical_energy_joule": 5.694404844335502e-11,
+              "open_circuit_electrical_joule": 1.8070816250002924e-12,
+              "coupling_fraction": 0.03173433702729941,
+              "face_voltage_volt": [
+                0.5360161381607845,
+                -1.6917034249669083,
+                -0.6919938587983775
+              ],
+              "face_charge_coulomb": [
+                2.2221030145573621e-13,
+                -1.0098876094079218e-12,
+                -2.5818503906813877e-12
+              ]
+            },
+            "initial_mechanical_joule": 5.694404844335502e-07,
+            "trace": [
+              {
+                "cycle": 1,
+                "dynamic_force_amplitude_newton": 100.0,
+                "contact_force_max_newton": 200.0,
+                "mechanical_joule": 5.694404844335502e-07,
+                "stored_joule": 1.6263734625002633e-08
+              },
+              {
+                "cycle": 2,
+                "dynamic_force_amplitude_newton": 98.25530511483595,
+                "contact_force_max_newton": 198.25530511483595,
+                "mechanical_joule": 5.497438218411173e-07,
+                "stored_joule": 1.570118014888349e-08
+              },
+              {
+                "cycle": 3,
+                "dynamic_force_amplitude_newton": 96.54104983209508,
+                "contact_force_max_newton": 196.5410498320951,
+                "mechanical_joule": 5.307284569924971e-07,
+                "stored_joule": 1.5158084151760633e-08
+              },
+              {
+                "cycle": 4,
+                "dynamic_force_amplitude_newton": 94.85670307359085,
+                "contact_force_max_newton": 194.85670307359084,
+                "mechanical_joule": 5.12370824138236e-07,
+                "stored_joule": 1.4633773574542141e-08
+              },
+              {
+                "cycle": 5,
+                "dynamic_force_amplitude_newton": 93.20174302683066,
+                "contact_force_max_newton": 193.20174302683066,
+                "mechanical_joule": 4.946481726564107e-07,
+                "stored_joule": 1.4127598638914689e-08
+              },
+              {
+                "cycle": 500,
+                "dynamic_force_amplitude_newton": 0.015333747176618834,
+                "contact_force_max_newton": 100.01533374717661,
+                "mechanical_joule": 1.3388901198405722e-14,
+                "stored_joule": 3.8239911274987808e-16
+              },
+              {
+                "cycle": 1000,
+                "dynamic_force_amplitude_newton": 2.310216095208558e-06,
+                "contact_force_max_newton": 100.00000231021609,
+                "mechanical_joule": 3.039159902101441e-22,
+                "stored_joule": 8.680115215182727e-24
+              }
+            ],
+            "energy": {
+              "held_joule": 4.701927994196435e-07,
+              "final_mechanical_joule": 2.934036875564804e-22,
+              "circuit_loss_joule": 5.224364437996047e-08,
+              "q_loss_joule": 4.700404063394502e-08,
+              "closure_residual_joule": -8.470329472543003e-22
+            }
+          }
+        },
+        "maximum": {
+          "euler_degrees": [
+            345,
+            85.21980815280085,
+            135
+          ],
+          "first_event": {
+            "mechanical_energy_joule": 6.958833944652023e-07,
+            "open_circuit_electrical_joule": 2.5493584109063618e-08,
+            "coupling_fraction": 0.036634850481891225,
+            "face_voltage_volt": [
+              84.49005295361731,
+              196.75743395653475,
+              -81.72131416084927
+            ],
+            "face_charge_coulomb": [
+              3.5026109850451475e-11,
+              1.1745728694465983e-10,
+              -3.049047389807266e-10
+            ]
+          },
+          "recurrence": {
+            "material": {
+              "name": "PE_EMIS_free",
+              "c11": 86.72,
+              "c12": 6.802,
+              "c13": 11.81,
+              "c14": -18.1,
+              "c33": 105.22,
+              "c44": 58.22,
+              "e11": 0.153,
+              "e14": -0.04,
+              "epsilon11_relative": 4.424,
+              "epsilon33_relative": 4.632
+            },
+            "run": {
+              "length": 0.038099999999999995,
+              "width": 0.03175,
+              "thickness": 0.0127,
+              "mass": 0.028,
+              "force": 100.0,
+              "mechanical_q": 2127.6595744680853,
+              "capture_efficiency": 0.9,
+              "cycles": 1000
+            },
+            "one_newton_event": {
+              "mechanical_energy_joule": 6.958833944652024e-11,
+              "open_circuit_electrical_joule": 2.549358410906362e-12,
+              "coupling_fraction": 0.036634850481891225,
+              "face_voltage_volt": [
+                0.8449005295361731,
+                1.9675743395653478,
+                -0.8172131416084927
+              ],
+              "face_charge_coulomb": [
+                3.502610985045148e-13,
+                1.1745728694465983e-12,
+                -3.0490473898072664e-12
+              ]
+            },
+            "initial_mechanical_joule": 6.958833944652024e-07,
+            "trace": [
+              {
+                "cycle": 1,
+                "dynamic_force_amplitude_newton": 100.0,
+                "contact_force_max_newton": 200.0,
+                "mechanical_joule": 6.958833944652024e-07,
+                "stored_joule": 2.294422569815726e-08
+              },
+              {
+                "cycle": 2,
+                "dynamic_force_amplitude_newton": 98.00634852963687,
+                "contact_force_max_newton": 198.00634852963685,
+                "mechanical_joule": 6.684130044415868e-07,
+                "stored_joule": 2.2038489430082305e-08
+              },
+              {
+                "cycle": 3,
+                "dynamic_force_amplitude_newton": 96.05244352112655,
+                "contact_force_max_newton": 196.05244352112655,
+                "mechanical_joule": 6.420270235791203e-07,
+                "stored_joule": 2.116850761273925e-08
+              },
+              {
+                "cycle": 4,
+                "dynamic_force_amplitude_newton": 94.1374925685479,
+                "contact_force_max_newton": 194.13749256854788,
+                "mechanical_joule": 6.166826442137043e-07,
+                "stored_joule": 2.0332868818991745e-08
+              },
+              {
+                "cycle": 5,
+                "dynamic_force_amplitude_newton": 92.26071906379205,
+                "contact_force_max_newton": 192.26071906379207,
+                "mechanical_joule": 5.92338748537958e-07,
+                "stored_joule": 1.9530217338586793e-08
+              },
+              {
+                "cycle": 500,
+                "dynamic_force_amplitude_newton": 0.004323646497914051,
+                "contact_force_max_newton": 100.00432364649791,
+                "mechanical_joule": 1.3008787836664409e-15,
+                "stored_joule": 4.289174976121613e-17
+              },
+              {
+                "cycle": 1000,
+                "dynamic_force_amplitude_newton": 1.8321227447136425e-07,
+                "contact_force_max_newton": 100.00000018321228,
+                "mechanical_joule": 2.3358535244431896e-24,
+                "stored_joule": 7.701628015401741e-26
+              }
+            ],
+            "energy": {
+              "held_joule": 5.812260273146239e-07,
+              "final_mechanical_joule": 2.2436443873020387e-24,
+              "circuit_loss_joule": 6.458066970162476e-08,
+              "q_loss_joule": 5.007669744895377e-08,
+              "closure_residual_joule": 0.0
+            }
+          }
+        }
+      }
+    },
+    "sandwich_RUS_clamped": {
+      "orientation_count": 6912,
+      "cases": {
+        "p05": {
+          "euler_degrees": [
+            150,
+            23.55646430910122,
+            270
+          ],
+          "first_event": {
+            "mechanical_energy_joule": 5.294478221893778e-07,
+            "open_circuit_electrical_joule": 2.2764352034727324e-10,
+            "coupling_fraction": 0.000429964031971875,
+            "face_voltage_volt": [
+              -16.569884727255893,
+              -23.91656851930562,
+              -2.539032074997018e-15
+            ],
+            "face_charge_coulomb": [
+              -6.869194448070648e-12,
+              -1.4277352549354078e-11,
+              -9.473206837654374e-27
+            ]
+          },
+          "recurrence": {
+            "material": {
+              "name": "sandwich_RUS_clamped",
+              "c11": 86.79,
+              "c12": 6.986,
+              "c13": 11.75,
+              "c14": -18.04,
+              "c33": 105.49,
+              "c44": 58.32,
+              "e11": 0.173,
+              "e14": -0.07,
+              "epsilon11_relative": 4.424,
+              "epsilon33_relative": 4.632
+            },
+            "run": {
+              "length": 0.038099999999999995,
+              "width": 0.03175,
+              "thickness": 0.0127,
+              "mass": 0.028,
+              "force": 100.0,
+              "mechanical_q": 2127.6595744680853,
+              "capture_efficiency": 0.9,
+              "cycles": 1000
+            },
+            "one_newton_event": {
+              "mechanical_energy_joule": 5.294478221893778e-11,
+              "open_circuit_electrical_joule": 2.2764352034727296e-14,
+              "coupling_fraction": 0.0004299640319718745,
+              "face_voltage_volt": [
+                -0.1656988472725588,
+                -0.23916568519305603,
+                -2.5390320749970182e-17
+              ],
+              "face_charge_coulomb": [
+                -6.869194448070644e-14,
+                -1.4277352549354074e-13,
+                -9.473206837654376e-29
+              ]
+            },
+            "initial_mechanical_joule": 5.294478221893778e-07,
+            "trace": [
+              {
+                "cycle": 1,
+                "dynamic_force_amplitude_newton": 100.00000000000001,
+                "contact_force_max_newton": 200.0,
+                "mechanical_joule": 5.294478221893778e-07,
+                "stored_joule": 2.0487916831254573e-10
+              },
+              {
+                "cycle": 2,
+                "dynamic_force_amplitude_newton": 99.83098531159511,
+                "contact_force_max_newton": 199.8309853115951,
+                "mechanical_joule": 5.276596454342884e-07,
+                "stored_joule": 2.0418720179379873e-10
+              },
+              {
+                "cycle": 3,
+                "dynamic_force_amplitude_newton": 99.66225628283918,
+                "contact_force_max_newton": 199.66225628283917,
+                "mechanical_joule": 5.25877508133841e-07,
+                "stored_joule": 2.0349757234849364e-10
+              },
+              {
+                "cycle": 4,
+                "dynamic_force_amplitude_newton": 99.49381243092546,
+                "contact_force_max_newton": 199.49381243092546,
+                "mechanical_joule": 5.241013898901571e-07,
+                "stored_joule": 2.0281027208331185e-10
+              },
+              {
+                "cycle": 5,
+                "dynamic_force_amplitude_newton": 99.32565327386318,
+                "contact_force_max_newton": 199.32565327386317,
+                "mechanical_joule": 5.223312703742506e-07,
+                "stored_joule": 2.0212529313159368e-10
+              },
+              {
+                "cycle": 500,
+                "dynamic_force_amplitude_newton": 42.99455010579995,
+                "contact_force_max_newton": 142.99455010579996,
+                "mechanical_joule": 9.787008915765505e-08,
+                "stored_joule": 3.787255632930498e-11
+              },
+              {
+                "cycle": 1000,
+                "dynamic_force_amplitude_newton": 18.454070493178005,
+                "contact_force_max_newton": 118.45407049317801,
+                "mechanical_joule": 1.803048947625089e-08,
+                "stored_joule": 6.977215758271756e-12
+              }
+            ],
+            "energy": {
+              "held_joule": 5.860227965925058e-08,
+              "final_mechanical_joule": 1.796959263087151e-08,
+              "circuit_loss_joule": 6.511364406583394e-09,
+              "q_loss_joule": 4.4636458549267273e-07,
+              "closure_residual_joule": 4.235164736271502e-22
+            }
+          }
+        },
+        "median": {
+          "euler_degrees": [
+            0,
+            41.40962210927086,
+            30
+          ],
+          "first_event": {
+            "mechanical_energy_joule": 6.188984205992311e-07,
+            "open_circuit_electrical_joule": 8.947599999714418e-09,
+            "coupling_fraction": 0.014457299779584432,
+            "face_voltage_volt": [
+              -48.990139330243736,
+              164.359258704326,
+              14.401747262469929
+            ],
+            "face_charge_coulomb": [
+              -2.0309302004012714e-11,
+              9.81167126621008e-11,
+              5.3733362403923363e-11
+            ]
+          },
+          "recurrence": {
+            "material": {
+              "name": "sandwich_RUS_clamped",
+              "c11": 86.79,
+              "c12": 6.986,
+              "c13": 11.75,
+              "c14": -18.04,
+              "c33": 105.49,
+              "c44": 58.32,
+              "e11": 0.173,
+              "e14": -0.07,
+              "epsilon11_relative": 4.424,
+              "epsilon33_relative": 4.632
+            },
+            "run": {
+              "length": 0.038099999999999995,
+              "width": 0.03175,
+              "thickness": 0.0127,
+              "mass": 0.028,
+              "force": 100.0,
+              "mechanical_q": 2127.6595744680853,
+              "capture_efficiency": 0.9,
+              "cycles": 1000
+            },
+            "one_newton_event": {
+              "mechanical_energy_joule": 6.18898420599231e-11,
+              "open_circuit_electrical_joule": 8.947599999714412e-13,
+              "coupling_fraction": 0.014457299779584426,
+              "face_voltage_volt": [
+                -0.4899013933024371,
+                1.6435925870432595,
+                0.14401747262469916
+              ],
+              "face_charge_coulomb": [
+                -2.0309302004012703e-13,
+                9.811671266210077e-13,
+                5.373336240392333e-13
+              ]
+            },
+            "initial_mechanical_joule": 6.18898420599231e-07,
+            "trace": [
+              {
+                "cycle": 1,
+                "dynamic_force_amplitude_newton": 100.0,
+                "contact_force_max_newton": 200.0,
+                "mechanical_joule": 6.18898420599231e-07,
+                "stored_joule": 8.052839999742971e-09
+              },
+              {
+                "cycle": 2,
+                "dynamic_force_amplitude_newton": 99.12802782567147,
+                "contact_force_max_newton": 199.12802782567147,
+                "mechanical_joule": 6.081522336115872e-07,
+                "stored_joule": 7.913015237651919e-09
+              },
+              {
+                "cycle": 3,
+                "dynamic_force_amplitude_newton": 98.26365900607097,
+                "contact_force_max_newton": 198.26365900607095,
+                "mechanical_joule": 5.975926370738942e-07,
+                "stored_joule": 7.775618310224717e-09
+              },
+              {
+                "cycle": 4,
+                "dynamic_force_amplitude_newton": 97.40682724206096,
+                "contact_force_max_newton": 197.40682724206096,
+                "mechanical_joule": 5.872163911396786e-07,
+                "stored_joule": 7.640607061972836e-09
+              },
+              {
+                "cycle": 5,
+                "dynamic_force_amplitude_newton": 96.55746681261392,
+                "contact_force_max_newton": 196.55746681261394,
+                "mechanical_joule": 5.770203122172497e-07,
+                "stored_joule": 7.507940069370763e-09
+              },
+              {
+                "cycle": 500,
+                "dynamic_force_amplitude_newton": 1.2648425679444613,
+                "contact_force_max_newton": 101.26484256794446,
+                "mechanical_joule": 9.901302312828832e-11,
+                "stored_joule": 1.2883148617037312e-12
+              },
+              {
+                "cycle": 1000,
+                "dynamic_force_amplitude_newton": 0.015858766778337814,
+                "contact_force_max_newton": 100.01585876677834,
+                "mechanical_joule": 1.556532521602608e-14,
+                "stored_joule": 2.0252931553333238e-16
+              }
+            ],
+            "energy": {
+              "held_joule": 4.637821619650928e-07,
+              "final_mechanical_joule": 1.5295058093461847e-14,
+              "circuit_loss_joule": 5.153135132945466e-08,
+              "q_loss_joule": 1.0358489200962592e-07,
+              "closure_residual_joule": 4.235164736271502e-22
+            }
+          }
+        },
+        "p95": {
+          "euler_degrees": [
+            180,
+            104.47751218592992,
+            135
+          ],
+          "first_event": {
+            "mechanical_energy_joule": 5.690007625030783e-07,
+            "open_circuit_electrical_joule": 2.291322385825484e-08,
+            "coupling_fraction": 0.04026923225455411,
+            "face_voltage_volt": [
+              59.171689619327395,
+              -194.58293743421146,
+              -76.39032282086977
+            ],
+            "face_charge_coulomb": [
+              2.4530155067853442e-11,
+              -1.161591887897555e-10,
+              -2.850146461730455e-10
+            ]
+          },
+          "recurrence": {
+            "material": {
+              "name": "sandwich_RUS_clamped",
+              "c11": 86.79,
+              "c12": 6.986,
+              "c13": 11.75,
+              "c14": -18.04,
+              "c33": 105.49,
+              "c44": 58.32,
+              "e11": 0.173,
+              "e14": -0.07,
+              "epsilon11_relative": 4.424,
+              "epsilon33_relative": 4.632
+            },
+            "run": {
+              "length": 0.038099999999999995,
+              "width": 0.03175,
+              "thickness": 0.0127,
+              "mass": 0.028,
+              "force": 100.0,
+              "mechanical_q": 2127.6595744680853,
+              "capture_efficiency": 0.9,
+              "cycles": 1000
+            },
+            "one_newton_event": {
+              "mechanical_energy_joule": 5.690007625030781e-11,
+              "open_circuit_electrical_joule": 2.2913223858254833e-12,
+              "coupling_fraction": 0.0402692322545541,
+              "face_voltage_volt": [
+                0.591716896193274,
+                -1.9458293743421142,
+                -0.7639032282086975
+              ],
+              "face_charge_coulomb": [
+                2.4530155067853434e-13,
+                -1.1615918878975548e-12,
+                -2.8501464617304537e-12
+              ]
+            },
+            "initial_mechanical_joule": 5.690007625030782e-07,
+            "trace": [
+              {
+                "cycle": 1,
+                "dynamic_force_amplitude_newton": 100.00000000000001,
+                "contact_force_max_newton": 200.0,
+                "mechanical_joule": 5.690007625030782e-07,
+                "stored_joule": 2.0621901472429356e-08
+              },
+              {
+                "cycle": 2,
+                "dynamic_force_amplitude_newton": 97.82130495393716,
+                "contact_force_max_newton": 197.82130495393716,
+                "mechanical_joule": 5.444772679342904e-07,
+                "stored_joule": 1.9733113403793922e-08
+              },
+              {
+                "cycle": 3,
+                "dynamic_force_amplitude_newton": 95.6900770289117,
+                "contact_force_max_newton": 195.6900770289117,
+                "mechanical_joule": 5.210107170912364e-07,
+                "stored_joule": 1.8882631416292906e-08
+              },
+              {
+                "cycle": 4,
+                "dynamic_force_amplitude_newton": 93.6052820611091,
+                "contact_force_max_newton": 193.6052820611091,
+                "mechanical_joule": 4.985555565134894e-07,
+                "stored_joule": 1.8068804547336162e-08
+              },
+              {
+                "cycle": 5,
+                "dynamic_force_amplitude_newton": 91.56590841799056,
+                "contact_force_max_newton": 191.56590841799056,
+                "mechanical_joule": 4.770681960596774e-07,
+                "stored_joule": 1.7290052989549475e-08
+              },
+              {
+                "cycle": 500,
+                "dynamic_force_amplitude_newton": 0.001683808096277933,
+                "contact_force_max_newton": 100.00168380809627,
+                "mechanical_joule": 1.613236484052973e-16,
+                "stored_joule": 5.8467415192064485e-18
+              },
+              {
+                "cycle": 1000,
+                "dynamic_force_amplitude_newton": 2.773439131700803e-08,
+                "contact_force_max_newton": 100.00000002773439,
+                "mechanical_joule": 4.376733732361551e-26,
+                "stored_joule": 1.5862293646632788e-27
+              }
+            ],
+            "energy": {
+              "held_joule": 4.784749428415429e-07,
+              "final_mechanical_joule": 4.18809987984713e-26,
+              "circuit_loss_joule": 5.3163882537949196e-08,
+              "q_loss_joule": 3.736193712358523e-08,
+              "closure_residual_joule": -8.470329472543003e-22
+            }
+          }
+        },
+        "maximum": {
+          "euler_degrees": [
+            345,
+            94.78019184719916,
+            225
+          ],
+          "first_event": {
+            "mechanical_energy_joule": 6.949543746863039e-07,
+            "open_circuit_electrical_joule": 3.079218859906565e-08,
+            "coupling_fraction": 0.044308216079602294,
+            "face_voltage_volt": [
+              -92.5729682259887,
+              -214.92726576200963,
+              -90.34823621734739
+            ],
+            "face_charge_coulomb": [
+              -3.837695493037341e-11,
+              -1.2830403923856972e-10,
+              -3.3709205075922215e-10
+            ]
+          },
+          "recurrence": {
+            "material": {
+              "name": "sandwich_RUS_clamped",
+              "c11": 86.79,
+              "c12": 6.986,
+              "c13": 11.75,
+              "c14": -18.04,
+              "c33": 105.49,
+              "c44": 58.32,
+              "e11": 0.173,
+              "e14": -0.07,
+              "epsilon11_relative": 4.424,
+              "epsilon33_relative": 4.632
+            },
+            "run": {
+              "length": 0.038099999999999995,
+              "width": 0.03175,
+              "thickness": 0.0127,
+              "mass": 0.028,
+              "force": 100.0,
+              "mechanical_q": 2127.6595744680853,
+              "capture_efficiency": 0.9,
+              "cycles": 1000
+            },
+            "one_newton_event": {
+              "mechanical_energy_joule": 6.94954374686304e-11,
+              "open_circuit_electrical_joule": 3.079218859906565e-12,
+              "coupling_fraction": 0.04430821607960229,
+              "face_voltage_volt": [
+                -0.9257296822598868,
+                -2.1492726576200964,
+                -0.903482362173474
+              ],
+              "face_charge_coulomb": [
+                -3.837695493037341e-13,
+                -1.2830403923856972e-12,
+                -3.3709205075922213e-12
+              ]
+            },
+            "initial_mechanical_joule": 6.94954374686304e-07,
+            "trace": [
+              {
+                "cycle": 1,
+                "dynamic_force_amplitude_newton": 100.0,
+                "contact_force_max_newton": 200.0,
+                "mechanical_joule": 6.94954374686304e-07,
+                "stored_joule": 2.7712969739159084e-08
+              },
+              {
+                "cycle": 2,
+                "dynamic_force_amplitude_newton": 97.61524964785166,
+                "contact_force_max_newton": 197.61524964785167,
+                "mechanical_joule": 6.62203743823652e-07,
+                "stored_joule": 2.6406959913053974e-08
+              },
+              {
+                "cycle": 3,
+                "dynamic_force_amplitude_newton": 95.28736963812403,
+                "contact_force_max_newton": 195.28736963812403,
+                "mechanical_joule": 6.309965291347393e-07,
+                "stored_joule": 2.516249750254298e-08
+              },
+              {
+                "cycle": 4,
+                "dynamic_force_amplitude_newton": 93.01500375512599,
+                "contact_force_max_newton": 193.01500375512597,
+                "mechanical_joule": 6.012599951203522e-07,
+                "stored_joule": 2.3976682005431858e-08
+              },
+              {
+                "cycle": 5,
+                "dynamic_force_amplitude_newton": 90.79682812552484,
+                "contact_force_max_newton": 190.79682812552483,
+                "mechanical_joule": 5.729248340364966e-07,
+                "stored_joule": 2.2846749609473434e-08
+              },
+              {
+                "cycle": 500,
+                "dynamic_force_amplitude_newton": 0.0005879183108818677,
+                "contact_force_max_newton": 100.00058791831088,
+                "mechanical_joule": 2.4020954819207774e-17,
+                "stored_joule": 9.578930909110398e-19
+              },
+              {
+                "cycle": 1000,
+                "dynamic_force_amplitude_newton": 3.374050997974013e-09,
+                "contact_force_max_newton": 100.00000000337405,
+                "mechanical_joule": 7.911513586551023e-28,
+                "stored_joule": 3.1549054815865086e-29
+              }
+            ],
+            "energy": {
+              "held_joule": 5.880573609878321e-07,
+              "final_mechanical_joule": 7.538673195187279e-28,
+              "circuit_loss_joule": 6.533970677642564e-08,
+              "q_loss_joule": 4.15573069220456e-08,
+              "closure_residual_joule": -6.352747104407253e-22
+            }
+          }
+        }
+      }
+    }
+  }
+}
